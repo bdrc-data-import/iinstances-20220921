@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG209084 {
+    bda:I2KG209113  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG209113 ;
+        adm:logEntry        bda:LG5BD49A95038307DD , bda:LGIM4A7FA999 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5BD49A95038307DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-05T11:28:02.697Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG81C0E0F7BB1CE931
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-05T11:28:02.749Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4A7FA999  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-11-18T20:20:35.234Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W2KG209084  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W2KG209084 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "a3/W2KG209084.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG209084 ;
+        adm:logEntry        bda:LG81C0E0F7BB1CE931 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG209113  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of lhan du 'dzoms pa/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W2KG209084 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   422 .
+    
+    bdr:W2KG209084  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG209113 ;
+        :instanceOf         bdr:WA2KG209084 ;
+        :instanceReproductionOf  bdr:MW2KG209084 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "11/2019"@en .
+}

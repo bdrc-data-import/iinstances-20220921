@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24524 {
+    bda:I1KG24541  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24541 ;
+        adm:logEntry        bda:LG53134AABF4A63D0D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0D2B3F8532A1D452
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-10-04T16:35:27.187Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG53134AABF4A63D0D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-10-04T16:35:27.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG24524  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG24524 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "af/W1KG24524.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24524 ;
+        adm:logEntry        bda:LG0D2B3F8532A1D452 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24541  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bon dang 'brel lam byung ba'i bod kyi chos brgyud khag gi skyes chen gleng ba/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W1KG24524 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1KG24524  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24541 ;
+        :instanceOf         bdr:WA1KG24524 ;
+        :instanceReproductionOf  bdr:MW1KG24524 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

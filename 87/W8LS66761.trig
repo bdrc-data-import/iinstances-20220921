@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66761 {
+    bda:I8LS67820  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67820 ;
+        adm:logEntry        bda:LGF235AA47D4D78070 , bda:LGIM69D1E0CE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG598203A532D48965
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-26T10:31:33.096Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF235AA47D4D78070
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-26T10:31:33.013Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM69D1E0CE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-14T15:16:05.698Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66761  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS66761 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "87/W8LS66761.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66761 ;
+        adm:logEntry        bda:LG598203A532D48965 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67820  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bu slob kyi bsrung bya/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS66761 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   109 .
+    
+    bdr:W8LS66761  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS67820 ;
+        :instanceOf         bdr:WA8LS66761 ;
+        :instanceReproductionOf  bdr:MW8LS66761 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

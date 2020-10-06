@@ -1,0 +1,132 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN22971 {
+    bda:I4CN10520  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CN10520 ;
+        adm:logEntry        bda:LGC902A64199559902 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CN10521  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CN10521 ;
+        adm:logEntry        bda:LG69951C1D747B7F1E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CN10522  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CN10522 ;
+        adm:logEntry        bda:LG2A451295DD2EEA07 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CN10523  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CN10523 ;
+        adm:logEntry        bda:LGAA8B65F6C923D265 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CN10524  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CN10524 ;
+        adm:logEntry        bda:LG158014A8FCF5265E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG158014A8FCF5265E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-30T22:33:20.679Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG2A451295DD2EEA07
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-30T22:33:20.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG53622B4BAB8487CB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-30T22:33:20.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG69951C1D747B7F1E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-30T22:33:20.393Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAA8B65F6C923D265
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-30T22:33:20.588Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC902A64199559902
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-30T22:33:20.294Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN22971  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN22971 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "8a/W3CN22971.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN22971 ;
+        adm:logEntry        bda:LG53622B4BAB8487CB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CN10520  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod brgyud tshad ma rig pa zhib 'jug (1nas 5bar/) (bod rgya shan sbyar/)" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W3CN22971 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CN10521  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod brgyud tshad ma rig pa zhib 'jug (1nas 5bar/) (bod rgya shan sbyar/)" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W3CN22971 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CN10522  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of bod brgyud tshad ma rig pa zhib 'jug (1nas 5bar/) (bod rgya shan sbyar/)" ;
+        :volumeNumber       3 ;
+        :volumeOf           bdr:W3CN22971 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CN10523  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of bod brgyud tshad ma rig pa zhib 'jug (1nas 5bar/) (bod rgya shan sbyar/)" ;
+        :volumeNumber       4 ;
+        :volumeOf           bdr:W3CN22971 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CN10524  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of bod brgyud tshad ma rig pa zhib 'jug (1nas 5bar/) (bod rgya shan sbyar/)" ;
+        :volumeNumber       5 ;
+        :volumeOf           bdr:W3CN22971 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN22971  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CN10520 , bdr:I4CN10521 , bdr:I4CN10522 , bdr:I4CN10523 , bdr:I4CN10524 ;
+        :instanceOf         bdr:WA3CN22971 ;
+        :instanceReproductionOf  bdr:MW3CN22971 ;
+        :isRoot             true ;
+        :itemVolumes        5 ;
+        :scanInfo           "2020"@en .
+}

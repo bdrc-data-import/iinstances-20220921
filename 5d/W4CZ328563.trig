@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ328563 {
+    bda:I4CZ354325  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ354325 ;
+        adm:logEntry        bda:LG611760721D119FDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ354326  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ354326 ;
+        adm:logEntry        bda:LGC58756DBA3530D60 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG2049DEC936B988CA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-08-05T12:37:04.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG611760721D119FDB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-05T12:37:04.289Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC58756DBA3530D60
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-05T12:37:04.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ328563  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ328563 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5d/W4CZ328563.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ328563 ;
+        adm:logEntry        bda:LG2049DEC936B988CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ354325  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of sdom gsum skor dang dnyings rig rin po che'i mdzod/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W4CZ328563 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ354326  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of sdom gsum skor dang dnyings rig rin po che'i mdzod/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W4CZ328563 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ328563  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ354325 , bdr:I4CZ354326 ;
+        :instanceOf         bdr:WA4CZ328563 ;
+        :instanceReproductionOf  bdr:MW4CZ328563 ;
+        :isRoot             true ;
+        :itemVolumes        2 ;
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa Acc. No. 000054"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+}

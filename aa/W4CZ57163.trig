@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ57163 {
+    bda:I4CZ300962  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ300962 ;
+        adm:logEntry        bda:LG13A85C646098E34E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ300963  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ300963 ;
+        adm:logEntry        bda:LG684EB3BBCD408C01 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0C439DA91F446351
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-10-26T09:48:15.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG13A85C646098E34E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-26T09:48:14.687Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG684EB3BBCD408C01
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-10-26T09:48:14.919Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ57163  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ57163 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "aa/W4CZ57163.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ57163 ;
+        adm:logEntry        bda:LG0C439DA91F446351 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ300962  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung thor bu/ dge legs dpal bzang /" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W4CZ57163 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ300963  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung thor bu/ dge legs dpal bzang /" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W4CZ57163 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ57163  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ300962 , bdr:I4CZ300963 ;
+        :instanceOf         bdr:WA4CZ57163 ;
+        :instanceReproductionOf  bdr:MW4CZ57163 ;
+        :isRoot             true ;
+        :itemVolumes        2 .
+}

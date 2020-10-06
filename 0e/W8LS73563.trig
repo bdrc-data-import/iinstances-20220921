@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73563 {
+    bda:I8LS73565  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73565 ;
+        adm:logEntry        bda:LG3B3768464E976E65 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG3B3768464E976E65
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-18T12:23:22.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC07DA728A04B00A8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-18T12:23:22.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS73563  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73563 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "0e/W8LS73563.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73563 ;
+        adm:logEntry        bda:LGC07DA728A04B00A8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73565  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of khrid yig ye shes bla ma/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS73563 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS73563  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73565 ;
+        :instanceOf         bdr:WA8LS73563 ;
+        :instanceReproductionOf  bdr:MW8LS73563 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W22065 {
+    bda:I1KG80355  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG80355 ;
+        adm:logEntry        bda:LG00A2710DECDBF61E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG00A2710DECDBF61E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T14:40:07.551Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG12E7118DFC44992B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-12T14:40:07.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD6B43D23D27E2B93
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-04-11T11:11:24.852Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W22065  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W22065 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "cf/W22065.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W22065 ;
+        adm:logEntry        bda:LG12E7118DFC44992B , bda:LGD6B43D23D27E2B93 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG80355  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of smug gu drel rdzong /" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W22065 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W22065  a           :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG80355 ;
+        :instanceOf         bdr:WA22065 ;
+        :instanceReproductionOf  bdr:MW22065 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "9/2017"@en .
+}

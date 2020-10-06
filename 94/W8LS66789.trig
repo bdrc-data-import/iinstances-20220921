@@ -1,0 +1,91 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66789 {
+    bda:I8LS67885  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67885 ;
+        adm:logEntry        bda:LG414CC26B7B510E01 , bda:LGIMA252F9CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS67886  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67886 ;
+        adm:logEntry        bda:LG26DBFF269288D27C , bda:LGIM9457D09C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG26DBFF269288D27C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-04T10:22:02.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG414CC26B7B510E01
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-04T10:22:02.665Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD648497BBBA602C3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-04T10:22:02.849Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM9457D09C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-17T23:26:23.269Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA252F9CA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-17T23:26:23.007Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66789  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS66789 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "94/W8LS66789.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66789 ;
+        adm:logEntry        bda:LGD648497BBBA602C3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67885  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tshe smon gling rgyal thog dang po ngag dbang tshul dpal bzang po'i skyes rabs rnam thar dad pa'i sgo 'byed/ stod smad/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS66789 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   564 .
+    
+    bdr:I8LS67886  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of tshe smon gling rgyal thog dang po ngag dbang tshul dpal bzang po'i skyes rabs rnam thar dad pa'i sgo 'byed/ stod smad/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W8LS66789 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   620 .
+    
+    bdr:W8LS66789  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS67885 , bdr:I8LS67886 ;
+        :instanceOf         bdr:WA8LS66789 ;
+        :instanceReproductionOf  bdr:MW8LS66789 ;
+        :isRoot             true ;
+        :itemVolumes        2 .
+}

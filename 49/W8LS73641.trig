@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73641 {
+    bda:I8LS73643  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73643 ;
+        adm:logEntry        bda:LG1A3D1090E239DFF2 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS73644  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73644 ;
+        adm:logEntry        bda:LGEF3FD7B68DA29290 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS73645  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73645 ;
+        adm:logEntry        bda:LG016EFBE7A8144FAE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS73646  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73646 ;
+        adm:logEntry        bda:LG06906F00E13C3700 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG016EFBE7A8144FAE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-28T11:08:48.101Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG06906F00E13C3700
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-28T11:08:48.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG1A3D1090E239DFF2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-28T11:08:47.833Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBF1E26454DA30A9D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-28T11:08:48.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEF3FD7B68DA29290
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-28T11:08:47.967Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS73641  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73641 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "49/W8LS73641.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73641 ;
+        adm:logEntry        bda:LGBF1E26454DA30A9D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73643  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsol 'debs sogs/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS73641 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS73644  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsol 'debs sogs/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W8LS73641 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS73645  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsol 'debs sogs/" ;
+        :volumeNumber       3 ;
+        :volumeOf           bdr:W8LS73641 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS73646  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of gsol 'debs sogs/" ;
+        :volumeNumber       4 ;
+        :volumeOf           bdr:W8LS73641 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS73641  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73643 , bdr:I8LS73644 , bdr:I8LS73645 , bdr:I8LS73646 ;
+        :instanceOf         bdr:WA8LS73641 ;
+        :instanceReproductionOf  bdr:MW8LS73641 ;
+        :isRoot             true ;
+        :itemVolumes        4 .
+}

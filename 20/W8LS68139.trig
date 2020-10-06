@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS68139 {
+    bda:I8LS68143  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS68143 ;
+        adm:logEntry        bda:LGFACA5A1E6DEAB117 , bda:LGIM9DD4AB40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG1BA2EEC7AEBD4D82
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-24T09:34:14.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFACA5A1E6DEAB117
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-24T09:34:14.581Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM9DD4AB40  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-03-04T23:24:14.867Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS68139  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS68139 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "20/W8LS68139.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS68139 ;
+        adm:logEntry        bda:LG1BA2EEC7AEBD4D82 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS68143  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mo nad gso ba/ bcos sgrigs/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS68139 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   135 .
+    
+    bdr:W8LS68139  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS68143 ;
+        :instanceOf         bdr:WA8LS68139 ;
+        :instanceReproductionOf  bdr:MW8LS68139 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

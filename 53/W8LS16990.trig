@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS16990 {
+    bda:I8LS17002  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS17002 ;
+        adm:logEntry        bda:LG44664D69C2B6FD02 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG44664D69C2B6FD02
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-12-14T12:41:02.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG89BE01AEA4321EA9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-12-14T12:41:02.605Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS16990  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS16990 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "53/W8LS16990.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS16990 ;
+        adm:logEntry        bda:LG89BE01AEA4321EA9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS17002  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of 'phags pa spyan ras gzigs 'khor ba dong sprugs kyi cha lag grol chos rnams kyi zin bris shel dkar me long /" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS16990 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS16990  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS17002 ;
+        :instanceOf         bdr:WA8LS16990 ;
+        :instanceReproductionOf  bdr:MW8LS16990 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 12/2015"@en .
+}

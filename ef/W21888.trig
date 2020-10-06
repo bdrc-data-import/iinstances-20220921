@@ -1,0 +1,125 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W21888 {
+    bda:I1983  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1983 ;
+        adm:logEntry        bda:LGFE665BF965284B34 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1984  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1984 ;
+        adm:logEntry        bda:LG730DBD8ED42C664E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1985  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1985 ;
+        adm:logEntry        bda:LG65B4A8F81218800C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I1986  a            adm:AdminData ;
+        adm:adminAbout      bdr:I1986 ;
+        adm:logEntry        bda:LG4BAC7299443A26F6 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4BAC7299443A26F6
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-07-17"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG65B4A8F81218800C
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-07-17"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LG730DBD8ED42C664E
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-07-17"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGFE665BF965284B34
+        a                   adm:ContentQC ;
+        adm:logDate         "2002-07-17"^^xsd:date ;
+        adm:logMessage      "No Problems"@en ;
+        adm:logWho          bdu:U00067 .
+    
+    bda:LGIGS001  a         adm:UpdateData ;
+        adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS002  a         adm:UpdateData ;
+        adm:logDate         "2016-03-31T21:27:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "Added ondisk"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIGS003  a         adm:UpdateData ;
+        adm:logDate         "2016-04-28T23:50:58.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages and added page list"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:W21888  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W21888 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      17 ;
+        adm:gitPath         "ef/W21888.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W21888 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1983  a            :ImageGroup ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W21888 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   517 .
+    
+    bdr:I1984  a            :ImageGroup ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W21888 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   587 .
+    
+    bdr:I1985  a            :ImageGroup ;
+        :volumeNumber       3 ;
+        :volumeOf           bdr:W21888 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   507 .
+    
+    bdr:I1986  a            :ImageGroup ;
+        :volumeNumber       4 ;
+        :volumeOf           bdr:W21888 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   551 .
+    
+    bdr:W21888  a           :ImageInstance ;
+        :instanceHasReproduction  bdr:IE21888 ;
+        :instanceHasVolume  bdr:I1983 , bdr:I1984 , bdr:I1985 , bdr:I1986 ;
+        :instanceOf         bdr:WA21888 ;
+        :instanceReproductionOf  bdr:MW21888 ;
+        :isRoot             true ;
+        :itemVolumes        4 .
+}

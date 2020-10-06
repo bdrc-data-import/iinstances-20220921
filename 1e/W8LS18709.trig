@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS18709 {
+    bda:I8LS18711  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS18711 ;
+        adm:logEntry        bda:LG17CF70953AD1D31C , bda:LGA9EB64396647F4D5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG17CF70953AD1D31C
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:46.918Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA9EB64396647F4D5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:53:22.931Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE215895C0BFF1FD5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T11:53:23.031Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS18709  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS18709 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "1e/W8LS18709.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS18709 ;
+        adm:logEntry        bda:LGE215895C0BFF1FD5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS18711  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of tang dang rgyal khab kyi mi rigs srid jus dril bsgrags slob gso'i gnad bsdus/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS18709 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   53 .
+    
+    bdr:W8LS18709  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS18711 ;
+        :instanceOf         bdr:WA8LS18709 ;
+        :instanceReproductionOf  bdr:MW8LS18709 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

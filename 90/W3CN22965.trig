@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W3CN22965 {
+    bda:I4CN10501  a        adm:AdminData ;
+        adm:adminAbout      bdr:I4CN10501 ;
+        adm:logEntry        bda:LGFC5B008A8566D973 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG46E6A44F9C9C34EE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-07-30T22:14:59.555Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFC5B008A8566D973
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-30T22:14:59.453Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:W3CN22965  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN22965 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "90/W3CN22965.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W3CN22965 ;
+        adm:logEntry        bda:LG46E6A44F9C9C34EE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CN10501  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of pe cin sa khul gyi bod yig dpe rnying dkar chag chen mo shes bya'i gter mdzod/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W3CN22965 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W3CN22965  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I4CN10501 ;
+        :instanceOf         bdr:WA3CN22965 ;
+        :instanceReproductionOf  bdr:MW3CN22965 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "2020"@en .
+}

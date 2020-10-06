@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1AC427 {
+    bda:I2PD17847  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD17847 ;
+        adm:logEntry        bda:LG0761EB2E172464F9 , bda:LG3BFF8FCF3F613E43 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG0761EB2E172464F9
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:38.017Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG3BFF8FCF3F613E43
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-09T23:30:03.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG661A53B5476FB9F6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-09T23:30:04.832Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1AC427  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1AC427 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "33/W1AC427.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1AC427 ;
+        adm:logEntry        bda:LG661A53B5476FB9F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD17847  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of mnga' ris rtswa mda' rdzong khongs wa chen phug pa'i ldebs ris sgyu rtsal/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W1AC427 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   170 .
+    
+    bdr:W1AC427  a          :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD17847 ;
+        :instanceOf         bdr:WA1AC427 ;
+        :instanceReproductionOf  bdr:MW1AC427 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

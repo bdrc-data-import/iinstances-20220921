@@ -1,0 +1,92 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD137895 {
+    bda:I2PD18615  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18615 ;
+        adm:logEntry        bda:LG65CC6853175509B7 , bda:LGCE0F542A7C805476 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I2PD18616  a        adm:AdminData ;
+        adm:adminAbout      bdr:I2PD18616 ;
+        adm:logEntry        bda:LG3D4B414E688ADE23 , bda:LGE72F20D88B80036A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG3D4B414E688ADE23
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-24T01:00:30.325Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG65CC6853175509B7
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-24T01:00:30.127Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGCA8709BED62FD28C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-18T23:35:16.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGCE0F542A7C805476
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T23:35:14.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE72F20D88B80036A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-18T23:35:15.681Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD137895  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD137895 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6b/W1PD137895.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD137895 ;
+        adm:logEntry        bda:LGCA8709BED62FD28C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2PD18615  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi lag shes kun 'dus chen mo/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W1PD137895 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   540 .
+    
+    bdr:I2PD18616  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of bod kyi lag shes kun 'dus chen mo/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W1PD137895 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   536 .
+    
+    bdr:W1PD137895  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2PD18615 , bdr:I2PD18616 ;
+        :instanceOf         bdr:WA1PD137895 ;
+        :instanceReproductionOf  bdr:MW1PD137895 ;
+        :isRoot             true ;
+        :itemVolumes        2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, Southwest University of Nationalities, Chengdu, China."@en .
+}

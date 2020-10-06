@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1PD53259 {
+    bda:I1PD53296  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1PD53296 ;
+        adm:logEntry        bda:LG07CD6F341EEC4010 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG07CD6F341EEC4010
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-11-18T17:08:21.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG33648717F3BBDB7F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-11-18T17:08:21.551Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG42D9813E8AB62867
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2008-11-18T17:00:59.835Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:W1PD53259  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1PD53259 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "9b/W1PD53259.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1PD53259 ;
+        adm:logEntry        bda:LG33648717F3BBDB7F , bda:LG42D9813E8AB62867 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1PD53296  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of rig gnas dang mi gshis" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W1PD53259 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1PD53259  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1PD53296 ;
+        :instanceOf         bdr:WA1PD53259 ;
+        :instanceReproductionOf  bdr:MW1PD53259 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

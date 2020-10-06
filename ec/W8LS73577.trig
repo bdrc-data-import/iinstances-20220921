@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73577 {
+    bda:I8LS73579  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73579 ;
+        adm:logEntry        bda:LGBAE502BC32159F87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG55A0E508A7411F10
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-21T10:38:48.617Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBAE502BC32159F87
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-21T10:38:48.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS73577  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73577 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ec/W8LS73577.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73577 ;
+        adm:logEntry        bda:LG55A0E508A7411F10 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73579  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of lnga pa 'phrod dang sbyor byed rten 'brel nyi ma sbar sme chos kyi sa bdag thebs bzlog gnam sgo drang srong yan kwong bcas kyi 'bras bu gsal bar btus pa sogs/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS73577 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS73577  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73579 ;
+        :instanceOf         bdr:WA8LS73577 ;
+        :instanceReproductionOf  bdr:MW8LS73577 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

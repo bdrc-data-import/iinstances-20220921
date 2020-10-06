@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS73625 {
+    bda:I8LS73627  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS73627 ;
+        adm:logEntry        bda:LG27BA0C5C2757A42B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG084CE3C3D447AFF9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-25T09:14:44.966Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG27BA0C5C2757A42B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-25T09:14:44.816Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS73625  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS73625 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "a6/W8LS73625.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS73625 ;
+        adm:logEntry        bda:LG084CE3C3D447AFF9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS73627  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bla sgrub blo gsal rgya mtsho dang nyin zhag phrugs gcig gi nyams len sogs/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS73625 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS73625  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS73627 ;
+        :instanceOf         bdr:WA8LS73625 ;
+        :instanceReproductionOf  bdr:MW8LS73625 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

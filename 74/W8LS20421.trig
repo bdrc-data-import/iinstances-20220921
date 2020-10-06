@@ -1,0 +1,116 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS20421 {
+    bda:I8LS20423  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20423 ;
+        adm:logEntry        bda:LGC034B547CC44708D , bda:LGC8B63F284F459667 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS20424  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20424 ;
+        adm:logEntry        bda:LGA2DE0F69481B9C4F , bda:LGD9A85A1A89C0560E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:I8LS20425  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS20425 ;
+        adm:logEntry        bda:LG5744E2F0C5ADEA6F , bda:LGC9D0AC980C072EAD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5744E2F0C5ADEA6F
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:14:50.541Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGA2DE0F69481B9C4F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:07:59.414Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGBAA64B683BDFFC06
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-12-15T10:07:59.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC034B547CC44708D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:07:59.297Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC8B63F284F459667
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:14:48.276Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGC9D0AC980C072EAD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:07:59.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD9A85A1A89C0560E
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:14:49.359Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS20421  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS20421 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      7 ;
+        adm:gitPath         "74/W8LS20421.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS20421 ;
+        adm:logEntry        bda:LGBAA64B683BDFFC06 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS20423  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of chab spel tshe brtan phun tshogs kyi dpyad rtsom phyogs bsgrigs/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS20421 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   587 .
+    
+    bdr:I8LS20424  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of chab spel tshe brtan phun tshogs kyi dpyad rtsom phyogs bsgrigs/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W8LS20421 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   461 .
+    
+    bdr:I8LS20425  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of chab spel tshe brtan phun tshogs kyi dpyad rtsom phyogs bsgrigs/" ;
+        :volumeNumber       3 ;
+        :volumeOf           bdr:W8LS20421 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   327 .
+    
+    bdr:W8LS20421  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS20423 , bdr:I8LS20424 , bdr:I8LS20425 ;
+        :instanceOf         bdr:WA1KG13116 ;
+        :instanceReproductionOf  bdr:MW8LS20421 ;
+        :isRoot             true ;
+        :itemVolumes        3 .
+}

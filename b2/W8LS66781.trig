@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS66781 {
+    bda:I8LS67869  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS67869 ;
+        adm:logEntry        bda:LGF1761FD46D62C5CA , bda:LGIMA36F801F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG8225A0CE8E337AED
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-11-27T12:03:21.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF1761FD46D62C5CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-27T12:03:21.013Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIMA36F801F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2019-12-17T23:26:21.36Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W8LS66781  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS66781 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b2/W8LS66781.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS66781 ;
+        adm:logEntry        bda:LG8225A0CE8E337AED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS67869  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of bod kyi zhing 'brog khul du spyod bde'i bod phyi lugs sman bcos thad kyi lag deb/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS66781 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   206 .
+    
+    bdr:W8LS66781  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS67869 ;
+        :instanceOf         bdr:WA8LS66781 ;
+        :instanceReproductionOf  bdr:MW8LS66781 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

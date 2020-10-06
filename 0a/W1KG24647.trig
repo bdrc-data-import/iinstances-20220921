@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG24647 {
+    bda:I1KG24713  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG24713 ;
+        adm:logEntry        bda:LG5D4CE212D058BD97 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG5D4CE212D058BD97
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T09:54:22.727Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG789B355F6EF1904A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-11-29T09:54:22.821Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W1KG24647  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W1KG24647 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "0a/W1KG24647.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG24647 ;
+        adm:logEntry        bda:LG789B355F6EF1904A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG24713  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sde bdun rgya mtshor 'jug pa'i gru dzings/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W1KG24647 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W1KG24647  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG24713 ;
+        :instanceOf         bdr:WA1AC229 ;
+        :instanceReproductionOf  bdr:MW1KG24647 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "11/2016"@en .
+}

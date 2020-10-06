@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS16551 {
+    bda:I8LS16585  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS16585 ;
+        adm:logEntry        bda:LG88972EE4F00100B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS16586  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS16586 ;
+        adm:logEntry        bda:LG2D5360AC5FE1C733 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG1123D80E879BA1EC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2015-05-27T09:17:00.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG2D5360AC5FE1C733
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-27T09:17:00.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG88972EE4F00100B9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-05-27T09:17:00.417Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS16551  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS16551 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ed/W8LS16551.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS16551 ;
+        adm:logEntry        bda:LG1123D80E879BA1EC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS16585  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gter chos/ pad+ma las 'brel rtsal/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS16551 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS16586  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gter chos/ pad+ma las 'brel rtsal/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W8LS16551 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS16551  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS16585 , bdr:I8LS16586 ;
+        :instanceOf         bdr:WA3CN21538 ;
+        :instanceReproductionOf  bdr:MW8LS16551 ;
+        :isRoot             true ;
+        :itemVolumes        2 ;
+        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 05/2015"@en .
+}

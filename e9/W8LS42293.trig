@@ -1,0 +1,132 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS42293 {
+    bda:I8LS42299  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS42299 ;
+        adm:logEntry        bda:LGC1652F98708279AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS42300  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS42300 ;
+        adm:logEntry        bda:LGDDE0FD13E19F6AAB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS42301  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS42301 ;
+        adm:logEntry        bda:LGF983AB0FB5FECE67 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS42302  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS42302 ;
+        adm:logEntry        bda:LGB28ACE3033C50A3D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS42303  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS42303 ;
+        adm:logEntry        bda:LG77D0717D88FA8296 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG77D0717D88FA8296
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-10T11:36:30.355Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB28ACE3033C50A3D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-10T11:36:29.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC1652F98708279AE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-10T11:36:28.665Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDDE0FD13E19F6AAB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-10T11:36:29.053Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGECF4BE2CF5EF3607
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-01-10T11:36:30.739Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF983AB0FB5FECE67
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-01-10T11:36:29.454Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS42293  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS42293 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "e9/W8LS42293.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS42293 ;
+        adm:logEntry        bda:LGECF4BE2CF5EF3607 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS42299  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/chos rgyal nam mkha'i nor bu/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS42293 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS42300  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/chos rgyal nam mkha'i nor bu/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W8LS42293 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS42301  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/chos rgyal nam mkha'i nor bu/" ;
+        :volumeNumber       3 ;
+        :volumeOf           bdr:W8LS42293 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS42302  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung 'bum/chos rgyal nam mkha'i nor bu/" ;
+        :volumeNumber       4 ;
+        :volumeOf           bdr:W8LS42293 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS42303  a        :ImageGroup ;
+        :biblioNote         "Volume 5 of gsung 'bum/chos rgyal nam mkha'i nor bu/" ;
+        :volumeNumber       5 ;
+        :volumeOf           bdr:W8LS42293 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS42293  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS42299 , bdr:I8LS42300 , bdr:I8LS42301 , bdr:I8LS42302 , bdr:I8LS42303 ;
+        :instanceOf         bdr:WA8LS42293 ;
+        :instanceReproductionOf  bdr:MW8LS42293 ;
+        :isRoot             true ;
+        :itemVolumes        5 ;
+        :scanInfo           "copy made from LTWA collection, Acc.No.D35916-D35920"@en .
+}

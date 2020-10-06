@@ -1,0 +1,67 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W1KG10152 {
+    bda:I1KG20690  a        adm:AdminData ;
+        adm:adminAbout      bdr:I1KG20690 ;
+        adm:logEntry        bda:LG618599D1699468FB , bda:LG7A66DABC7A66F180 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG2FD4410E3497F2CC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-19T16:43:22.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG618599D1699468FB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-19T16:43:22.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7A66DABC7A66F180
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:26.686Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:W1KG10152  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W1KG10152 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "d8/W1KG10152.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W1KG10152 ;
+        adm:logEntry        bda:LG2FD4410E3497F2CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I1KG20690  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of sgra sbyor bam po gnyis pa dang / dag yig za ma tog dang / dag yig li shi'i gur khang bcas/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W1KG10152 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   448 .
+    
+    bdr:W1KG10152  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I1KG20690 ;
+        :instanceOf         bdr:WA1KG10152 ;
+        :instanceReproductionOf  bdr:MW1KG10152 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 11/2014"@en .
+}
