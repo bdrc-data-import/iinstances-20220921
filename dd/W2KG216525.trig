@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG216525 {
+    bda:I2KG217495  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG217495 ;
+        adm:logEntry        bda:LG6D88F98E7053DAC5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG2294EA274FAC5368
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-07T16:42:03.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6D88F98E7053DAC5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-07T16:42:03.063Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG216525  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG216525 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "dd/W2KG216525.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG216525 ;
+        adm:logEntry        bda:LG2294EA274FAC5368 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG217495  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of blo bzang dgongs rgyan mu tig phreng mdzes deb so gsum pa/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W2KG216525 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG216525  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG217495 ;
+        :instanceOf         bdr:WA2KG216525 ;
+        :instanceReproductionOf  bdr:MW2KG216525 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "Scanned at Drepung Loseling Educational Society, P.O. Tibetan Colony, Mundgod, 581411 Karnataka, India. Comments: 10/2020"@en .
+}

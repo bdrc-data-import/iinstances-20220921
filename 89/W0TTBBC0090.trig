@@ -15,16 +15,22 @@ bdg:W0TTBBC0090 {
     bda:I0TTBBC0090_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I0TTBBC0090_001 ;
-        adm:logEntry        bda:LGIMD8DD6D40 ;
+        adm:logEntry        bda:LGIMD8DD6D40 , bda:LGIMFF3FB7B5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I0TTBBC0090_002
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I0TTBBC0090_002 ;
-        adm:logEntry        bda:LGIMD8DD6D40 ;
+        adm:logEntry        bda:LGIMBC42DDEB , bda:LGIMD8DD6D40 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIMBC42DDEB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-10-07T23:37:06.288Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMD8DD6D40  a     adm:InitialDataImport ;
         adm:logAgent        "NGMP Importer" ;
@@ -32,12 +38,18 @@ bdg:W0TTBBC0090 {
         adm:logMessage      "imported imagegroup for W0TTBBC0090 volume 1"@en , "imported imagegroup for W0TTBBC0090 volume 2"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMFF3FB7B5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-10-07T23:37:06.046Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W0TTBBC0090  a      adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W0TTBBC0090 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "89/W0TTBBC0090.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W0TTBBC0090 ;
@@ -48,12 +60,16 @@ bdg:W0TTBBC0090 {
     bdr:I0TTBBC0090_001
         a                   :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W0TTBBC0090 .
+        :volumeOf           bdr:W0TTBBC0090 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   158 .
     
     bdr:I0TTBBC0090_002
         a                   :ImageGroup ;
         :volumeNumber       2 ;
-        :volumeOf           bdr:W0TTBBC0090 .
+        :volumeOf           bdr:W0TTBBC0090 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   181 .
     
     bdr:W0TTBBC0090  a      :ImageInstance ;
         :instanceHasVolume  bdr:I0TTBBC0090_001 , bdr:I0TTBBC0090_002 ;

@@ -12,20 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W2KG216524 {
-    bda:I2KG217469  a       adm:AdminData ;
-        adm:adminAbout      bdr:I2KG217469 ;
-        adm:logEntry        bda:LG3F8B267EFD992A2D ;
+    bda:I2KG217505  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG217505 ;
+        adm:logEntry        bda:LG7AF8546485F6990F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG3F8B267EFD992A2D
+    bda:LG7AF8546485F6990F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-10-06T14:40:26.499Z"^^xsd:dateTime ;
+        adm:logDate         "2020-10-07T17:44:39.64Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG7E57ED7D17B3EC58
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-10-06T14:40:26.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA65B1BE4C73AEB7A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-07T17:44:39.745Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -38,12 +44,12 @@ bdg:W2KG216524 {
         adm:gitPath         "13/W2KG216524.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG216524 ;
-        adm:logEntry        bda:LG7E57ED7D17B3EC58 ;
+        adm:logEntry        bda:LG7E57ED7D17B3EC58 , bda:LGA65B1BE4C73AEB7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG217469  a       :ImageGroup ;
+    bdr:I2KG217505  a       :ImageGroup ;
         :biblioNote         "Volume 1 of blo bzang dgongs rgyan mu tig phreng mdzes deb sum cu tham pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG216524 ;
@@ -51,10 +57,10 @@ bdg:W2KG216524 {
         :volumePagesTotal   0 .
     
     bdr:W2KG216524  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2KG217469 ;
+        :instanceHasVolume  bdr:I2KG217505 ;
         :instanceOf         bdr:WA2KG216524 ;
         :instanceReproductionOf  bdr:MW2KG216524 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "Drepung Loseling Educational Society, P.O. Tibetan Colony, Mundgod, 581411 Karnataka, India"@en .
+        :scanInfo           "Scanned at Drepung Loseling Educational Society, P.O. Tibetan Colony, Mundgod, 581411 Karnataka, India. Comments: 10/2020"@en .
 }
