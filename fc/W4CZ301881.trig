@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301881 {
-    bda:I4CZ301883  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301883 ;
-        adm:logEntry        bda:LG0ACC47EA73CD4C46 ;
+    bda:I4CZ364164  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364164 ;
+        adm:logEntry        bda:LGD6995F1006203C0D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG0ACC47EA73CD4C46
+    bda:LG24B1964D881A3216
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:05:36.349Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGD6995F1006203C0D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T15:20:40.238Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-09T16:05:36.215Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,12 +44,12 @@ bdg:W4CZ301881 {
         adm:gitPath         "fc/W4CZ301881.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301881 ;
-        adm:logEntry        bda:LGFF760F54D771E0D8 ;
+        adm:logEntry        bda:LG24B1964D881A3216 , bda:LGFF760F54D771E0D8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301883  a       :ImageGroup ;
+    bdr:I4CZ364164  a       :ImageGroup ;
         :biblioNote         "Volume 1 of 'grel pa don gsal/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301881 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301881 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301881  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301883 ;
+        :instanceHasVolume  bdr:I4CZ364164 ;
         :instanceOf         bdr:WA4CZ301881 ;
         :instanceReproductionOf  bdr:MW4CZ301881 ;
         :isRoot             true ;

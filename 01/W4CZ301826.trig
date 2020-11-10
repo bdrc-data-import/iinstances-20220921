@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301826 {
-    bda:I4CZ301876  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301876 ;
-        adm:logEntry        bda:LG3D1461F44F8D6FAF ;
+    bda:I4CZ364217  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364217 ;
+        adm:logEntry        bda:LG13DA1ED4FCD77A47 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG043999D25112755A
@@ -23,10 +23,16 @@ bdg:W4CZ301826 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG3D1461F44F8D6FAF
+    bda:LG13DA1ED4FCD77A47
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T14:30:32.872Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-09T16:34:46.711Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG491A819221298976
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:34:46.862Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ301826  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ301826 {
         adm:gitPath         "01/W4CZ301826.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301826 ;
-        adm:logEntry        bda:LG043999D25112755A ;
+        adm:logEntry        bda:LG043999D25112755A , bda:LG491A819221298976 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301876  a       :ImageGroup ;
+    bdr:I4CZ364217  a       :ImageGroup ;
         :biblioNote         "Volume 1 of gsung 'bum/ sgam po pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301826 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301826 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301826  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301876 ;
+        :instanceHasVolume  bdr:I4CZ364217 ;
         :instanceOf         bdr:WA4CZ301826 ;
         :instanceReproductionOf  bdr:MW4CZ301826 ;
         :isRoot             true ;

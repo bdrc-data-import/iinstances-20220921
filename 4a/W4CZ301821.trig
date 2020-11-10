@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301821 {
-    bda:I4CZ301866  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301866 ;
-        adm:logEntry        bda:LG3110EC4D68297F79 ;
+    bda:I4CZ364207  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364207 ;
+        adm:logEntry        bda:LG7D1D85CD3DE51350 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG3110EC4D68297F79
+    bda:LG3F19C3810E463278
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:24:47.822Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG7D1D85CD3DE51350
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T14:18:20.356Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-09T16:24:47.671Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,12 +44,12 @@ bdg:W4CZ301821 {
         adm:gitPath         "4a/W4CZ301821.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301821 ;
-        adm:logEntry        bda:LG959858B31942D6F9 ;
+        adm:logEntry        bda:LG3F19C3810E463278 , bda:LG959858B31942D6F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301866  a       :ImageGroup ;
+    bdr:I4CZ364207  a       :ImageGroup ;
         :biblioNote         "Volume 1 of ko rag pa'i mgur 'bum/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301821 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301821 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301821  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301866 ;
+        :instanceHasVolume  bdr:I4CZ364207 ;
         :instanceOf         bdr:WA4CZ301821 ;
         :instanceReproductionOf  bdr:MW4CZ301821 ;
         :isRoot             true ;

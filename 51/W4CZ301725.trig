@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301725 {
-    bda:I4CZ301738  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301738 ;
-        adm:logEntry        bda:LG854E81681149F5FB ;
+    bda:I4CZ364191  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364191 ;
+        adm:logEntry        bda:LG332D1664F58EE783 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG19E3E20DAC647079
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:11:33.367Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG332D1664F58EE783
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-09T16:11:33.233Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG4EE9941B576E3551
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-12-06T12:11:31.469Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LG854E81681149F5FB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-06T12:11:31.353Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ301725  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ301725 {
         adm:gitPath         "51/W4CZ301725.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301725 ;
-        adm:logEntry        bda:LG4EE9941B576E3551 ;
+        adm:logEntry        bda:LG19E3E20DAC647079 , bda:LG4EE9941B576E3551 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301738  a       :ImageGroup ;
+    bdr:I4CZ364191  a       :ImageGroup ;
         :biblioNote         "Volume 1 of karma 'phrin las pa'i rnam thar ngo mtshar yid kyi shing rta/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301725 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301725 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301725  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301738 ;
+        :instanceHasVolume  bdr:I4CZ364191 ;
         :instanceOf         bdr:WA4CZ301725 ;
         :instanceReproductionOf  bdr:MW4CZ301725 ;
         :isRoot             true ;

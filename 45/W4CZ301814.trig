@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301814 {
-    bda:I4CZ301854  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301854 ;
-        adm:logEntry        bda:LGBCEEB5079887812C ;
+    bda:I4CZ364195  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364195 ;
+        adm:logEntry        bda:LG7D792ED7925789FA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG175F6E5723372140
@@ -23,9 +23,15 @@ bdg:W4CZ301814 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGBCEEB5079887812C
+    bda:LG77050DADF4319BB4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:17:41.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG7D792ED7925789FA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T14:12:10.672Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-09T16:17:41.275Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,12 +44,12 @@ bdg:W4CZ301814 {
         adm:gitPath         "45/W4CZ301814.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301814 ;
-        adm:logEntry        bda:LG175F6E5723372140 ;
+        adm:logEntry        bda:LG175F6E5723372140 , bda:LG77050DADF4319BB4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301854  a       :ImageGroup ;
+    bdr:I4CZ364195  a       :ImageGroup ;
         :biblioNote         "Volume 1 of 'ba' ra ba rgyal mtshan dpal bzang po'i rnam thar mgur 'bum/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301814 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301814 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301814  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301854 ;
+        :instanceHasVolume  bdr:I4CZ364195 ;
         :instanceOf         bdr:WA4CZ301814 ;
         :instanceReproductionOf  bdr:MW4CZ301814 ;
         :isRoot             true ;

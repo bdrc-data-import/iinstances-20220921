@@ -12,20 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301801 {
-    bda:I4CZ301832  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301832 ;
-        adm:logEntry        bda:LG16DD5F2A841351C7 ;
+    bda:I4CZ364170  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364170 ;
+        adm:logEntry        bda:LG658E83052D8E534D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG16DD5F2A841351C7
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T13:57:57.446Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
     
     bda:LG642E9892932BB591
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-12-14T13:57:57.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG658E83052D8E534D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-09T16:06:57.385Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDA03913B1F4F6B20
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:06:57.518Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,12 +44,12 @@ bdg:W4CZ301801 {
         adm:gitPath         "cd/W4CZ301801.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301801 ;
-        adm:logEntry        bda:LG642E9892932BB591 ;
+        adm:logEntry        bda:LG642E9892932BB591 , bda:LGDA03913B1F4F6B20 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301832  a       :ImageGroup ;
+    bdr:I4CZ364170  a       :ImageGroup ;
         :biblioNote         "Volume 1 of spyod 'jug" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301801 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301801 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301801  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301832 ;
+        :instanceHasVolume  bdr:I4CZ364170 ;
         :instanceOf         bdr:WA4CZ301801 ;
         :instanceReproductionOf  bdr:MW4CZ301801 ;
         :isRoot             true ;

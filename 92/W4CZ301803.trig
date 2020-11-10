@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301803 {
-    bda:I4CZ301836  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301836 ;
-        adm:logEntry        bda:LG382891300887AF27 ;
+    bda:I4CZ364175  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364175 ;
+        adm:logEntry        bda:LGFA4C1C0CFC348549 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG382891300887AF27
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T13:59:54.957Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
     
     bda:LG622E0CB152210897
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-12-14T13:59:55.091Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG836D6088B6AAD918
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:07:45.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFA4C1C0CFC348549
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-09T16:07:45.243Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ301803  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ301803 {
         adm:gitPath         "92/W4CZ301803.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301803 ;
-        adm:logEntry        bda:LG622E0CB152210897 ;
+        adm:logEntry        bda:LG622E0CB152210897 , bda:LG836D6088B6AAD918 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301836  a       :ImageGroup ;
+    bdr:I4CZ364175  a       :ImageGroup ;
         :biblioNote         "Volume 1 of kun rig cho ga'i de nyid rnam par nges pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301803 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301803 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301803  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301836 ;
+        :instanceHasVolume  bdr:I4CZ364175 ;
         :instanceOf         bdr:WA4CZ301803 ;
         :instanceReproductionOf  bdr:MW4CZ301803 ;
         :isRoot             true ;

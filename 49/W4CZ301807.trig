@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301807 {
-    bda:I4CZ301844  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301844 ;
-        adm:logEntry        bda:LG58AED5B7625F98CB ;
+    bda:I4CZ364185  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364185 ;
+        adm:logEntry        bda:LG4EA8577BD73E6A66 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG58AED5B7625F98CB
+    bda:LG1F0F669B2775D740
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:09:42.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG4EA8577BD73E6A66
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T14:03:37.647Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-09T16:09:41.945Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,12 +44,12 @@ bdg:W4CZ301807 {
         adm:gitPath         "49/W4CZ301807.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301807 ;
-        adm:logEntry        bda:LG5A4A7889DA280113 ;
+        adm:logEntry        bda:LG1F0F669B2775D740 , bda:LG5A4A7889DA280113 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301844  a       :ImageGroup ;
+    bdr:I4CZ364185  a       :ImageGroup ;
         :biblioNote         "Volume 1 of bkra shis rnam rgyal gyi rnam par thar pa ngo mtshar gyi rgya mtsho/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301807 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301807 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301807  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301844 ;
+        :instanceHasVolume  bdr:I4CZ364185 ;
         :instanceOf         bdr:WA4CZ301807 ;
         :instanceReproductionOf  bdr:MW4CZ301807 ;
         :isRoot             true ;

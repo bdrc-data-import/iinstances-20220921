@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301813 {
-    bda:I4CZ301852  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301852 ;
-        adm:logEntry        bda:LG0742599B2592CE7F ;
+    bda:I4CZ364193  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364193 ;
+        adm:logEntry        bda:LGE5B319F7F89B03FA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG0742599B2592CE7F
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T14:11:04.522Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
     
     bda:LG3608DF0C16C99170
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-12-14T14:11:04.641Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG87DFA30F00434D57
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:16:31.818Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE5B319F7F89B03FA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-09T16:16:31.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ301813  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ301813 {
         adm:gitPath         "b5/W4CZ301813.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301813 ;
-        adm:logEntry        bda:LG3608DF0C16C99170 ;
+        adm:logEntry        bda:LG3608DF0C16C99170 , bda:LG87DFA30F00434D57 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301852  a       :ImageGroup ;
+    bdr:I4CZ364193  a       :ImageGroup ;
         :biblioNote         "Volume 1 of mi la ras pa'i rnam thar thar pa dang thams cad mkhyen pa'i lam ston/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301813 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301813 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301813  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301852 ;
+        :instanceHasVolume  bdr:I4CZ364193 ;
         :instanceOf         bdr:WA4CZ301813 ;
         :instanceReproductionOf  bdr:MW4CZ301813 ;
         :isRoot             true ;

@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ301815 {
-    bda:I4CZ301858  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ301858 ;
-        adm:logEntry        bda:LGF49F2CC16BBAF1BB ;
+    bda:I4CZ364199  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364199 ;
+        adm:logEntry        bda:LG17162BB1F1A60179 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG17162BB1F1A60179
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-09T16:19:07.759Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG871CA968E37CF6CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:19:07.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGF2C2CDEE72CC7316
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-12-14T14:13:52.75Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LGF49F2CC16BBAF1BB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-12-14T14:13:52.617Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ301815  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ301815 {
         adm:gitPath         "18/W4CZ301815.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301815 ;
-        adm:logEntry        bda:LGF2C2CDEE72CC7316 ;
+        adm:logEntry        bda:LG871CA968E37CF6CE , bda:LGF2C2CDEE72CC7316 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ301858  a       :ImageGroup ;
+    bdr:I4CZ364199  a       :ImageGroup ;
         :biblioNote         "Volume 1 of gtsang smyon pa'i rnam thar dad pa'i spu slong g.yo ba/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301815 ;
@@ -51,7 +57,7 @@ bdg:W4CZ301815 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ301815  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ301858 ;
+        :instanceHasVolume  bdr:I4CZ364199 ;
         :instanceOf         bdr:WA4CZ301815 ;
         :instanceReproductionOf  bdr:MW4CZ301815 ;
         :isRoot             true ;
