@@ -14,15 +14,17 @@
 bdg:W4CZ355891 {
     bda:I4CZ362692  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ362692 ;
-        adm:logEntry        bda:LGFDF66CAE60A83ACD ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGFDF66CAE60A83ACD , bda:LGIM1F1EF61C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ362693  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ362693 ;
-        adm:logEntry        bda:LG5F7BB31BD17D0E16 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG2BAC7EFED2D5D049 , bda:LGIMB9C611EF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG5F7BB31BD17D0E16
+    bda:LG2BAC7EFED2D5D049
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-09-30T12:33:59.744Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W4CZ355891 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM1F1EF61C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-16T13:12:09.418Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMB9C611EF  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-16T13:12:09.739Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ355891  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ355891 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fe/W4CZ355891.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ355891 ;
@@ -59,14 +73,14 @@ bdg:W4CZ355891 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ355891 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   307 .
     
     bdr:I4CZ362693  a       :ImageGroup ;
         :biblioNote         "Volume 2 of gnam lcags chos 'byung /" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ355891 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   397 .
     
     bdr:W4CZ355891  a       :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ362692 , bdr:I4CZ362693 ;

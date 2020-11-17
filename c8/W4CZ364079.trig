@@ -14,15 +14,17 @@
 bdg:W4CZ364079 {
     bda:I4CZ364157  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364157 ;
-        adm:logEntry        bda:LG9D145D7A11A44F31 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG9D145D7A11A44F31 , bda:LGIM246E3D63 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ364158  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364158 ;
-        adm:logEntry        bda:LG08CB0B23D87720C5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG4D2E83C2E8CCA0EF , bda:LGIM28868C63 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG08CB0B23D87720C5
+    bda:LG4D2E83C2E8CCA0EF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-06T15:13:26.014Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W4CZ364079 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM246E3D63  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-16T13:16:11.189Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM28868C63  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-16T13:16:11.42Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ364079  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ364079 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c8/W4CZ364079.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ364079 ;
@@ -59,14 +73,14 @@ bdg:W4CZ364079 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ364079 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   428 .
     
     bdr:I4CZ364158  a       :ImageGroup ;
         :biblioNote         "Volume 2 of khams sangs ban de mkhar gyi gsung rtsom gces btus/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ364079 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   268 .
     
     bdr:W4CZ364079  a       :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ364157 , bdr:I4CZ364158 ;

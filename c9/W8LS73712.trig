@@ -14,22 +14,23 @@
 bdg:W8LS73712 {
     bda:I8LS73715  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS73715 ;
-        adm:logEntry        bda:LG9F08DA69D417616D ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG9F08DA69D417616D , bda:LGIM37CDD6E6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS73716  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS73716 ;
-        adm:logEntry        bda:LGE94D4C1E042D5AB9 ;
+        adm:logEntry        bda:LG412528CF31A94021 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I8LS73717  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS73717 ;
-        adm:logEntry        bda:LG60F9C8FBBCF3A8F3 ;
+        adm:logEntry        bda:LGA1C47FD8AC7668B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG60F9C8FBBCF3A8F3
+    bda:LG412528CF31A94021
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-11-05T09:10:33.312Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-05T09:10:33.144Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -39,24 +40,30 @@ bdg:W8LS73712 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA1C47FD8AC7668B3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-05T09:10:33.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB5259373595F1DFB
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-11-05T09:10:33.595Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE94D4C1E042D5AB9
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-11-05T09:10:33.144Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+    bda:LGIM37CDD6E6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-16T13:21:11.81Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS73712  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS73712 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c9/W8LS73712.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS73712 ;
@@ -70,7 +77,7 @@ bdg:W8LS73712 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS73712 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   266 .
     
     bdr:I8LS73716  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsung 'bum/ grub dbang nam mkha' bstan 'dzin rin po che/stod cha/" ;
