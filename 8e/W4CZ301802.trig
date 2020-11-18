@@ -14,12 +14,13 @@
 bdg:W4CZ301802 {
     bda:I4CZ364172  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364172 ;
-        adm:logEntry        bda:LG8DE41ABCFF737079 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG8DE41ABCFF737079 , bda:LGIM4514842F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ364173  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364173 ;
-        adm:logEntry        bda:LG86BDAFF77FB885AA ;
+        adm:logEntry        bda:LG493BC35EDF959D76 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG31B32B0CD9232853
@@ -28,7 +29,7 @@ bdg:W4CZ301802 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG86BDAFF77FB885AA
+    bda:LG493BC35EDF959D76
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-09T16:07:18.632Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -46,12 +47,18 @@ bdg:W4CZ301802 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4514842F  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-17T23:27:25.205Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ301802  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ301802 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "8e/W4CZ301802.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ301802 ;
@@ -65,7 +72,7 @@ bdg:W4CZ301802 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ301802 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   340 .
     
     bdr:I4CZ364173  a       :ImageGroup ;
         :biblioNote         "Volume 2 of bsdus pa'i rgyud kyi rgya cher bshad pa sbas don kun gsal/" ;
