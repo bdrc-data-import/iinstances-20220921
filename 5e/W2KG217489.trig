@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG217489 {
+    bda:I2KG220173  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220173 ;
+        adm:logEntry        bda:LG93204E76AEFEC5FF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG93204E76AEFEC5FF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-11-24T14:58:17.984Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB5262C0E500B9888
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-24T14:58:18.172Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG217489  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG217489 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "5e/W2KG217489.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG217489 ;
+        adm:logEntry        bda:LGB5262C0E500B9888 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG220173  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of rje btsun ras chung rdo rje grags pa'i rnam thar rnam mkhyen thar lam gsal ba'i me long ye shes snang ba/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W2KG217489 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG217489  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG220173 ;
+        :instanceOf         bdr:WA2KG217489 ;
+        :instanceReproductionOf  bdr:MW2KG217489 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "Scanned at Images from the CD bod kyi shing spar lag rtsal gyi byung rim mdor bsdus (A brief introduction to the history of Tibetan printing technology), Paltsek, 2013.. Comments: 11/2020"@en .
+}

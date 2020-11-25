@@ -14,13 +14,15 @@
 bdg:W3CN25663 {
     bda:I4CN11258  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN11258 ;
-        adm:logEntry        bda:LG0F45CF8C9C5CCBBC ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0F45CF8C9C5CCBBC , bda:LGIMAC97D8E7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CN11259  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN11259 ;
-        adm:logEntry        bda:LG273967AE9704A7AB ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG48809061595C1E15 , bda:LGIM709DF798 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG0F45CF8C9C5CCBBC
         a                   adm:InitialDataCreation ;
@@ -28,7 +30,7 @@ bdg:W3CN25663 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG273967AE9704A7AB
+    bda:LG48809061595C1E15
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-09-11T22:52:13.441Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W3CN25663 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM709DF798  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-24T22:45:13.573Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAC97D8E7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-24T22:45:13.303Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN25663  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN25663 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "27/W3CN25663.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN25663 ;
@@ -59,14 +73,14 @@ bdg:W3CN25663 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN25663 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   362 .
     
     bdr:I4CN11259  a        :ImageGroup ;
         :biblioNote         "Volume 2 of mtho sgang gi dpyid dpal/（stod cha smad cha/）" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN25663 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   298 .
     
     bdr:W3CN25663  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4CN11258 , bdr:I4CN11259 ;

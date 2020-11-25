@@ -14,34 +14,25 @@
 bdg:W3CN23000 {
     bda:I4CN10546  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN10546 ;
-        adm:logEntry        bda:LG4C5D1978895E523F ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG4C5D1978895E523F , bda:LGIM513C8559 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CN10547  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN10547 ;
-        adm:logEntry        bda:LG6FC5AC5A22331BDA ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGE6E3F1449AC1C415 , bda:LGIMD410A5CB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CN10548  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN10548 ;
-        adm:logEntry        bda:LG392E52D690C39DCA ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG392E52D690C39DCA
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-07-31T22:28:10.464Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+        adm:logEntry        bda:LGDBE0C0886EB86D0C , bda:LGIM39F78D48 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG4C5D1978895E523F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-07-31T22:28:10.269Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LG6FC5AC5A22331BDA
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-07-31T22:28:10.367Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
@@ -51,12 +42,42 @@ bdg:W3CN23000 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGDBE0C0886EB86D0C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-31T22:28:10.464Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE6E3F1449AC1C415
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-31T22:28:10.367Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM39F78D48  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-24T22:44:13.404Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM513C8559  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-24T22:44:12.879Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD410A5CB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-11-24T22:44:13.123Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN23000  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN23000 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "83/W3CN23000.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN23000 ;
@@ -70,21 +91,21 @@ bdg:W3CN23000 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN23000 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   2 .
     
     bdr:I4CN10547  a        :ImageGroup ;
         :biblioNote         "Volume 2 of bod brgyud nang bstan gros tshogs skabs bdun pa'i rtsom yig phyogs bsgrigs/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN23000 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   291 .
     
     bdr:I4CN10548  a        :ImageGroup ;
         :biblioNote         "Volume 3 of bod brgyud nang bstan gros tshogs skabs bdun pa'i rtsom yig phyogs bsgrigs/" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W3CN23000 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   270 .
     
     bdr:W3CN23000  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4CN10546 , bdr:I4CN10547 , bdr:I4CN10548 ;
