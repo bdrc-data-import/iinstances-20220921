@@ -14,31 +14,41 @@
 bdg:W2KG212710 {
     bda:I2KG213929  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG213929 ;
-        adm:logEntry        bda:LGF012775F8F1C054D ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGF012775F8F1C054D , bda:LGIM68DA3981 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I2KG213930  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG213930 ;
-        adm:logEntry        bda:LG16AF779262634E81 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG50B52435760C2177 , bda:LGIM10BE046B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I2KG213931  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG213931 ;
-        adm:logEntry        bda:LG04018E3A925D0102 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG04D21267D151050D , bda:LGIM4C1A72CC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I2KG213932  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG213932 ;
-        adm:logEntry        bda:LGFDF0BC0F18F75F67 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG34E5B4D580AA3C06 , bda:LGIMD4BF8725 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG04018E3A925D0102
+    bda:LG04D21267D151050D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-09-18T19:24:50.731Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG16AF779262634E81
+    bda:LG34E5B4D580AA3C06
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-09-18T19:24:50.829Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG50B52435760C2177
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-09-18T19:24:50.634Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -56,18 +66,36 @@ bdg:W2KG212710 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGFDF0BC0F18F75F67
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-09-18T19:24:50.829Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+    bda:LGIM10BE046B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-10T03:39:22.465Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM4C1A72CC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-10T03:39:22.765Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM68DA3981  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-10T03:39:22.071Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD4BF8725  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-10T03:39:23.045Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W2KG212710  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG212710 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "da/W2KG212710.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG212710 ;
@@ -81,28 +109,28 @@ bdg:W2KG212710 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG212710 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   310 .
     
     bdr:I2KG213930  a       :ImageGroup ;
         :biblioNote         "Volume 2 of mgo log bod rigs rang skyong khul gyi srid dbang btsugs nas lo 'khor 65 lon pa'i rtsom rig brtsams chos phyogs bsdus/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W2KG212710 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   334 .
     
     bdr:I2KG213931  a       :ImageGroup ;
         :biblioNote         "Volume 3 of mgo log bod rigs rang skyong khul gyi srid dbang btsugs nas lo 'khor 65 lon pa'i rtsom rig brtsams chos phyogs bsdus/" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W2KG212710 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   314 .
     
     bdr:I2KG213932  a       :ImageGroup ;
         :biblioNote         "Volume 4 of mgo log bod rigs rang skyong khul gyi srid dbang btsugs nas lo 'khor 65 lon pa'i rtsom rig brtsams chos phyogs bsdus/" ;
         :volumeNumber       4 ;
         :volumeOf           bdr:W2KG212710 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   316 .
     
     bdr:W2KG212710  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG213929 , bdr:I2KG213930 , bdr:I2KG213931 , bdr:I2KG213932 ;
