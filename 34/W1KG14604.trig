@@ -12,10 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG14604 {
-    bda:I4CZ299994  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299994 ;
-        adm:logEntry        bda:LGAB39B18209F7CBAF ;
+    bda:I2KG220256  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220256 ;
+        adm:logEntry        bda:LG689DD1040406A319 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG689DD1040406A319
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-15T11:25:29.268Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG77D4A0283A524CC7
         a                   adm:ScanRequestCreation ;
@@ -23,11 +29,11 @@ bdg:W1KG14604 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGAB39B18209F7CBAF
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:29:14.444Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+    bda:LGA2306348B04BA8B3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-15T11:25:29.377Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W1KG14604  a        adm:AdminData ;
         :isRoot             true ;
@@ -38,12 +44,12 @@ bdg:W1KG14604 {
         adm:gitPath         "34/W1KG14604.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14604 ;
-        adm:logEntry        bda:LG77D4A0283A524CC7 ;
+        adm:logEntry        bda:LG77D4A0283A524CC7 , bda:LGA2306348B04BA8B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299994  a       :ImageGroup ;
+    bdr:I2KG220256  a       :ImageGroup ;
         :biblioNote         "Volume 1 of mi'i rigs kyi shes rig mdun du skul mkhan mkhas dbang brgya tham pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W1KG14604 ;
@@ -51,7 +57,7 @@ bdg:W1KG14604 {
         :volumePagesTotal   0 .
     
     bdr:W1KG14604  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299994 ;
+        :instanceHasVolume  bdr:I2KG220256 ;
         :instanceOf         bdr:WA1KG14604 ;
         :instanceReproductionOf  bdr:MW1KG14604 ;
         :isRoot             true ;

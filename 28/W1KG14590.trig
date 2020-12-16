@@ -12,16 +12,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG14590 {
-    bda:I4CZ300005  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ300005 ;
-        adm:logEntry        bda:LG0F43D1FBC7CACC98 ;
+    bda:I2KG220248  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220248 ;
+        adm:logEntry        bda:LG49A65C1FEDF7E1FB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG0F43D1FBC7CACC98
+    bda:LG49A65C1FEDF7E1FB
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-29T10:45:12.713Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-15T10:57:12.196Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5CABB62D3FED40A1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-15T10:57:12.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG655BBF347F9139DE
         a                   adm:ScanRequestCreation ;
@@ -38,12 +44,12 @@ bdg:W1KG14590 {
         adm:gitPath         "28/W1KG14590.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14590 ;
-        adm:logEntry        bda:LG655BBF347F9139DE ;
+        adm:logEntry        bda:LG5CABB62D3FED40A1 , bda:LG655BBF347F9139DE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ300005  a       :ImageGroup ;
+    bdr:I2KG220248  a       :ImageGroup ;
         :biblioNote         "Volume 1 of byang thang dmangs sgrung rna ba'i bu ram/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W1KG14590 ;
@@ -51,7 +57,7 @@ bdg:W1KG14590 {
         :volumePagesTotal   0 .
     
     bdr:W1KG14590  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ300005 ;
+        :instanceHasVolume  bdr:I2KG220248 ;
         :instanceOf         bdr:WA1KG14590 ;
         :instanceReproductionOf  bdr:MW1KG14590 ;
         :isRoot             true ;

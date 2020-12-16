@@ -12,16 +12,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG14600 {
-    bda:I4CZ299996  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299996 ;
-        adm:logEntry        bda:LG1C25A44718ECE9B7 ;
+    bda:I2KG220250  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220250 ;
+        adm:logEntry        bda:LGB76E8BB453C9F0D2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG1C25A44718ECE9B7
+    bda:LGB76E8BB453C9F0D2
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:30:34.81Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-15T11:01:14.765Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDA36A1972D35BE58
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-15T11:01:14.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGE03F70899A48C540
         a                   adm:ScanRequestCreation ;
@@ -38,12 +44,12 @@ bdg:W1KG14600 {
         adm:gitPath         "cd/W1KG14600.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14600 ;
-        adm:logEntry        bda:LGE03F70899A48C540 ;
+        adm:logEntry        bda:LGDA36A1972D35BE58 , bda:LGE03F70899A48C540 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299996  a       :ImageGroup ;
+    bdr:I2KG220250  a       :ImageGroup ;
         :biblioNote         "Volume 1 of bod kyi srol rgyun mda' rtsed rig gnas/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W1KG14600 ;
@@ -51,7 +57,7 @@ bdg:W1KG14600 {
         :volumePagesTotal   0 .
     
     bdr:W1KG14600  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299996 ;
+        :instanceHasVolume  bdr:I2KG220250 ;
         :instanceOf         bdr:WA1KG14600 ;
         :instanceReproductionOf  bdr:MW1KG14600 ;
         :isRoot             true ;

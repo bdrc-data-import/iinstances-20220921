@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1KG14605 {
-    bda:I4CZ300062  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ300062 ;
-        adm:logEntry        bda:LGA20810BBFA485FA9 ;
+    bda:I2KG220258  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG220258 ;
+        adm:logEntry        bda:LGB8A6C6CD7907D8C1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG04C1BF896EA4DA87
@@ -23,11 +23,17 @@ bdg:W1KG14605 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGA20810BBFA485FA9
+    bda:LGB8A6C6CD7907D8C1
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-10T14:30:03.704Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-15T11:26:27.369Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBF825534B3218E61
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-15T11:26:27.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W1KG14605  a        adm:AdminData ;
         :isRoot             true ;
@@ -38,12 +44,12 @@ bdg:W1KG14605 {
         adm:gitPath         "97/W1KG14605.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14605 ;
-        adm:logEntry        bda:LG04C1BF896EA4DA87 ;
+        adm:logEntry        bda:LG04C1BF896EA4DA87 , bda:LGBF825534B3218E61 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ300062  a       :ImageGroup ;
+    bdr:I2KG220258  a       :ImageGroup ;
         :biblioNote         "Volume 1 of skya bo'i slob gso/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W1KG14605 ;
@@ -51,7 +57,7 @@ bdg:W1KG14605 {
         :volumePagesTotal   0 .
     
     bdr:W1KG14605  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ300062 ;
+        :instanceHasVolume  bdr:I2KG220258 ;
         :instanceOf         bdr:WA1KG14605 ;
         :instanceReproductionOf  bdr:MW1KG14605 ;
         :isRoot             true ;
