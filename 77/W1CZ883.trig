@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1CZ883 {
-    bda:I4CZ295947  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ295947 ;
-        adm:logEntry        bda:LG2E0A7B232C489469 ;
+    bda:I1CZ2121  a         adm:AdminData ;
+        adm:adminAbout      bdr:I1CZ2121 ;
+        adm:logEntry        bda:LG68B8E1BB84AAB4FA , bda:LGB7AE0225090D1911 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG110D8336B1A26566
@@ -23,9 +23,9 @@ bdg:W1CZ883 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG2E0A7B232C489469
+    bda:LG68B8E1BB84AAB4FA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-08-30T13:02:54.093Z"^^xsd:dateTime ;
+        adm:logDate         "2007-10-02T13:22:05.311Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -41,12 +41,18 @@ bdg:W1CZ883 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGB7AE0225090D1911
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-12-14T12:51:26.939Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
+    
     bda:W1CZ883  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1CZ883 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "77/W1CZ883.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1CZ883 ;
@@ -55,7 +61,7 @@ bdg:W1CZ883 {
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ295947  a       :ImageGroup ;
+    bdr:I1CZ2121  a         :ImageGroup ;
         :biblioNote         "Volume 1 of bzo rig kha shas kyi pa tra lag len ma" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W1CZ883 ;
@@ -63,7 +69,7 @@ bdg:W1CZ883 {
         :volumePagesTotal   0 .
     
     bdr:W1CZ883  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ295947 ;
+        :instanceHasVolume  bdr:I1CZ2121 ;
         :instanceOf         bdr:WA1CZ883 ;
         :instanceReproductionOf  bdr:MW1CZ883 ;
         :isRoot             true ;
