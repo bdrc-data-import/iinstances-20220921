@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299890 {
-    bda:I4CZ299946  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299946 ;
-        adm:logEntry        bda:LG97C83382AFDD9BFD ;
+    bda:I4CZ364401  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364401 ;
+        adm:logEntry        bda:LG8B0BCBF34A87E6DE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG97C83382AFDD9BFD
+    bda:LG256D3F21778293CB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T15:26:07.397Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG8B0BCBF34A87E6DE
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-27T15:34:00.162Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T15:26:07.246Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -31,27 +37,27 @@ bdg:W4CZ299890 {
     
     bda:W4CZ299890  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ299890 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      2 ;
         adm:gitPath         "0f/W4CZ299890.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299890 ;
-        adm:logEntry        bda:LGDCDFA296E62BA262 ;
+        adm:logEntry        bda:LG256D3F21778293CB , bda:LGDCDFA296E62BA262 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299946  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of nyams myong rgan po'i gtam/ don snyin gldan pa'i lo rgyus/" ;
+    bdr:I4CZ364401  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of nyams myong rgan po'i gtam/ don snying ldan pa'i lo rgyus/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299890 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
     bdr:W4CZ299890  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299946 ;
+        :instanceHasVolume  bdr:I4CZ364401 ;
         :instanceOf         bdr:WA4CZ299890 ;
         :instanceReproductionOf  bdr:MW4CZ299890 ;
         :isRoot             true ;

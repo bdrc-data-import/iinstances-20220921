@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ296775 {
-    bda:I4CZ296822  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ296822 ;
-        adm:logEntry        bda:LG28001BD151E27B79 ;
+    bda:I4CZ364301  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364301 ;
+        adm:logEntry        bda:LGAEBBC724980C79AA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG28001BD151E27B79
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T16:04:15.05Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG3F5234F08C8BAC60
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T10:56:47.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG6182AAE3AF23ACA8
@@ -29,21 +29,27 @@ bdg:W4CZ296775 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGAEBBC724980C79AA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-21T10:56:47.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:W4CZ296775  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ296775 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      2 ;
         adm:gitPath         "ce/W4CZ296775.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ296775 ;
-        adm:logEntry        bda:LG6182AAE3AF23ACA8 ;
+        adm:logEntry        bda:LG3F5234F08C8BAC60 , bda:LG6182AAE3AF23ACA8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ296822  a       :ImageGroup ;
+    bdr:I4CZ364301  a       :ImageGroup ;
         :biblioNote         "Volume 1 of dmangs gzhas las 'phros pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ296775 ;
@@ -51,10 +57,10 @@ bdg:W4CZ296775 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ296775  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ296822 ;
+        :instanceHasVolume  bdr:I4CZ364301 ;
         :instanceOf         bdr:WA4CZ296775 ;
         :instanceReproductionOf  bdr:MW4CZ296775 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35496"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35496"@en .
 }

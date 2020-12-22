@@ -12,19 +12,19 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ296777 {
-    bda:I4CZ296792  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ296792 ;
-        adm:logEntry        bda:LGCB1C8E8898A45F1E ;
+    bda:I4CZ364305  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364305 ;
+        adm:logEntry        bda:LGB993D7412089D0DF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:I4CZ296793  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ296793 ;
-        adm:logEntry        bda:LGE6BFA30ACF0CF864 ;
+    bda:I4CZ364306  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364306 ;
+        adm:logEntry        bda:LGDD37A4C7F0E44FC5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:I4CZ296794  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ296794 ;
-        adm:logEntry        bda:LGFB0416C2306495C4 ;
+    bda:I4CZ364307  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364307 ;
+        adm:logEntry        bda:LG2F500C9D1F6AB3F0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG16D54B9B50D56953
@@ -33,53 +33,59 @@ bdg:W4CZ296777 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGCB1C8E8898A45F1E
+    bda:LG2F500C9D1F6AB3F0
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T10:27:16.927Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T11:06:24.226Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGE6BFA30ACF0CF864
+    bda:LGB993D7412089D0DF
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T10:27:17.059Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T11:06:23.791Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGFB0416C2306495C4
+    bda:LGDD37A4C7F0E44FC5
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T10:27:17.176Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T11:06:24.01Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF75427D07A8A6F5E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T11:06:24.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ296777  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ296777 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      4 ;
         adm:gitPath         "0f/W4CZ296777.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ296777 ;
-        adm:logEntry        bda:LG16D54B9B50D56953 ;
+        adm:logEntry        bda:LG16D54B9B50D56953 , bda:LGF75427D07A8A6F5E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ296792  a       :ImageGroup ;
+    bdr:I4CZ364305  a       :ImageGroup ;
         :biblioNote         "Volume 1 of sprin dkar lam rnying /" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ296777 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
-    bdr:I4CZ296793  a       :ImageGroup ;
+    bdr:I4CZ364306  a       :ImageGroup ;
         :biblioNote         "Volume 2 of sprin dkar lam rnying /" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ296777 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
-    bdr:I4CZ296794  a       :ImageGroup ;
+    bdr:I4CZ364307  a       :ImageGroup ;
         :biblioNote         "Volume 3 of sprin dkar lam rnying /" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W4CZ296777 ;
@@ -87,10 +93,10 @@ bdg:W4CZ296777 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ296777  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ296792 , bdr:I4CZ296793 , bdr:I4CZ296794 ;
+        :instanceHasVolume  bdr:I4CZ364305 , bdr:I4CZ364306 , bdr:I4CZ364307 ;
         :instanceOf         bdr:WA4CZ296777 ;
         :instanceReproductionOf  bdr:MW4CZ296777 ;
         :isRoot             true ;
         :itemVolumes        3 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35499, D35502, D35505"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35499, D35502, D35505"@en .
 }

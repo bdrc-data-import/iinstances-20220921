@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ296095 {
-    bda:I4CZ296810  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ296810 ;
-        adm:logEntry        bda:LGCC2BD7B3474721CA ;
+    bda:I4CZ364285  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364285 ;
+        adm:logEntry        bda:LGCDCE5889DF5863D3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG2FEA9ED202EF8FFB
@@ -23,10 +23,16 @@ bdg:W4CZ296095 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGCC2BD7B3474721CA
+    bda:LGCDCE5889DF5863D3
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T14:59:43.931Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T10:21:05.737Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDDEB68297DB2EEB3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T10:21:05.887Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ296095  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ296095 {
         adm:gitPath         "45/W4CZ296095.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ296095 ;
-        adm:logEntry        bda:LG2FEA9ED202EF8FFB ;
+        adm:logEntry        bda:LG2FEA9ED202EF8FFB , bda:LGDDEB68297DB2EEB3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ296810  a       :ImageGroup ;
+    bdr:I4CZ364285  a       :ImageGroup ;
         :biblioNote         "Volume 1 of ja zhing lha mo'i ya yud/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ296095 ;
@@ -51,7 +57,7 @@ bdg:W4CZ296095 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ296095  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ296810 ;
+        :instanceHasVolume  bdr:I4CZ364285 ;
         :instanceOf         bdr:WA4CZ296095 ;
         :instanceReproductionOf  bdr:MW4CZ296095 ;
         :isRoot             true ;

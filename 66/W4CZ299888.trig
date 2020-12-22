@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299888 {
-    bda:I4CZ299906  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299906 ;
-        adm:logEntry        bda:LG7F1FA71044689DDE ;
+    bda:I4CZ364397  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364397 ;
+        adm:logEntry        bda:LGA0D4650FD55A8591 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG7F1FA71044689DDE
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-27T12:38:01.014Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
     
     bda:LG863E82099708F7A2
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-27T12:38:01.18Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG9B3BC10FC95A4D9D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T15:14:37.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA0D4650FD55A8591
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-21T15:14:37.53Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ299888  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ299888 {
         adm:gitPath         "66/W4CZ299888.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299888 ;
-        adm:logEntry        bda:LG863E82099708F7A2 ;
+        adm:logEntry        bda:LG863E82099708F7A2 , bda:LG9B3BC10FC95A4D9D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299906  a       :ImageGroup ;
+    bdr:I4CZ364397  a       :ImageGroup ;
         :biblioNote         "Volume 1 of mngon bstod glegs bam/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299888 ;
@@ -51,10 +57,10 @@ bdg:W4CZ299888 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299888  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299906 ;
+        :instanceHasVolume  bdr:I4CZ364397 ;
         :instanceOf         bdr:WA4CZ299888 ;
         :instanceReproductionOf  bdr:MW4CZ299888 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA acc No:D33768"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA acc No:D33768"@en .
 }

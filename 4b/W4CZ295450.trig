@@ -11,56 +11,55 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:W4CZ296785 {
-    bda:I4CZ364319  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ364319 ;
-        adm:logEntry        bda:LG0A31C45F5A0416AB ;
+bdg:W4CZ295450 {
+    bda:I4CZ364381  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364381 ;
+        adm:logEntry        bda:LG5C8C3AD61AE74317 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG0A31C45F5A0416AB
+    bda:LG5C8C3AD61AE74317
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-12-21T11:31:38.902Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T14:19:09.393Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG39B32ACB480B7276
+    bda:LGAD6BE8431B4EA76B
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-09-18T12:02:52.716Z"^^xsd:dateTime ;
+        adm:logDate         "2017-10-23T09:42:00.858Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGB90B14833F2E01D9
+    bda:LGB4E800DB22B9FE51
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-12-21T11:31:39.142Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T14:19:09.543Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:W4CZ296785  a       adm:AdminData ;
+    bda:W4CZ295450  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessOpen ;
-        adm:adminAbout      bdr:W4CZ296785 ;
-        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ295450 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
         adm:facetIndex      2 ;
-        adm:gitPath         "18/W4CZ296785.trig" ;
+        adm:gitPath         "4b/W4CZ295450.trig" ;
         adm:gitRepo         bda:GR0014 ;
-        adm:graphId         bdg:W4CZ296785 ;
-        adm:logEntry        bda:LG39B32ACB480B7276 , bda:LGB90B14833F2E01D9 ;
+        adm:graphId         bdg:W4CZ295450 ;
+        adm:logEntry        bda:LGAD6BE8431B4EA76B , bda:LGB4E800DB22B9FE51 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ364319  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of bod kyi srol rgyun shes yon rig pa'i dpyad zhib/" ;
+    bdr:I4CZ364381  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of shes rab kyi bdag po/" ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W4CZ296785 ;
+        :volumeOf           bdr:W4CZ295450 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
-    bdr:W4CZ296785  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ364319 ;
-        :instanceOf         bdr:WA4CZ296785 ;
-        :instanceReproductionOf  bdr:MW4CZ296785 ;
+    bdr:W4CZ295450  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ364381 ;
+        :instanceOf         bdr:WA4CZ295450 ;
+        :instanceReproductionOf  bdr:MW4CZ295450 ;
         :isRoot             true ;
-        :itemVolumes        1 ;
-        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA Acc.No. D35571"@en .
+        :itemVolumes        1 .
 }

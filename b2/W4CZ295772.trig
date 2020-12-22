@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ295772 {
-    bda:I4CZ299798  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299798 ;
-        adm:logEntry        bda:LGADED0604A17E7208 ;
+    bda:I4CZ364267  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364267 ;
+        adm:logEntry        bda:LGC9CB554CC86F7D88 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LGADED0604A17E7208
+    bda:LG8A2D544052901007
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T09:32:18.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC9CB554CC86F7D88
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-25T11:45:33.09Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T09:32:17.912Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,12 +44,12 @@ bdg:W4CZ295772 {
         adm:gitPath         "b2/W4CZ295772.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ295772 ;
-        adm:logEntry        bda:LGD6C6BC8E8A03FB3D ;
+        adm:logEntry        bda:LG8A2D544052901007 , bda:LGD6C6BC8E8A03FB3D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299798  a       :ImageGroup ;
+    bdr:I4CZ364267  a       :ImageGroup ;
         :biblioNote         "Volume 1 of grib sel snyan brgyud ma/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ295772 ;
@@ -51,10 +57,9 @@ bdg:W4CZ295772 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ295772  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299798 ;
+        :instanceHasVolume  bdr:I4CZ364267 ;
         :instanceOf         bdr:WA4CZ295772 ;
         :instanceReproductionOf  bdr:MW4CZ295772 ;
         :isRoot             true ;
-        :itemVolumes        1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :itemVolumes        1 .
 }

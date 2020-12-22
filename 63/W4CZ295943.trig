@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ295943 {
-    bda:I4CZ299064  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299064 ;
-        adm:logEntry        bda:LG5CE79DB602BAD61E ;
+    bda:I4CZ364273  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364273 ;
+        adm:logEntry        bda:LGD7D8F3176953C2B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG5CE79DB602BAD61E
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-18T15:46:09.32Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG124F6C231D97D44F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T09:55:39.817Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG845CB6E8C76302DB
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-18T15:46:09.42Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGD7D8F3176953C2B0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-21T09:55:39.596Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ295943  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ295943 {
         adm:gitPath         "63/W4CZ295943.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ295943 ;
-        adm:logEntry        bda:LG845CB6E8C76302DB ;
+        adm:logEntry        bda:LG124F6C231D97D44F , bda:LG845CB6E8C76302DB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299064  a       :ImageGroup ;
+    bdr:I4CZ364273  a       :ImageGroup ;
         :biblioNote         "Volume 1 of 'tsho ba'i rlabs kyi rol mo/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ295943 ;
@@ -51,7 +57,7 @@ bdg:W4CZ295943 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ295943  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299064 ;
+        :instanceHasVolume  bdr:I4CZ364273 ;
         :instanceOf         bdr:WA4CZ295943 ;
         :instanceReproductionOf  bdr:MW4CZ295943 ;
         :isRoot             true ;

@@ -12,10 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ296089 {
-    bda:I4CZ296800  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ296800 ;
-        adm:logEntry        bda:LGA8BE2212BE5CCD8A ;
+    bda:I4CZ364275  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364275 ;
+        adm:logEntry        bda:LG4D5098532BC2F7D6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG4D5098532BC2F7D6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-21T09:58:24.012Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG98FF4D3692F39F51
         a                   adm:ScanRequestCreation ;
@@ -23,27 +29,27 @@ bdg:W4CZ296089 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGA8BE2212BE5CCD8A
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T13:02:06.048Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LGEB6CA4CBE23BEFBD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T09:58:24.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ296089  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ296089 ;
-        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
         adm:facetIndex      2 ;
         adm:gitPath         "23/W4CZ296089.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ296089 ;
-        adm:logEntry        bda:LG98FF4D3692F39F51 ;
+        adm:logEntry        bda:LG98FF4D3692F39F51 , bda:LGEB6CA4CBE23BEFBD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ296800  a       :ImageGroup ;
+    bdr:I4CZ364275  a       :ImageGroup ;
         :biblioNote         "Volume 1 of kha 'babs rnam bzhi'i babs rgyun dang / mnga' ris skor gsum gyi byung rabs/ khyab khongs bcas kyi lo rgyus rgyal rgyud lha mo dar/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ296089 ;
@@ -51,7 +57,7 @@ bdg:W4CZ296089 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ296089  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ296800 ;
+        :instanceHasVolume  bdr:I4CZ364275 ;
         :instanceOf         bdr:WA4CZ296089 ;
         :instanceReproductionOf  bdr:MW4CZ296089 ;
         :isRoot             true ;

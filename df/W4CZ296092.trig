@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ296092 {
-    bda:I4CZ296804  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ296804 ;
-        adm:logEntry        bda:LG925B9DE0D027B371 ;
+    bda:I4CZ364281  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364281 ;
+        adm:logEntry        bda:LGEDFC4956CFD7ED3E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG925B9DE0D027B371
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T14:28:22.413Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG557F22302D3C6341
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T10:13:39.597Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGDB977B6789823713
@@ -29,21 +29,27 @@ bdg:W4CZ296092 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGEDFC4956CFD7ED3E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-21T10:13:39.446Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:W4CZ296092  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessOpen ;
+        adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ296092 ;
-        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
         adm:facetIndex      2 ;
         adm:gitPath         "df/W4CZ296092.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ296092 ;
-        adm:logEntry        bda:LGDB977B6789823713 ;
+        adm:logEntry        bda:LG557F22302D3C6341 , bda:LGDB977B6789823713 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ296804  a       :ImageGroup ;
+    bdr:I4CZ364281  a       :ImageGroup ;
         :biblioNote         "Volume 1 of pad+ma bkod yul gyi bkod pa dang byung rabs lo rgyus mdor bsdus/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ296092 ;
@@ -51,7 +57,7 @@ bdg:W4CZ296092 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ296092  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ296804 ;
+        :instanceHasVolume  bdr:I4CZ364281 ;
         :instanceOf         bdr:WA4CZ296092 ;
         :instanceReproductionOf  bdr:MW4CZ296092 ;
         :isRoot             true ;
