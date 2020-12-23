@@ -12,10 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299960 {
-    bda:I4CZ299986  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299986 ;
-        adm:logEntry        bda:LG83E5FAEDDBF3F796 ;
+    bda:I4CZ364423  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364423 ;
+        adm:logEntry        bda:LG21ACA26335898768 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG21ACA26335898768
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T10:20:25.309Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG49B8FF54A8DFB38D
         a                   adm:ScanRequestCreation ;
@@ -23,27 +29,27 @@ bdg:W4CZ299960 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG83E5FAEDDBF3F796
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:23:24.174Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG85338AA19437622C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:20:25.426Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ299960  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ299960 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      2 ;
         adm:gitPath         "bc/W4CZ299960.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299960 ;
-        adm:logEntry        bda:LG49B8FF54A8DFB38D ;
+        adm:logEntry        bda:LG49B8FF54A8DFB38D , bda:LG85338AA19437622C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299986  a       :ImageGroup ;
+    bdr:I4CZ364423  a       :ImageGroup ;
         :biblioNote         "Volume 1 of las dang po ba dag la skyes bu gsum gyi lam rim myong khrid skyong tshul mdzub tshugs kyi tshul du bkod pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299960 ;
@@ -51,7 +57,7 @@ bdg:W4CZ299960 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299960  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299986 ;
+        :instanceHasVolume  bdr:I4CZ364423 ;
         :instanceOf         bdr:WA4CZ299960 ;
         :instanceReproductionOf  bdr:MW4CZ299960 ;
         :isRoot             true ;

@@ -12,15 +12,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ74970 {
-    bda:I4CZ299082  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299082 ;
-        adm:logEntry        bda:LG986C0ABED06B3C86 ;
+    bda:I4CZ364445  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364445 ;
+        adm:logEntry        bda:LG6D2CB6FE24F3C254 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG986C0ABED06B3C86
+    bda:LG6D2CB6FE24F3C254
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-19T10:20:36.687Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-22T10:42:55.344Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA08315D1E5E6D823
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:42:55.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGB0641B00F8AB7833
@@ -31,19 +37,19 @@ bdg:W4CZ74970 {
     
     bda:W4CZ74970  a        adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ74970 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      2 ;
         adm:gitPath         "ec/W4CZ74970.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ74970 ;
-        adm:logEntry        bda:LGB0641B00F8AB7833 ;
+        adm:logEntry        bda:LGA08315D1E5E6D823 , bda:LGB0641B00F8AB7833 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299082  a       :ImageGroup ;
+    bdr:I4CZ364445  a       :ImageGroup ;
         :biblioNote         "Volume 1 of zhen pa bzhi bral gyi 'grel pa rnam grol lam bzang /" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ74970 ;
@@ -51,7 +57,7 @@ bdg:W4CZ74970 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ74970  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299082 ;
+        :instanceHasVolume  bdr:I4CZ364445 ;
         :instanceOf         bdr:WA4CZ74970 ;
         :instanceReproductionOf  bdr:MW4CZ74970 ;
         :isRoot             true ;

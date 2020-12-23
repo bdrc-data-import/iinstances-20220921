@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299957 {
-    bda:I4CZ299980  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299980 ;
-        adm:logEntry        bda:LG69B4BE98CEFA25AA ;
+    bda:I4CZ364429  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364429 ;
+        adm:logEntry        bda:LG35D140E982F50484 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG204FB83F53060482
@@ -23,27 +23,33 @@ bdg:W4CZ299957 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG69B4BE98CEFA25AA
+    bda:LG35D140E982F50484
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:18:03.639Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-22T10:21:38.239Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA5BD8E8D3F9F65CC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:21:38.355Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ299957  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ299957 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      2 ;
         adm:gitPath         "42/W4CZ299957.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299957 ;
-        adm:logEntry        bda:LG204FB83F53060482 ;
+        adm:logEntry        bda:LG204FB83F53060482 , bda:LGA5BD8E8D3F9F65CC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299980  a       :ImageGroup ;
+    bdr:I4CZ364429  a       :ImageGroup ;
         :biblioNote         "Volume 1 of gtam dpe sna tshogs dang gzhas tshig kha shas/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299957 ;
@@ -51,7 +57,7 @@ bdg:W4CZ299957 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299957  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299980 ;
+        :instanceHasVolume  bdr:I4CZ364429 ;
         :instanceOf         bdr:WA4CZ299957 ;
         :instanceReproductionOf  bdr:MW4CZ299957 ;
         :isRoot             true ;

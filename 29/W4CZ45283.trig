@@ -12,15 +12,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ45283 {
-    bda:I4CZ300893  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ300893 ;
-        adm:logEntry        bda:LG552523F7244501E8 ;
+    bda:I4CZ364431  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364431 ;
+        adm:logEntry        bda:LG6970409C9A654329 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG552523F7244501E8
+    bda:LG6970409C9A654329
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-23T10:05:18.083Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-22T10:26:51.884Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBFB323940CB3B433
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:26:52.05Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGD107414266A59559
@@ -38,12 +44,12 @@ bdg:W4CZ45283 {
         adm:gitPath         "29/W4CZ45283.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ45283 ;
-        adm:logEntry        bda:LGD107414266A59559 ;
+        adm:logEntry        bda:LGBFB323940CB3B433 , bda:LGD107414266A59559 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ300893  a       :ImageGroup ;
+    bdr:I4CZ364431  a       :ImageGroup ;
         :biblioNote         "Volume 1 of dbyangs yig" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ45283 ;
@@ -51,10 +57,9 @@ bdg:W4CZ45283 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ45283  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ300893 ;
+        :instanceHasVolume  bdr:I4CZ364431 ;
         :instanceOf         bdr:WA4CZ45283 ;
         :instanceReproductionOf  bdr:MW4CZ45283 ;
         :isRoot             true ;
-        :itemVolumes        1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :itemVolumes        1 .
 }

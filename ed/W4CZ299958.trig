@@ -12,10 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299958 {
-    bda:I4CZ299982  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299982 ;
-        adm:logEntry        bda:LGF6D028B28FC37F19 ;
+    bda:I4CZ364427  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364427 ;
+        adm:logEntry        bda:LG055454127B273804 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG055454127B273804
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T10:21:16.231Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG2F550B6FF4B0080E
         a                   adm:ScanRequestCreation ;
@@ -23,10 +29,10 @@ bdg:W4CZ299958 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGF6D028B28FC37F19
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:18:56.086Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG73C4EC51B1AEECD8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:21:16.348Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ299958  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ299958 {
         adm:gitPath         "ed/W4CZ299958.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299958 ;
-        adm:logEntry        bda:LG2F550B6FF4B0080E ;
+        adm:logEntry        bda:LG2F550B6FF4B0080E , bda:LG73C4EC51B1AEECD8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299982  a       :ImageGroup ;
+    bdr:I4CZ364427  a       :ImageGroup ;
         :biblioNote         "Volume 1 of sa skya pa'i gdan rabs mdor bsdus su bkod pa pad dkar phreng mdzes/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299958 ;
@@ -51,10 +57,10 @@ bdg:W4CZ299958 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299958  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299982 ;
+        :instanceHasVolume  bdr:I4CZ364427 ;
         :instanceOf         bdr:WA4CZ299958 ;
         :instanceReproductionOf  bdr:MW4CZ299958 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35749"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35749"@en .
 }

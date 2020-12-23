@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299950 {
-    bda:I4CZ299966  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299966 ;
-        adm:logEntry        bda:LGE773918DED59DA21 ;
+    bda:I4CZ364417  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364417 ;
+        adm:logEntry        bda:LG128488B26BABA4EF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG128488B26BABA4EF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T09:45:06.338Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG2703A7123811379D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T09:45:06.473Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG3B310278214FB3CB
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-28T15:49:59.293Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LGE773918DED59DA21
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T15:49:59.191Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ299950  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ299950 {
         adm:gitPath         "d5/W4CZ299950.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299950 ;
-        adm:logEntry        bda:LG3B310278214FB3CB ;
+        adm:logEntry        bda:LG2703A7123811379D , bda:LG3B310278214FB3CB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299966  a       :ImageGroup ;
+    bdr:I4CZ364417  a       :ImageGroup ;
         :biblioNote         "Volume 1 of phreng ba 'dzin pa'i bstod pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299950 ;
@@ -51,7 +57,7 @@ bdg:W4CZ299950 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299950  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299966 ;
+        :instanceHasVolume  bdr:I4CZ364417 ;
         :instanceOf         bdr:WA4CZ299950 ;
         :instanceReproductionOf  bdr:MW4CZ299950 ;
         :isRoot             true ;

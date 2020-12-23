@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299953 {
-    bda:I4CZ299972  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299972 ;
-        adm:logEntry        bda:LGD297CD15C55BA483 ;
+    bda:I4CZ364411  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364411 ;
+        adm:logEntry        bda:LG3A0C3264341400AF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG131F669BBF69D5E3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T09:44:19.937Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG3A0C3264341400AF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T09:44:19.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG96E3578151D766EF
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-28T16:02:22.544Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LGD297CD15C55BA483
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:02:22.444Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ299953  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ299953 {
         adm:gitPath         "ad/W4CZ299953.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299953 ;
-        adm:logEntry        bda:LG96E3578151D766EF ;
+        adm:logEntry        bda:LG131F669BBF69D5E3 , bda:LG96E3578151D766EF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299972  a       :ImageGroup ;
+    bdr:I4CZ364411  a       :ImageGroup ;
         :biblioNote         "Volume 1 of sngags klog thabs/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299953 ;
@@ -51,7 +57,7 @@ bdg:W4CZ299953 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299953  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299972 ;
+        :instanceHasVolume  bdr:I4CZ364411 ;
         :instanceOf         bdr:WA4CZ299953 ;
         :instanceReproductionOf  bdr:MW4CZ299953 ;
         :isRoot             true ;

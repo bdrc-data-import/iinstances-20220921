@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299962 {
-    bda:I4CZ299990  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299990 ;
-        adm:logEntry        bda:LGFBD363EB75A46A02 ;
+    bda:I4CZ364419  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364419 ;
+        adm:logEntry        bda:LGB33FD2BB9AE0F139 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG00D681848115DE35
@@ -23,9 +23,15 @@ bdg:W4CZ299962 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGFBD363EB75A46A02
+    bda:LG0C89573F42437AC8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:19:30.796Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB33FD2BB9AE0F139
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:25:30.769Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-22T10:19:30.649Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,12 +44,12 @@ bdg:W4CZ299962 {
         adm:gitPath         "3d/W4CZ299962.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299962 ;
-        adm:logEntry        bda:LG00D681848115DE35 ;
+        adm:logEntry        bda:LG00D681848115DE35 , bda:LG0C89573F42437AC8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299990  a       :ImageGroup ;
+    bdr:I4CZ364419  a       :ImageGroup ;
         :biblioNote         "Volume 1 of gong sa mchog ad mi a ye trer phebs pa/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299962 ;
@@ -51,10 +57,10 @@ bdg:W4CZ299962 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299962  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299990 ;
+        :instanceHasVolume  bdr:I4CZ364419 ;
         :instanceOf         bdr:WA4CZ299962 ;
         :instanceReproductionOf  bdr:MW4CZ299962 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35757"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35757"@en .
 }

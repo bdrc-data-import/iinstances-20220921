@@ -12,25 +12,25 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ57164 {
-    bda:I4CZ300965  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ300965 ;
-        adm:logEntry        bda:LGC98236027DCF9314 ;
+    bda:I4CZ364438  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364438 ;
+        adm:logEntry        bda:LGBD5786DA3D17CAEC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:I4CZ300966  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ300966 ;
-        adm:logEntry        bda:LG36891ADE9CD1E199 ;
+    bda:I4CZ364439  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364439 ;
+        adm:logEntry        bda:LGE64319F322FB86E0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG36891ADE9CD1E199
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-26T09:49:17.397Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG344D18527635DD47
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:34:57.167Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGC98236027DCF9314
+    bda:LGBD5786DA3D17CAEC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-26T09:49:17.215Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-22T10:34:56.934Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -38,6 +38,12 @@ bdg:W4CZ57164 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-10-26T09:49:17.58Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE64319F322FB86E0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T10:34:57.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ57164  a        adm:AdminData ;
@@ -49,19 +55,19 @@ bdg:W4CZ57164 {
         adm:gitPath         "5b/W4CZ57164.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ57164 ;
-        adm:logEntry        bda:LGCD1C86C8FD22EBEF ;
+        adm:logEntry        bda:LG344D18527635DD47 , bda:LGCD1C86C8FD22EBEF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ300965  a       :ImageGroup ;
+    bdr:I4CZ364438  a       :ImageGroup ;
         :biblioNote         "Volume 1 of rje yab sras kyis mdzad pa'i lta ba'i gsung rtsom phyogs bsdus/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ57164 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
-    bdr:I4CZ300966  a       :ImageGroup ;
+    bdr:I4CZ364439  a       :ImageGroup ;
         :biblioNote         "Volume 2 of rje yab sras kyis mdzad pa'i lta ba'i gsung rtsom phyogs bsdus/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ57164 ;
@@ -69,7 +75,7 @@ bdg:W4CZ57164 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ57164  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ300965 , bdr:I4CZ300966 ;
+        :instanceHasVolume  bdr:I4CZ364438 , bdr:I4CZ364439 ;
         :instanceOf         bdr:WA4CZ57164 ;
         :instanceReproductionOf  bdr:MW4CZ57164 ;
         :isRoot             true ;

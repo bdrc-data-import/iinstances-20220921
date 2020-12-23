@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ58513 {
-    bda:I4CZ300960  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ300960 ;
-        adm:logEntry        bda:LGF01676A698178DD9 ;
+    bda:I4CZ364441  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364441 ;
+        adm:logEntry        bda:LGED32C12435D78692 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG37176393B397DF72
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-02-10T15:09:39.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG504B1C2AF687DA40
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:38:03.406Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -29,9 +35,9 @@ bdg:W4CZ58513 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGF01676A698178DD9
+    bda:LGED32C12435D78692
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-10-25T14:58:27.453Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-22T10:38:03.272Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -44,12 +50,12 @@ bdg:W4CZ58513 {
         adm:gitPath         "f0/W4CZ58513.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ58513 ;
-        adm:logEntry        bda:LG37176393B397DF72 , bda:LGB6B5FFDD67107728 ;
+        adm:logEntry        bda:LG37176393B397DF72 , bda:LG504B1C2AF687DA40 , bda:LGB6B5FFDD67107728 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ300960  a       :ImageGroup ;
+    bdr:I4CZ364441  a       :ImageGroup ;
         :biblioNote         "Volume 1 of rgyal ba tsong kha pa la stong mchod 'bul ba'i cho ga bkra shis g.yas 'khyil sogs rong po dgon chen gyi par rnying/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ58513 ;
@@ -57,7 +63,7 @@ bdg:W4CZ58513 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ58513  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ300960 ;
+        :instanceHasVolume  bdr:I4CZ364441 ;
         :instanceOf         bdr:WA4CZ58513 ;
         :instanceReproductionOf  bdr:MW4CZ58513 ;
         :isRoot             true ;

@@ -12,10 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299954 {
-    bda:I4CZ299974  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299974 ;
-        adm:logEntry        bda:LGDFE895EBD5E50925 ;
+    bda:I4CZ364409  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364409 ;
+        adm:logEntry        bda:LG136B67190D918E3B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG136B67190D918E3B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T09:44:02.318Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG854D4C5AF953E5A1
         a                   adm:ScanRequestCreation ;
@@ -23,10 +29,10 @@ bdg:W4CZ299954 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGDFE895EBD5E50925
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-28T16:03:19.608Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LGE6677BCC6ACF4740
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T09:44:02.435Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:W4CZ299954  a       adm:AdminData ;
@@ -38,12 +44,12 @@ bdg:W4CZ299954 {
         adm:gitPath         "ac/W4CZ299954.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299954 ;
-        adm:logEntry        bda:LG854D4C5AF953E5A1 ;
+        adm:logEntry        bda:LG854D4C5AF953E5A1 , bda:LGE6677BCC6ACF4740 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299974  a       :ImageGroup ;
+    bdr:I4CZ364409  a       :ImageGroup ;
         :biblioNote         "Volume 1 of dag par byed pa'i sdeb sbyor rin chen rgya mtsho sogs bslab bya phyogs bsdebs/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299954 ;
@@ -51,7 +57,7 @@ bdg:W4CZ299954 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ299954  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299974 ;
+        :instanceHasVolume  bdr:I4CZ364409 ;
         :instanceOf         bdr:WA4CZ299954 ;
         :instanceReproductionOf  bdr:MW4CZ299954 ;
         :isRoot             true ;

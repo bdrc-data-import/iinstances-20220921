@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ58835 {
-    bda:I4CZ299088  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299088 ;
-        adm:logEntry        bda:LG9FC276B0640D265D ;
+    bda:I4CZ364443  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364443 ;
+        adm:logEntry        bda:LGA4866B9961725894 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG9FC276B0640D265D
+    bda:LG90C9A696F541DB10
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T10:39:26.38Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA4866B9961725894
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-19T12:28:00.112Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-22T10:39:26.213Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -44,12 +50,12 @@ bdg:W4CZ58835 {
         adm:gitPath         "cd/W4CZ58835.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ58835 ;
-        adm:logEntry        bda:LGB2E49F5858FE4878 , bda:LGBB3732E131C8DF8A ;
+        adm:logEntry        bda:LG90C9A696F541DB10 , bda:LGB2E49F5858FE4878 , bda:LGBB3732E131C8DF8A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ299088  a       :ImageGroup ;
+    bdr:I4CZ364443  a       :ImageGroup ;
         :biblioNote         "Volume 1 of bod mi'i ngo bo/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ58835 ;
@@ -57,10 +63,10 @@ bdg:W4CZ58835 {
         :volumePagesTotal   0 .
     
     bdr:W4CZ58835  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299088 ;
+        :instanceHasVolume  bdr:I4CZ364443 ;
         :instanceOf         bdr:WA4CZ58835 ;
         :instanceReproductionOf  bdr:MW4CZ58835 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35609"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D35609"@en , "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA."@en .
 }
