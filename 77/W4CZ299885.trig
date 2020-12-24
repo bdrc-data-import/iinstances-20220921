@@ -12,14 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ299885 {
-    bda:I4CZ299908  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ299908 ;
-        adm:logEntry        bda:LG5EB0BDEECED49081 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    bda:I4CZ364466  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ364466 ;
+        adm:logEntry        bda:LG4875B483639FE650 , bda:LGIMBDCF2182 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG5EB0BDEECED49081
+    bda:LG4875B483639FE650
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-27T12:39:23.961Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-23T13:55:51.366Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -29,32 +30,44 @@ bdg:W4CZ299885 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGCF4F7509E014B1A8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-23T13:55:51.516Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIMBDCF2182  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2020-12-24T00:06:50.645Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ299885  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ299885 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      2 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      3 ;
         adm:gitPath         "77/W4CZ299885.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299885 ;
-        adm:logEntry        bda:LG61BBBDEFE10504BE ;
+        adm:logEntry        bda:LG61BBBDEFE10504BE , bda:LGCF4F7509E014B1A8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusEditing .
     
-    bdr:I4CZ299908  a       :ImageGroup ;
+    bdr:I4CZ364466  a       :ImageGroup ;
         :biblioNote         "Volume 1 of sngon ma lung pa pha bu'i byung ba gang dran gsong por bkod pa'i gtam sna bsdus spu bsdus/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299885 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   302 .
     
     bdr:W4CZ299885  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ299908 ;
+        :instanceHasVolume  bdr:I4CZ364466 ;
         :instanceOf         bdr:WA4CZ299885 ;
         :instanceReproductionOf  bdr:MW4CZ299885 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA acc No:D35561"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "copy made available from the Library of Tibetan Works and Archives, LTWA acc No:D35561"@en .
 }
