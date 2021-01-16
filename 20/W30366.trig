@@ -14,7 +14,7 @@
 bdg:W30366 {
     bda:I1PD28062  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD28062 ;
-        adm:logEntry        bda:LG967FDB202DD82965 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG967FDB202DD82965 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMCF527EEC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,12 +48,18 @@ bdg:W30366 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMCF527EEC  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-01-15T23:46:12.678Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W30366  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W30366 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "20/W30366.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W30366 ;
