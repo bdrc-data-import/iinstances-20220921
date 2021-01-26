@@ -24,12 +24,6 @@ bdg:W8LS15932 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF7F855FC8AD699D0
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2014-12-17T09:36:25.79Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
     bda:LGIM6E3A8805  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2020-09-24T02:09:22.929Z"^^xsd:dateTime ;
@@ -45,10 +39,9 @@ bdg:W8LS15932 {
         adm:gitPath         "c6/W8LS15932.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS15932 ;
-        adm:logEntry        bda:LGF7F855FC8AD699D0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I8LS15938  a        :ImageGroup ;
         :biblioNote         "Volume 1 of theg pa chen po'i mdo de snying / rnam 'jug /dpal phreng / rnga bo che/ sor phreng / lang kar/ rgyan stug po dang rab tu zhi ba rnam par nges pa/" ;
@@ -59,7 +52,6 @@ bdg:W8LS15932 {
     
     bdr:W8LS15932  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS15938 ;
-        :instanceOf         bdr:WA8LS15932 ;
         :instanceReproductionOf  bdr:MW8LS15932 ;
         :isRoot             true ;
         :itemVolumes        1 ;

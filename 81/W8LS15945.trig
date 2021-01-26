@@ -24,12 +24,6 @@ bdg:W8LS15945 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGFC49D55B575293FB
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2015-01-05T09:33:20.142Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
     bda:LGIMD8B0E8C7  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2020-09-24T02:13:20.446Z"^^xsd:dateTime ;
@@ -45,10 +39,9 @@ bdg:W8LS15945 {
         adm:gitPath         "81/W8LS15945.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS15945 ;
-        adm:logEntry        bda:LGFC49D55B575293FB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I8LS15948  a        :ImageGroup ;
         :biblioNote         "Volume 1 of 'phags pa yongs su mya ngan las 'das pa chen po'i mdo/" ;
@@ -59,7 +52,6 @@ bdg:W8LS15945 {
     
     bdr:W8LS15945  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS15948 ;
-        :instanceOf         bdr:WA8LS15945 ;
         :instanceReproductionOf  bdr:MW8LS15945 ;
         :isRoot             true ;
         :itemVolumes        1 ;

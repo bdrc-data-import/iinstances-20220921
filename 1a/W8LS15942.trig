@@ -24,12 +24,6 @@ bdg:W8LS15942 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD542329AC98BD2A5
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2014-12-17T15:58:07.428Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
     bda:LGIM03B0325A  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2020-09-24T02:13:06.854Z"^^xsd:dateTime ;
@@ -45,10 +39,9 @@ bdg:W8LS15942 {
         adm:gitPath         "1a/W8LS15942.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS15942 ;
-        adm:logEntry        bda:LGD542329AC98BD2A5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I8LS15944  a        :ImageGroup ;
         :biblioNote         "Volume 1 of theg po chen po'i mdo snying rje chen po/ chos sdud pa/ gser 'od/ yon tan dang ye shes bsam mi khyab/" ;
@@ -59,7 +52,6 @@ bdg:W8LS15942 {
     
     bdr:W8LS15942  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS15944 ;
-        :instanceOf         bdr:WA8LS15942 ;
         :instanceReproductionOf  bdr:MW8LS15942 ;
         :isRoot             true ;
         :itemVolumes        1 ;
