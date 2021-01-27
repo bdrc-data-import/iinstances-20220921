@@ -23,12 +23,6 @@ bdg:W2KG221304 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG7153B2669685A6A8
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-01-25T16:09:11.424Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:W2KG221304  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
@@ -38,10 +32,9 @@ bdg:W2KG221304 {
         adm:gitPath         "ff/W2KG221304.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG221304 ;
-        adm:logEntry        bda:LG7153B2669685A6A8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I2KG221306  a       :ImageGroup ;
         :biblioNote         "Volume 1 of testing scan request" ;
@@ -52,7 +45,6 @@ bdg:W2KG221304 {
     
     bdr:W2KG221304  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG221306 ;
-        :instanceOf         bdr:WA2KG221304 ;
         :instanceReproductionOf  bdr:MW2KG221304 ;
         :isRoot             true ;
         :itemVolumes        1 ;
