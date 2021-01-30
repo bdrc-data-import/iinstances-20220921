@@ -23,12 +23,6 @@ bdg:W8LS29344 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG1D7B728366EF2BE4
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-11-06T11:50:25.704Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
     bda:W8LS29344  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
@@ -38,10 +32,9 @@ bdg:W8LS29344 {
         adm:gitPath         "2d/W8LS29344.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS29344 ;
-        adm:logEntry        bda:LG1D7B728366EF2BE4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I8LS29346  a        :ImageGroup ;
         :biblioNote         "Volume 1 of o rgyan pad ma'i rnam thar/" ;
@@ -52,7 +45,6 @@ bdg:W8LS29344 {
     
     bdr:W8LS29344  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS29346 ;
-        :instanceOf         bdr:WA8LS29344 ;
         :instanceReproductionOf  bdr:MW8LS29344 ;
         :isRoot             true ;
         :itemVolumes        1 ;
