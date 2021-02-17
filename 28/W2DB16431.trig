@@ -14,25 +14,19 @@
 bdg:W2DB16431 {
     bda:I1PD34157  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD34157 ;
-        adm:logEntry        bda:LG27A59A5AF6FF49FD , bda:LG4CF6ECDC8C58C20B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG27A59A5AF6FF49FD , bda:LG4CF6ECDC8C58C20B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMA83523C1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1PD34158  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD34158 ;
-        adm:logEntry        bda:LG33BA145C10A59FF2 , bda:LG8D2DB40C33D53D98 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG8D2DB40C33D53D98 , bda:LG9E1FD960241586ED , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMBC1DD494 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG27A59A5AF6FF49FD
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-02-26T16:51:21.599Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LG33BA145C10A59FF2
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-02-26T16:51:21.802Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
@@ -43,6 +37,12 @@ bdg:W2DB16431 {
         adm:logWho          bdu:U00003 .
     
     bda:LG8D2DB40C33D53D98
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-02-26T16:51:21.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG9E1FD960241586ED
         a                   adm:UpdateData ;
         adm:logDate         "2008-02-27T09:49:42.153Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
@@ -72,12 +72,24 @@ bdg:W2DB16431 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMA83523C1  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-16T15:51:15.055Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBC1DD494  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-16T15:51:15.485Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2DB16431  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2DB16431 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "28/W2DB16431.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2DB16431 ;
@@ -91,7 +103,7 @@ bdg:W2DB16431 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2DB16431 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   2 .
+        :volumePagesTotal   0 .
     
     bdr:I1PD34158  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsung 'bum/_'gyur med bde chen" ;
