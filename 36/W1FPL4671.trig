@@ -14,7 +14,7 @@
 bdg:W1FPL4671 {
     bda:I1FPL4671  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL4671 ;
-        adm:logEntry        bda:LGIMA3A86F9513 ;
+        adm:logEntry        bda:LGIMA3A86F9513 , bda:LGIMDB719C05 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,12 +25,18 @@ bdg:W1FPL4671 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMDB719C05  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-18T23:54:54.183Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FPL4671  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL4671 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "36/W1FPL4671.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL4671 ;
@@ -40,7 +46,9 @@ bdg:W1FPL4671 {
     
     bdr:I1FPL4671  a        :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FPL4671 .
+        :volumeOf           bdr:W1FPL4671 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   434 .
     
     bdr:W1FPL4671  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1FPL4671 ;
