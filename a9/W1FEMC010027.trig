@@ -14,9 +14,27 @@
 bdg:W1FEMC010027 {
     bda:I1FEMC010027  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC010027 ;
-        adm:logEntry        bda:LGIMC3FF7CDB ;
+        adm:logEntry        bda:LGIM5E2593AF , bda:LGIM947E6B87 , bda:LGIMA681C00A , bda:LGIMC3FF7CDB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM5E2593AF  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T19:51:07.231Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM947E6B87  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T19:21:54.472Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA681C00A  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-23T00:47:26.103Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMC3FF7CDB  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc01-import.xql" ;
@@ -29,7 +47,7 @@ bdg:W1FEMC010027 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC010027 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a9/W1FEMC010027.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC010027 ;
@@ -39,7 +57,9 @@ bdg:W1FEMC010027 {
     
     bdr:I1FEMC010027  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FEMC010027 .
+        :volumeOf           bdr:W1FEMC010027 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   76 .
     
     bdr:W1FEMC010027  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1FEMC010027 ;

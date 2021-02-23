@@ -14,9 +14,21 @@
 bdg:W1FEMC010014 {
     bda:I1FEMC010014  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC010014 ;
-        adm:logEntry        bda:LGIMC3FF7CDB ;
+        adm:logEntry        bda:LGIM81EDF57A , bda:LGIMAC11C06B , bda:LGIMC3FF7CDB , bda:LGIMDD2379DD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM81EDF57A  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T19:49:52.604Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAC11C06B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T19:20:35.692Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMC3FF7CDB  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc01-import.xql" ;
@@ -24,12 +36,18 @@ bdg:W1FEMC010014 {
         adm:logMessage      "imported imagegroup for W1FEMC010014 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMDD2379DD  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-23T00:44:45.695Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FEMC010014  a     adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC010014 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e4/W1FEMC010014.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC010014 ;
@@ -39,7 +57,9 @@ bdg:W1FEMC010014 {
     
     bdr:I1FEMC010014  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FEMC010014 .
+        :volumeOf           bdr:W1FEMC010014 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   22 .
     
     bdr:W1FEMC010014  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1FEMC010014 ;

@@ -14,9 +14,27 @@
 bdg:W1FEMC010012 {
     bda:I1FEMC010012  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC010012 ;
-        adm:logEntry        bda:LGIMC3FF7CDB ;
+        adm:logEntry        bda:LGIM1C2A8410 , bda:LGIM3A5C3213 , bda:LGIMC0B000D8 , bda:LGIMC3FF7CDB , bda:LGIMCB36226A , bda:LGIMEFA33347 , bda:LGIMF4A0C159 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM1C2A8410  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T19:30:37.694Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM3A5C3213  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T20:50:50.16Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMC0B000D8  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T19:58:54.826Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMC3FF7CDB  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc01-import.xql" ;
@@ -24,12 +42,30 @@ bdg:W1FEMC010012 {
         adm:logMessage      "imported imagegroup for W1FEMC010012 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMCB36226A  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T20:30:53.995Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEFA33347  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T23:25:32.73Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF4A0C159  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-02-22T23:49:13.817Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FEMC010012  a     adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC010012 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "3d/W1FEMC010012.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC010012 ;
@@ -39,7 +75,9 @@ bdg:W1FEMC010012 {
     
     bdr:I1FEMC010012  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FEMC010012 .
+        :volumeOf           bdr:W1FEMC010012 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   50 .
     
     bdr:W1FEMC010012  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1FEMC010012 ;
