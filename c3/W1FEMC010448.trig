@@ -14,9 +14,15 @@
 bdg:W1FEMC010448 {
     bda:I1FEMC010448  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC010448 ;
-        adm:logEntry        bda:LGIMC3FF7CDB ;
+        adm:logEntry        bda:LGIMB8BC8C45 , bda:LGIMC3FF7CDB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIMB8BC8C45  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-01T17:45:52.382Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMC3FF7CDB  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc01-import.xql" ;
@@ -29,7 +35,7 @@ bdg:W1FEMC010448 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC010448 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c3/W1FEMC010448.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC010448 ;
@@ -39,7 +45,9 @@ bdg:W1FEMC010448 {
     
     bdr:I1FEMC010448  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FEMC010448 .
+        :volumeOf           bdr:W1FEMC010448 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   144 .
     
     bdr:W1FEMC010448  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1FEMC010448 ;
