@@ -14,7 +14,7 @@
 bdg:W1FEMC022411 {
     bda:I1FEMC022411  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC022411 ;
-        adm:logEntry        bda:LGIM3045394C , bda:LGIMCE7B2AB9 ;
+        adm:logEntry        bda:LGIM3045394C , bda:LGIM4389FE7C , bda:LGIMCE7B2AB9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -22,6 +22,12 @@ bdg:W1FEMC022411 {
         adm:logAgent        "works-femc01-import.xql" ;
         adm:logDate         "2019-08-14T18:51:13.73Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1FEMC022411 volume 1"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM4389FE7C  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-09T01:49:53.439Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMCE7B2AB9  a     adm:Synced ;
@@ -35,7 +41,7 @@ bdg:W1FEMC022411 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC022411 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d7/W1FEMC022411.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC022411 ;
