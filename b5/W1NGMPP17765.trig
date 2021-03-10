@@ -14,7 +14,7 @@
 bdg:W1NGMPP17765 {
     bda:I1NGMPP17765  a     adm:AdminData ;
         adm:adminAbout      bdr:I1NGMPP17765 ;
-        adm:logEntry        bda:LG45B54ECB1BAF3F1E ;
+        adm:logEntry        bda:LG45B54ECB1BAF3F1E , bda:LGIM40663043 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,12 +24,18 @@ bdg:W1NGMPP17765 {
         adm:logMessage      "import from NGMPP Sskt spreadsheet"@en ;
         adm:logWhoStr       "works-ngmp-import2" .
     
+    bda:LGIM40663043  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-10T00:13:23.665Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1NGMPP17765  a     adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NGMPP17765 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b5/W1NGMPP17765.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NGMPP17765 ;
@@ -39,7 +45,9 @@ bdg:W1NGMPP17765 {
     
     bdr:I1NGMPP17765  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1NGMPP17765 .
+        :volumeOf           bdr:W1NGMPP17765 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   12 .
     
     bdr:W1NGMPP17765  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1NGMPP17765 ;

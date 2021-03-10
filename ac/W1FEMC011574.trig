@@ -14,7 +14,7 @@
 bdg:W1FEMC011574 {
     bda:I1FEMC011574  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC011574 ;
-        adm:logEntry        bda:LGIM67463007 , bda:LGIMC3FF7CDB ;
+        adm:logEntry        bda:LGIM67463007 , bda:LGIMC3FF7CDB , bda:LGIMDA03B1EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,12 +30,18 @@ bdg:W1FEMC011574 {
         adm:logMessage      "imported imagegroup for W1FEMC011574 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMDA03B1EB  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-09T22:32:31.395Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FEMC011574  a     adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC011574 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ac/W1FEMC011574.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC011574 ;
