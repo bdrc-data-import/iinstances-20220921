@@ -14,7 +14,7 @@
 bdg:W1FEMC021211 {
     bda:I1FEMC021211  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC021211 ;
-        adm:logEntry        bda:LGIM3045394C , bda:LGIM66301EAC ;
+        adm:logEntry        bda:LGIM3045394C , bda:LGIM66301EAC , bda:LGIME28F4E02 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,12 +30,18 @@ bdg:W1FEMC021211 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIME28F4E02  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-10T06:19:20.572Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FEMC021211  a     adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC021211 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "90/W1FEMC021211.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC021211 ;
