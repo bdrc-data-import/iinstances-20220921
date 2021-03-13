@@ -14,13 +14,15 @@
 bdg:W8LS16031 {
     bda:I8LS16033  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS16033 ;
-        adm:logEntry        bda:LG93C17DC9905DCA20 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG93C17DC9905DCA20 , bda:LGIM40B19661 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS16034  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS16034 ;
-        adm:logEntry        bda:LGB52672468E223C96 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB182DE78579F4F65 , bda:LGIM2617B9DB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG93C17DC9905DCA20
         a                   adm:InitialDataCreation ;
@@ -28,7 +30,7 @@ bdg:W8LS16031 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGB52672468E223C96
+    bda:LGB182DE78579F4F65
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-01-13T14:31:53.301Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W8LS16031 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM2617B9DB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-13T02:18:00.39Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM40B19661  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-13T02:18:00.105Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS16031  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS16031 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "dc/W8LS16031.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS16031 ;
@@ -59,14 +73,14 @@ bdg:W8LS16031 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS16031 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   807 .
     
     bdr:I8LS16034  a        :ImageGroup ;
         :biblioNote         "Volume 2 of dkon mchog brtsegs pa'i mdo/ kha dang ga/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS16031 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   764 .
     
     bdr:W8LS16031  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS16033 , bdr:I8LS16034 ;
