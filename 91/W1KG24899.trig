@@ -14,15 +14,21 @@
 bdg:W1KG24899 {
     bda:I1KG24901  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24901 ;
-        adm:logEntry        bda:LG3CEECD2E05F213F6 , bda:LGBD93C93C30683C23 ;
+        adm:logEntry        bda:LG3CEECD2E05F213F6 , bda:LGBD93C93C30683C23 , bda:LGIM7A8B8AF3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24902  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24902 ;
-        adm:logEntry        bda:LG848A96ED1DD4433B , bda:LGFFC32602234CCFE2 ;
+        adm:logEntry        bda:LG00A9635C91BA12D1 , bda:LGFFC32602234CCFE2 , bda:LGIMA9F592F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG00A9635C91BA12D1
+        a                   adm:Synced ;
+        adm:logDate         "2017-10-04T22:40:16.28Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG3CEECD2E05F213F6
         a                   adm:Synced ;
@@ -36,12 +42,6 @@ bdg:W1KG24899 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG848A96ED1DD4433B
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T16:17:07.627Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGBD93C93C30683C23
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T16:17:07.545Z"^^xsd:dateTime ;
@@ -49,8 +49,20 @@ bdg:W1KG24899 {
         adm:logWho          bdu:U00016 .
     
     bda:LGFFC32602234CCFE2
-        a                   adm:Synced ;
-        adm:logDate         "2017-10-04T22:40:16.28Z"^^xsd:dateTime ;
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T16:17:07.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM7A8B8AF3  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-17T23:30:58.849Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA9F592F9  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-17T23:30:59.174Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -59,7 +71,7 @@ bdg:W1KG24899 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24899 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "91/W1KG24899.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24899 ;
@@ -73,14 +85,14 @@ bdg:W1KG24899 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W1KG24899 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   752 .
+        :volumePagesTotal   754 .
     
     bdr:I1KG24902  a        :ImageGroup ;
         :biblioNote         "Volume 2 of rgyal khab gsum gyi sgrung /" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W1KG24899 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   662 .
+        :volumePagesTotal   666 .
     
     bdr:W1KG24899  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1KG24901 , bdr:I1KG24902 ;

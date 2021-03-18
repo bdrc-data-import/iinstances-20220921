@@ -14,7 +14,7 @@
 bdg:W8LS19012 {
     bda:I8LS19014  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS19014 ;
-        adm:logEntry        bda:LG23A3BF971ABAFD75 , bda:LGB066D02E8E6F2B4A ;
+        adm:logEntry        bda:LG23A3BF971ABAFD75 , bda:LGB066D02E8E6F2B4A , bda:LGIMBE2F6AE2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W8LS19012 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIMBE2F6AE2  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-17T23:52:32.254Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS19012  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS19012 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "34/W8LS19012.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS19012 ;

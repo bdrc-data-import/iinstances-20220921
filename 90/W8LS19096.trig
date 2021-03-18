@@ -14,7 +14,7 @@
 bdg:W8LS19096 {
     bda:I8LS19098  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS19098 ;
-        adm:logEntry        bda:LG47CCD28C71C46BAC , bda:LGF4538A83273BA819 ;
+        adm:logEntry        bda:LG47CCD28C71C46BAC , bda:LGF4538A83273BA819 , bda:LGIMA115A918 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W8LS19096 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMA115A918  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-18T00:00:08.525Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS19096  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS19096 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "90/W8LS19096.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS19096 ;
@@ -55,7 +61,7 @@ bdg:W8LS19096 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS19096 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   344 .
+        :volumePagesTotal   342 .
     
     bdr:W8LS19096  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS19098 ;
