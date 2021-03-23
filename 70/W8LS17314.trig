@@ -14,12 +14,13 @@
 bdg:W8LS17314 {
     bda:I8LS17328  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS17328 ;
-        adm:logEntry        bda:LG8CD34F7051317A19 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG8CD34F7051317A19 , bda:LGIM324B761D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS17329  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS17329 ;
-        adm:logEntry        bda:LG9A6EA12E71D6A4D2 ;
+        adm:logEntry        bda:LGA308FA3CA5A6CC00 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG8CD34F7051317A19
@@ -34,18 +35,24 @@ bdg:W8LS17314 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG9A6EA12E71D6A4D2
+    bda:LGA308FA3CA5A6CC00
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-02-16T09:20:17.541Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LGIM324B761D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-23T02:40:17.635Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS17314  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS17314 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "70/W8LS17314.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS17314 ;
@@ -59,7 +66,7 @@ bdg:W8LS17314 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS17314 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   706 .
     
     bdr:I8LS17329  a        :ImageGroup ;
         :biblioNote         "Volume 2 of tshad ma rnam 'grel gyi rgya cher bshad pa/" ;

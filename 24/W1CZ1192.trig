@@ -14,7 +14,7 @@
 bdg:W1CZ1192 {
     bda:I1CZ1654  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ1654 ;
-        adm:logEntry        bda:LG4FB977DB8F206BD1 , bda:LG6E71F3EA33EFF25F , bda:LGE049B9208099E176 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG4FB977DB8F206BD1 , bda:LG6E71F3EA33EFF25F , bda:LGE049B9208099E176 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM86485B26 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -60,12 +60,18 @@ bdg:W1CZ1192 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM86485B26  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-22T15:14:26.997Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1CZ1192  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1CZ1192 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "24/W1CZ1192.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1CZ1192 ;
