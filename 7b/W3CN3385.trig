@@ -14,7 +14,7 @@
 bdg:W3CN3385 {
     bda:I3CN3471  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN3471 ;
-        adm:logEntry        bda:LG412A48355AD342F4 , bda:LGA8CA3BF1ED88C906 ;
+        adm:logEntry        bda:LG412A48355AD342F4 , bda:LGA8CA3BF1ED88C906 , bda:LGIM987EFDA1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W3CN3385 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM987EFDA1  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-23T17:50:07.321Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN3385  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN3385 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "7b/W3CN3385.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN3385 ;

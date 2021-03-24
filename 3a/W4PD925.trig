@@ -14,7 +14,7 @@
 bdg:W4PD925 {
     bda:I4PD2034  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD2034 ;
-        adm:logEntry        bda:LG3FE07D6E63B86D5C , bda:LGBAEA419982B83C34 ;
+        adm:logEntry        bda:LG3FE07D6E63B86D5C , bda:LGBAEA419982B83C34 , bda:LGIMD846844E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W4PD925 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIMD846844E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-23T17:53:29.486Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4PD925  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4PD925 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "3a/W4PD925.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4PD925 ;

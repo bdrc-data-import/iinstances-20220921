@@ -14,7 +14,7 @@
 bdg:W23923 {
     bda:I3528  a            adm:AdminData ;
         adm:adminAbout      bdr:I3528 ;
-        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM505C43EB , bda:LGIM60F924CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,6 +36,12 @@ bdg:W23923 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM505C43EB  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-23T17:49:26.863Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM60F924CD  a     adm:UpdateData ;
         adm:logAgent        "admin/imagegroups-zero-tbrcIntro-by-list.xql" ;
         adm:logDate         "2020-06-26T16:21:40.517Z"^^xsd:dateTime ;
@@ -47,7 +53,7 @@ bdg:W23923 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W23923 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2f/W23923.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W23923 ;
