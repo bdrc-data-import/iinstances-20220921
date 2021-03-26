@@ -14,7 +14,7 @@
 bdg:W3CN22303 {
     bda:I3CN22305  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN22305 ;
-        adm:logEntry        bda:LG2E8EF99BF3C196F2 , bda:LGIM934B2074 ;
+        adm:logEntry        bda:LG2E8EF99BF3C196F2 , bda:LGIM05471A1E , bda:LGIM934B2074 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,6 +30,12 @@ bdg:W3CN22303 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM05471A1E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-25T19:34:22.344Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM934B2074  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2020-06-24T23:46:41.231Z"^^xsd:dateTime ;
@@ -41,7 +47,7 @@ bdg:W3CN22303 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN22303 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "39/W3CN22303.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN22303 ;

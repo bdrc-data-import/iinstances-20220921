@@ -14,7 +14,7 @@
 bdg:W1KG18569 {
     bda:I1KG18645  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18645 ;
-        adm:logEntry        bda:LG7B32086780587532 , bda:LGF8937A7163CF1CF0 , bda:LGIM95A1D4FD ;
+        adm:logEntry        bda:LG7B32086780587532 , bda:LGF8937A7163CF1CF0 , bda:LGIM95A1D4FD , bda:LGIME3815FEB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -42,12 +42,18 @@ bdg:W1KG18569 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIME3815FEB  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-25T20:19:10.961Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1KG18569  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG18569 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8c/W1KG18569.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG18569 ;
