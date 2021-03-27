@@ -14,18 +14,26 @@
 bdg:W4CZ57164 {
     bda:I4CZ364438  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364438 ;
-        adm:logEntry        bda:LGBD5786DA3D17CAEC ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGBD5786DA3D17CAEC , bda:LGIM3D0B537E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ364439  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364439 ;
-        adm:logEntry        bda:LGE64319F322FB86E0 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB08EB3143D0C4AD8 , bda:LGIMCB470536 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG344D18527635DD47
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-12-22T10:34:57.167Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB08EB3143D0C4AD8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-22T10:34:57.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGBD5786DA3D17CAEC
@@ -40,18 +48,24 @@ bdg:W4CZ57164 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGE64319F322FB86E0
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-12-22T10:34:57.051Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+    bda:LGIM3D0B537E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-27T04:58:10.026Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCB470536  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-27T04:58:10.271Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W4CZ57164  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ57164 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "5b/W4CZ57164.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ57164 ;
@@ -65,14 +79,14 @@ bdg:W4CZ57164 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ57164 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   252 .
     
     bdr:I4CZ364439  a       :ImageGroup ;
         :biblioNote         "Volume 2 of rje yab sras kyis mdzad pa'i lta ba'i gsung rtsom phyogs bsdus/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ57164 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   283 .
     
     bdr:W4CZ57164  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ364438 , bdr:I4CZ364439 ;
