@@ -14,18 +14,21 @@
 bdg:W4CZ296777 {
     bda:I4CZ364305  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364305 ;
-        adm:logEntry        bda:LGB993D7412089D0DF ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB993D7412089D0DF , bda:LGIMEA9C3A6D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ364306  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364306 ;
-        adm:logEntry        bda:LGDD37A4C7F0E44FC5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG467397B276D218A9 , bda:LGIMAFF1EA1B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ364307  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364307 ;
-        adm:logEntry        bda:LG2F500C9D1F6AB3F0 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG810F95C78BFBDC3A , bda:LGIM82F6C609 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG16D54B9B50D56953
         a                   adm:ScanRequestCreation ;
@@ -33,7 +36,13 @@ bdg:W4CZ296777 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG2F500C9D1F6AB3F0
+    bda:LG467397B276D218A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-21T11:06:24.01Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG810F95C78BFBDC3A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-12-21T11:06:24.226Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -45,24 +54,36 @@ bdg:W4CZ296777 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGDD37A4C7F0E44FC5
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-12-21T11:06:24.01Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
     bda:LGF75427D07A8A6F5E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-12-21T11:06:24.409Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM82F6C609  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-31T06:57:19.283Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAFF1EA1B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-31T06:57:19.018Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEA9C3A6D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-03-31T06:57:18.768Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ296777  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ296777 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0f/W4CZ296777.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ296777 ;
@@ -76,21 +97,21 @@ bdg:W4CZ296777 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ296777 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   378 .
     
     bdr:I4CZ364306  a       :ImageGroup ;
         :biblioNote         "Volume 2 of sprin dkar lam rnying /" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ296777 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   348 .
     
     bdr:I4CZ364307  a       :ImageGroup ;
         :biblioNote         "Volume 3 of sprin dkar lam rnying /" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W4CZ296777 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   348 .
     
     bdr:W4CZ296777  a       :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ364305 , bdr:I4CZ364306 , bdr:I4CZ364307 ;
