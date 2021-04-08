@@ -11,50 +11,50 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:W8LS16491 {
-    bda:I8LS16501  a        adm:AdminData ;
-        adm:adminAbout      bdr:I8LS16501 ;
-        adm:logEntry        bda:LGB00029778016574D ;
+bdg:W3CN21627 {
+    bda:I2KG228742  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG228742 ;
+        adm:logEntry        bda:LG44CA12A501B0083F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LGB00029778016574D
+    bda:LG44CA12A501B0083F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-05-13T15:04:03.111Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-07T13:54:22.291Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+        adm:logWho          bdu:U00016 .
     
-    bda:LGF83D22585031309A
+    bda:LG5413FFB699E61187
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2015-05-13T15:04:03.178Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-07T13:54:22.592Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+        adm:logWho          bdu:U00016 .
     
-    bda:W8LS16491  a        adm:AdminData ;
+    bda:W3CN21627  a        adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessOpen ;
-        adm:adminAbout      bdr:W8LS16491 ;
-        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W3CN21627 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
         adm:facetIndex      2 ;
-        adm:gitPath         "d1/W8LS16491.trig" ;
+        adm:gitPath         "28/W3CN21627.trig" ;
         adm:gitRepo         bda:GR0014 ;
-        adm:graphId         bdg:W8LS16491 ;
-        adm:logEntry        bda:LGF83D22585031309A ;
+        adm:graphId         bdg:W3CN21627 ;
+        adm:logEntry        bda:LG5413FFB699E61187 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I8LS16501  a        :ImageGroup ;
-        :biblioNote         "Volume 1 of pad+ma'i snyan brgyud yang gsang bla med/" ;
+    bdr:I2KG228742  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of tshangs pa lha yi yo bcos rgyas pa/" ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W8LS16491 ;
+        :volumeOf           bdr:W3CN21627 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   579 .
+        :volumePagesTotal   0 .
     
-    bdr:W8LS16491  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I8LS16501 ;
-        :instanceOf         bdr:WA1CZ1981 ;
-        :instanceReproductionOf  bdr:MW8LS16491 ;
+    bdr:W3CN21627  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG228742 ;
+        :instanceOf         bdr:WA3CN21627 ;
+        :instanceReproductionOf  bdr:MW3CN21627 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 05/2015"@en .
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1 Commercial Unit, Boston, MA 02111. Comments: 4/2021"@en .
 }
