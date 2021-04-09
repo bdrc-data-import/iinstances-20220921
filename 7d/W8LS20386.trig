@@ -14,13 +14,13 @@
 bdg:W8LS20386 {
     bda:I8LS20388  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20388 ;
-        adm:logEntry        bda:LG9967FA0A1D93F1E6 , bda:LGIMF6BC924C ;
+        adm:logEntry        bda:LG9967FA0A1D93F1E6 , bda:LGIMF6BC924C , bda:LGIMFF13DF1B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS20389  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20389 ;
-        adm:logEntry        bda:LGFA4936EB5B963131 , bda:LGIM5344130A ;
+        adm:logEntry        bda:LGE06DCF066E5F98BA , bda:LGIM5344130A , bda:LGIMFBFA4611 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,7 +36,7 @@ bdg:W8LS20386 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGFA4936EB5B963131
+    bda:LGE06DCF066E5F98BA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-15T10:06:20.226Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -54,12 +54,24 @@ bdg:W8LS20386 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMFBFA4611  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-09T03:21:06.193Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFF13DF1B  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-09T03:21:05.937Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS20386  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS20386 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7d/W8LS20386.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS20386 ;
@@ -73,14 +85,14 @@ bdg:W8LS20386 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS20386 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   505 .
+        :volumePagesTotal   504 .
     
     bdr:I8LS20389  a        :ImageGroup ;
         :biblioNote         "Volume 2 of baiDUr+ya dkar po las dris lan 'khrul snang g.ya' sel/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS20386 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   453 .
+        :volumePagesTotal   452 .
     
     bdr:W8LS20386  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS20388 , bdr:I8LS20389 ;
