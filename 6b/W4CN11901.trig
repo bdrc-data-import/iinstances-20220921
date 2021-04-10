@@ -14,15 +14,17 @@
 bdg:W4CN11901 {
     bda:I4CN11944  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN11944 ;
-        adm:logEntry        bda:LGBB7A185816B835F8 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGBB7A185816B835F8 , bda:LGIM57222028 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CN11945  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN11945 ;
-        adm:logEntry        bda:LG2D55A1AE0C29382B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG866D50EC0B6A91D3 , bda:LGIME9E6F9B5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG2D55A1AE0C29382B
+    bda:LG866D50EC0B6A91D3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-03-01T19:43:14.012Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W4CN11901 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM57222028  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-10T01:14:23.383Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME9E6F9B5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-10T01:14:23.673Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CN11901  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CN11901 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6b/W4CN11901.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CN11901 ;
@@ -59,14 +73,14 @@ bdg:W4CN11901 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CN11901 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   243 .
     
     bdr:I4CN11945  a        :ImageGroup ;
         :biblioNote         "Volume 2 of 'dzam gling rtsom rig" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CN11901 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   250 .
     
     bdr:W4CN11901  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4CN11944 , bdr:I4CN11945 ;

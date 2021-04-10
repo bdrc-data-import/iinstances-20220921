@@ -14,13 +14,13 @@
 bdg:W8LS20386 {
     bda:I8LS20388  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20388 ;
-        adm:logEntry        bda:LG9967FA0A1D93F1E6 , bda:LGIMF6BC924C , bda:LGIMFF13DF1B ;
+        adm:logEntry        bda:LG9967FA0A1D93F1E6 , bda:LGIMD93D8189 , bda:LGIMF6BC924C , bda:LGIMFF13DF1B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS20389  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20389 ;
-        adm:logEntry        bda:LGE06DCF066E5F98BA , bda:LGIM5344130A , bda:LGIMFBFA4611 ;
+        adm:logEntry        bda:LGF225AFC2346C81F9 , bda:LGIM0A417628 , bda:LGIM5344130A , bda:LGIMFBFA4611 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,15 +36,27 @@ bdg:W8LS20386 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE06DCF066E5F98BA
+    bda:LGF225AFC2346C81F9
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-15T10:06:20.226Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM0A417628  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-09T14:04:11.143Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5344130A  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2020-04-25T13:58:03.724Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD93D8189  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-09T14:04:10.859Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -71,7 +83,7 @@ bdg:W8LS20386 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS20386 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "7d/W8LS20386.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS20386 ;

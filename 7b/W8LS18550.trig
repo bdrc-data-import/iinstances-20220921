@@ -14,7 +14,7 @@
 bdg:W8LS18550 {
     bda:I8LS18552  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18552 ;
-        adm:logEntry        bda:LG3729A297FD46A812 , bda:LG5359B693FC902559 , bda:LGIM5FB4F228 ;
+        adm:logEntry        bda:LG3729A297FD46A812 , bda:LG5359B693FC902559 , bda:LGIM5FB4F228 , bda:LGIMBB7B5D23 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -42,12 +42,18 @@ bdg:W8LS18550 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMBB7B5D23  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-09T13:57:29.794Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS18550  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18550 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "7b/W8LS18550.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18550 ;
