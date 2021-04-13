@@ -14,24 +14,21 @@
 bdg:W3CN26205 {
     bda:I3CN26210  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26210 ;
-        adm:logEntry        bda:LG577C17658210ED48 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG577C17658210ED48 , bda:LGIM1F69EC20 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN26211  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26211 ;
-        adm:logEntry        bda:LG2E127C1FDC3700F5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGD752C176281E6704 , bda:LGIM8AE96649 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN26212  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26212 ;
-        adm:logEntry        bda:LGC74BF7DE0A6279A7 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG2E127C1FDC3700F5
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-04-02T20:20:53.372Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+        adm:logEntry        bda:LG662E4DA33E1450B8 , bda:LGIMEE9813FA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG50A4BFAFF6475B01
         a                   adm:ScanRequestCreation ;
@@ -45,18 +42,42 @@ bdg:W3CN26205 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGC74BF7DE0A6279A7
+    bda:LG662E4DA33E1450B8
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-04-02T20:20:53.555Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGD752C176281E6704
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-04-02T20:20:53.372Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM1F69EC20  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:27:21.628Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8AE96649  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:27:21.896Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEE9813FA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-12T23:27:22.109Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN26205  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN26205 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "60/W3CN26205.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26205 ;
@@ -70,21 +91,21 @@ bdg:W3CN26205 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN26205 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   394 .
     
     bdr:I3CN26211  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsung 'bum/ bkra shis 'od zer/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN26205 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   264 .
     
     bdr:I3CN26212  a        :ImageGroup ;
         :biblioNote         "Volume 3 of gsung 'bum/ bkra shis 'od zer/" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W3CN26205 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   52 .
     
     bdr:W3CN26205  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN26210 , bdr:I3CN26211 , bdr:I3CN26212 ;

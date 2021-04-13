@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG228737 {
+    bda:I2KG228803  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG228803 ;
+        adm:logEntry        bda:LG1064D4D649191A0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG04B58A35B3B6C5C3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-04-12T16:02:37.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG1064D4D649191A0B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-04-12T16:02:36.955Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG228737  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessRestrictedByTbrc ;
+        adm:adminAbout      bdr:W2KG228737 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "4e/W2KG228737.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG228737 ;
+        adm:logEntry        bda:LG04B58A35B3B6C5C3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG228803  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bon dang zhang zhung zhib 'jug" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W2KG228737 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG228737  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG228803 ;
+        :instanceOf         bdr:WA2KG228737 ;
+        :instanceReproductionOf  bdr:MW2KG228737 ;
+        :isRoot             true ;
+        :itemVolumes        1 ;
+        :scanInfo           "Scanned at Tibetan Yungdrung Bon Library, Menri Monastery, P.O. Katla Panjalo, Dolanji, Oachghat, Solan, 173223 H.P. India. Comments: 4/2021"@en .
+}
