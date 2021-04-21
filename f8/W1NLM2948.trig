@@ -15,9 +15,15 @@ bdg:W1NLM2948 {
     bda:I1NLM2948_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM2948_001 ;
-        adm:logEntry        bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGIM5C5FFCDA , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM5C5FFCDA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-20T06:10:58.985Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
@@ -30,7 +36,7 @@ bdg:W1NLM2948 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM2948 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f8/W1NLM2948.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM2948 ;
@@ -41,7 +47,9 @@ bdg:W1NLM2948 {
     bdr:I1NLM2948_001
         a                   :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1NLM2948 .
+        :volumeOf           bdr:W1NLM2948 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   453 .
     
     bdr:W1NLM2948  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1NLM2948_001 ;
