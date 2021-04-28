@@ -14,13 +14,15 @@
 bdg:W3CN25671 {
     bda:I4CN11833  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN11833 ;
-        adm:logEntry        bda:LG1C44D732BB5AA823 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG1C44D732BB5AA823 , bda:LGIM63D63A0B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CN11834  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CN11834 ;
-        adm:logEntry        bda:LGE2724A3C4828E3FD ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGF5E665FD59BE2586 , bda:LGIMF66E18A9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG1C44D732BB5AA823
         a                   adm:InitialDataCreation ;
@@ -34,18 +36,30 @@ bdg:W3CN25671 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGE2724A3C4828E3FD
+    bda:LGF5E665FD59BE2586
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-01-18T16:51:16.139Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGIM63D63A0B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-27T22:42:46.684Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF66E18A9  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-27T22:42:47.055Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN25671  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN25671 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d7/W3CN25671.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN25671 ;
@@ -59,14 +73,14 @@ bdg:W3CN25671 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN25671 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   798 .
     
     bdr:I4CN11834  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsung 'bum/ blo bzang chos kyi nyi ma/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN25671 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   508 .
     
     bdr:W3CN25671  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4CN11833 , bdr:I4CN11834 ;

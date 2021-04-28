@@ -14,7 +14,7 @@
 bdg:W27888 {
     bda:I4682  a            adm:AdminData ;
         adm:adminAbout      bdr:I4682 ;
-        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM0757DF38 , bda:LGIM60F924CD , bda:LGIM6B8DC125 , bda:LGIMD9A7DD70 , bda:LGIMDE7884AA ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM0757DF38 , bda:LGIM60F924CD , bda:LGIM6B8DC125 , bda:LGIMD9A7DD70 , bda:LGIMDE7884AA , bda:LGIMFE781606 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -66,12 +66,18 @@ bdg:W27888 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMFE781606  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-04-27T19:19:19.846Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W27888  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W27888 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "48/W27888.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W27888 ;
