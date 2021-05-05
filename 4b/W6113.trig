@@ -12,9 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W6113 {
-    bda:I4CZ295945  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ295945 ;
-        adm:logEntry        bda:LG618696FA4176BB22 ;
+    bda:I2KG228836  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG228836 ;
+        adm:logEntry        bda:LG666B215E96BB6CB9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG07EE1B8C2A91CA6A
@@ -23,17 +23,23 @@ bdg:W6113 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG23727A3DCB98CB81
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-04T10:18:46.381Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG534CD4EB69000945
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-05-10T14:52:51.118Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG618696FA4176BB22
+    bda:LG666B215E96BB6CB9
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-08-30T12:56:19.424Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-04T10:18:46.269Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+        adm:logWho          bdu:U00016 .
     
     bda:W6113  a            adm:AdminData ;
         :isRoot             true ;
@@ -44,23 +50,23 @@ bdg:W6113 {
         adm:gitPath         "4b/W6113.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W6113 ;
-        adm:logEntry        bda:LG07EE1B8C2A91CA6A , bda:LG534CD4EB69000945 ;
+        adm:logEntry        bda:LG07EE1B8C2A91CA6A , bda:LG23727A3DCB98CB81 , bda:LG534CD4EB69000945 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ295945  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of gsung 'bum/_ye shes rgya mtsho" ;
+    bdr:I2KG228836  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/_ye shes rgya mtsho/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W6113 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
     bdr:W6113  a            :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ295945 ;
+        :instanceHasVolume  bdr:I2KG228836 ;
         :instanceOf         bdr:WA1KG1608 ;
         :instanceReproductionOf  bdr:MW6113 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138 US."@en , "scanned from microfilm copy of blocks carved at se ra smad"@en .
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 5/2021"@en , "scanned from microfilm copy of blocks carved at se ra smad"@en .
 }
