@@ -1,0 +1,113 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS75598 {
+    bda:I8LS75600  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS75600 ;
+        adm:logEntry        bda:LG8635E0999A57107A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS75601  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS75601 ;
+        adm:logEntry        bda:LGFDAF0E24F464DF05 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS75602  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS75602 ;
+        adm:logEntry        bda:LGCD86DC603944C35E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I8LS75603  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS75603 ;
+        adm:logEntry        bda:LG9BEE9DC89CE610C4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG210A5A32CB38574A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-20T12:13:45.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8635E0999A57107A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-20T12:13:44.925Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9BEE9DC89CE610C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-20T12:13:45.324Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGCD86DC603944C35E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-20T12:13:45.19Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFDAF0E24F464DF05
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-20T12:13:45.058Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS75598  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS75598 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "27/W8LS75598.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS75598 ;
+        adm:logEntry        bda:LG210A5A32CB38574A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS75600  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsung 'bum/ blo gsal rgya mtsho/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS75598 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS75601  a        :ImageGroup ;
+        :biblioNote         "Volume 2 of gsung 'bum/ blo gsal rgya mtsho/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W8LS75598 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS75602  a        :ImageGroup ;
+        :biblioNote         "Volume 3 of gsung 'bum/ blo gsal rgya mtsho/" ;
+        :volumeNumber       3 ;
+        :volumeOf           bdr:W8LS75598 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I8LS75603  a        :ImageGroup ;
+        :biblioNote         "Volume 4 of gsung 'bum/ blo gsal rgya mtsho/" ;
+        :volumeNumber       4 ;
+        :volumeOf           bdr:W8LS75598 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS75598  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS75600 , bdr:I8LS75601 , bdr:I8LS75602 , bdr:I8LS75603 ;
+        :instanceOf         bdr:WA8LS75598 ;
+        :instanceReproductionOf  bdr:MW8LS75598 ;
+        :isRoot             true ;
+        :itemVolumes        4 .
+}
