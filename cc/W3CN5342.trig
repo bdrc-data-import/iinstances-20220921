@@ -14,13 +14,15 @@
 bdg:W3CN5342 {
     bda:I8LS20816  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20816 ;
-        adm:logEntry        bda:LG0C96F02E8DBFD213 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0C96F02E8DBFD213 , bda:LGIM4349C908 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS20817  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20817 ;
-        adm:logEntry        bda:LG6CB2B4FAAAAB46E6 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG45362460CB37439A , bda:LGIM5AB59093 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG0C96F02E8DBFD213
         a                   adm:InitialDataCreation ;
@@ -28,7 +30,7 @@ bdg:W3CN5342 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG6CB2B4FAAAAB46E6
+    bda:LG45362460CB37439A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-05-24T12:46:03.744Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -46,12 +48,24 @@ bdg:W3CN5342 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM4349C908  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:06:59.429Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5AB59093  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:06:59.669Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN5342  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN5342 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "cc/W3CN5342.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5342 ;
@@ -65,14 +79,14 @@ bdg:W3CN5342 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN5342 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   404 .
     
     bdr:I8LS20817  a        :ImageGroup ;
         :biblioNote         "Volume 2 of rdzogs pa chen po snying thig ya bzhi las bi ma snying thig gi chos skor/ (stod smad)" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN5342 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   556 .
     
     bdr:W3CN5342  a         :ImageInstance ;
         :instanceHasVolume  bdr:I8LS20816 , bdr:I8LS20817 ;

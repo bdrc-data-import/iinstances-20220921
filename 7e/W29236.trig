@@ -14,11 +14,11 @@
 bdg:W29236 {
     bda:I5257  a            adm:AdminData ;
         adm:adminAbout      bdr:I5257 ;
-        adm:logEntry        bda:LGB0315D8B986F1111 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG99658A3306028771 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMBF4B1431 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGB0315D8B986F1111
+    bda:LG99658A3306028771
         a                   adm:ContentQC ;
         adm:logDate         "2006-01-10"^^xsd:date ;
         adm:logMessage      "re scaaned NY"@en ;
@@ -42,12 +42,18 @@ bdg:W29236 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMBF4B1431  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-27T18:43:44.237Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W29236  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W29236 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7e/W29236.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W29236 ;
@@ -59,7 +65,7 @@ bdg:W29236 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W29236 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   612 .
+        :volumePagesTotal   2 .
     
     bdr:W29236  a           :ImageInstance ;
         :instanceHasVolume  bdr:I5257 ;

@@ -14,19 +14,15 @@
 bdg:W3CN26335 {
     bda:I3CN26338  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26338 ;
-        adm:logEntry        bda:LG4C9B4FB32988F0D5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG4C9B4FB32988F0D5 , bda:LGIM5FC0D971 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN26339  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26339 ;
-        adm:logEntry        bda:LG0DF89B8F789BA72F ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG0DF89B8F789BA72F
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-04-30T19:04:13.327Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+        adm:logEntry        bda:LGE1665340CB2B517F , bda:LGIM0DB57F94 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG0F3760D9C6AB6C3D
         a                   adm:ScanRequestCreation ;
@@ -40,12 +36,30 @@ bdg:W3CN26335 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE1665340CB2B517F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-04-30T19:04:13.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0DB57F94  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:03:17.233Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5FC0D971  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:03:16.916Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN26335  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN26335 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "86/W3CN26335.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26335 ;
@@ -59,14 +73,14 @@ bdg:W3CN26335 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN26335 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   856 .
     
     bdr:I3CN26339  a        :ImageGroup ;
         :biblioNote         "Volume 2 of bod gso rnam grangs chen mo/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN26335 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   1186 .
     
     bdr:W3CN26335  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN26338 , bdr:I3CN26339 ;

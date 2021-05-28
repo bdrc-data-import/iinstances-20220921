@@ -14,13 +14,13 @@
 bdg:W8LS29377 {
     bda:I8LS71431  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS71431 ;
-        adm:logEntry        bda:LG19962D38E57AFFE6 , bda:LGIM6E98BCBC ;
+        adm:logEntry        bda:LG19962D38E57AFFE6 , bda:LGIM5FA0616F , bda:LGIM6E98BCBC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS71432  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS71432 ;
-        adm:logEntry        bda:LGCC749653B71915F2 , bda:LGIM7B5C3AB8 ;
+        adm:logEntry        bda:LG1E0071CFA1A18951 , bda:LGIM7B5C3AB8 , bda:LGIMB2DBB144 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,17 +30,23 @@ bdg:W8LS29377 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG1E0071CFA1A18951
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-07-22T16:18:59.314Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG8B4DBBFA95C90D2F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-07-22T16:18:59.482Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCC749653B71915F2
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-07-22T16:18:59.314Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+    bda:LGIM5FA0616F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:27:44.934Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM6E98BCBC  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -54,12 +60,18 @@ bdg:W8LS29377 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMB2DBB144  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-28T00:27:45.199Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS29377  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS29377 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a3/W8LS29377.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS29377 ;
