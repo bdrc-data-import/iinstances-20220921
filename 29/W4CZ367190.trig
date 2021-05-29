@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ367190 {
+    bda:I4CZ367291  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ367291 ;
+        adm:logEntry        bda:LGF9858C3CF1AA665D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG0C5F2737DE86758D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:16:23.933Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF9858C3CF1AA665D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-28T16:16:23.8Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ367190  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W4CZ367190 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "29/W4CZ367190.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ367190 ;
+        adm:logEntry        bda:LG0C5F2737DE86758D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ367291  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dpang lo tsA ba blo gros brtan pa'i mdzad rjes/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W4CZ367190 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ367190  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ367291 ;
+        :instanceOf         bdr:WA4CZ367190 ;
+        :instanceReproductionOf  bdr:MW4CZ367190 ;
+        :isRoot             true ;
+        :itemVolumes        1 .
+}

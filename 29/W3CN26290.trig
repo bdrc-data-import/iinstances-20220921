@@ -14,13 +14,15 @@
 bdg:W3CN26290 {
     bda:I3CN26292  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26292 ;
-        adm:logEntry        bda:LGE4A741E812DA623B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGE4A741E812DA623B , bda:LGIMCD0B7194 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN26293  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26293 ;
-        adm:logEntry        bda:LG3560BA9613C5A823 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG8D88B45509F700E8 , bda:LGIMF0C43992 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG29BD178B4889DE26
         a                   adm:ScanRequestCreation ;
@@ -28,7 +30,7 @@ bdg:W3CN26290 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG3560BA9613C5A823
+    bda:LG8D88B45509F700E8
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-04-26T14:23:56.708Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W3CN26290 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIMCD0B7194  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-29T00:43:01.478Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF0C43992  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-05-29T00:43:01.796Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN26290  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN26290 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "29/W3CN26290.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26290 ;
@@ -59,14 +73,14 @@ bdg:W3CN26290 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN26290 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   518 .
     
     bdr:I3CN26293  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsung 'bum/ blo bzang bstan 'dzin rgyal mtshan/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN26290 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   852 .
     
     bdr:W3CN26290  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN26292 , bdr:I3CN26293 ;
