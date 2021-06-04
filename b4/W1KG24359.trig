@@ -34,33 +34,34 @@ bdg:W1KG24359 {
     
     bda:I1KG24511  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24511 ;
-        adm:logEntry        bda:LG0DC8A04D49857ABF ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0DC8A04D49857ABF , bda:LGIM754E70EB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I1KG24512  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24512 ;
-        adm:logEntry        bda:LGA54B22C9E26284C2 , bda:LGIM0B71CCF0 ;
+        adm:logEntry        bda:LGFB8BF2AF9A7CEEFD , bda:LGIM0B71CCF0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24513  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24513 ;
-        adm:logEntry        bda:LG6C590F638043077F ;
+        adm:logEntry        bda:LG406BE791F4243DF6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG24514  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24514 ;
-        adm:logEntry        bda:LG7315119191F7B289 ;
+        adm:logEntry        bda:LGB7EA55BCCA6E54AC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG24515  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24515 ;
-        adm:logEntry        bda:LG1A04386AD52FB782 ;
+        adm:logEntry        bda:LG4E7B1D51C92DF7A1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG24516  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24516 ;
-        adm:logEntry        bda:LG1B3F7EE1A60482E8 ;
+        adm:logEntry        bda:LG711CC15BDC65CE83 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG0DC8A04D49857ABF
@@ -75,27 +76,21 @@ bdg:W1KG24359 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG1A04386AD52FB782
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-09-28T14:51:19.828Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG1B3F7EE1A60482E8
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-09-28T14:51:19.91Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG6C590F638043077F
+    bda:LG406BE791F4243DF6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-09-28T14:51:19.668Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG7315119191F7B289
+    bda:LG4E7B1D51C92DF7A1
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-09-28T14:51:19.746Z"^^xsd:dateTime ;
+        adm:logDate         "2016-09-28T14:51:19.828Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG711CC15BDC65CE83
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-28T14:51:19.91Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -117,9 +112,9 @@ bdg:W1KG24359 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGA54B22C9E26284C2
+    bda:LGB7EA55BCCA6E54AC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-09-28T14:51:19.552Z"^^xsd:dateTime ;
+        adm:logDate         "2016-09-28T14:51:19.746Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -129,9 +124,21 @@ bdg:W1KG24359 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGFB8BF2AF9A7CEEFD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-28T14:51:19.552Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM0B71CCF0  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2020-06-05T22:48:10.574Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM754E70EB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-03T23:03:44.493Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -140,7 +147,7 @@ bdg:W1KG24359 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24359 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b4/W1KG24359.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24359 ;
@@ -182,7 +189,7 @@ bdg:W1KG24359 {
         :volumeNumber       5 ;
         :volumeOf           bdr:W1KG24359 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   158 .
     
     bdr:I1KG24512  a        :ImageGroup ;
         :biblioNote         "Volume 6 of dbyangs can sprul ba'i glegs bam/" ;
