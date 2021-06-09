@@ -14,13 +14,15 @@
 bdg:W8LS26111 {
     bda:I8LS26115  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS26115 ;
-        adm:logEntry        bda:LG4B5F2CC730F1C1D5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG4B5F2CC730F1C1D5 , bda:LGIM56B3CBD0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS26116  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS26116 ;
-        adm:logEntry        bda:LGBF6C2C8A8C4607DD ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG74DE64D946D10F68 , bda:LGIM1975E65C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG2BDB9A0500D4E339
         a                   adm:ScanRequestCreation ;
@@ -34,18 +36,30 @@ bdg:W8LS26111 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBF6C2C8A8C4607DD
+    bda:LG74DE64D946D10F68
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-09-18T11:54:53.017Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LGIM1975E65C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-08T23:41:18.164Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM56B3CBD0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-08T23:41:17.823Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS26111  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS26111 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "88/W8LS26111.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS26111 ;
@@ -59,14 +73,14 @@ bdg:W8LS26111 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS26111 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   1355 .
     
     bdr:I8LS26116  a        :ImageGroup ;
         :biblioNote         "Volume 2 of bod dang legs sbyar gyi mdzod/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS26111 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   1235 .
     
     bdr:W8LS26111  a        :ImageInstance ;
         :digitalLendingPossible  false ;

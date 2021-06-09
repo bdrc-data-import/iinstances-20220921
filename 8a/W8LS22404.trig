@@ -14,7 +14,7 @@
 bdg:W8LS22404 {
     bda:I8LS22406  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS22406 ;
-        adm:logEntry        bda:LG6636C34BAB3EB292 , bda:LGIMC457563A ;
+        adm:logEntry        bda:LG6636C34BAB3EB292 , bda:LGIMBEB5195B , bda:LGIMC457563A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,6 +30,12 @@ bdg:W8LS22404 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIMBEB5195B  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-08T23:38:15.042Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMC457563A  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-02-18T02:44:52.333Z"^^xsd:dateTime ;
@@ -41,7 +47,7 @@ bdg:W8LS22404 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS22404 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "8a/W8LS22404.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS22404 ;

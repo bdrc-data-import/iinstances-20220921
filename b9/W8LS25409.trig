@@ -14,8 +14,9 @@
 bdg:W8LS25409 {
     bda:I8LS25411  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS25411 ;
-        adm:logEntry        bda:LGA6FAD38641FBD868 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGA6FAD38641FBD868 , bda:LGIMFA8E6125 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG15B1286575B5B8F1
         a                   adm:ScanRequestCreation ;
@@ -29,12 +30,18 @@ bdg:W8LS25409 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIMFA8E6125  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-08T23:38:27.769Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS25409  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS25409 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b9/W8LS25409.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS25409 ;
@@ -48,7 +55,7 @@ bdg:W8LS25409 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS25409 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   175 .
     
     bdr:W8LS25409  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS25411 ;
