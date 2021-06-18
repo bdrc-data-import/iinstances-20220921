@@ -17,12 +17,6 @@ bdg:W2KG210355 {
         adm:logEntry        bda:LGF729A9361C038885 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LGED109BFDA3F01DA9
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-02-27T13:21:21.534Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGF729A9361C038885
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-02-27T13:21:21.482Z"^^xsd:dateTime ;
@@ -38,9 +32,9 @@ bdg:W2KG210355 {
         adm:gitPath         "8a/W2KG210355.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG210355 ;
-        adm:logEntry        bda:LGED109BFDA3F01DA9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false .
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I2KG210357  a       :ImageGroup ;
         :biblioNote         "Volume 1 of a test 002" ;
@@ -51,7 +45,6 @@ bdg:W2KG210355 {
     
     bdr:W2KG210355  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG210357 ;
-        :instanceOf         bdr:WA2KG210355 ;
         :instanceReproductionOf  bdr:MW2KG210355 ;
         :isRoot             true ;
         :itemVolumes        1 ;

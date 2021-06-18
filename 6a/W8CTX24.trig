@@ -17,12 +17,6 @@ bdg:W8CTX24 {
         adm:logEntry        bda:LG63D934A8138EB388 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG1D81D4778D6DC7FE
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-06-03T11:38:18.705Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG63D934A8138EB388
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-06-03T11:38:18.53Z"^^xsd:dateTime ;
@@ -38,9 +32,9 @@ bdg:W8CTX24 {
         adm:gitPath         "6a/W8CTX24.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8CTX24 ;
-        adm:logEntry        bda:LG1D81D4778D6DC7FE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false .
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I8CTX26  a          :ImageGroup ;
         :biblioNote         "Volume 1 of Testing Scan Request 003" ;
@@ -51,7 +45,6 @@ bdg:W8CTX24 {
     
     bdr:W8CTX24  a          :ImageInstance ;
         :instanceHasVolume  bdr:I8CTX26 ;
-        :instanceOf         bdr:WA8CTX24 ;
         :instanceReproductionOf  bdr:MW8CTX24 ;
         :isRoot             true ;
         :itemVolumes        1 ;

@@ -14,19 +14,15 @@
 bdg:W1KG26105 {
     bda:I1KG26330  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26330 ;
-        adm:logEntry        bda:LGF3AE3B8A7F8369C3 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGF3AE3B8A7F8369C3 , bda:LGIMCCB63934 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I1KG26331  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26331 ;
-        adm:logEntry        bda:LG73D72261192785D4 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG73D72261192785D4
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-03-24T12:45:54.174Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+        adm:logEntry        bda:LGFC4AE976BC174135 , bda:LGIM67F463E9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG9B9206DEAAD2E702
         a                   adm:ScanRequestCreation ;
@@ -40,12 +36,30 @@ bdg:W1KG26105 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGFC4AE976BC174135
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-03-24T12:45:54.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM67F463E9  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-17T03:47:17.245Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCCB63934  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-17T03:47:16.891Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1KG26105  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1KG26105 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "56/W1KG26105.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG26105 ;
@@ -59,14 +73,14 @@ bdg:W1KG26105 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W1KG26105 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   456 .
     
     bdr:I1KG26331  a        :ImageGroup ;
         :biblioNote         "Volume 2 of btsan byol bod mi'i mang gtso'i byung ba brjod pa/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W1KG26105 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   536 .
     
     bdr:W1KG26105  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1KG26330 , bdr:I1KG26331 ;

@@ -17,12 +17,6 @@ bdg:W4JK98772 {
         adm:logEntry        bda:LGE6DEA50DB877878E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG612294D29B06A8F5
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-06-04T11:32:30.248Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00080 .
-    
     bda:LGE6DEA50DB877878E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-06-04T11:32:30.162Z"^^xsd:dateTime ;
@@ -38,9 +32,9 @@ bdg:W4JK98772 {
         adm:gitPath         "e8/W4JK98772.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4JK98772 ;
-        adm:logEntry        bda:LG612294D29B06A8F5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false .
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I4JK98774  a        :ImageGroup ;
         :biblioNote         "Volume 1 of Hello Catalina" ;
@@ -51,7 +45,6 @@ bdg:W4JK98772 {
     
     bdr:W4JK98772  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4JK98774 ;
-        :instanceOf         bdr:WA4JK98772 ;
         :instanceReproductionOf  bdr:MW4JK98772 ;
         :isRoot             true ;
         :itemVolumes        1 ;

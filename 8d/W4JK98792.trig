@@ -17,12 +17,6 @@ bdg:W4JK98792 {
         adm:logEntry        bda:LG740D88BADA62D697 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG574773BFCF4AA403
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-06-05T09:44:57.087Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00080 .
-    
     bda:LG740D88BADA62D697
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-06-05T09:44:56.986Z"^^xsd:dateTime ;
@@ -38,9 +32,9 @@ bdg:W4JK98792 {
         adm:gitPath         "8d/W4JK98792.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4JK98792 ;
-        adm:logEntry        bda:LG574773BFCF4AA403 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false .
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I4JK98794  a        :ImageGroup ;
         :biblioNote         "Volume 1 of Catalina Scan Request from scratch" ;
@@ -51,7 +45,6 @@ bdg:W4JK98792 {
     
     bdr:W4JK98792  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4JK98794 ;
-        :instanceOf         bdr:WA4JK98792 ;
         :instanceReproductionOf  bdr:MW4JK98792 ;
         :isRoot             true ;
         :itemVolumes        1 ;

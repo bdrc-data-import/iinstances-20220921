@@ -23,12 +23,6 @@ bdg:W8CTX21 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGC50CACC6F5EF1E99
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-06-03T11:11:49.259Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:W8CTX21  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
@@ -38,9 +32,9 @@ bdg:W8CTX21 {
         adm:gitPath         "e1/W8CTX21.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8CTX21 ;
-        adm:logEntry        bda:LGC50CACC6F5EF1E99 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false .
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I8CTX23  a          :ImageGroup ;
         :biblioNote         "Volume 1 of Yet Another Test of scanr 002" ;
@@ -51,7 +45,6 @@ bdg:W8CTX21 {
     
     bdr:W8CTX21  a          :ImageInstance ;
         :instanceHasVolume  bdr:I8CTX23 ;
-        :instanceOf         bdr:WA8CTX21 ;
         :instanceReproductionOf  bdr:MW8CTX21 ;
         :isRoot             true ;
         :itemVolumes        1 ;

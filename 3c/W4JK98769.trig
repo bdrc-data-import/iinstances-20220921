@@ -17,12 +17,6 @@ bdg:W4JK98769 {
         adm:logEntry        bda:LGE4D0D35C740C8652 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG46B84D6F80970614
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-06-04T11:27:56.975Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00080 .
-    
     bda:LGE4D0D35C740C8652
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-06-04T11:27:56.881Z"^^xsd:dateTime ;
@@ -38,9 +32,9 @@ bdg:W4JK98769 {
         adm:gitPath         "3c/W4JK98769.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4JK98769 ;
-        adm:logEntry        bda:LG46B84D6F80970614 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false .
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I4JK98771  a        :ImageGroup ;
         :biblioNote         "Volume 1 of unknown title" ;
@@ -51,7 +45,6 @@ bdg:W4JK98769 {
     
     bdr:W4JK98769  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4JK98771 ;
-        :instanceOf         bdr:WA4JK98769 ;
         :instanceReproductionOf  bdr:MW4JK98769 ;
         :isRoot             true ;
         :itemVolumes        1 ;

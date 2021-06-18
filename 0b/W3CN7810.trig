@@ -14,19 +14,9 @@
 bdg:W3CN7810 {
     bda:I3CN7812  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN7812 ;
-        adm:logEntry        bda:LGBB070D51B1BDDD0F ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:I3CN7813  a         adm:AdminData ;
-        adm:adminAbout      bdr:I3CN7813 ;
-        adm:logEntry        bda:LG3D3E1FBB29E3F890 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG3D3E1FBB29E3F890
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-15T15:03:27.221Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+        adm:logEntry        bda:LGBB070D51B1BDDD0F , bda:LGIMAD092B61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG56FC076038CDE58E
         a                   adm:ScanRequestCreation ;
@@ -39,6 +29,12 @@ bdg:W3CN7810 {
         adm:logDate         "2016-12-15T15:03:27.12Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGIMAD092B61  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-17T06:09:35.45Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN7810  a         adm:AdminData ;
         :isRoot             true ;
@@ -59,19 +55,12 @@ bdg:W3CN7810 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN7810 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
-    
-    bdr:I3CN7813  a         :ImageGroup ;
-        :biblioNote         "Volume 2 of 'phags pa shes rab kyi pha rol du phyin pa brgyad stong pa/" ;
-        :volumeNumber       2 ;
-        :volumeOf           bdr:W3CN7810 ;
-        :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   902 .
     
     bdr:W3CN7810  a         :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN7812 , bdr:I3CN7813 ;
+        :instanceHasVolume  bdr:I3CN7812 ;
         :instanceOf         bdr:WA3CN7487 ;
         :instanceReproductionOf  bdr:MW3CN7810 ;
         :isRoot             true ;
-        :itemVolumes        2 .
+        :itemVolumes        1 .
 }
