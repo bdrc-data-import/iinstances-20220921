@@ -15,9 +15,15 @@ bdg:W1NLM3174 {
     bda:I1NLM3174_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3174_001 ;
-        adm:logEntry        bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGIM0ECA4F74 , bda:LGIM63F77742 , bda:LGIM7FC0F720 , bda:LGIMAD13BCFE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM0ECA4F74  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-18T18:38:23.952Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
@@ -25,12 +31,24 @@ bdg:W1NLM3174 {
         adm:logMessage      "imported imagegroup for W1NLM3174 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM7FC0F720  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-19T04:34:35.057Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAD13BCFE  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-18T21:02:02.971Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1NLM3174  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3174 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f2/W1NLM3174.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3174 ;
@@ -41,7 +59,9 @@ bdg:W1NLM3174 {
     bdr:I1NLM3174_001
         a                   :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1NLM3174 .
+        :volumeOf           bdr:W1NLM3174 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   335 .
     
     bdr:W1NLM3174  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1NLM3174_001 ;

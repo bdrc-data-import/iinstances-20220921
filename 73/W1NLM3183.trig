@@ -15,9 +15,15 @@ bdg:W1NLM3183 {
     bda:I1NLM3183_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3183_001 ;
-        adm:logEntry        bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGIM41BF720B , bda:LGIM63F77742 , bda:LGIM7A26BFFE , bda:LGIM7C3D9FCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM41BF720B  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-18T21:04:10.137Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
@@ -25,12 +31,24 @@ bdg:W1NLM3183 {
         adm:logMessage      "imported imagegroup for W1NLM3183 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM7A26BFFE  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-19T04:36:47.408Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7C3D9FCE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-18T19:24:50.83Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1NLM3183  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3183 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "73/W1NLM3183.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3183 ;
@@ -41,7 +59,9 @@ bdg:W1NLM3183 {
     bdr:I1NLM3183_001
         a                   :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1NLM3183 .
+        :volumeOf           bdr:W1NLM3183 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   380 .
     
     bdr:W1NLM3183  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1NLM3183_001 ;
