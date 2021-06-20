@@ -15,7 +15,7 @@ bdg:W1NLM3155 {
     bda:I1NLM3155_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3155_001 ;
-        adm:logEntry        bda:LGIM0EAC4495 , bda:LGIM63F77742 , bda:LGIMBF7EC752 , bda:LGIMCE71E197 , bda:LGIMF6AB67CE ;
+        adm:logEntry        bda:LGIM0EAC4495 , bda:LGIM63F77742 , bda:LGIMBF7EC752 , bda:LGIMCE71E197 , bda:LGIMEC433144 , bda:LGIMF6AB67CE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -43,6 +43,12 @@ bdg:W1NLM3155 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMEC433144  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-19T13:33:47.774Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMF6AB67CE  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-06-18T20:57:35.863Z"^^xsd:dateTime ;
@@ -54,7 +60,7 @@ bdg:W1NLM3155 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3155 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f6/W1NLM3155.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3155 ;

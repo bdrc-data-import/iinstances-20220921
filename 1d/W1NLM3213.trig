@@ -15,7 +15,7 @@ bdg:W1NLM3213 {
     bda:I1NLM3213_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3213_001 ;
-        adm:logEntry        bda:LGIM21BBFED3 , bda:LGIM62D771DB , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGIM21BBFED3 , bda:LGIM62D771DB , bda:LGIM63F77742 , bda:LGIMDF7D5D4F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -37,12 +37,18 @@ bdg:W1NLM3213 {
         adm:logMessage      "imported imagegroup for W1NLM3213 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMDF7D5D4F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-19T13:55:47.59Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1NLM3213  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3213 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1d/W1NLM3213.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3213 ;

@@ -15,7 +15,7 @@ bdg:W1NLM3221 {
     bda:I1NLM3221_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3221_001 ;
-        adm:logEntry        bda:LGIM436220B6 , bda:LGIM63F77742 , bda:LGIME27D9C3E ;
+        adm:logEntry        bda:LGIM436220B6 , bda:LGIM63F77742 , bda:LGIMC43C5600 , bda:LGIME27D9C3E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -31,6 +31,12 @@ bdg:W1NLM3221 {
         adm:logMessage      "imported imagegroup for W1NLM3221 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMC43C5600  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-19T13:58:39.411Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIME27D9C3E  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-06-19T04:45:36.28Z"^^xsd:dateTime ;
@@ -42,7 +48,7 @@ bdg:W1NLM3221 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3221 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "69/W1NLM3221.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3221 ;
