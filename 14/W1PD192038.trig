@@ -14,13 +14,15 @@
 bdg:W1PD192038 {
     bda:I1KG81370  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG81370 ;
-        adm:logEntry        bda:LGB1888EEE3F73319B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB1888EEE3F73319B , bda:LGIM5974141B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I1KG81371  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG81371 ;
-        adm:logEntry        bda:LG8474A2D415B56079 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG49C879C90C78B5C7 , bda:LGIM3BFB8171 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG3459C8EFDA869353
         a                   adm:ScanRequestCreation ;
@@ -28,7 +30,7 @@ bdg:W1PD192038 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG8474A2D415B56079
+    bda:LG49C879C90C78B5C7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-10-16T10:38:47.274Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -46,12 +48,24 @@ bdg:W1PD192038 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM3BFB8171  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-21T20:13:27.82Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5974141B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-21T20:13:27.454Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1PD192038  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1PD192038 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "14/W1PD192038.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD192038 ;
@@ -65,14 +79,14 @@ bdg:W1PD192038 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W1PD192038 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   870 .
     
     bdr:I1KG81371  a        :ImageGroup ;
         :biblioNote         "Volume 2 of karma shing rta/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W1PD192038 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   898 .
     
     bdr:W1PD192038  a       :ImageInstance ;
         :instanceHasVolume  bdr:I1KG81370 , bdr:I1KG81371 ;
