@@ -14,18 +14,21 @@
 bdg:W8LS75693 {
     bda:I8LS75725  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS75725 ;
-        adm:logEntry        bda:LG7A66C6A1D7EA96A8 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG7A66C6A1D7EA96A8 , bda:LGIM386BE16C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS75726  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS75726 ;
-        adm:logEntry        bda:LGFDAC2C0E7702E04F ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGD27E4077B4BEB188 , bda:LGIM87693BDA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS75727  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS75727 ;
-        adm:logEntry        bda:LG7B8D922E9BCC4B6A ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG9AAF802D6EA574AF , bda:LGIM78EA0A97 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG7A66C6A1D7EA96A8
         a                   adm:InitialDataCreation ;
@@ -33,9 +36,15 @@ bdg:W8LS75693 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7B8D922E9BCC4B6A
+    bda:LG9AAF802D6EA574AF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-05-24T09:20:57.267Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD27E4077B4BEB188
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-24T09:20:57.151Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -45,18 +54,30 @@ bdg:W8LS75693 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGFDAC2C0E7702E04F
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-05-24T09:20:57.151Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+    bda:LGIM386BE16C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-22T23:04:02.398Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM78EA0A97  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-22T23:04:02.936Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM87693BDA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-22T23:04:02.65Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS75693  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS75693 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "de/W8LS75693.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS75693 ;
@@ -70,21 +91,21 @@ bdg:W8LS75693 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS75693 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   558 .
     
     bdr:I8LS75726  a        :ImageGroup ;
         :biblioNote         "Volume 2 of mdo las gsungs pa'i byang sems kyi gtam rgyud ngo mtshar rmad byung /" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS75693 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   594 .
     
     bdr:I8LS75727  a        :ImageGroup ;
         :biblioNote         "Volume 3 of mdo las gsungs pa'i byang sems kyi gtam rgyud ngo mtshar rmad byung /" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W8LS75693 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   514 .
     
     bdr:W8LS75693  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS75725 , bdr:I8LS75726 , bdr:I8LS75727 ;
