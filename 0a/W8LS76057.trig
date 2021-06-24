@@ -14,20 +14,23 @@
 bdg:W8LS76057 {
     bda:I8LS76059  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76059 ;
-        adm:logEntry        bda:LG0A8206E645F9E7FB ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0A8206E645F9E7FB , bda:LGIM208D76D7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS76060  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76060 ;
-        adm:logEntry        bda:LGA69C900A72006EC4 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB183AEA149A82CD5 , bda:LGIME13AC364 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS76061  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76061 ;
-        adm:logEntry        bda:LG0882B1DB735CD419 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0149466C3E451885 , bda:LGIM89D01B37 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG0882B1DB735CD419
+    bda:LG0149466C3E451885
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-06-18T09:01:54.475Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -45,18 +48,36 @@ bdg:W8LS76057 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGA69C900A72006EC4
+    bda:LGB183AEA149A82CD5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-06-18T09:01:54.342Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LGIM208D76D7  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-23T23:15:09.86Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM89D01B37  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-23T23:15:10.378Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME13AC364  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-23T23:15:10.129Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS76057  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS76057 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0a/W8LS76057.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76057 ;
@@ -70,21 +91,21 @@ bdg:W8LS76057 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS76057 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   330 .
     
     bdr:I8LS76060  a        :ImageGroup ;
         :biblioNote         "Volume 2 of yid gdung mu 'brel dpe tshogs/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS76057 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   314 .
     
     bdr:I8LS76061  a        :ImageGroup ;
         :biblioNote         "Volume 3 of yid gdung mu 'brel dpe tshogs/" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W8LS76057 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   326 .
     
     bdr:W8LS76057  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS76059 , bdr:I8LS76060 , bdr:I8LS76061 ;
