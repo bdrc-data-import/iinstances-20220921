@@ -14,9 +14,15 @@
 bdg:W1FPL5037 {
     bda:I1FPL5037  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL5037 ;
-        adm:logEntry        bda:LGIMA3A86F9513 ;
+        adm:logEntry        bda:LGIM1603E5CE , bda:LGIMA3A86F9513 , bda:LGIMD3494C67 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM1603E5CE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-28T20:06:29.506Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA3A86F9513
         a                   adm:InitialDataImport ;
@@ -25,12 +31,18 @@ bdg:W1FPL5037 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMD3494C67  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-28T20:16:22.678Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FPL5037  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL5037 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "52/W1FPL5037.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL5037 ;
@@ -40,7 +52,9 @@ bdg:W1FPL5037 {
     
     bdr:I1FPL5037  a        :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FPL5037 .
+        :volumeOf           bdr:W1FPL5037 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   306 .
     
     bdr:W1FPL5037  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1FPL5037 ;
