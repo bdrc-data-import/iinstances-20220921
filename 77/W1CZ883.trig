@@ -12,21 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1CZ883 {
-    bda:I1CZ2121  a         adm:AdminData ;
-        adm:adminAbout      bdr:I1CZ2121 ;
-        adm:logEntry        bda:LG68B8E1BB84AAB4FA , bda:LGB7AE0225090D1911 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    bda:I2KG229026  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229026 ;
+        adm:logEntry        bda:LGA49D230DE5FD587A , bda:LGIM82C8EFCB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG110D8336B1A26566
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-05-10T09:48:20.881Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LG68B8E1BB84AAB4FA
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-10-02T13:22:05.311Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LG746B929FFA2C5DB0
@@ -41,11 +36,23 @@ bdg:W1CZ883 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGB7AE0225090D1911
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-12-14T12:51:26.939Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00026 .
+    bda:LGA49D230DE5FD587A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-06-29T14:44:29.012Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFE1361F69FC9DD90
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-29T14:44:29.124Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM82C8EFCB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-06-29T21:32:21.576Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1CZ883  a          adm:AdminData ;
         :isRoot             true ;
@@ -56,23 +63,23 @@ bdg:W1CZ883 {
         adm:gitPath         "77/W1CZ883.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1CZ883 ;
-        adm:logEntry        bda:LG110D8336B1A26566 , bda:LG746B929FFA2C5DB0 , bda:LG9F000DC7F33B6DBD ;
+        adm:logEntry        bda:LG110D8336B1A26566 , bda:LG746B929FFA2C5DB0 , bda:LG9F000DC7F33B6DBD , bda:LGFE1361F69FC9DD90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1CZ2121  a         :ImageGroup ;
-        :biblioNote         "Volume 1 of bzo rig kha shas kyi pa tra lag len ma" ;
+    bdr:I2KG229026  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of bzo rig kha shas kyi pa tra lag len ma/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W1CZ883 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   22 .
     
     bdr:W1CZ883  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I1CZ2121 ;
+        :instanceHasVolume  bdr:I2KG229026 ;
         :instanceOf         bdr:WA1CZ883 ;
         :instanceReproductionOf  bdr:MW1CZ883 ;
         :isRoot             true ;
         :itemVolumes        1 ;
-        :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138 US."@en , "scanned from microfiche copy of an dbu med manuscript"@en .
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 6/2021"@en , "scanned from microfiche copy of an dbu med manuscript"@en .
 }
