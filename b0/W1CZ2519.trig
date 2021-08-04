@@ -14,17 +14,23 @@
 bdg:W1CZ2519 {
     bda:I1CZ2538  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ2538 ;
-        adm:logEntry        bda:LG9A33A1E9F4349F38 , bda:LGA253D2AE4E684746 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG9A33A1E9F4349F38 , bda:LGA253D2AE4E684746 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM0C37648C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1CZ2539  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ2539 ;
-        adm:logEntry        bda:LG15EF78B5E8871A5B , bda:LGD8DA0232C986A9E2 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG15EF78B5E8871A5B , bda:LG898C5B402D6B03CE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM44410024 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG15EF78B5E8871A5B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-11-28T11:20:22.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG898C5B402D6B03CE
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-04T12:48:35.641Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
@@ -48,12 +54,6 @@ bdg:W1CZ2519 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGD8DA0232C986A9E2
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-11-28T11:20:22.636Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -72,12 +72,24 @@ bdg:W1CZ2519 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM0C37648C  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-03T23:22:38.438Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM44410024  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-03T23:22:39.622Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1CZ2519  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1CZ2519 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b0/W1CZ2519.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1CZ2519 ;
@@ -91,14 +103,14 @@ bdg:W1CZ2519 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W1CZ2519 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   654 .
+        :volumePagesTotal   0 .
     
     bdr:I1CZ2539  a         :ImageGroup ;
         :biblioNote         "Volume 2 of yul phyogs so so'i gsar 'gyur me long" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W1CZ2519 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   630 .
+        :volumePagesTotal   0 .
     
     bdr:W1CZ2519  a         :ImageInstance ;
         :instanceHasVolume  bdr:I1CZ2538 , bdr:I1CZ2539 ;
