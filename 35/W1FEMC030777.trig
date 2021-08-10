@@ -14,32 +14,14 @@
 bdg:W1FEMC030777 {
     bda:I1FEMC030777  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC030777 ;
-        adm:logEntry        bda:LGIM3A96BCC2 , bda:LGIM61B7CB85 , bda:LGIM673215F2 , bda:LGIMD790DBE3 ;
+        adm:logEntry        bda:LGIM4F4FC78A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGIM3A96BCC2  a     adm:ImagesUpdated ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-04-08T06:39:49.581Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGIM61B7CB85  a     adm:InitialDataImport ;
+    bda:LGIM4F4FC78A  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc01-import.xql" ;
-        adm:logDate         "2019-12-04T22:05:38.059Z"^^xsd:dateTime ;
+        adm:logDate         "2021-08-09T15:39:57.044Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1FEMC030777 volume 1"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGIM673215F2  a     adm:Synced ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-04-07T20:58:18.527Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGIMD790DBE3  a     adm:ImagesUpdated ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-04-07T23:49:05.421Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:W1FEMC030777  a     adm:AdminData ;
@@ -47,7 +29,7 @@ bdg:W1FEMC030777 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC030777 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "35/W1FEMC030777.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC030777 ;
@@ -57,9 +39,7 @@ bdg:W1FEMC030777 {
     
     bdr:I1FEMC030777  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FEMC030777 ;
-        :volumePagesTbrcIntro  0 ;
-        :volumePagesTotal   413 .
+        :volumeOf           bdr:W1FEMC030777 .
     
     bdr:W1FEMC030777  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1FEMC030777 ;

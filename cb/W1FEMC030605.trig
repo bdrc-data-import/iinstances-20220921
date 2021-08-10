@@ -14,26 +14,14 @@
 bdg:W1FEMC030605 {
     bda:I1FEMC030605  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC030605 ;
-        adm:logEntry        bda:LGIM61B7CB85 , bda:LGIM767F5DE5 , bda:LGIM83A28A6A ;
+        adm:logEntry        bda:LGIM4F4FC78A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGIM61B7CB85  a     adm:InitialDataImport ;
+    bda:LGIM4F4FC78A  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc01-import.xql" ;
-        adm:logDate         "2019-12-04T22:05:38.059Z"^^xsd:dateTime ;
+        adm:logDate         "2021-08-09T15:39:57.044Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1FEMC030605 volume 1"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGIM767F5DE5  a     adm:Synced ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-03-31T22:19:02.428Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGIM83A28A6A  a     adm:ImagesUpdated ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-04-05T02:39:59.659Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:W1FEMC030605  a     adm:AdminData ;
@@ -41,7 +29,7 @@ bdg:W1FEMC030605 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC030605 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "cb/W1FEMC030605.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC030605 ;
@@ -51,9 +39,7 @@ bdg:W1FEMC030605 {
     
     bdr:I1FEMC030605  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FEMC030605 ;
-        :volumePagesTbrcIntro  0 ;
-        :volumePagesTotal   19 .
+        :volumeOf           bdr:W1FEMC030605 .
     
     bdr:W1FEMC030605  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1FEMC030605 ;
