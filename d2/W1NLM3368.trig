@@ -15,7 +15,7 @@ bdg:W1NLM3368 {
     bda:I1NLM3368_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3368_001 ;
-        adm:logEntry        bda:LGIM03915F22 , bda:LGIMC10BDC99 ;
+        adm:logEntry        bda:LGIM03915F22 , bda:LGIM0613F72B , bda:LGIM2C6E648F , bda:LGIM2CE6D725 , bda:LGIMC10BDC99 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -23,6 +23,24 @@ bdg:W1NLM3368 {
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1NLM3368 volume 1"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM0613F72B  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T20:42:48.702Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM2C6E648F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T14:58:23.855Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM2CE6D725  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T16:37:40.234Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIMC10BDC99  a     adm:Synced ;
@@ -36,7 +54,7 @@ bdg:W1NLM3368 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3368 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d2/W1NLM3368.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3368 ;

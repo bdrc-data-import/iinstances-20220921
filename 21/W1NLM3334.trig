@@ -15,14 +15,32 @@ bdg:W1NLM3334 {
     bda:I1NLM3334_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3334_001 ;
-        adm:logEntry        bda:LGIM63F77742 , bda:LGIM68E3DB89 ;
+        adm:logEntry        bda:LGIM158F63ED , bda:LGIM4B2ED618 , bda:LGIM63F77742 , bda:LGIM645C8716 , bda:LGIM68E3DB89 , bda:LGIM73287A39 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM158F63ED  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T16:26:52.76Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM4B2ED618  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T14:47:27.349Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1NLM3334 volume 1"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM645C8716  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T20:31:59.551Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM68E3DB89  a     adm:Synced ;
@@ -31,12 +49,18 @@ bdg:W1NLM3334 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM73287A39  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T14:36:18.91Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1NLM3334  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3334 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "21/W1NLM3334.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3334 ;

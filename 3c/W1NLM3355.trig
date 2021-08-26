@@ -15,7 +15,7 @@ bdg:W1NLM3355 {
     bda:I1NLM3355_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3355_001 ;
-        adm:logEntry        bda:LGIM03915F22 , bda:LGIMCD3554EF ;
+        adm:logEntry        bda:LGIM03915F22 , bda:LGIM82096211 , bda:LGIMCD3554EF , bda:LGIMD0535813 , bda:LGIMDD37AFA1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,9 +25,27 @@ bdg:W1NLM3355 {
         adm:logMessage      "imported imagegroup for W1NLM3355 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM82096211  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T16:33:44.23Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMCD3554EF  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-08-24T19:46:32.65Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD0535813  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T20:38:48.777Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMDD37AFA1  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T14:54:25.071Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -36,7 +54,7 @@ bdg:W1NLM3355 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3355 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3c/W1NLM3355.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3355 ;

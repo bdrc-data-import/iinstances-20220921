@@ -15,7 +15,7 @@ bdg:W1NLM3349 {
     bda:I1NLM3349_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3349_001 ;
-        adm:logEntry        bda:LGIM0537BCF5 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGIM0537BCF5 , bda:LGIM3D2DE835 , bda:LGIM63F77742 , bda:LGIM83638AFC , bda:LGIMFE5B4E6C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,10 +25,28 @@ bdg:W1NLM3349 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM3D2DE835  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T20:36:36.247Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1NLM3349 volume 1"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM83638AFC  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T14:52:06.475Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFE5B4E6C  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-25T16:31:29.33Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:W1NLM3349  a        adm:AdminData ;
@@ -36,7 +54,7 @@ bdg:W1NLM3349 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3349 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8d/W1NLM3349.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3349 ;
