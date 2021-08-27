@@ -15,7 +15,7 @@ bdg:W1NLM3382 {
     bda:I1NLM3382_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3382_001 ;
-        adm:logEntry        bda:LGIM03915F22 , bda:LGIM42C5C3B5 , bda:LGIMB33B6DE9 , bda:LGIMF7BAA40C ;
+        adm:logEntry        bda:LGIM03915F22 , bda:LGIM27A6BAB1 , bda:LGIM42C5C3B5 , bda:LGIMB33B6DE9 , bda:LGIMD32DE31C , bda:LGIMF7BAA40C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -23,6 +23,12 @@ bdg:W1NLM3382 {
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1NLM3382 volume 1"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM27A6BAB1  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-26T16:59:48.386Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIM42C5C3B5  a     adm:ImagesUpdated ;
@@ -37,6 +43,12 @@ bdg:W1NLM3382 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMD32DE31C  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-26T14:20:41.882Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMF7BAA40C  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-08-25T15:10:29.232Z"^^xsd:dateTime ;
@@ -48,7 +60,7 @@ bdg:W1NLM3382 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3382 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "cc/W1NLM3382.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3382 ;

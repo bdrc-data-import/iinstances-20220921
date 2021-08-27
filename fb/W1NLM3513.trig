@@ -15,7 +15,7 @@ bdg:W1NLM3513 {
     bda:I1NLM3513_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3513_001 ;
-        adm:logEntry        bda:LGIM03915F22 , bda:LGIM2F82BD7A ;
+        adm:logEntry        bda:LGIM03915F22 , bda:LGIM20714A84 , bda:LGIM2F82BD7A , bda:LGIM3436FEC4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,9 +25,21 @@ bdg:W1NLM3513 {
         adm:logMessage      "imported imagegroup for W1NLM3513 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM20714A84  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-26T15:01:08.356Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM2F82BD7A  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-08-25T22:01:49.359Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM3436FEC4  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-26T17:40:21.86Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -36,7 +48,7 @@ bdg:W1NLM3513 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3513 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fb/W1NLM3513.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3513 ;

@@ -14,7 +14,7 @@
 bdg:W1FPL522 {
     bda:I1FPL522  a         adm:AdminData ;
         adm:adminAbout      bdr:I1FPL522 ;
-        adm:logEntry        bda:LG32B041D86DFAA996 , bda:LGIMA3A86F9513 , bda:LGIMD9F15FB0 ;
+        adm:logEntry        bda:LG32B041D86DFAA996 , bda:LGIMA3A86F9513 , bda:LGIMD9F15FB0 , bda:LGIMDF3C9B5E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -37,12 +37,18 @@ bdg:W1FPL522 {
         adm:logMessage      "zeroed tbrcIntro"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMDF3C9B5E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-27T01:20:32.578Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FPL522  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL522 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "08/W1FPL522.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL522 ;

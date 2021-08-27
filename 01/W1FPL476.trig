@@ -14,7 +14,7 @@
 bdg:W1FPL476 {
     bda:I1FPL476  a         adm:AdminData ;
         adm:adminAbout      bdr:I1FPL476 ;
-        adm:logEntry        bda:LGC7A521FD7B1D68C4 , bda:LGIMA3A86F9513 , bda:LGIMD9F15FB0 ;
+        adm:logEntry        bda:LGC7A521FD7B1D68C4 , bda:LGIMA3A86F9513 , bda:LGIMADC49CBC , bda:LGIMD9F15FB0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -31,6 +31,12 @@ bdg:W1FPL476 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMADC49CBC  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-27T01:18:14.5Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMD9F15FB0  a     adm:UpdateData ;
         adm:logAgent        "Imagegroups zero tbrcIntro" ;
         adm:logDate         "2019-02-11T19:32:33.446Z"^^xsd:dateTime ;
@@ -42,7 +48,7 @@ bdg:W1FPL476 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL476 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "01/W1FPL476.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL476 ;

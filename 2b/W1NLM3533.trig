@@ -15,7 +15,7 @@ bdg:W1NLM3533 {
     bda:I1NLM3533_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3533_001 ;
-        adm:logEntry        bda:LGIM03915F22 , bda:LGIME3005D1E ;
+        adm:logEntry        bda:LGIM03915F22 , bda:LGIM5DBC2B3F , bda:LGIMBFD0AFB8 , bda:LGIME3005D1E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -23,6 +23,18 @@ bdg:W1NLM3533 {
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1NLM3533 volume 1"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5DBC2B3F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-26T17:46:38.615Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBFD0AFB8  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-08-26T15:07:17.38Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIME3005D1E  a     adm:Synced ;
@@ -36,7 +48,7 @@ bdg:W1NLM3533 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3533 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2b/W1NLM3533.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3533 ;
