@@ -14,15 +14,17 @@
 bdg:W8LS76152 {
     bda:I8LS76154  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76154 ;
-        adm:logEntry        bda:LGE445EF70C9EBC128 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGE445EF70C9EBC128 , bda:LGIMAAD27467 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS76155  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76155 ;
-        adm:logEntry        bda:LG755C4793A3E76C6C ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG2E9226383F40B670 , bda:LGIM17F60B19 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG755C4793A3E76C6C
+    bda:LG2E9226383F40B670
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-08-25T10:25:30.057Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W8LS76152 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM17F60B19  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:37:07.75Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMAAD27467  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:37:07.415Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS76152  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS76152 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a2/W8LS76152.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76152 ;
@@ -59,14 +73,14 @@ bdg:W8LS76152 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS76152 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   220 .
     
     bdr:I8LS76155  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsang sngags rdo rje theg pa'i sa lam sogs kyi skor zung 'jug sgrub pa'i them skas/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS76152 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   266 .
     
     bdr:W8LS76152  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS76154 , bdr:I8LS76155 ;

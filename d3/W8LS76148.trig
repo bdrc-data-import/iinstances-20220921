@@ -14,15 +14,17 @@
 bdg:W8LS76148 {
     bda:I8LS76150  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76150 ;
-        adm:logEntry        bda:LGC73AE4A0A471FEE2 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGC73AE4A0A471FEE2 , bda:LGIM05EB6FAA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS76151  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76151 ;
-        adm:logEntry        bda:LG85A6265DF946AC2D ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG207007DAECCE628C , bda:LGIMD7658C3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG85A6265DF946AC2D
+    bda:LG207007DAECCE628C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-08-25T09:45:04.207Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W8LS76148 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM05EB6FAA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:36:47.147Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMD7658C3E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-01T01:36:47.442Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS76148  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS76148 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d3/W8LS76148.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76148 ;
@@ -59,14 +73,14 @@ bdg:W8LS76148 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS76148 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   704 .
     
     bdr:I8LS76151  a        :ImageGroup ;
         :biblioNote         "Volume 2 of 'ba' mda'i dbu ma/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS76148 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   730 .
     
     bdr:W8LS76148  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS76150 , bdr:I8LS76151 ;
