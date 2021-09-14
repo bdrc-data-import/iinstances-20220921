@@ -12,16 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W1PD53259 {
-    bda:I1PD53296  a        adm:AdminData ;
-        adm:adminAbout      bdr:I1PD53296 ;
-        adm:logEntry        bda:LG07CD6F341EEC4010 ;
+    bda:I2KG229488  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229488 ;
+        adm:logEntry        bda:LG02C1A5362E6C4C54 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG07CD6F341EEC4010
+    bda:LG02C1A5362E6C4C54
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-11-18T17:08:21.411Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-13T14:19:37.701Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+        adm:logWho          bdu:U00016 .
     
     bda:LG33648717F3BBDB7F
         a                   adm:ScanRequestCreation ;
@@ -35,6 +35,12 @@ bdg:W1PD53259 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCB8C240EEC6BCEF8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-13T14:19:37.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:W1PD53259  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
@@ -44,12 +50,12 @@ bdg:W1PD53259 {
         adm:gitPath         "9b/W1PD53259.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD53259 ;
-        adm:logEntry        bda:LG33648717F3BBDB7F , bda:LG42D9813E8AB62867 ;
+        adm:logEntry        bda:LG33648717F3BBDB7F , bda:LG42D9813E8AB62867 , bda:LGCB8C240EEC6BCEF8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I1PD53296  a        :ImageGroup ;
+    bdr:I2KG229488  a       :ImageGroup ;
         :biblioNote         "Volume 1 of rig gnas dang mi gshis" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W1PD53259 ;
@@ -57,9 +63,10 @@ bdg:W1PD53259 {
         :volumePagesTotal   0 .
     
     bdr:W1PD53259  a        :ImageInstance ;
-        :instanceHasVolume  bdr:I1PD53296 ;
+        :instanceHasVolume  bdr:I2KG229488 ;
         :instanceOf         bdr:WA1PD53259 ;
         :instanceReproductionOf  bdr:MW1PD53259 ;
         :isRoot             true ;
-        :itemVolumes        1 .
+        :itemVolumes        1 ;
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 09/2021"@en .
 }

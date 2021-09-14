@@ -14,28 +14,31 @@
 bdg:W8LS25562 {
     bda:I8LS25564  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS25564 ;
-        adm:logEntry        bda:LG06C84A629359956B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG06C84A629359956B , bda:LGIM14C21EED ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS25565  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS25565 ;
-        adm:logEntry        bda:LGB84160FA7B877B94 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG34E3773BE57F66AF , bda:LGIM43C19DBC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS25566  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS25566 ;
-        adm:logEntry        bda:LG02DE4E70EDFA2690 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG02DE4E70EDFA2690
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T10:25:02.09Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+        adm:logEntry        bda:LG686C36254BA4AD43 , bda:LGIM62CC72F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG06C84A629359956B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-09-13T10:25:01.857Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG34E3773BE57F66AF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-13T10:25:01.973Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -45,18 +48,36 @@ bdg:W8LS25562 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGB84160FA7B877B94
+    bda:LG686C36254BA4AD43
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-13T10:25:01.973Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-13T10:25:02.09Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LGIM14C21EED  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-13T23:35:32.043Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM43C19DBC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-13T23:35:32.303Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM62CC72F6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-13T23:35:32.566Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS25562  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS25562 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "be/W8LS25562.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS25562 ;
@@ -70,21 +91,21 @@ bdg:W8LS25562 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS25562 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   316 .
     
     bdr:I8LS25565  a        :ImageGroup ;
         :biblioNote         "Volume 2 of tun hong bod kyi lo rgyus/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS25562 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   326 .
     
     bdr:I8LS25566  a        :ImageGroup ;
         :biblioNote         "Volume 3 of tun hong bod kyi lo rgyus/" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W8LS25562 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   220 .
     
     bdr:W8LS25562  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS25564 , bdr:I8LS25565 , bdr:I8LS25566 ;
