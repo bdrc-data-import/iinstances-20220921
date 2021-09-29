@@ -14,7 +14,7 @@
 bdg:W21780 {
     bda:I4742  a            adm:AdminData ;
         adm:adminAbout      bdr:I4742 ;
-        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD , bda:LGIM8542EE57 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -42,12 +42,18 @@ bdg:W21780 {
         adm:logMessage      "setting tbrcIntro = 2"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM8542EE57  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-28T14:05:58.671Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W21780  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W21780 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d7/W21780.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W21780 ;

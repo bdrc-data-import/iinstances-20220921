@@ -14,7 +14,7 @@
 bdg:W3CN2178 {
     bda:I3CN2180  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN2180 ;
-        adm:logEntry        bda:LG5C2EAD73B411E50C , bda:LG5DE61DE479899AD9 ;
+        adm:logEntry        bda:LG5C2EAD73B411E50C , bda:LG5DE61DE479899AD9 , bda:LGIM2F6359AD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W3CN2178 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM2F6359AD  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-28T14:08:22.918Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN2178  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessRestrictedTemporarily ;
         adm:adminAbout      bdr:W3CN2178 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "01/W3CN2178.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN2178 ;
