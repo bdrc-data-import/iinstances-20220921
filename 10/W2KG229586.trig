@@ -14,8 +14,9 @@
 bdg:W2KG229586 {
     bda:I2KG229620  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG229620 ;
-        adm:logEntry        bda:LG22C2DF1D2BAEE17C ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG22C2DF1D2BAEE17C , bda:LGIM4923C276 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG22C2DF1D2BAEE17C
         a                   adm:InitialDataCreation ;
@@ -29,12 +30,18 @@ bdg:W2KG229586 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4923C276  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-30T00:59:30.88Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2KG229586  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2KG229586 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "10/W2KG229586.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG229586 ;
@@ -48,13 +55,13 @@ bdg:W2KG229586 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG229586 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   506 .
     
     bdr:W2KG229586  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG229620 ;
         :instanceOf         bdr:WA2KG229586 ;
         :instanceReproductionOf  bdr:MW2KG229586 ;
         :isRoot             true ;
-        :itemVolumes        1 ;
+        :numberOfVolumes    1 ;
         :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 9/2021"@en .
 }

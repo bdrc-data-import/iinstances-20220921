@@ -14,13 +14,15 @@
 bdg:W4CZ364081 {
     bda:I4CZ367208  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ367208 ;
-        adm:logEntry        bda:LG66C1148CC4BED83C ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG66C1148CC4BED83C , bda:LGIM2F69A765 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ367209  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ367209 ;
-        adm:logEntry        bda:LGDD4B6A7BF82CD232 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGEE64F6342F2158EF , bda:LGIM64391DA6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG66C1148CC4BED83C
         a                   adm:InitialDataCreation ;
@@ -34,18 +36,30 @@ bdg:W4CZ364081 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGDD4B6A7BF82CD232
+    bda:LGEE64F6342F2158EF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-05-28T15:57:48.035Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGIM2F69A765  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-30T01:01:48.151Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM64391DA6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-09-30T01:01:48.43Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W4CZ364081  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessRestrictedTemporarily ;
         adm:adminAbout      bdr:W4CZ364081 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6e/W4CZ364081.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ364081 ;
@@ -59,14 +73,14 @@ bdg:W4CZ364081 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ364081 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   620 .
     
     bdr:I4CZ367209  a       :ImageGroup ;
         :biblioNote         "Volume 2 of kam tshang bka' brgyud gser 'phreng/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ364081 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   526 .
     
     bdr:W4CZ364081  a       :ImageInstance ;
         :digitalLendingPossible  false ;
@@ -74,5 +88,5 @@ bdg:W4CZ364081 {
         :instanceOf         bdr:WA4CZ364081 ;
         :instanceReproductionOf  bdr:MW4CZ364081 ;
         :isRoot             true ;
-        :itemVolumes        2 .
+        :numberOfVolumes    2 .
 }
