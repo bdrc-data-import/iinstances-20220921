@@ -14,7 +14,7 @@
 bdg:W20077 {
     bda:I5683  a            adm:AdminData ;
         adm:adminAbout      bdr:I5683 ;
-        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM25DB197E , bda:LGIM60F924CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,6 +36,12 @@ bdg:W20077 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM25DB197E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-01T18:46:23.193Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM60F924CD  a     adm:UpdateData ;
         adm:logAgent        "admin/imagegroups-zero-tbrcIntro-by-list.xql" ;
         adm:logDate         "2020-06-26T16:21:40.517Z"^^xsd:dateTime ;
@@ -47,7 +53,7 @@ bdg:W20077 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20077 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "13/W20077.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20077 ;
@@ -59,7 +65,7 @@ bdg:W20077 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W20077 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   304 .
+        :volumePagesTotal   302 .
     
     bdr:W20077  a           :ImageInstance ;
         :instanceHasVolume  bdr:I5683 ;

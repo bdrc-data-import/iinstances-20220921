@@ -14,7 +14,7 @@
 bdg:W1KG25518 {
     bda:I1KG25520  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25520 ;
-        adm:logEntry        bda:LG6FD3CF2C89145B58 , bda:LG9D6BBE8D506DF4D4 ;
+        adm:logEntry        bda:LG6FD3CF2C89145B58 , bda:LG9D6BBE8D506DF4D4 , bda:LGIM718BC9B7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W1KG25518 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM718BC9B7  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-01T18:32:13.105Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1KG25518  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG25518 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d0/W1KG25518.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG25518 ;
