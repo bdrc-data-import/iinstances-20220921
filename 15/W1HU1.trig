@@ -14,7 +14,7 @@
 bdg:W1HU1 {
     bda:I2KG200905  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG200905 ;
-        adm:logEntry        bda:LG0FC1C847C754CE50 , bda:LGIM2C08F6C2 ;
+        adm:logEntry        bda:LG0FC1C847C754CE50 , bda:LGIM1AA91776 , bda:LGIM24A268EB , bda:LGIM2C08F6C2 , bda:LGIM5D8716AB , bda:LGIMEC74E54A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,9 +30,33 @@ bdg:W1HU1 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM1AA91776  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-12T15:52:24.388Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM24A268EB  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-12T15:49:15.876Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM2C08F6C2  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2019-04-10T20:57:42.687Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5D8716AB  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-12T15:50:07.959Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEC74E54A  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-12T14:22:34.456Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -41,7 +65,7 @@ bdg:W1HU1 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1HU1 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "15/W1HU1.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1HU1 ;
