@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN844 {
+    bda:I2KG229636  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229636 ;
+        adm:logEntry        bda:LG4AADA3A301EEE6CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
     bda:I3CN846  a          adm:AdminData ;
         adm:adminAbout      bdr:I3CN846 ;
         adm:logEntry        bda:LGC2DEF7898452CD21 ;
@@ -117,6 +123,12 @@ bdg:W3CN844 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG4AADA3A301EEE6CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-13T15:14:05.073Z"^^xsd:dateTime ;
+        adm:logMessage      "created imagegroup"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG748B17B5CF491E50
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-12-11T13:07:30.517Z"^^xsd:dateTime ;
@@ -188,7 +200,7 @@ bdg:W3CN844 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN844 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "89/W3CN844.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN844 ;
@@ -196,6 +208,10 @@ bdg:W3CN844 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
+    
+    bdr:I2KG229636  a       :ImageGroup ;
+        :volumeNumber       16 ;
+        :volumeOf           bdr:W3CN844 .
     
     bdr:I3CN846  a          :ImageGroup ;
         :biblioNote         "Volume 1 of spyi lo 2009lor glog rdul gyis 'dra bshus byas pa'i gna' dpe bris ma/ (1)" ;
@@ -303,10 +319,10 @@ bdg:W3CN844 {
         :volumePagesTotal   0 .
     
     bdr:W3CN844  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN846 , bdr:I3CN847 , bdr:I3CN848 , bdr:I3CN849 , bdr:I3CN850 , bdr:I3CN851 , bdr:I3CN852 , bdr:I3CN853 , bdr:I3CN854 , bdr:I3CN855 , bdr:I3CN856 , bdr:I3CN857 , bdr:I3CN858 , bdr:I3CN859 , bdr:I3CN860 ;
+        :instanceHasVolume  bdr:I2KG229636 , bdr:I3CN846 , bdr:I3CN847 , bdr:I3CN848 , bdr:I3CN849 , bdr:I3CN850 , bdr:I3CN851 , bdr:I3CN852 , bdr:I3CN853 , bdr:I3CN854 , bdr:I3CN855 , bdr:I3CN856 , bdr:I3CN857 , bdr:I3CN858 , bdr:I3CN859 , bdr:I3CN860 ;
         :instanceOf         bdr:WA3CN844 ;
         :instanceReproductionOf  bdr:MW3CN844 ;
         :isRoot             true ;
-        :numberOfVolumes    15 ;
+        :numberOfVolumes    16 ;
         :scanInfo           "Scanned at Tibetan Buddhist Resource Center, 1430 Massachusetts Avenue, Cambridge, MA 02138, USA. Comments: 12/2014"@en .
 }
