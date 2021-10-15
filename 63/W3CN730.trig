@@ -14,19 +14,15 @@
 bdg:W3CN730 {
     bda:I3CN732  a          adm:AdminData ;
         adm:adminAbout      bdr:I3CN732 ;
-        adm:logEntry        bda:LG60DC3228C8A3C586 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG60DC3228C8A3C586 , bda:LGIM6F0921DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN733  a          adm:AdminData ;
         adm:adminAbout      bdr:I3CN733 ;
-        adm:logEntry        bda:LG32F5F81FE940C597 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG32F5F81FE940C597
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2014-12-05T11:05:19.861Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+        adm:logEntry        bda:LGC2D09EE47ADE570C , bda:LGIMEC37E760 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG60DC3228C8A3C586
         a                   adm:InitialDataCreation ;
@@ -40,12 +36,30 @@ bdg:W3CN730 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGC2D09EE47ADE570C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-05T11:05:19.861Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGIM6F0921DD  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:56:39.853Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEC37E760  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:56:40.153Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN730  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN730 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "63/W3CN730.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN730 ;
@@ -59,14 +73,14 @@ bdg:W3CN730 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN730 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   572 .
     
     bdr:I3CN733  a          :ImageGroup ;
         :biblioNote         "Volume 2 of gsung thor bu/_chos grags ye shes/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN730 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   546 .
     
     bdr:W3CN730  a          :ImageInstance ;
         :instanceHasVolume  bdr:I3CN732 , bdr:I3CN733 ;

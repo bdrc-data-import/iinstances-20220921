@@ -14,18 +14,26 @@
 bdg:W3CN26813 {
     bda:I3CN26815  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26815 ;
-        adm:logEntry        bda:LGDA0107D366ECC652 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGDA0107D366ECC652 , bda:LGIM4DCCA2B8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN26816  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26816 ;
-        adm:logEntry        bda:LGE50A4167361A3BA6 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG6E816E73A63687E8 , bda:LGIME3E7435E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG05FFA09309792C58
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2021-09-22T18:41:07.924Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG6E816E73A63687E8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-09-22T18:41:07.791Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGDA0107D366ECC652
@@ -34,18 +42,24 @@ bdg:W3CN26813 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGE50A4167361A3BA6
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-22T18:41:07.791Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+    bda:LGIM4DCCA2B8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:55:11.579Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME3E7435E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:55:11.834Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN26813  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN26813 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "85/W3CN26813.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26813 ;
@@ -59,14 +73,14 @@ bdg:W3CN26813 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN26813 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   454 .
     
     bdr:I3CN26816  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsung 'bum/ karma dkon mchog gzhon nu/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN26813 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   484 .
     
     bdr:W3CN26813  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN26815 , bdr:I3CN26816 ;

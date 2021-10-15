@@ -14,7 +14,7 @@
 bdg:W2CZ10542 {
     bda:I1KG4924  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG4924 ;
-        adm:logEntry        bda:LG5FDC3586DE69915C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG5FDC3586DE69915C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM02C72D5A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,12 +48,18 @@ bdg:W2CZ10542 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM02C72D5A  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-14T18:35:21.169Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2CZ10542  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2CZ10542 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5e/W2CZ10542.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2CZ10542 ;

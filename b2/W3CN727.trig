@@ -12,41 +12,67 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W3CN727 {
-    bda:I3CN729  a          adm:AdminData ;
-        adm:adminAbout      bdr:I3CN729 ;
-        adm:logEntry        bda:LG305F137F4DBF1FF0 ;
+    bda:I2KG229638  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229638 ;
+        adm:logEntry        bda:LG827ED7F7143DCB2C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG305F137F4DBF1FF0
+    bda:I2KG229639  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG229639 ;
+        adm:logEntry        bda:LGF178EDD832971A9F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG51C37D8E33310D6C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-10-14T09:10:26.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG827ED7F7143DCB2C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2014-12-03T17:01:37.792Z"^^xsd:dateTime ;
+        adm:logDate         "2021-10-14T09:10:26.399Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF178EDD832971A9F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-14T09:10:26.531Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W3CN727  a          adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessRestrictedSealed ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN727 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b2/W3CN727.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN727 ;
+        adm:logEntry        bda:LG51C37D8E33310D6C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I3CN729  a          :ImageGroup ;
+    bdr:I2KG229638  a       :ImageGroup ;
         :biblioNote         "Volume 1 of pad+ma gling pa'i gter chos dngul bris ma/" ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN727 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
+    bdr:I2KG229639  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of pad+ma gling pa'i gter chos dngul bris ma/" ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W3CN727 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
     bdr:W3CN727  a          :ImageInstance ;
-        :instanceHasVolume  bdr:I3CN729 ;
+        :instanceHasVolume  bdr:I2KG229638 , bdr:I2KG229639 ;
         :instanceOf         bdr:WA3CN727 ;
         :instanceReproductionOf  bdr:MW3CN727 ;
         :isRoot             true ;
-        :numberOfVolumes    1 .
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111. Comments: 10/2021"@en .
 }

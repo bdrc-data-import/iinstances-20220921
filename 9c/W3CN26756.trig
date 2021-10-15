@@ -14,13 +14,15 @@
 bdg:W3CN26756 {
     bda:I3CN26758  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26758 ;
-        adm:logEntry        bda:LGB0195B1C554C5799 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB0195B1C554C5799 , bda:LGIM44D035FC ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN26759  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26759 ;
-        adm:logEntry        bda:LGDA790FBE747323A5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGD6846239AAF13DEC , bda:LGIM75DECECA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LGA1F046F956D53428
         a                   adm:ScanRequestCreation ;
@@ -34,18 +36,30 @@ bdg:W3CN26756 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGDA790FBE747323A5
+    bda:LGD6846239AAF13DEC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-09-17T19:31:31.475Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGIM44D035FC  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:46:21.921Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM75DECECA  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:46:22.166Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN26756  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN26756 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "9c/W3CN26756.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26756 ;
@@ -59,14 +73,14 @@ bdg:W3CN26756 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN26756 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   236 .
     
     bdr:I3CN26759  a        :ImageGroup ;
         :biblioNote         "Volume 2 of mtshur lugs gsar rnying dkyil 'khor rnams las nyer mkho phyogs bsdus rin chen bum bzang / (ka dang kha/)" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN26756 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   214 .
     
     bdr:W3CN26756  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN26758 , bdr:I3CN26759 ;

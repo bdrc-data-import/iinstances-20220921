@@ -14,7 +14,7 @@
 bdg:W23832 {
     bda:I3014  a            adm:AdminData ;
         adm:adminAbout      bdr:I3014 ;
-        adm:logEntry        bda:LG5CBF89242A64FA6B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LG5CBF89242A64FA6B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD , bda:LGIM9BEE6B4F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,12 +48,18 @@ bdg:W23832 {
         adm:logMessage      "setting tbrcIntro = 2"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM9BEE6B4F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-14T18:34:59.569Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W23832  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W23832 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c9/W23832.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W23832 ;

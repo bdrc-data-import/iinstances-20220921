@@ -14,13 +14,15 @@
 bdg:W3CN26766 {
     bda:I3CN26769  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26769 ;
-        adm:logEntry        bda:LGAC4CDFEBC5FFEF4B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGAC4CDFEBC5FFEF4B , bda:LGIMEEECE7BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN26770  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN26770 ;
-        adm:logEntry        bda:LGD745D26EDBD4822B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGDF58A61E0A56B3B3 , bda:LGIM0A60B09D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG5B98A63FD5CE0F03
         a                   adm:ScanRequestCreation ;
@@ -34,18 +36,30 @@ bdg:W3CN26766 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGD745D26EDBD4822B
+    bda:LGDF58A61E0A56B3B3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-09-20T13:07:20.311Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGIM0A60B09D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:48:06.87Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEEECE7BB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-15T01:48:06.548Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN26766  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN26766 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "72/W3CN26766.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN26766 ;
@@ -59,14 +73,14 @@ bdg:W3CN26766 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN26766 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   734 .
     
     bdr:I3CN26770  a        :ImageGroup ;
         :biblioNote         "Volume 2 of klong chen snying thig gi tshes bcu'i 'don cha zur du phyung ba/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN26766 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   1028 .
     
     bdr:W3CN26766  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN26769 , bdr:I3CN26770 ;
