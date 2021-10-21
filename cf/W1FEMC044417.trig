@@ -14,19 +14,13 @@
 bdg:W1FEMC044417 {
     bda:I1FEMC044417  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC044417 ;
-        adm:logEntry        bda:LGIM6CB445B5 , bda:LGIMFE80F1F6 ;
+        adm:logEntry        bda:LGIM1163D81E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGIM6CB445B5  a     adm:Synced ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-10-19T21:30:59.402Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGIMFE80F1F6  a     adm:InitialDataImport ;
+    bda:LGIM1163D81E  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc04-import.xql" ;
-        adm:logDate         "2021-04-20T15:55:03.405Z"^^xsd:dateTime ;
+        adm:logDate         "2021-10-20T16:40:23.637Z"^^xsd:dateTime ;
         adm:logMessage      "imported imagegroup for W1FEMC044417 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -35,7 +29,7 @@ bdg:W1FEMC044417 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC044417 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "cf/W1FEMC044417.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC044417 ;
@@ -45,14 +39,12 @@ bdg:W1FEMC044417 {
     
     bdr:I1FEMC044417  a     :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FEMC044417 ;
-        :volumePagesTbrcIntro  0 ;
-        :volumePagesTotal   26 .
+        :volumeOf           bdr:W1FEMC044417 .
     
     bdr:W1FEMC044417  a     :ImageInstance ;
         :instanceHasVolume  bdr:I1FEMC044417 ;
         :instanceReproductionOf  bdr:MW1FEMC044417 ;
         :isRoot             true ;
         :numberOfVolumes    1 ;
-        :scanInfo           "This manuscript was digitized from a film negative (Kodak Technical Pan, 35mm) produced during an earlier manuscript documentation project carried out by the Fonds pour l’Edition des Manuscripts du Cambodge of the École française d'Extrême-Orient (EFEO-FEMC). The digitization was carried out by the Buddhist Digital Resource Center in collaboration with Digital Divide Data, Brechin Imaging Services and the FEMC, with the permission of the EFEO. We are grateful for the support of A Khmer Buddhist Foundation, whose generosity made this preservation project possible."@en .
+        :scanInfo           "This manuscript was digitized from a physical copy with the generous support of The Khmer Buddhist Temple Foundation and was made available by L'Ecole française d'Extrême-Orient (EFEO)."@en .
 }
