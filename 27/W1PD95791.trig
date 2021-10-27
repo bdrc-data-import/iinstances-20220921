@@ -14,7 +14,7 @@
 bdg:W1PD95791 {
     bda:I1PD95795  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD95795 ;
-        adm:logEntry        bda:LGDC561994107AE734 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGDC561994107AE734 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMD7182CDE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,12 +48,18 @@ bdg:W1PD95791 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMD7182CDE  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-26T20:53:52.05Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1PD95791  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD95791 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "27/W1PD95791.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD95791 ;

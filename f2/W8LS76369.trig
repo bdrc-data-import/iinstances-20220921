@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76369 {
+    bda:I8LS76371  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76371 ;
+        adm:logEntry        bda:LG8168CDF04BA4185A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG8168CDF04BA4185A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-26T14:19:54.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF100470B6FE2784B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-10-26T14:19:54.662Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS76369  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessFairUse ;
+        adm:adminAbout      bdr:W8LS76369 ;
+        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "f2/W8LS76369.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76369 ;
+        adm:logEntry        bda:LGF100470B6FE2784B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76371  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of gsang sngags man ngag gnad kyi rdzong 'phrang dang snal ris srung 'khor sna tshogs/" ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS76369 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS76369  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76371 ;
+        :instanceOf         bdr:WA8LS76369 ;
+        :instanceReproductionOf  bdr:MW8LS76369 ;
+        :isRoot             true ;
+        :numberOfVolumes    1 .
+}

@@ -14,7 +14,7 @@
 bdg:W1KG4920 {
     bda:I1KG5101  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG5101 ;
-        adm:logEntry        bda:LG2BE8589FA37767AA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG2BE8589FA37767AA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMC41BC356 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,12 +48,18 @@ bdg:W1KG4920 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMC41BC356  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-10-26T20:53:39.318Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1KG4920  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1KG4920 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1f/W1KG4920.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG4920 ;
