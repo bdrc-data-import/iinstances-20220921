@@ -14,34 +14,31 @@
 bdg:W8LS76348 {
     bda:I8LS76350  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76350 ;
-        adm:logEntry        bda:LG720B0A48A22C6C99 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG720B0A48A22C6C99 , bda:LGIM821C130E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS76351  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76351 ;
-        adm:logEntry        bda:LG11846012E5AC1232 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG9610DE9FAE48FE24 , bda:LGIMA8618BCE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS76352  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS76352 ;
-        adm:logEntry        bda:LG2CF0E25EF2606979 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG11846012E5AC1232
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-10-25T15:38:44.066Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LG2CF0E25EF2606979
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-10-25T15:38:44.2Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+        adm:logEntry        bda:LGAC9B6D2C279A4108 , bda:LGIM165771BB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG720B0A48A22C6C99
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-10-25T15:38:43.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9610DE9FAE48FE24
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-25T15:38:44.066Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -51,12 +48,36 @@ bdg:W8LS76348 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGAC9B6D2C279A4108
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-10-25T15:38:44.2Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGIM165771BB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-01T21:01:33.962Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM821C130E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-01T21:01:33.392Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA8618BCE  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-01T21:01:33.661Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS76348  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS76348 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "74/W8LS76348.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS76348 ;
@@ -70,21 +91,21 @@ bdg:W8LS76348 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS76348 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   408 .
     
     bdr:I8LS76351  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gsung 'bum/ gshen mkhas tshul khrims rgyal mtshan/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS76348 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   356 .
     
     bdr:I8LS76352  a        :ImageGroup ;
         :biblioNote         "Volume 3 of gsung 'bum/ gshen mkhas tshul khrims rgyal mtshan/" ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W8LS76348 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   400 .
     
     bdr:W8LS76348  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS76350 , bdr:I8LS76351 , bdr:I8LS76352 ;
