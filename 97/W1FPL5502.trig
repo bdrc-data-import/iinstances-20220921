@@ -14,9 +14,15 @@
 bdg:W1FPL5502 {
     bda:I1FPL5502  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL5502 ;
-        adm:logEntry        bda:LGIMA3A86F9513 , bda:LGIMD9EDE817 ;
+        adm:logEntry        bda:LGIM06FB2A4F , bda:LGIMA3A86F9513 , bda:LGIMD9EDE817 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM06FB2A4F  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-03T16:06:46.929Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA3A86F9513
         a                   adm:InitialDataImport ;
@@ -36,7 +42,7 @@ bdg:W1FPL5502 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL5502 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "97/W1FPL5502.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL5502 ;

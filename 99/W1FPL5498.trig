@@ -14,7 +14,7 @@
 bdg:W1FPL5498 {
     bda:I1FPL5498  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL5498 ;
-        adm:logEntry        bda:LGIMA3A86F9513 , bda:LGIME9769D6B ;
+        adm:logEntry        bda:LGIMA3A86F9513 , bda:LGIMC40E7FF6 , bda:LGIME9769D6B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,6 +24,12 @@ bdg:W1FPL5498 {
         adm:logMessage      "FPL Import"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIMC40E7FF6  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-03T16:06:14.498Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIME9769D6B  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -36,7 +42,7 @@ bdg:W1FPL5498 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL5498 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "99/W1FPL5498.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL5498 ;
