@@ -14,7 +14,7 @@
 bdg:W1KG16581 {
     bda:I2KG230069  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG230069 ;
-        adm:logEntry        bda:LG4AA1DF7A3918A957 ;
+        adm:logEntry        bda:LG4AA1DF7A3918A957 , bda:LGIM3DFBCEF5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -258,12 +258,18 @@ bdg:W1KG16581 {
         adm:logMessage      "fixed vol order"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM3DFBCEF5  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-16T22:31:20.971Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1KG16581  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1KG16581 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      29 ;
+        adm:facetIndex      30 ;
         adm:gitPath         "6b/W1KG16581.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG16581 ;
@@ -274,7 +280,9 @@ bdg:W1KG16581 {
     
     bdr:I2KG230069  a       :ImageGroup ;
         :volumeNumber       7 ;
-        :volumeOf           bdr:W1KG16581 .
+        :volumeOf           bdr:W1KG16581 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   244 .
     
     bdr:I2PD18456  a        :ImageGroup ;
         :biblioNote         "Volume 1 of gangs ljongs dgon sde'i slob deb dpe tshogs/" ;
