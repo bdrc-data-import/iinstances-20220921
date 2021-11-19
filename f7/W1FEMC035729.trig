@@ -14,9 +14,15 @@
 bdg:W1FEMC035729 {
     bda:I1FEMC035729  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC035729 ;
-        adm:logEntry        bda:LGIM4F4FC78A , bda:LGIMF152F735 ;
+        adm:logEntry        bda:LGIM32A49D2A , bda:LGIM4F4FC78A , bda:LGIMF152F735 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGIM32A49D2A  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-19T01:15:55.704Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM4F4FC78A  a     adm:InitialDataImport ;
         adm:logAgent        "works-femc01-import.xql" ;
@@ -35,7 +41,7 @@ bdg:W1FEMC035729 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC035729 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f7/W1FEMC035729.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC035729 ;
