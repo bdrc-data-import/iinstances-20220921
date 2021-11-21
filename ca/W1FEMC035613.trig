@@ -14,7 +14,7 @@
 bdg:W1FEMC035613 {
     bda:I1FEMC035613  a     adm:AdminData ;
         adm:adminAbout      bdr:I1FEMC035613 ;
-        adm:logEntry        bda:LGIM2AB37F48 , bda:LGIM4F4FC78A , bda:LGIMDB4011DE ;
+        adm:logEntry        bda:LGIM2AB37F48 , bda:LGIM4F4FC78A , bda:LGIM85C1AE03 , bda:LGIMDB4011DE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,6 +30,12 @@ bdg:W1FEMC035613 {
         adm:logMessage      "imported imagegroup for W1FEMC035613 volume 1"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM85C1AE03  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-11-19T07:09:21.382Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMDB4011DE  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-11-15T21:10:37.712Z"^^xsd:dateTime ;
@@ -41,7 +47,7 @@ bdg:W1FEMC035613 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FEMC035613 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ca/W1FEMC035613.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FEMC035613 ;
