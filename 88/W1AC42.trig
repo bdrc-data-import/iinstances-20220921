@@ -14,7 +14,7 @@
 bdg:W1AC42 {
     bda:I2PD18446  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18446 ;
-        adm:logEntry        bda:LG1031C38E9E4BA4B3 , bda:LG254DB67AF69D8FFD ;
+        adm:logEntry        bda:LG1031C38E9E4BA4B3 , bda:LG254DB67AF69D8FFD , bda:LGIM9A6A3BA1 , bda:LGIMB7E58251 , bda:LGIMF1908702 , bda:LGIMF6685D48 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,36 @@ bdg:W1AC42 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM9A6A3BA1  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-02T22:29:22.314Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMB7E58251  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-02T22:47:23.83Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF1908702  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-02T22:49:05.638Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF6685D48  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-02T22:20:29.949Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1AC42  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1AC42 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "88/W1AC42.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC42 ;
