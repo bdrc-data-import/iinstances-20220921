@@ -14,7 +14,7 @@
 bdg:W14260 {
     bda:I1KG5215  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG5215 ;
-        adm:logEntry        bda:LGFE335AB8600AE1FE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGFE335AB8600AE1FE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM3D027F2A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,12 +48,18 @@ bdg:W14260 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM3D027F2A  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-06T19:56:52.228Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W14260  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W14260 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0c/W14260.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W14260 ;
@@ -67,7 +73,7 @@ bdg:W14260 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W14260 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   940 .
+        :volumePagesTotal   941 .
     
     bdr:W14260  a           :ImageInstance ;
         :instanceHasVolume  bdr:I1KG5215 ;

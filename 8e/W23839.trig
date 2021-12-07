@@ -14,7 +14,7 @@
 bdg:W23839 {
     bda:I3181  a            adm:AdminData ;
         adm:adminAbout      bdr:I3181 ;
-        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD , bda:LGIMACDC4A0B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -42,12 +42,18 @@ bdg:W23839 {
         adm:logMessage      "setting tbrcIntro = 2"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMACDC4A0B  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-06T20:52:07.827Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W23839  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W23839 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8e/W23839.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W23839 ;
