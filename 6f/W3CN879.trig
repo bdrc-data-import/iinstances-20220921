@@ -14,15 +14,17 @@
 bdg:W3CN879 {
     bda:I3CN881  a          adm:AdminData ;
         adm:adminAbout      bdr:I3CN881 ;
-        adm:logEntry        bda:LG93AD07B01C62B818 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG93AD07B01C62B818 , bda:LGIM38D8F46A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN882  a          adm:AdminData ;
         adm:adminAbout      bdr:I3CN882 ;
-        adm:logEntry        bda:LG4E050A68E7AE1CE0 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG438E00FE28CE242B , bda:LGIM0813B9C1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG4E050A68E7AE1CE0
+    bda:LG438E00FE28CE242B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-12-11T16:39:47.229Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W3CN879 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM0813B9C1  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-08T01:25:51.092Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM38D8F46A  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-08T01:25:50.783Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN879  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN879 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6f/W3CN879.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN879 ;
@@ -59,14 +73,14 @@ bdg:W3CN879 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN879 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   272 .
     
     bdr:I3CN882  a          :ImageGroup ;
         :biblioNote         "Volume 2 of lung rtogs bstan pa'i nyi ma'i dngos gzhi'i zin bris sogs zin bris khag cig" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN879 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   482 .
     
     bdr:W3CN879  a          :ImageInstance ;
         :instanceHasVolume  bdr:I3CN881 , bdr:I3CN882 ;
