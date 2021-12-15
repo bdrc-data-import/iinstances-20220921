@@ -14,15 +14,17 @@
 bdg:W3CN10646 {
     bda:I3CN10648  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN10648 ;
-        adm:logEntry        bda:LG7998B2CE6A51B30E ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG7998B2CE6A51B30E , bda:LGIMFBE7DE1D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN10649  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN10649 ;
-        adm:logEntry        bda:LG62E32C544632AE70 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG2B334FD039A481B0 , bda:LGIM91325A0E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG62E32C544632AE70
+    bda:LG2B334FD039A481B0
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-09-27T10:37:55.273Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W3CN10646 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM91325A0E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-14T23:32:39.737Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMFBE7DE1D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2021-12-14T23:32:39.452Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN10646  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN10646 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2f/W3CN10646.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN10646 ;
@@ -59,14 +73,14 @@ bdg:W3CN10646 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN10646 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   602 .
     
     bdr:I3CN10649  a        :ImageGroup ;
         :biblioNote         "Volume 2 of bstan bcos mngon par rtogs pa'i rgyan 'grel ba dang bcas pa'i brgal lan skal bzang mgul rgyan" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN10646 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   440 .
     
     bdr:W3CN10646  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN10648 , bdr:I3CN10649 ;
