@@ -11,57 +11,57 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:W2KG230148 {
-    bda:I2KG230193  a       adm:AdminData ;
-        adm:adminAbout      bdr:I2KG230193 ;
-        adm:logEntry        bda:LGE442F00C650394F3 , bda:LGIMCE25B92B ;
+bdg:W2KG230191 {
+    bda:I2KG230204  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG230204 ;
+        adm:logEntry        bda:LGFE796C9C836C3728 , bda:LGIM7E744DE0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG192A9EAD3B33A83A
+    bda:LG89EF31B4C5A50DA4
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-12-17T13:18:45.485Z"^^xsd:dateTime ;
+        adm:logDate         "2021-12-21T12:33:59.125Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGE442F00C650394F3
+    bda:LGFE796C9C836C3728
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-12-17T13:18:45.364Z"^^xsd:dateTime ;
+        adm:logDate         "2021-12-21T12:33:59.019Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGIMCE25B92B  a     adm:Synced ;
+    bda:LGIM7E744DE0  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2021-12-21T23:34:05.928Z"^^xsd:dateTime ;
+        adm:logDate         "2021-12-21T23:55:39.988Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:W2KG230148  a       adm:AdminData ;
+    bda:W2KG230191  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
-        adm:adminAbout      bdr:W2KG230148 ;
+        adm:adminAbout      bdr:W2KG230191 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      3 ;
-        adm:gitPath         "75/W2KG230148.trig" ;
+        adm:gitPath         "1a/W2KG230191.trig" ;
         adm:gitRepo         bda:GR0014 ;
-        adm:graphId         bdg:W2KG230148 ;
-        adm:logEntry        bda:LG192A9EAD3B33A83A ;
+        adm:graphId         bdg:W2KG230191 ;
+        adm:logEntry        bda:LG89EF31B4C5A50DA4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG230193  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of dpyad rtsom phyogs bsgrigs/" ;
+    bdr:I2KG230204  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dpal ldan sa skya'i gser khri mnga' gsol/" ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W2KG230148 ;
+        :volumeOf           bdr:W2KG230191 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   175 .
+        :volumePagesTotal   142 .
     
-    bdr:W2KG230148  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I2KG230193 ;
-        :instanceOf         bdr:WA2KG230148 ;
-        :instanceReproductionOf  bdr:MW2KG230148 ;
+    bdr:W2KG230191  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG230204 ;
+        :instanceOf         bdr:WA2KG230191 ;
+        :instanceReproductionOf  bdr:MW2KG230191 ;
         :isRoot             true ;
         :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at Ngagyur Nyingma Institute, Bylakuppe, 571104 Mysore, Karnataka, India."@en .
+        :scanInfo           "Scanned at ."@en .
 }
