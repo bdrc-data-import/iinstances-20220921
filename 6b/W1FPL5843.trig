@@ -14,7 +14,7 @@
 bdg:W1FPL5843 {
     bda:I1FPL5843  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL5843 ;
-        adm:logEntry        bda:LGIMA3A86F9513 ;
+        adm:logEntry        bda:LGIMA3A86F9513 , bda:LGIME7FAED49 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,12 +25,18 @@ bdg:W1FPL5843 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIME7FAED49  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-04T01:25:23.265Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1FPL5843  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL5843 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "6b/W1FPL5843.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL5843 ;
@@ -40,7 +46,9 @@ bdg:W1FPL5843 {
     
     bdr:I1FPL5843  a        :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1FPL5843 .
+        :volumeOf           bdr:W1FPL5843 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   476 .
     
     bdr:W1FPL5843  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1FPL5843 ;
