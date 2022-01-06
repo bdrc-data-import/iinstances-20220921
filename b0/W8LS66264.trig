@@ -14,18 +14,26 @@
 bdg:W8LS66264 {
     bda:I8LS66266  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS66266 ;
-        adm:logEntry        bda:LGB8AFD02AADE47F62 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB8AFD02AADE47F62 , bda:LGIMEAF01D61 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS66267  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS66267 ;
-        adm:logEntry        bda:LGC81503683201490E ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB077B673B7E2B7C3 , bda:LGIMC8BBB235 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG9289C3C4A4FA8ABC
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-06-24T15:47:05.221Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB077B673B7E2B7C3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-24T15:47:05.122Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGB8AFD02AADE47F62
@@ -34,18 +42,24 @@ bdg:W8LS66264 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC81503683201490E
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-06-24T15:47:05.122Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+    bda:LGIMC8BBB235  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-06T02:10:36.177Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEAF01D61  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-06T02:10:35.87Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS66264  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS66264 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b0/W8LS66264.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS66264 ;
@@ -59,14 +73,14 @@ bdg:W8LS66264 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS66264 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   512 .
     
     bdr:I8LS66267  a        :ImageGroup ;
         :biblioNote         "Volume 2 of bod kyi nye rabs lo rgyus/1913-1951/ stod cha dang smad cha/" ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS66264 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   668 .
     
     bdr:W8LS66264  a        :ImageInstance ;
         :digitalLendingPossible  false ;
