@@ -15,7 +15,7 @@ bdg:W1NLM4039 {
     bda:I1NLM4039_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM4039_001 ;
-        adm:logEntry        bda:LGIM1A1B7898 ;
+        adm:logEntry        bda:LGIM1A1B7898 , bda:LGIMDDD9DE4D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,12 +24,18 @@ bdg:W1NLM4039 {
         adm:logDate         "2022-01-10T18:28:13.309Z"^^xsd:dateTime ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMDDD9DE4D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-01-12T18:30:28.785Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1NLM4039  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM4039 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "49/W1NLM4039.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM4039 ;
@@ -40,7 +46,9 @@ bdg:W1NLM4039 {
     bdr:I1NLM4039_001
         a                   :ImageGroup ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W1NLM4039 .
+        :volumeOf           bdr:W1NLM4039 ;
+        :volumePagesTbrcIntro  0 ;
+        :volumePagesTotal   312 .
     
     bdr:W1NLM4039  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1NLM4039_001 ;
