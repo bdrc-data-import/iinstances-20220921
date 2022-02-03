@@ -14,7 +14,7 @@
 bdg:W8LS68226 {
     bda:I8LS68228  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68228 ;
-        adm:logEntry        bda:LGD5F06ED64A3113AB , bda:LGIM6A434C22 , bda:LGIMABEA05E1 , bda:LGIMDAD7FF0F ;
+        adm:logEntry        bda:LGD5F06ED64A3113AB , bda:LGIM652350D2 , bda:LGIM6A434C22 , bda:LGIM7D498B57 , bda:LGIMABEA05E1 , bda:LGIMDAD7FF0F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,9 +30,21 @@ bdg:W8LS68226 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM652350D2  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-02T21:01:56.152Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6A434C22  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2020-04-02T21:46:26.533Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7D498B57  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-02T22:33:50.399Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -53,7 +65,7 @@ bdg:W8LS68226 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS68226 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e8/W8LS68226.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS68226 ;
