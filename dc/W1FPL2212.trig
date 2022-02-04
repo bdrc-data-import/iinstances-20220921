@@ -14,13 +14,19 @@
 bdg:W1FPL2212 {
     bda:I1FPL2212  a        adm:AdminData ;
         adm:adminAbout      bdr:I1FPL2212 ;
-        adm:logEntry        bda:LGIM53886859 , bda:LGIMA3A86F9513 , bda:LGIMABA7768B ;
+        adm:logEntry        bda:LGIM53886859 , bda:LGIM753FC082 , bda:LGIMA3A86F9513 , bda:LGIMABA7768B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LGIM53886859  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-02-04T22:04:17.194Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM753FC082  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-03T22:47:14.771Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -42,7 +48,7 @@ bdg:W1FPL2212 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1FPL2212 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "dc/W1FPL2212.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1FPL2212 ;
@@ -54,7 +60,7 @@ bdg:W1FPL2212 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W1FPL2212 ;
         :volumePagesTbrcIntro  0 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   317 .
     
     bdr:W1FPL2212  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1FPL2212 ;
