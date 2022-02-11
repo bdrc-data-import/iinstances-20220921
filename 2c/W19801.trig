@@ -14,7 +14,7 @@
 bdg:W19801 {
     bda:I1KG1944  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG1944 ;
-        adm:logEntry        bda:LG0A79C7E05B0F2862 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0A79C7E05B0F2862 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM92EA2473 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,12 +48,18 @@ bdg:W19801 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM92EA2473  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-10T21:42:19.891Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W19801  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W19801 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2c/W19801.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W19801 ;

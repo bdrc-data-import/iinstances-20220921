@@ -14,8 +14,9 @@
 bdg:W4CZ299961 {
     bda:I4CZ364421  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ364421 ;
-        adm:logEntry        bda:LGD22DEA38E1790E6B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGD22DEA38E1790E6B , bda:LGIM2F3539AB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG1F9B15BBBBBC6D9E
         a                   adm:ScanRequestCreation ;
@@ -35,12 +36,18 @@ bdg:W4CZ299961 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM2F3539AB  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-11T01:54:51.658Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ299961  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ299961 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "aa/W4CZ299961.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ299961 ;
@@ -54,7 +61,7 @@ bdg:W4CZ299961 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ299961 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   150 .
     
     bdr:W4CZ299961  a       :ImageInstance ;
         :digitalLendingPossible  false ;
