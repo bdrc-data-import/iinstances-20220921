@@ -15,13 +15,19 @@ bdg:W1NLM3594 {
     bda:I1NLM3594_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM3594_001 ;
-        adm:logEntry        bda:LGIM03915F22 , bda:LGIME46CE29A ;
+        adm:logEntry        bda:LGIM03915F22 , bda:LGIM9463E92B , bda:LGIME46CE29A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM9463E92B  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-17T00:44:05.166Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
     bda:LGIME46CE29A  a     adm:Synced ;
@@ -35,7 +41,7 @@ bdg:W1NLM3594 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM3594 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "69/W1NLM3594.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM3594 ;
