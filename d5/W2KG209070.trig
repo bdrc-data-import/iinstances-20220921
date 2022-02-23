@@ -18,12 +18,6 @@ bdg:W2KG209070 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGBAD5043FE57C94FB
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-04-10T16:23:34.198Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGC1CF341F3C611A49
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-04-10T16:23:34.067Z"^^xsd:dateTime ;
@@ -38,20 +32,19 @@ bdg:W2KG209070 {
     
     bda:W2KG209070  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
+        adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2KG209070 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      3 ;
         adm:gitPath         "d5/W2KG209070.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG209070 ;
-        adm:logEntry        bda:LGBAD5043FE57C94FB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I2KG228793  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of rgya bod shan sbyar tshig mdzod/" ;
+        :biblioNote         "Volume 1 of rgya bod shan sbyar tshig mdzod/"@en ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG209070 ;
         :volumePagesTbrcIntro  2 ;
@@ -62,6 +55,6 @@ bdg:W2KG209070 {
         :instanceOf         bdr:WA2KG209070 ;
         :instanceReproductionOf  bdr:MW2KG209070 ;
         :isRoot             true ;
-        :itemVolumes        1 ;
-        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1 Commercial Unit, Boston, MA 02111. Comments: 4/2021"@en , "scanned images made available through the kind support by GEBIS."@en .
+        :numberOfVolumes    1 ;
+        :scanInfo           "Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111"@en , "scanned images made available through the support by GEBIS."@en .
 }

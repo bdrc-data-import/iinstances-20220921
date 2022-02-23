@@ -24,12 +24,6 @@ bdg:W2KG208438 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG2213C4B7A1497DC2
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-04-08T16:05:06.258Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGIMD8B8B558  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-04-10T01:10:14.418Z"^^xsd:dateTime ;
@@ -45,13 +39,12 @@ bdg:W2KG208438 {
         adm:gitPath         "1c/W2KG208438.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG208438 ;
-        adm:logEntry        bda:LG2213C4B7A1497DC2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I2KG228789  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of rdor sems thugs kyi sgrub pa'i sngon 'gro'i zin bris rnam grol them skas sogs/" ;
+        :biblioNote         "Volume 1 of rdor sems thugs kyi sgrub pa'i sngon 'gro'i zin bris rnam grol them skas sogs/"@en ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG208438 ;
         :volumePagesTbrcIntro  2 ;
@@ -62,6 +55,6 @@ bdg:W2KG208438 {
         :instanceOf         bdr:WA2KG208438 ;
         :instanceReproductionOf  bdr:MW2KG208438 ;
         :isRoot             true ;
-        :itemVolumes        1 ;
-        :scanInfo           "Scanned at Shechen Tennyi Dargyeling Monastery, Baudanath, Nepal for the Tibetan Buddhist Resource Center, 150 17th st., New York, NY 10011, U.S.A 2006. Comments: 4/2021"@en .
+        :numberOfVolumes    1 ;
+        :scanInfo           "Shechen Tennyi Dargyeling Monastery, Baudanath, Nepal"@en .
 }

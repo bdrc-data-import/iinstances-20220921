@@ -24,12 +24,6 @@ bdg:W2KG209069 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGB2EABB569594F758
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-03-29T16:43:37.538Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGIM4BB206D4  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2021-04-12T23:14:06.914Z"^^xsd:dateTime ;
@@ -45,13 +39,12 @@ bdg:W2KG209069 {
         adm:gitPath         "91/W2KG209069.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG209069 ;
-        adm:logEntry        bda:LGB2EABB569594F758 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
     bdr:I2KG228729  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of snyan ngag me long gi dpyad pa/" ;
+        :biblioNote         "Volume 1 of snyan ngag me long gi dpyad pa/"@en ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG209069 ;
         :volumePagesTbrcIntro  2 ;
@@ -62,6 +55,6 @@ bdg:W2KG209069 {
         :instanceOf         bdr:WA2KG209069 ;
         :instanceReproductionOf  bdr:MW2KG209069 ;
         :isRoot             true ;
-        :itemVolumes        1 ;
-        :scanInfo           "Scanned at Buddhist Digital Resource Center, 210 South Street, FL 1 Commercial Unit, Boston, MA 02111. Comments: 3/2021"@en , "Scanned or acquired in Tibetan areas of China by BDRC"@en .
+        :numberOfVolumes    1 ;
+        :scanInfo           "Buddhist Digital Resource Center, 210 South Street, FL 1, Boston, MA 02111"@en .
 }

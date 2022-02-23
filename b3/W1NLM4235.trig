@@ -15,7 +15,7 @@ bdg:W1NLM4235 {
     bda:I1NLM4235_001
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I1NLM4235_001 ;
-        adm:logEntry        bda:LGIM1A1B7898 , bda:LGIMEB9768D2 ;
+        adm:logEntry        bda:LGIM1A1B7898 , bda:LGIM8D8D8D65 , bda:LGIME5D46B17 , bda:LGIMEB9768D2 , bda:LGIMF4EA1C79 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,9 +24,27 @@ bdg:W1NLM4235 {
         adm:logDate         "2022-01-10T18:28:13.309Z"^^xsd:dateTime ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM8D8D8D65  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-22T14:20:33.585Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIME5D46B17  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-22T14:15:22.015Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMEB9768D2  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2022-02-18T18:45:53.266Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF4EA1C79  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-02-22T14:22:51.188Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -35,7 +53,7 @@ bdg:W1NLM4235 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W1NLM4235 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b3/W1NLM4235.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1NLM4235 ;
@@ -48,7 +66,7 @@ bdg:W1NLM4235 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W1NLM4235 ;
         :volumePagesTbrcIntro  0 ;
-        :volumePagesTotal   312 .
+        :volumePagesTotal   310 .
     
     bdr:W1NLM4235  a        :ImageInstance ;
         :instanceHasVolume  bdr:I1NLM4235_001 ;
