@@ -14,7 +14,7 @@
 bdg:W8LS22941 {
     bda:I8LS22943  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS22943 ;
-        adm:logEntry        bda:LGE914EDAD2E02B528 , bda:LGIM972C34F0 ;
+        adm:logEntry        bda:LGE914EDAD2E02B528 , bda:LGIM972C34F0 , bda:LGIMDFE94052 , bda:LGIMF0B0B2AD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,24 @@ bdg:W8LS22941 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMDFE94052  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-03T00:15:05.334Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF0B0B2AD  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-03T00:00:20.965Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS22941  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS22941 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "7d/W8LS22941.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS22941 ;
@@ -55,7 +67,7 @@ bdg:W8LS22941 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS22941 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   762 .
+        :volumePagesTotal   751 .
     
     bdr:W8LS22941  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS22943 ;
