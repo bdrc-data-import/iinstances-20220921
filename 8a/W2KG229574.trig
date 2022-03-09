@@ -14,8 +14,9 @@
 bdg:W2KG229574 {
     bda:I2KG234540  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG234540 ;
-        adm:logEntry        bda:LGE9CAD155F564975A ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGE9CAD155F564975A , bda:LGIM5ECA9373 , bda:LGIM865EC955 , bda:LGIMF717781C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG602D1634AFB662B6
         a                   adm:ScanRequestCreation ;
@@ -29,12 +30,30 @@ bdg:W2KG229574 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM5ECA9373  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-09T02:33:59.921Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM865EC955  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-09T00:37:07.761Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF717781C  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-09T02:28:49.564Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2KG229574  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2KG229574 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8a/W2KG229574.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG229574 ;
@@ -48,7 +67,7 @@ bdg:W2KG229574 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG229574 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   374 .
     
     bdr:W2KG229574  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG234540 ;
