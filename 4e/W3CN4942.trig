@@ -14,15 +14,15 @@
 bdg:W3CN4942 {
     bda:I3CN8655  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN8655 ;
-        adm:logEntry        bda:LG3159C934C6C5CC0D , bda:LGCD1D6E18641F419E ;
+        adm:logEntry        bda:LG3159C934C6C5CC0D , bda:LGA7B805229C8ED71C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG3159C934C6C5CC0D
-        a                   adm:Synced ;
-        adm:logDate         "2017-08-12T14:48:35.332Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-01T10:28:20.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG49E58A0B8B7643DD
         a                   adm:ScanRequestCreation ;
@@ -30,11 +30,11 @@ bdg:W3CN4942 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGCD1D6E18641F419E
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-06-01T10:28:20.079Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+    bda:LGA7B805229C8ED71C
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-12T14:48:35.332Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGE2448C703F74F44B
         a                   adm:ScanRequestCreation ;
@@ -47,7 +47,7 @@ bdg:W3CN4942 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN4942 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4e/W3CN4942.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN4942 ;
@@ -63,7 +63,13 @@ bdg:W3CN4942 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   328 .
     
+    bdr:ID29978AB07BC16404
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147710139" .
+    
     bdr:W3CN4942  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID29978AB07BC16404 ;
         :instanceHasVolume  bdr:I3CN8655 ;
         :instanceOf         bdr:WA3CN4942 ;
         :instanceReproductionOf  bdr:MW3CN4942 ;

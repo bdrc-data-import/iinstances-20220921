@@ -14,20 +14,20 @@
 bdg:W1KG14527 {
     bda:I1KG15872  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15872 ;
-        adm:logEntry        bda:LG2DEDC083558F13E8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGE2B03E890EFD38A0 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG2DEDC083558F13E8
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2013-11-05T15:14:54.667Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG32433A417F8D623D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2013-11-05T15:14:54.768Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE2B03E890EFD38A0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-05T15:14:54.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W1KG14527 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG14527 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0b/W1KG14527.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14527 ;
@@ -69,7 +69,13 @@ bdg:W1KG14527 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   194 .
     
+    bdr:IDF13BBA880AB30548
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726740" .
+    
     bdr:W1KG14527  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF13BBA880AB30548 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG15872 ;
         :instanceOf         bdr:WA1KG14527 ;

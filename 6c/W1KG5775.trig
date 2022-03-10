@@ -14,13 +14,13 @@
 bdg:W1KG5775 {
     bda:I1KG5784  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG5784 ;
-        adm:logEntry        bda:LGCAB2AB1AE50F9597 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG518FC9DC233B27BB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG5785  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG5785 ;
-        adm:logEntry        bda:LGAF1AB5BB0385D36C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGC24D200AB9DE7E43 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,15 +30,15 @@ bdg:W1KG5775 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGAF1AB5BB0385D36C
+    bda:LG518FC9DC233B27BB
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-08-11T11:40:18.215Z"^^xsd:dateTime ;
+        adm:logDate         "2010-08-11T11:40:18.115Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGCAB2AB1AE50F9597
+    bda:LGC24D200AB9DE7E43
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-08-11T11:40:18.115Z"^^xsd:dateTime ;
+        adm:logDate         "2010-08-11T11:40:18.215Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -65,7 +65,7 @@ bdg:W1KG5775 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG5775 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "6c/W1KG5775.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG5775 ;
@@ -88,7 +88,13 @@ bdg:W1KG5775 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   540 .
     
+    bdr:ID9BA6BFDA44DAD7BF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147729221" .
+    
     bdr:W1KG5775  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9BA6BFDA44DAD7BF ;
         :instanceHasVolume  bdr:I1KG5784 , bdr:I1KG5785 ;
         :instanceOf         bdr:WA1KG5775 ;
         :instanceReproductionOf  bdr:MW1KG5775 ;

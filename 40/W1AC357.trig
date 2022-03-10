@@ -14,9 +14,15 @@
 bdg:W1AC357 {
     bda:I2PD18107  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18107 ;
-        adm:logEntry        bda:LGD01FAC69C1B74735 , bda:LGDF073188F422DD4C ;
+        adm:logEntry        bda:LGA8A688439DBB1551 , bda:LGD01FAC69C1B74735 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGA8A688439DBB1551
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:55.089Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGC0FBB6046CF8006D
         a                   adm:ScanRequestCreation ;
@@ -25,12 +31,6 @@ bdg:W1AC357 {
         adm:logWho          bdu:U00021 .
     
     bda:LGD01FAC69C1B74735
-        a                   adm:Synced ;
-        adm:logDate         "2017-11-30T01:59:55.089Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGDF073188F422DD4C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-14T20:40:53.56Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W1AC357 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC357 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "40/W1AC357.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC357 ;
@@ -57,7 +57,13 @@ bdg:W1AC357 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   840 .
     
+    bdr:IDAE42A06C6613710A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724452" .
+    
     bdr:W1AC357  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAE42A06C6613710A ;
         :instanceHasVolume  bdr:I2PD18107 ;
         :instanceOf         bdr:WA1AC357 ;
         :instanceReproductionOf  bdr:MW1AC357 ;

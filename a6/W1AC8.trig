@@ -14,7 +14,7 @@
 bdg:W1AC8 {
     bda:I2PD18714  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18714 ;
-        adm:logEntry        bda:LG369BB5AED4EDE70C , bda:LG96523EFA2307DC1B ;
+        adm:logEntry        bda:LG374DC4EE7418F22F , bda:LG96523EFA2307DC1B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,24 +24,24 @@ bdg:W1AC8 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG369BB5AED4EDE70C
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-22T02:21:55.898Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LG96523EFA2307DC1B
+    bda:LG374DC4EE7418F22F
         a                   adm:Synced ;
         adm:logDate         "2017-07-27T02:52:50.227Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG96523EFA2307DC1B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T02:21:55.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:W1AC8  a            adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC8 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a6/W1AC8.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC8 ;
@@ -57,7 +57,13 @@ bdg:W1AC8 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   280 .
     
+    bdr:ID6BE933CCA556BD71
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147752994" .
+    
     bdr:W1AC8  a            :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6BE933CCA556BD71 ;
         :instanceHasVolume  bdr:I2PD18714 ;
         :instanceOf         bdr:WA1AC8 ;
         :instanceReproductionOf  bdr:MW1AC8 ;

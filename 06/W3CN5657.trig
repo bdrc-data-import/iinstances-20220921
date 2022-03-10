@@ -14,7 +14,7 @@
 bdg:W3CN5657 {
     bda:I3CN5659  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN5659 ;
-        adm:logEntry        bda:LG5467E93CC199ECBD , bda:LGBED5E6AC568C8217 ;
+        adm:logEntry        bda:LGA1E7A68A3056C9C1 , bda:LGBED5E6AC568C8217 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,24 +24,24 @@ bdg:W3CN5657 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG5467E93CC199ECBD
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-08T16:01:37.327Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LGBED5E6AC568C8217
+    bda:LGA1E7A68A3056C9C1
         a                   adm:Synced ;
         adm:logDate         "2017-07-31T23:54:04.125Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGBED5E6AC568C8217
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T16:01:37.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:W3CN5657  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN5657 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "06/W3CN5657.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5657 ;
@@ -57,7 +57,13 @@ bdg:W3CN5657 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   431 .
     
+    bdr:ID975DF4F5AE8B8E3B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147747355" .
+    
     bdr:W3CN5657  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID975DF4F5AE8B8E3B ;
         :instanceHasVolume  bdr:I3CN5659 ;
         :instanceOf         bdr:WA3CN5657 ;
         :instanceReproductionOf  bdr:MW3CN5657 ;

@@ -14,15 +14,9 @@
 bdg:W8LS19078 {
     bda:I8LS19080  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS19080 ;
-        adm:logEntry        bda:LG474FAE01A50CEFDB , bda:LGE5F5684C288EA937 , bda:LGIM28FD6C69 ;
+        adm:logEntry        bda:LGE5F5684C288EA937 , bda:LGFDC3F224D084D274 , bda:LGIM28FD6C69 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG474FAE01A50CEFDB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T14:51:21.697Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
     
     bda:LG6FD31E87BD282820
         a                   adm:ScanRequestCreation ;
@@ -31,6 +25,12 @@ bdg:W8LS19078 {
         adm:logWho          bdu:U00019 .
     
     bda:LGE5F5684C288EA937
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T14:51:21.697Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFDC3F224D084D274
         a                   adm:Synced ;
         adm:logDate         "2017-07-22T00:50:53.185Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -47,7 +47,7 @@ bdg:W8LS19078 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS19078 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "10/W8LS19078.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS19078 ;
@@ -63,7 +63,13 @@ bdg:W8LS19078 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   402 .
     
+    bdr:ID54EF3BAFC8140443
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726886" .
+    
     bdr:W8LS19078  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID54EF3BAFC8140443 ;
         :instanceHasVolume  bdr:I8LS19080 ;
         :instanceOf         bdr:WA8LS19078 ;
         :instanceReproductionOf  bdr:MW8LS19078 ;

@@ -14,20 +14,20 @@
 bdg:W22172 {
     bda:I1GS55122  a        adm:AdminData ;
         adm:adminAbout      bdr:I1GS55122 ;
-        adm:logEntry        bda:LG46E417538C7B6D7D , bda:LG7A2BE35D5B3ADA94 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG6CD0BDC22A0C575F , bda:LG7A2BE35D5B3ADA94 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG46E417538C7B6D7D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-08-01T14:18:38.8Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LG7A2BE35D5B3ADA94
+    bda:LG6CD0BDC22A0C575F
         a                   adm:UpdateData ;
         adm:logDate         "2007-09-05T14:52:31.835Z"^^xsd:dateTime ;
         adm:logMessage      "annotation added; image group revised"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7A2BE35D5B3ADA94
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-08-01T14:18:38.8Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
     bda:LGBC098BE8B31A92EE
@@ -59,7 +59,7 @@ bdg:W22172 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W22172 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9a/W22172.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W22172 ;
@@ -75,7 +75,13 @@ bdg:W22172 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   169 .
     
+    bdr:ID54BB6730BF083B3D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737275" .
+    
     bdr:W22172  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID54BB6730BF083B3D ;
         :instanceHasVolume  bdr:I1GS55122 ;
         :instanceOf         bdr:WA22172 ;
         :instanceReproductionOf  bdr:MW22172 ;

@@ -14,32 +14,32 @@
 bdg:W20229 {
     bda:I1PD28122  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD28122 ;
-        adm:logEntry        bda:LGE4B7F46BD5EF9BCA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG1C7CA79E2970FF35 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1PD28123  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD28123 ;
-        adm:logEntry        bda:LG8FE8E33DE8AE52F1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG30D5D578796360E1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG5F599DEC71E0E2CF
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2007-12-27T11:21:39.346Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
+    bda:LG1C7CA79E2970FF35
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-12-27T11:21:35.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG8FE8E33DE8AE52F1
+    bda:LG30D5D578796360E1
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-12-27T11:21:38.361Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGE4B7F46BD5EF9BCA
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-12-27T11:21:35.814Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG5F599DEC71E0E2CF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2007-12-27T11:21:39.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -65,7 +65,7 @@ bdg:W20229 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20229 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "3b/W20229.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20229 ;
@@ -88,7 +88,13 @@ bdg:W20229 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   486 .
     
+    bdr:IDE062B1AD9EC2F14A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147722151" .
+    
     bdr:W20229  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE062B1AD9EC2F14A ;
         :instanceHasVolume  bdr:I1PD28122 , bdr:I1PD28123 ;
         :instanceOf         bdr:WA20229 ;
         :instanceReproductionOf  bdr:MW20229 ;

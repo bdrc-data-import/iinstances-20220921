@@ -14,7 +14,7 @@
 bdg:W8LS18769 {
     bda:I8LS18771  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18771 ;
-        adm:logEntry        bda:LG32389EBA182B3DB4 , bda:LGECFD0C868CC7825A ;
+        adm:logEntry        bda:LG32389EBA182B3DB4 , bda:LG9BFE757BF87FBCC8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,23 +25,23 @@ bdg:W8LS18769 {
         adm:logWho          bdu:U00019 .
     
     bda:LG32389EBA182B3DB4
-        a                   adm:Synced ;
-        adm:logDate         "2017-07-22T00:50:42.662Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGECFD0C868CC7825A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T12:48:18.394Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LG9BFE757BF87FBCC8
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-22T00:50:42.662Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS18769  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18769 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2d/W8LS18769.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18769 ;
@@ -57,7 +57,13 @@ bdg:W8LS18769 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   288 .
     
+    bdr:IDDFA12522FED3442F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147741917" .
+    
     bdr:W8LS18769  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDFA12522FED3442F ;
         :instanceHasVolume  bdr:I8LS18771 ;
         :instanceOf         bdr:WA8LS18769 ;
         :instanceReproductionOf  bdr:MW8LS18769 ;

@@ -14,20 +14,20 @@
 bdg:W1KG6122 {
     bda:I1KG8445  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG8445 ;
-        adm:logEntry        bda:LGD1956EF22586997F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG2F9CC3E591081543 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG2F9CC3E591081543
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-01-10T14:54:02.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG74DC73221DFB5DF5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-01-10T14:54:02.339Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGD1956EF22586997F
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2011-01-10T14:54:02.238Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W1KG6122 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG6122 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7f/W1KG6122.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG6122 ;
@@ -69,7 +69,13 @@ bdg:W1KG6122 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   370 .
     
+    bdr:IDEB3C63A9520F97D5
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147725500" .
+    
     bdr:W1KG6122  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEB3C63A9520F97D5 ;
         :instanceHasReproduction  bdr:IE1KG6122 ;
         :instanceHasVolume  bdr:I1KG8445 ;
         :instanceOf         bdr:WA1KG6122 ;

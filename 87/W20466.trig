@@ -14,17 +14,11 @@
 bdg:W20466 {
     bda:I1KG21198  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG21198 ;
-        adm:logEntry        bda:LG020D48F355B09D09 , bda:LG3E186AE3FC9D5C84 ;
+        adm:logEntry        bda:LG020D48F355B09D09 , bda:LG9F5E8CD5FF13A7BF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG020D48F355B09D09
-        a                   adm:Synced ;
-        adm:logDate         "2017-01-10T23:18:50.838Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG3E186AE3FC9D5C84
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-02-12T16:31:19.509Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -36,12 +30,18 @@ bdg:W20466 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG9F5E8CD5FF13A7BF
+        a                   adm:Synced ;
+        adm:logDate         "2017-01-10T23:18:50.838Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W20466  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20466 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "87/W20466.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20466 ;
@@ -57,7 +57,13 @@ bdg:W20466 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   214 .
     
+    bdr:ID493254EE54729817
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147733957" .
+    
     bdr:W20466  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID493254EE54729817 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG21198 ;
         :instanceOf         bdr:WA20466 ;

@@ -14,15 +14,15 @@
 bdg:W20169 {
     bda:I1GS55155  a        adm:AdminData ;
         adm:adminAbout      bdr:I1GS55155 ;
-        adm:logEntry        bda:LG06083AF3767227F8 , bda:LGA45D7E878C101F9E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG3D7AC7AF96CD836F , bda:LGA45D7E878C101F9E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG06083AF3767227F8
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-08-01T15:18:23.855Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00001 .
+    bda:LG3D7AC7AF96CD836F
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-05-08T13:12:12.828Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
     
     bda:LG9365691C950DDBBB
         a                   adm:ScanRequestCreation ;
@@ -31,10 +31,10 @@ bdg:W20169 {
         adm:logWho          bdu:U00001 .
     
     bda:LGA45D7E878C101F9E
-        a                   adm:UpdateData ;
-        adm:logDate         "2009-05-08T13:12:12.828Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00040 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-08-01T15:18:23.855Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -59,7 +59,7 @@ bdg:W20169 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20169 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "88/W20169.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20169 ;
@@ -75,7 +75,13 @@ bdg:W20169 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   85 .
     
+    bdr:ID35614C238C059B4E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147722701" .
+    
     bdr:W20169  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID35614C238C059B4E ;
         :instanceHasVolume  bdr:I1GS55155 ;
         :instanceOf         bdr:WA20169 ;
         :instanceReproductionOf  bdr:MW20169 ;

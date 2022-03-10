@@ -14,20 +14,20 @@
 bdg:W2KG208434 {
     bda:I2KG209259  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209259 ;
-        adm:logEntry        bda:LG32BDA24E7464554A , bda:LGIM581E3B62 ;
+        adm:logEntry        bda:LGC634CECC338A5E64 , bda:LGIM581E3B62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG32BDA24E7464554A
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-11-22T11:51:28.649Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG3652738994785D7A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-11-22T11:51:28.718Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC634CECC338A5E64
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-22T11:51:28.649Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM581E3B62  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W2KG208434 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG208434 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "34/W2KG208434.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG208434 ;
@@ -57,7 +57,13 @@ bdg:W2KG208434 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   169 .
     
+    bdr:ID51B30C1F39F1ED30
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746640" .
+    
     bdr:W2KG208434  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID51B30C1F39F1ED30 ;
         :instanceHasVolume  bdr:I2KG209259 ;
         :instanceOf         bdr:WA2KG208434 ;
         :instanceReproductionOf  bdr:MW2KG208434 ;

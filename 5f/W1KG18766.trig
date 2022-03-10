@@ -14,7 +14,7 @@
 bdg:W1KG18766 {
     bda:I1KG20679  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG20679 ;
-        adm:logEntry        bda:LG236AB85925B55867 , bda:LG779C8DA4779690E9 ;
+        adm:logEntry        bda:LG236AB85925B55867 , bda:LG96BDACF7F98F575B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,23 +25,23 @@ bdg:W1KG18766 {
         adm:logWho          bdu:U00016 .
     
     bda:LG236AB85925B55867
-        a                   adm:Synced ;
-        adm:logDate         "2016-11-08T21:50:37.741Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG779C8DA4779690E9
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-11-18T14:21:47.001Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG96BDACF7F98F575B
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:37.741Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1KG18766  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG18766 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5f/W1KG18766.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG18766 ;
@@ -57,7 +57,13 @@ bdg:W1KG18766 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   300 .
     
+    bdr:ID61B4A44CA4D90791
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147749168" .
+    
     bdr:W1KG18766  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID61B4A44CA4D90791 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG20679 ;
         :instanceOf         bdr:WA1KG18766 ;

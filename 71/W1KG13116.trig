@@ -14,21 +14,15 @@
 bdg:W1KG13116 {
     bda:I1KG13467  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG13467 ;
-        adm:logEntry        bda:LGF489A25E2D922390 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGA4CEF2D3ACF9FBD3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG13468  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG13468 ;
-        adm:logEntry        bda:LG1FE2CA3C9B9F99D1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGE7B19D2A3F2F0705 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG1FE2CA3C9B9F99D1
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2013-01-04T12:17:13.722Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG9AF6E3F72D102760
         a                   adm:ScanRequestCreation ;
@@ -36,9 +30,15 @@ bdg:W1KG13116 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGF489A25E2D922390
+    bda:LGA4CEF2D3ACF9FBD3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-01-04T12:17:13.436Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE7B19D2A3F2F0705
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-01-04T12:17:13.722Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -65,7 +65,7 @@ bdg:W1KG13116 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG13116 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "71/W1KG13116.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG13116 ;
@@ -88,7 +88,13 @@ bdg:W1KG13116 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   464 .
     
+    bdr:ID6E6D786AC9D1F1AF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716990" .
+    
     bdr:W1KG13116  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6E6D786AC9D1F1AF ;
         :instanceHasVolume  bdr:I1KG13467 , bdr:I1KG13468 ;
         :instanceOf         bdr:WA1KG13116 ;
         :instanceReproductionOf  bdr:MW1KG13116 ;

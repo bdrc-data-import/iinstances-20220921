@@ -14,20 +14,20 @@
 bdg:W3CN21536 {
     bda:I3CN21769  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21769 ;
-        adm:logEntry        bda:LGD83D6BAF28AB01D5 , bda:LGIME04758E1 ;
+        adm:logEntry        bda:LG1CE9AADFF7E87E4F , bda:LGIME04758E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG1CE9AADFF7E87E4F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-06T15:08:49.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGA1EEA8F624BF4D25
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-06T15:08:49.832Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LGD83D6BAF28AB01D5
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-06T15:08:49.765Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIME04758E1  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W3CN21536 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN21536 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e6/W3CN21536.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN21536 ;
@@ -57,7 +57,13 @@ bdg:W3CN21536 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   498 .
     
+    bdr:ID18FF8C4AAE2013FA
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147727638" .
+    
     bdr:W3CN21536  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID18FF8C4AAE2013FA ;
         :instanceHasVolume  bdr:I3CN21769 ;
         :instanceOf         bdr:WA3CN21536 ;
         :instanceReproductionOf  bdr:MW3CN21536 ;

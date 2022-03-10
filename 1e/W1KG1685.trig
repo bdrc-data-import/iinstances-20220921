@@ -14,20 +14,20 @@
 bdg:W1KG1685 {
     bda:I1KG1852  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG1852 ;
-        adm:logEntry        bda:LG2DE8D6F0725967C5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG6BB4C3BD879F783F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG2DE8D6F0725967C5
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2009-04-03T14:56:57.35Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG46A52B9B4C00D7E5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2009-04-03T14:56:58.085Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6BB4C3BD879F783F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-04-03T14:56:57.35Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W1KG1685 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG1685 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1e/W1KG1685.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG1685 ;
@@ -69,7 +69,13 @@ bdg:W1KG1685 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   378 .
     
+    bdr:ID5B128776B38AB618
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147733688" .
+    
     bdr:W1KG1685  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5B128776B38AB618 ;
         :instanceHasReproduction  bdr:IE1KG1685 ;
         :instanceHasVolume  bdr:I1KG1852 ;
         :instanceOf         bdr:WA1KG1685 ;

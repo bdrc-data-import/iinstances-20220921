@@ -14,11 +14,11 @@
 bdg:W3CN2460 {
     bda:I3CN2463  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN2463 ;
-        adm:logEntry        bda:LG240CFDCA58F34961 , bda:LG8CA51520943B636D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG405AD4F628BA605E , bda:LGC0404A5E9F5F69E8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG240CFDCA58F34961
+    bda:LG405AD4F628BA605E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-01-15T16:46:29.067Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -30,7 +30,7 @@ bdg:W3CN2460 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG8CA51520943B636D
+    bda:LGC0404A5E9F5F69E8
         a                   adm:ImagesUpdated ;
         adm:logDate         "2017-04-21T18:10:44.729Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -60,7 +60,7 @@ bdg:W3CN2460 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN2460 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "1b/W3CN2460.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN2460 ;
@@ -76,7 +76,13 @@ bdg:W3CN2460 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   388 .
     
+    bdr:ID66455A363D634870
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147736804" .
+    
     bdr:W3CN2460  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID66455A363D634870 ;
         :instanceHasVolume  bdr:I3CN2463 ;
         :instanceOf         bdr:WA3CN2460 ;
         :instanceReproductionOf  bdr:MW3CN2460 ;

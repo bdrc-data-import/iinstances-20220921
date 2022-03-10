@@ -14,37 +14,37 @@
 bdg:W2PD17402 {
     bda:I4PD3063  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD3063 ;
-        adm:logEntry        bda:LG2E1A1C122AFBC34A , bda:LG7E5AB4275A6F70E8 ;
+        adm:logEntry        bda:LG7E5AB4275A6F70E8 , bda:LGDC54F654F6F46B58 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I4PD3064  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD3064 ;
-        adm:logEntry        bda:LG1F928EA80BD5E0FD , bda:LG9902DFDA863C70BD ;
+        adm:logEntry        bda:LG30F9EB17E2439AC0 , bda:LG9902DFDA863C70BD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1F928EA80BD5E0FD
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-09-15T11:48:25.304Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LG30F9EB17E2439AC0
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:59.328Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
-    bda:LG2E1A1C122AFBC34A
+    bda:LG7E5AB4275A6F70E8
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-09-15T11:48:24.086Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG7E5AB4275A6F70E8
+    bda:LG9902DFDA863C70BD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-15T11:48:25.304Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGDC54F654F6F46B58
         a                   adm:Synced ;
         adm:logDate         "2017-12-09T00:39:59.088Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG9902DFDA863C70BD
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-09T00:39:59.328Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -59,7 +59,7 @@ bdg:W2PD17402 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD17402 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c5/W2PD17402.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD17402 ;
@@ -82,7 +82,13 @@ bdg:W2PD17402 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   586 .
     
+    bdr:ID92190ACAE4C4559A
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147708218" .
+    
     bdr:W2PD17402  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID92190ACAE4C4559A ;
         :instanceHasVolume  bdr:I4PD3063 , bdr:I4PD3064 ;
         :instanceOf         bdr:WA2PD17402 ;
         :instanceReproductionOf  bdr:MW2PD17402 ;

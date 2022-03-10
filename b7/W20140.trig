@@ -14,11 +14,11 @@
 bdg:W20140 {
     bda:I5764  a            adm:AdminData ;
         adm:adminAbout      bdr:I5764 ;
-        adm:logEntry        bda:LG75CD948430AAD44C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LG6770ECE0ECD1AE23 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG75CD948430AAD44C
+    bda:LG6770ECE0ECD1AE23
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-16T10:17:51.187Z"^^xsd:dateTime ;
         adm:logMessage      "catalog info added; revision of image group"@en ;
@@ -53,7 +53,7 @@ bdg:W20140 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20140 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b7/W20140.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20140 ;
@@ -67,7 +67,13 @@ bdg:W20140 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   308 .
     
+    bdr:IDF0A96A4F49A51B4B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147713126" .
+    
     bdr:W20140  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF0A96A4F49A51B4B ;
         :instanceHasVolume  bdr:I5764 ;
         :instanceOf         bdr:WA20140 ;
         :instanceReproductionOf  bdr:MW20140 ;

@@ -14,14 +14,14 @@
 bdg:W1KG875 {
     bda:I1KG932  a          adm:AdminData ;
         adm:adminAbout      bdr:I1KG932 ;
-        adm:logEntry        bda:LG3354A759018A680A , bda:LGFB27BA6A60F93BC8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG2E10CC1BE821F844 , bda:LGFB27BA6A60F93BC8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG3354A759018A680A
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-10-28T10:19:18.12Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG2E10CC1BE821F844
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-03-03T14:37:11.281Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGCB0301BA1106AAAC
@@ -31,9 +31,9 @@ bdg:W1KG875 {
         adm:logWho          bdu:U00016 .
     
     bda:LGFB27BA6A60F93BC8
-        a                   adm:UpdateData ;
-        adm:logDate         "2009-03-03T14:37:11.281Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-10-28T10:19:18.12Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -59,7 +59,7 @@ bdg:W1KG875 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG875 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c4/W1KG875.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG875 ;
@@ -75,7 +75,13 @@ bdg:W1KG875 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   234 .
     
+    bdr:ID7A5E8EEF992598E1
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147723570" .
+    
     bdr:W1KG875  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7A5E8EEF992598E1 ;
         :instanceHasVolume  bdr:I1KG932 ;
         :instanceOf         bdr:WA1KG875 ;
         :instanceReproductionOf  bdr:MW1KG875 ;

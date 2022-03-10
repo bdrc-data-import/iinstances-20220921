@@ -14,15 +14,9 @@
 bdg:W19967 {
     bda:I1PD36414  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD36414 ;
-        adm:logEntry        bda:LG16AC10757A8ED282 , bda:LG6C06B288047CBB2A , bda:LG753DF48FA880F304 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG6C06B288047CBB2A , bda:LG753DF48FA880F304 , bda:LG930F5288CE71CDF6 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG16AC10757A8ED282
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-06-19T10:15:11.735Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
     
     bda:LG1D824B2396231589
         a                   adm:ScanRequestCreation ;
@@ -32,13 +26,19 @@ bdg:W19967 {
     
     bda:LG6C06B288047CBB2A
         a                   adm:UpdateData ;
-        adm:logDate         "2008-06-27T09:41:33.843Z"^^xsd:dateTime ;
+        adm:logDate         "2008-06-27T09:39:13.718Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00003 .
     
     bda:LG753DF48FA880F304
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-06-19T10:15:11.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG930F5288CE71CDF6
         a                   adm:UpdateData ;
-        adm:logDate         "2008-06-27T09:39:13.718Z"^^xsd:dateTime ;
+        adm:logDate         "2008-06-27T09:41:33.843Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00003 .
     
@@ -65,7 +65,7 @@ bdg:W19967 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W19967 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "58/W19967.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W19967 ;
@@ -81,7 +81,13 @@ bdg:W19967 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   118 .
     
+    bdr:ID086BF08E7E2C2B87
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147729860" .
+    
     bdr:W19967  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID086BF08E7E2C2B87 ;
         :instanceHasVolume  bdr:I1PD36414 ;
         :instanceOf         bdr:WA19967 ;
         :instanceReproductionOf  bdr:MW19967 ;

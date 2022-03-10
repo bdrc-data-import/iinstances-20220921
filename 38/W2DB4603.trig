@@ -14,21 +14,21 @@
 bdg:W2DB4603 {
     bda:I1PD27257  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD27257 ;
-        adm:logEntry        bda:LG36B1158F145A4ADC , bda:LGA39D5EA5D4EBEE1E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG36B1158F145A4ADC , bda:LG95264AFD927DB1C8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG36B1158F145A4ADC
-        a                   adm:UpdateData ;
-        adm:logDate         "2009-04-22T11:16:33.109Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00040 .
-    
-    bda:LGA39D5EA5D4EBEE1E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-12-05T13:16:09.631Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG95264AFD927DB1C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-04-22T11:16:33.109Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
     
     bda:LGC9F1975E470FD904
         a                   adm:ScanRequestCreation ;
@@ -59,7 +59,7 @@ bdg:W2DB4603 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2DB4603 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "38/W2DB4603.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2DB4603 ;
@@ -75,7 +75,13 @@ bdg:W2DB4603 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   170 .
     
+    bdr:ID9A63AE3EB23E1359
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147718594" .
+    
     bdr:W2DB4603  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9A63AE3EB23E1359 ;
         :instanceHasVolume  bdr:I1PD27257 ;
         :instanceOf         bdr:WA2DB4603 ;
         :instanceReproductionOf  bdr:MW2DB4603 ;

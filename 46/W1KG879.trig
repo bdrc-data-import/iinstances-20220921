@@ -14,21 +14,21 @@
 bdg:W1KG879 {
     bda:I1KG938  a          adm:AdminData ;
         adm:adminAbout      bdr:I1KG938 ;
-        adm:logEntry        bda:LG6574C71AA4F5A9E7 , bda:LG6A4B54E7BC6285A4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG6574C71AA4F5A9E7 , bda:LG962635FB61BEFD4F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG6574C71AA4F5A9E7
-        a                   adm:UpdateData ;
-        adm:logDate         "2009-06-09T11:47:35.16Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00026 .
-    
-    bda:LG6A4B54E7BC6285A4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-10-28T10:24:04.915Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG962635FB61BEFD4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-06-09T11:47:35.16Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00026 .
     
     bda:LGE11E3AE210FDFC3F
         a                   adm:ScanRequestCreation ;
@@ -59,7 +59,7 @@ bdg:W1KG879 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG879 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "46/W1KG879.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG879 ;
@@ -75,7 +75,13 @@ bdg:W1KG879 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   226 .
     
+    bdr:IDA2EEFAA62061C428
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147710571" .
+    
     bdr:W1KG879  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA2EEFAA62061C428 ;
         :instanceHasVolume  bdr:I1KG938 ;
         :instanceOf         bdr:WA1KG879 ;
         :instanceReproductionOf  bdr:MW1KG879 ;

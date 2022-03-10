@@ -14,21 +14,21 @@
 bdg:W25268 {
     bda:I1PD36334  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD36334 ;
-        adm:logEntry        bda:LG6867197E026A9C82 , bda:LG6FAF50ADEC51514E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG24C7BF5D413236DF , bda:LG6867197E026A9C82 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1PD36335  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD36335 ;
-        adm:logEntry        bda:LG20EDA2F1207C6275 , bda:LGA10911C793519419 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGA10911C793519419 , bda:LGD18BECDD80F5CFF9 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG20EDA2F1207C6275
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-06-04T12:03:00.688Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LG24C7BF5D413236DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-06-04T12:03:52.188Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00003 .
     
     bda:LG4473DEC0F7458DD5
         a                   adm:ScanRequestCreation ;
@@ -37,18 +37,18 @@ bdg:W25268 {
         adm:logWho          bdu:U00021 .
     
     bda:LG6867197E026A9C82
-        a                   adm:UpdateData ;
-        adm:logDate         "2008-06-04T12:03:52.188Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00003 .
-    
-    bda:LG6FAF50ADEC51514E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-06-04T12:03:00.547Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGA10911C793519419
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-06-04T12:03:00.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGD18BECDD80F5CFF9
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-04T12:03:52.594Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
@@ -77,7 +77,7 @@ bdg:W25268 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W25268 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "1a/W25268.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W25268 ;
@@ -100,7 +100,13 @@ bdg:W25268 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   253 .
     
+    bdr:IDFD74F934AF8E8744
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746422" .
+    
     bdr:W25268  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFD74F934AF8E8744 ;
         :instanceHasVolume  bdr:I1PD36334 , bdr:I1PD36335 ;
         :instanceOf         bdr:WA25268 ;
         :instanceReproductionOf  bdr:MW25268 ;

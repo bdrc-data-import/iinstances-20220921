@@ -14,7 +14,7 @@
 bdg:W3CN6504 {
     bda:I3CN6506  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN6506 ;
-        adm:logEntry        bda:LGA6161383090851B2 , bda:LGBAAE3774F458D7E3 ;
+        adm:logEntry        bda:LG3B17C45CB1067040 , bda:LGA6161383090851B2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,13 +24,13 @@ bdg:W3CN6504 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGA6161383090851B2
+    bda:LG3B17C45CB1067040
         a                   adm:Synced ;
         adm:logDate         "2017-04-25T22:14:20.259Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:LGBAAE3774F458D7E3
+    bda:LGA6161383090851B2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-12T16:06:12.932Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W3CN6504 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN6504 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e2/W3CN6504.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN6504 ;
@@ -57,7 +57,13 @@ bdg:W3CN6504 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   344 .
     
+    bdr:ID8851D169C9DD0B28
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147744769" .
+    
     bdr:W3CN6504  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8851D169C9DD0B28 ;
         :instanceHasVolume  bdr:I3CN6506 ;
         :instanceOf         bdr:WA3CN6504 ;
         :instanceReproductionOf  bdr:MW3CN6504 ;

@@ -14,17 +14,17 @@
 bdg:W1KG855 {
     bda:I1KG891  a          adm:AdminData ;
         adm:adminAbout      bdr:I1KG891 ;
-        adm:logEntry        bda:LG026AC003F86E5EDD , bda:LG43195A59EE0D8A74 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG43195A59EE0D8A74 , bda:LGE10F5F827CAD362F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG026AC003F86E5EDD
+    bda:LG43195A59EE0D8A74
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-10-23T17:24:46.358Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG43195A59EE0D8A74
+    bda:LGE10F5F827CAD362F
         a                   adm:UpdateData ;
         adm:logDate         "2009-03-04T10:30:59.694Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
@@ -59,7 +59,7 @@ bdg:W1KG855 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG855 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "95/W1KG855.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG855 ;
@@ -75,7 +75,13 @@ bdg:W1KG855 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   314 .
     
+    bdr:IDCBBC4B8A599C7863
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147750231" .
+    
     bdr:W1KG855  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCBBC4B8A599C7863 ;
         :instanceHasVolume  bdr:I1KG891 ;
         :instanceOf         bdr:WA1KG855 ;
         :instanceReproductionOf  bdr:MW1KG855 ;

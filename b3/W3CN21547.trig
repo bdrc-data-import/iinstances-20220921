@@ -14,39 +14,33 @@
 bdg:W3CN21547 {
     bda:I3CN21951  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21951 ;
-        adm:logEntry        bda:LG5F34950BA1D91D89 , bda:LGIMD8B55077 ;
+        adm:logEntry        bda:LGA2B2B698C59DF0CD , bda:LGIMD8B55077 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I3CN21952  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21952 ;
-        adm:logEntry        bda:LG031641969B970075 , bda:LGIMA2B2EA78 ;
+        adm:logEntry        bda:LG48412B5578AEAD62 , bda:LGIMA2B2EA78 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I3CN21953  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21953 ;
-        adm:logEntry        bda:LGCBA1AFE1C6DA4CB5 , bda:LGIM27D12785 ;
+        adm:logEntry        bda:LG6231FF6451433AF7 , bda:LGIM27D12785 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I3CN21954  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21954 ;
-        adm:logEntry        bda:LG3E29ED8E7C287307 , bda:LGIM1C5C7C78 ;
+        adm:logEntry        bda:LGA6D6D17D26ABED19 , bda:LGIM1C5C7C78 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I3CN21955  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21955 ;
-        adm:logEntry        bda:LG5B7B9E13DBDF9882 , bda:LGIM86B93B88 ;
+        adm:logEntry        bda:LG91036F3AEA978859 , bda:LGIM86B93B88 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG031641969B970075
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-12T16:35:40.099Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
     
     bda:LG0DC13F114113D058
         a                   adm:ScanRequestCreation ;
@@ -54,27 +48,33 @@ bdg:W3CN21547 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG3E29ED8E7C287307
+    bda:LG48412B5578AEAD62
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-12T16:35:40.233Z"^^xsd:dateTime ;
+        adm:logDate         "2019-12-12T16:35:40.099Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG5B7B9E13DBDF9882
+    bda:LG6231FF6451433AF7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-12T16:35:40.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91036F3AEA978859
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-12T16:35:40.3Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG5F34950BA1D91D89
+    bda:LGA2B2B698C59DF0CD
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-12T16:35:40.018Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGCBA1AFE1C6DA4CB5
+    bda:LGA6D6D17D26ABED19
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-12T16:35:40.166Z"^^xsd:dateTime ;
+        adm:logDate         "2019-12-12T16:35:40.233Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
@@ -113,7 +113,7 @@ bdg:W3CN21547 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN21547 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "b3/W3CN21547.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN21547 ;
@@ -157,7 +157,13 @@ bdg:W3CN21547 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   556 .
     
+    bdr:IDDFCBBCB140625DBD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726721" .
+    
     bdr:W3CN21547  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDFCBBCB140625DBD ;
         :instanceHasVolume  bdr:I3CN21951 , bdr:I3CN21952 , bdr:I3CN21953 , bdr:I3CN21954 , bdr:I3CN21955 ;
         :instanceOf         bdr:WA3CN21547 ;
         :instanceReproductionOf  bdr:MW3CN21547 ;

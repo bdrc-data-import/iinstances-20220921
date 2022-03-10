@@ -14,7 +14,7 @@
 bdg:W3CN5577 {
     bda:I3CN5579  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN5579 ;
-        adm:logEntry        bda:LG38F8459B350ABDCC , bda:LGCE8584B2599542CE ;
+        adm:logEntry        bda:LG38F8459B350ABDCC , bda:LGF26F41BD9D0E5DE8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,23 +25,23 @@ bdg:W3CN5577 {
         adm:logWho          bdu:U00007 .
     
     bda:LG38F8459B350ABDCC
-        a                   adm:Synced ;
-        adm:logDate         "2017-04-21T18:11:17.639Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGCE8584B2599542CE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-08T12:44:32.318Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGF26F41BD9D0E5DE8
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:11:17.639Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN5577  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN5577 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "38/W3CN5577.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5577 ;
@@ -57,7 +57,13 @@ bdg:W3CN5577 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   428 .
     
+    bdr:ID3A75DBBAFCB10107
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728161" .
+    
     bdr:W3CN5577  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3A75DBBAFCB10107 ;
         :instanceHasVolume  bdr:I3CN5579 ;
         :instanceOf         bdr:WA1KG18038 ;
         :instanceReproductionOf  bdr:MW3CN5577 ;

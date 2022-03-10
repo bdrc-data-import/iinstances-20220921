@@ -14,7 +14,7 @@
 bdg:W2PD17612 {
     bda:I4PD4267  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD4267 ;
-        adm:logEntry        bda:LGB02CC3989BBDC6C5 , bda:LGE2F185131BBA3CEF ;
+        adm:logEntry        bda:LG528E028173496B27 , bda:LGE2F185131BBA3CEF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,24 +24,24 @@ bdg:W2PD17612 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGB02CC3989BBDC6C5
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-08T18:19:13.612Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LGE2F185131BBA3CEF
+    bda:LG528E028173496B27
         a                   adm:Synced ;
         adm:logDate         "2017-12-10T01:28:41.526Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE2F185131BBA3CEF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T18:19:13.612Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:W2PD17612  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD17612 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "39/W2PD17612.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD17612 ;
@@ -57,7 +57,13 @@ bdg:W2PD17612 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   236 .
     
+    bdr:ID7238668B32F8B046
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147720330" .
+    
     bdr:W2PD17612  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7238668B32F8B046 ;
         :instanceHasVolume  bdr:I4PD4267 ;
         :instanceOf         bdr:WA2PD17612 ;
         :instanceReproductionOf  bdr:MW2PD17612 ;

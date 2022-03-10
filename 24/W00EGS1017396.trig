@@ -14,7 +14,7 @@
 bdg:W00EGS1017396 {
     bda:I1GS60873  a        adm:AdminData ;
         adm:adminAbout      bdr:I1GS60873 ;
-        adm:logEntry        bda:LG111C352E063D8BE1 , bda:LG4E2639353E95B716 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG4E2639353E95B716 , bda:LGD30FB103CFC1BC06 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,13 +24,13 @@ bdg:W00EGS1017396 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LG111C352E063D8BE1
+    bda:LG4E2639353E95B716
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-09-19T15:16:43.764Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LG4E2639353E95B716
+    bda:LGD30FB103CFC1BC06
         a                   adm:UpdateData ;
         adm:logDate         "2009-05-08T15:12:30.89Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
@@ -60,7 +60,7 @@ bdg:W00EGS1017396 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00EGS1017396 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "24/W00EGS1017396.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00EGS1017396 ;
@@ -76,8 +76,14 @@ bdg:W00EGS1017396 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   185 .
     
+    bdr:ID4DC13D821D4E6B3F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147748747" .
+    
     bdr:W00EGS1017396
         a                   :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4DC13D821D4E6B3F ;
         :instanceHasVolume  bdr:I1GS60873 ;
         :instanceOf         bdr:WA00EGS1017396 ;
         :instanceReproductionOf  bdr:MW00EGS1017396 ;

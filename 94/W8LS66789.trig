@@ -14,25 +14,25 @@
 bdg:W8LS66789 {
     bda:I8LS67885  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67885 ;
-        adm:logEntry        bda:LG414CC26B7B510E01 , bda:LGIMA252F9CA ;
+        adm:logEntry        bda:LG4C1471BB692E964C , bda:LGIMA252F9CA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS67886  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67886 ;
-        adm:logEntry        bda:LG26DBFF269288D27C , bda:LGIM9457D09C ;
+        adm:logEntry        bda:LG92C343A867CBC613 , bda:LGIM9457D09C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG26DBFF269288D27C
+    bda:LG4C1471BB692E964C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-04T10:22:02.766Z"^^xsd:dateTime ;
+        adm:logDate         "2019-12-04T10:22:02.665Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG414CC26B7B510E01
+    bda:LG92C343A867CBC613
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-04T10:22:02.665Z"^^xsd:dateTime ;
+        adm:logDate         "2019-12-04T10:22:02.766Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -59,7 +59,7 @@ bdg:W8LS66789 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS66789 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "94/W8LS66789.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS66789 ;
@@ -82,7 +82,13 @@ bdg:W8LS66789 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   620 .
     
+    bdr:ID93C22FAB6FF7F27E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147739914" .
+    
     bdr:W8LS66789  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID93C22FAB6FF7F27E ;
         :instanceHasVolume  bdr:I8LS67885 , bdr:I8LS67886 ;
         :instanceOf         bdr:WA8LS66789 ;
         :instanceReproductionOf  bdr:MW8LS66789 ;

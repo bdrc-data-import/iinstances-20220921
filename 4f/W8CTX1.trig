@@ -14,11 +14,11 @@
 bdg:W8CTX1 {
     bda:I8CTX5  a           adm:AdminData ;
         adm:adminAbout      bdr:I8CTX5 ;
-        adm:logEntry        bda:LGCCD4DC1136076145 , bda:LGIM24B48EE4 , bda:LGIM9E8EAB3B ;
+        adm:logEntry        bda:LG8B5035719E9CF554 , bda:LGIM24B48EE4 , bda:LGIM9E8EAB3B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGCCD4DC1136076145
+    bda:LG8B5035719E9CF554
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-02-13T15:19:00.929Z"^^xsd:dateTime ;
         adm:logMessage      "added Work,PubInfo, and IG for Cambodia catalog"@en ;
@@ -41,7 +41,7 @@ bdg:W8CTX1 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8CTX1 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4f/W8CTX1.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8CTX1 ;
@@ -55,7 +55,13 @@ bdg:W8CTX1 {
         :volumePagesTbrcIntro  0 ;
         :volumePagesTotal   458 .
     
+    bdr:IDF88C58FF8C670BAC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147739879" .
+    
     bdr:W8CTX1  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF88C58FF8C670BAC ;
         :instanceHasVolume  bdr:I8CTX5 ;
         :instanceOf         bdr:WA8CTX1 ;
         :instanceReproductionOf  bdr:MW8CTX1 ;

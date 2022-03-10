@@ -14,21 +14,21 @@
 bdg:W1KG24035 {
     bda:I1KG24184  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24184 ;
-        adm:logEntry        bda:LG1C6FF762381D75E3 , bda:LG50789047053250AE ;
+        adm:logEntry        bda:LG1C6FF762381D75E3 , bda:LG5ABAF4EE895C9103 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG1C6FF762381D75E3
-        a                   adm:Synced ;
-        adm:logDate         "2016-12-16T00:02:31.471Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG50789047053250AE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-07-08T10:54:47.074Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG5ABAF4EE895C9103
+        a                   adm:Synced ;
+        adm:logDate         "2016-12-16T00:02:31.471Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGD19DBF463B1DDA4F
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1KG24035 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24035 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6d/W1KG24035.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24035 ;
@@ -57,7 +57,13 @@ bdg:W1KG24035 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   78 .
     
+    bdr:ID1142DDC84CE5EDFC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737203" .
+    
     bdr:W1KG24035  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1142DDC84CE5EDFC ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG24184 ;
         :instanceOf         bdr:WA1KG24035 ;

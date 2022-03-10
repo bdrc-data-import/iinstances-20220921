@@ -14,20 +14,20 @@
 bdg:W1PD105786 {
     bda:I1PD105788  a       adm:AdminData ;
         adm:adminAbout      bdr:I1PD105788 ;
-        adm:logEntry        bda:LG351EE33116053973 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGE81BE3ACD20DE395 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG351EE33116053973
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-06-30T10:34:24.718Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
     
     bda:LGD22A56C253FEDE90
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2010-06-30T10:34:24.833Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGE81BE3ACD20DE395
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-06-30T10:34:24.718Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W1PD105786 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD105786 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "03/W1PD105786.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD105786 ;
@@ -69,7 +69,13 @@ bdg:W1PD105786 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   160 .
     
+    bdr:IDE55E20F19B687378
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737143" .
+    
     bdr:W1PD105786  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE55E20F19B687378 ;
         :instanceHasReproduction  bdr:IE1PD105786 ;
         :instanceHasVolume  bdr:I1PD105788 ;
         :instanceOf         bdr:WA1PD105786 ;

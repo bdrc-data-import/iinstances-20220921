@@ -14,31 +14,31 @@
 bdg:W1PD512 {
     bda:I1PD5290  a         adm:AdminData ;
         adm:adminAbout      bdr:I1PD5290 ;
-        adm:logEntry        bda:LG821D22BA8241EF3D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG2523441EDA392FA5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2DB112  a          adm:AdminData ;
         adm:adminAbout      bdr:I2DB112 ;
-        adm:logEntry        bda:LG4D852AFB5BD9E37D ;
+        adm:logEntry        bda:LG0C305B9A55D7D553 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG4D852AFB5BD9E37D
+    bda:LG0C305B9A55D7D553
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-04-25T15:28:15.278Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00003 .
     
+    bda:LG2523441EDA392FA5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-05-16T10:36:50.501Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
     bda:LG5105A095183EE0E7
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-05-16T10:36:50.829Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LG821D22BA8241EF3D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-05-16T10:36:50.501Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
     bda:LG9213453B4FD7A3D4
@@ -70,7 +70,7 @@ bdg:W1PD512 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD512 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "33/W1PD512.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD512 ;
@@ -93,7 +93,13 @@ bdg:W1PD512 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
+    bdr:IDCF789423A950FE98
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711075" .
+    
     bdr:W1PD512  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCF789423A950FE98 ;
         :instanceHasVolume  bdr:I1PD5290 , bdr:I2DB112 ;
         :instanceOf         bdr:WA1PD512 ;
         :instanceReproductionOf  bdr:MW1PD512 ;

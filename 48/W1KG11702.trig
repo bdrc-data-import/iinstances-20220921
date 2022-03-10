@@ -14,20 +14,20 @@
 bdg:W1KG11702 {
     bda:I1KG17080  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG17080 ;
-        adm:logEntry        bda:LG49246408F675CBE0 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGF404DAE8AD1715D4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG49246408F675CBE0
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2014-03-27T09:13:15.378Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG7C6563BED742FD45
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2014-03-27T09:13:15.427Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF404DAE8AD1715D4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-03-27T09:13:15.378Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W1KG11702 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG11702 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "48/W1KG11702.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG11702 ;
@@ -69,7 +69,13 @@ bdg:W1KG11702 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   246 .
     
+    bdr:IDE32FBDEF2157A14C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147731959" .
+    
     bdr:W1KG11702  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE32FBDEF2157A14C ;
         :instanceHasVolume  bdr:I1KG17080 ;
         :instanceOf         bdr:WA1KG11702 ;
         :instanceReproductionOf  bdr:MW1KG11702 ;

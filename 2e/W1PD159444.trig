@@ -14,15 +14,15 @@
 bdg:W1PD159444 {
     bda:I2PD19059  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD19059 ;
-        adm:logEntry        bda:LG2801F0B70A8935D0 , bda:LG8429250CFBFBB9C0 ;
+        adm:logEntry        bda:LG2801F0B70A8935D0 , bda:LG4CA76DCE7CB6C521 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG2801F0B70A8935D0
-        a                   adm:Synced ;
-        adm:logDate         "2018-02-14T00:04:38.082Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T20:51:22.762Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LG3453962638B9DD70
         a                   adm:ScanRequestCreation ;
@@ -30,18 +30,18 @@ bdg:W1PD159444 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG8429250CFBFBB9C0
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T20:51:22.762Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LG4CA76DCE7CB6C521
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:04:38.082Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1PD159444  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD159444 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2e/W1PD159444.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD159444 ;
@@ -57,7 +57,13 @@ bdg:W1PD159444 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   200 .
     
+    bdr:IDBC5B5D37D0A9AB20
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726750" .
+    
     bdr:W1PD159444  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBC5B5D37D0A9AB20 ;
         :instanceHasVolume  bdr:I2PD19059 ;
         :instanceOf         bdr:WA1PD159444 ;
         :instanceReproductionOf  bdr:MW1PD159444 ;

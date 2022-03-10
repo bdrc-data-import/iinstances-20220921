@@ -14,15 +14,9 @@
 bdg:W3CN6516 {
     bda:I3CN6518  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN6518 ;
-        adm:logEntry        bda:LG2610F90E3224B232 , bda:LG7DF45E0D579C63A8 ;
+        adm:logEntry        bda:LG7DF45E0D579C63A8 , bda:LGAEE687B4A79AB3B8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG2610F90E3224B232
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-12T16:15:26.953Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
     
     bda:LG774C28F3DA955588
         a                   adm:ScanRequestCreation ;
@@ -31,6 +25,12 @@ bdg:W3CN6516 {
         adm:logWho          bdu:U00007 .
     
     bda:LG7DF45E0D579C63A8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T16:15:26.953Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGAEE687B4A79AB3B8
         a                   adm:Synced ;
         adm:logDate         "2017-04-25T22:15:38.751Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -41,7 +41,7 @@ bdg:W3CN6516 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN6516 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fa/W3CN6516.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN6516 ;
@@ -57,7 +57,13 @@ bdg:W3CN6516 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   236 .
     
+    bdr:ID2CAA34D2152F66C8
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728508" .
+    
     bdr:W3CN6516  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2CAA34D2152F66C8 ;
         :instanceHasVolume  bdr:I3CN6518 ;
         :instanceOf         bdr:WA3CN6516 ;
         :instanceReproductionOf  bdr:MW3CN6516 ;

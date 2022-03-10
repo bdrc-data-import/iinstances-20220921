@@ -14,15 +14,21 @@
 bdg:W1PD152294 {
     bda:I1KG77144  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG77144 ;
-        adm:logEntry        bda:LG57691A225ABF5E43 , bda:LGABA78842C0ED638A ;
+        adm:logEntry        bda:LG441F65AB51028968 , bda:LGABA78842C0ED638A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG77145  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG77145 ;
-        adm:logEntry        bda:LGAB3B51ED9C5C1D35 , bda:LGCF83903C96B55073 ;
+        adm:logEntry        bda:LG12E8BC19EAB28547 , bda:LGAB3B51ED9C5C1D35 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG12E8BC19EAB28547
+        a                   adm:Synced ;
+        adm:logDate         "2018-01-18T02:08:20.728Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG329BC8E4F2B40107
         a                   adm:ScanRequestCreation ;
@@ -30,27 +36,21 @@ bdg:W1PD152294 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG57691A225ABF5E43
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-08-04T10:22:43.937Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGAB3B51ED9C5C1D35
-        a                   adm:Synced ;
-        adm:logDate         "2018-01-18T02:08:20.728Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGABA78842C0ED638A
+    bda:LG441F65AB51028968
         a                   adm:Synced ;
         adm:logDate         "2018-01-18T02:08:19.637Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:LGCF83903C96B55073
+    bda:LGAB3B51ED9C5C1D35
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-08-04T10:22:44.053Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGABA78842C0ED638A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-04T10:22:43.937Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -59,7 +59,7 @@ bdg:W1PD152294 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD152294 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b6/W1PD152294.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD152294 ;
@@ -82,7 +82,13 @@ bdg:W1PD152294 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   417 .
     
+    bdr:IDB93465DD2759FAE0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147738086" .
+    
     bdr:W1PD152294  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB93465DD2759FAE0 ;
         :instanceHasVolume  bdr:I1KG77144 , bdr:I1KG77145 ;
         :instanceOf         bdr:WA1PD152294 ;
         :instanceReproductionOf  bdr:MW1PD152294 ;

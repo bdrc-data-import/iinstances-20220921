@@ -14,20 +14,20 @@
 bdg:W4CZ355742 {
     bda:I4CZ355816  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355816 ;
-        adm:logEntry        bda:LG9F8E581FD9153890 , bda:LGIM226A797C ;
+        adm:logEntry        bda:LG2C2AAF6168B6AD3D , bda:LGIM226A797C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG2C2AAF6168B6AD3D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-29T14:31:46.34Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG4C02E685CAF58F52
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-01-29T14:31:46.406Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LG9F8E581FD9153890
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-01-29T14:31:46.34Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGIM226A797C  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W4CZ355742 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ355742 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "87/W4CZ355742.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ355742 ;
@@ -57,7 +57,13 @@ bdg:W4CZ355742 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   186 .
     
+    bdr:IDD3C9CEE3965A67E0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147748308" .
+    
     bdr:W4CZ355742  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD3C9CEE3965A67E0 ;
         :instanceHasVolume  bdr:I4CZ355816 ;
         :instanceOf         bdr:WA4CZ355742 ;
         :instanceReproductionOf  bdr:MW4CZ355742 ;

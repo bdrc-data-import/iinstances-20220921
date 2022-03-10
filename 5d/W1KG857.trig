@@ -14,20 +14,20 @@
 bdg:W1KG857 {
     bda:I1KG898  a          adm:AdminData ;
         adm:adminAbout      bdr:I1KG898 ;
-        adm:logEntry        bda:LG4CD9C784DFEB7CF1 , bda:LG8381939B1041A9B8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG24C4835A16B44F34 , bda:LG8381939B1041A9B8 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG4CD9C784DFEB7CF1
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-10-24T16:27:00.683Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG8381939B1041A9B8
+    bda:LG24C4835A16B44F34
         a                   adm:UpdateData ;
         adm:logDate         "2009-03-06T15:40:01.759Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8381939B1041A9B8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-10-24T16:27:00.683Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGEE39AFA611A28812
@@ -59,7 +59,7 @@ bdg:W1KG857 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG857 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5d/W1KG857.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG857 ;
@@ -75,7 +75,13 @@ bdg:W1KG857 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   226 .
     
+    bdr:ID9ADDCB65CD34F4BD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147725416" .
+    
     bdr:W1KG857  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9ADDCB65CD34F4BD ;
         :instanceHasVolume  bdr:I1KG898 ;
         :instanceOf         bdr:WA1KG857 ;
         :instanceReproductionOf  bdr:MW1KG857 ;

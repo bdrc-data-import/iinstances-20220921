@@ -14,11 +14,17 @@
 bdg:W1KG16561 {
     bda:I2PD18452  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18452 ;
-        adm:logEntry        bda:LG0B08D5C19EB6E4D7 , bda:LG9792AB6C8751B016 ;
+        adm:logEntry        bda:LG0B08D5C19EB6E4D7 , bda:LG0CE7CFA866283D56 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG0B08D5C19EB6E4D7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-17T20:33:54.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG0CE7CFA866283D56
         a                   adm:Synced ;
         adm:logDate         "2017-06-17T02:29:12.352Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -30,18 +36,12 @@ bdg:W1KG16561 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG9792AB6C8751B016
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-17T20:33:54.341Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
     bda:W1KG16561  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG16561 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "40/W1KG16561.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG16561 ;
@@ -57,7 +57,13 @@ bdg:W1KG16561 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   190 .
     
+    bdr:IDE08E7B52C6EC61D4
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147722708" .
+    
     bdr:W1KG16561  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE08E7B52C6EC61D4 ;
         :instanceHasVolume  bdr:I2PD18452 ;
         :instanceOf         bdr:WA1KG16561 ;
         :instanceReproductionOf  bdr:MW1KG16561 ;

@@ -14,17 +14,11 @@
 bdg:W1AC340 {
     bda:I2PD18297  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18297 ;
-        adm:logEntry        bda:LG449003F9700E5E3E , bda:LG5ABE9BA9C96846D4 ;
+        adm:logEntry        bda:LG449003F9700E5E3E , bda:LGF91EE694F3950D74 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG449003F9700E5E3E
-        a                   adm:Synced ;
-        adm:logDate         "2017-11-30T01:59:52.272Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG5ABE9BA9C96846D4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-16T04:32:26.722Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -36,12 +30,18 @@ bdg:W1AC340 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGF91EE694F3950D74
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:52.272Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1AC340  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC340 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "63/W1AC340.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC340 ;
@@ -57,7 +57,13 @@ bdg:W1AC340 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   256 .
     
+    bdr:IDE02B21C87EF080E3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147730021" .
+    
     bdr:W1AC340  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE02B21C87EF080E3 ;
         :instanceHasVolume  bdr:I2PD18297 ;
         :instanceOf         bdr:WA1AC340 ;
         :instanceReproductionOf  bdr:MW1AC340 ;

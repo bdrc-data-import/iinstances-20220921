@@ -14,11 +14,17 @@
 bdg:W1GS139873 {
     bda:I1KG1613  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG1613 ;
-        adm:logEntry        bda:LG07D1397838A30853 , bda:LGA81FD7D4827BB84D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG07D1397838A30853 , bda:LG10005C1A36160160 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG07D1397838A30853
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-02-03T11:14:02.507Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG10005C1A36160160
         a                   adm:UpdateData ;
         adm:logDate         "2009-05-04T10:33:29.265Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
@@ -28,12 +34,6 @@ bdg:W1GS139873 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2009-02-03T11:14:05.226Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGA81FD7D4827BB84D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2009-02-03T11:14:02.507Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -59,7 +59,7 @@ bdg:W1GS139873 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1GS139873 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7d/W1GS139873.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1GS139873 ;
@@ -75,7 +75,13 @@ bdg:W1GS139873 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   606 .
     
+    bdr:ID1D1670F1D4DD102D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147740811" .
+    
     bdr:W1GS139873  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1D1670F1D4DD102D ;
         :instanceHasVolume  bdr:I1KG1613 ;
         :instanceOf         bdr:WA1GS139873 ;
         :instanceReproductionOf  bdr:MW1GS139873 ;

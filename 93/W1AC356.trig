@@ -14,15 +14,15 @@
 bdg:W1AC356 {
     bda:I2PD18117  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18117 ;
-        adm:logEntry        bda:LG1D95A78EF1612F60 , bda:LG89942878121DEC98 ;
+        adm:logEntry        bda:LG1D95A78EF1612F60 , bda:LG80EA14272066B527 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG1D95A78EF1612F60
-        a                   adm:Synced ;
-        adm:logDate         "2017-11-30T01:59:54.842Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-14T20:56:13.403Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LG1F918907BDD94287
         a                   adm:ScanRequestCreation ;
@@ -30,18 +30,18 @@ bdg:W1AC356 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG89942878121DEC98
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-14T20:56:13.403Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LG80EA14272066B527
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-30T01:59:54.842Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1AC356  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC356 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "93/W1AC356.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC356 ;
@@ -57,7 +57,13 @@ bdg:W1AC356 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   618 .
     
+    bdr:ID80DFE4A51799C974
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742377" .
+    
     bdr:W1AC356  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID80DFE4A51799C974 ;
         :instanceHasVolume  bdr:I2PD18117 ;
         :instanceOf         bdr:WA1AC356 ;
         :instanceReproductionOf  bdr:MW1AC356 ;

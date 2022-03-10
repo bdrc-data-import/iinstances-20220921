@@ -14,21 +14,21 @@
 bdg:W1KG24835 {
     bda:I1KG24837  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24837 ;
-        adm:logEntry        bda:LG0548C74C8288BBBB , bda:LG6AF845C63880CD3B ;
+        adm:logEntry        bda:LG0548C74C8288BBBB , bda:LG3FAA8349CC9A7E74 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG0548C74C8288BBBB
-        a                   adm:Synced ;
-        adm:logDate         "2018-02-01T03:35:17.859Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG6AF845C63880CD3B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T15:26:28.534Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG3FAA8349CC9A7E74
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:35:17.859Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG9651EBD006B01E4E
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1KG24835 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24835 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "40/W1KG24835.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24835 ;
@@ -57,7 +57,13 @@ bdg:W1KG24835 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   135 .
     
+    bdr:ID325A9F049B167DC2
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147721419" .
+    
     bdr:W1KG24835  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID325A9F049B167DC2 ;
         :instanceHasVolume  bdr:I1KG24837 ;
         :instanceOf         bdr:WA1KG24835 ;
         :instanceReproductionOf  bdr:MW1KG24835 ;

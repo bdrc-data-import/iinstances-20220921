@@ -14,15 +14,15 @@
 bdg:W3CN7744 {
     bda:I1KG26429  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26429 ;
-        adm:logEntry        bda:LG2B446A34119157EF , bda:LGEDA926049657E6D8 ;
+        adm:logEntry        bda:LG2B446A34119157EF , bda:LG812E79035B0B744F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG2B446A34119157EF
-        a                   adm:Synced ;
-        adm:logDate         "2017-09-20T23:20:10.542Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-02T15:17:14.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG6B20AA7D207E0D4A
         a                   adm:ScanRequestCreation ;
@@ -30,24 +30,24 @@ bdg:W3CN7744 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG812E79035B0B744F
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-20T23:20:10.542Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LG89619A46A2B57791
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T12:23:25.162Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGEDA926049657E6D8
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-06-02T15:17:14.312Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:W3CN7744  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN7744 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a3/W3CN7744.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN7744 ;
@@ -63,7 +63,13 @@ bdg:W3CN7744 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   94 .
     
+    bdr:ID37EF315279F7F224
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147708098" .
+    
     bdr:W3CN7744  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID37EF315279F7F224 ;
         :instanceHasVolume  bdr:I1KG26429 ;
         :instanceOf         bdr:WA3CN7741 ;
         :instanceReproductionOf  bdr:MW3CN7744 ;

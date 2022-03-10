@@ -14,14 +14,20 @@
 bdg:W1GS44054 {
     bda:I1GS49714  a        adm:AdminData ;
         adm:adminAbout      bdr:I1GS49714 ;
-        adm:logEntry        bda:LG560E23740D430034 , bda:LGC255A12FD1FC7B99 , bda:LGDDDE91E9F6FD40EE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG2982F42F11519A9A , bda:LG560E23740D430034 , bda:LGC255A12FD1FC7B99 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG560E23740D430034
+    bda:LG2982F42F11519A9A
         a                   adm:UpdateData ;
-        adm:logDate         "2007-06-28T15:52:32.308Z"^^xsd:dateTime ;
-        adm:logMessage      "checked cataloging"@en ;
+        adm:logDate         "2007-06-29T00:49:44.093Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation revised and image group checked"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG560E23740D430034
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-06-15T14:36:56.186Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
     bda:LG99679D42BD7DA253
@@ -32,14 +38,8 @@ bdg:W1GS44054 {
     
     bda:LGC255A12FD1FC7B99
         a                   adm:UpdateData ;
-        adm:logDate         "2007-06-29T00:49:44.093Z"^^xsd:dateTime ;
-        adm:logMessage      "annotation revised and image group checked"@en ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LGDDDE91E9F6FD40EE
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-06-15T14:36:56.186Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+        adm:logDate         "2007-06-28T15:52:32.308Z"^^xsd:dateTime ;
+        adm:logMessage      "checked cataloging"@en ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -65,7 +65,7 @@ bdg:W1GS44054 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1GS44054 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ac/W1GS44054.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1GS44054 ;
@@ -81,7 +81,13 @@ bdg:W1GS44054 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   121 .
     
+    bdr:IDE48AB234CCAD7E93
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147734197" .
+    
     bdr:W1GS44054  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE48AB234CCAD7E93 ;
         :instanceHasVolume  bdr:I1GS49714 ;
         :instanceOf         bdr:WA1GS44054 ;
         :instanceReproductionOf  bdr:MW1GS44054 ;

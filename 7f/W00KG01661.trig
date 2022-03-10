@@ -14,27 +14,27 @@
 bdg:W00KG01661 {
     bda:I00KG02355  a       adm:AdminData ;
         adm:adminAbout      bdr:I00KG02355 ;
-        adm:logEntry        bda:LG7FED00B62072ED4F , bda:LGC76DA00669F98320 , bda:LGCA2A27E1810889CB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG90C839A291373122 , bda:LGC76DA00669F98320 , bda:LGCA2A27E1810889CB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG7FED00B62072ED4F
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-06-05T17:23:40.437Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGC76DA00669F98320
+    bda:LG90C839A291373122
         a                   adm:UpdateData ;
         adm:logDate         "2009-05-08T10:50:40.468Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00040 .
     
-    bda:LGCA2A27E1810889CB
+    bda:LGC76DA00669F98320
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-12T04:53:00.234Z"^^xsd:dateTime ;
         adm:logMessage      "image group corrected; outline completed for publication"@en ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGCA2A27E1810889CB
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-06-05T17:23:40.437Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGF26AAD662B2D9FC8
         a                   adm:ScanRequestCreation ;
@@ -65,7 +65,7 @@ bdg:W00KG01661 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG01661 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "7f/W00KG01661.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG01661 ;
@@ -81,7 +81,13 @@ bdg:W00KG01661 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   203 .
     
+    bdr:ID63A67478E319A75C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737756" .
+    
     bdr:W00KG01661  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID63A67478E319A75C ;
         :instanceHasVolume  bdr:I00KG02355 ;
         :instanceOf         bdr:WA00KG01661 ;
         :instanceReproductionOf  bdr:MW00KG01661 ;

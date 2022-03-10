@@ -14,21 +14,21 @@
 bdg:W1KG14588 {
     bda:I1KG21928  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG21928 ;
-        adm:logEntry        bda:LG2E996AE3B0D81537 , bda:LG35E7497234C0563D ;
+        adm:logEntry        bda:LG2E996AE3B0D81537 , bda:LG5DC89F8A43E0AD9D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG2E996AE3B0D81537
-        a                   adm:Synced ;
-        adm:logDate         "2016-11-08T21:50:27.096Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG35E7497234C0563D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-05-13T11:09:54.831Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG5DC89F8A43E0AD9D
+        a                   adm:Synced ;
+        adm:logDate         "2016-11-08T21:50:27.096Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGBFD93CA02C20E601
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1KG14588 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG14588 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a3/W1KG14588.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14588 ;
@@ -57,7 +57,13 @@ bdg:W1KG14588 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   260 .
     
+    bdr:IDCD2A02DBFFD7398F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147735574" .
+    
     bdr:W1KG14588  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCD2A02DBFFD7398F ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG21928 ;
         :instanceOf         bdr:WA1KG14588 ;

@@ -14,44 +14,44 @@
 bdg:W1KG6160 {
     bda:I1KG8417  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG8417 ;
-        adm:logEntry        bda:LG9929EB61DADE8177 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG458AF24764850863 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG8418  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG8418 ;
-        adm:logEntry        bda:LG9DBF4CE42602AADE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG3B73C7ABBF9C77DD , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG8419  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG8419 ;
-        adm:logEntry        bda:LG83937C24939A807F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG312D70BCAC827A4F , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG7094308318E42C9B
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2011-01-10T10:37:06.944Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG83937C24939A807F
+    bda:LG312D70BCAC827A4F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2011-01-10T10:37:06.843Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG9929EB61DADE8177
+    bda:LG3B73C7ABBF9C77DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-01-10T10:37:06.71Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG458AF24764850863
         a                   adm:InitialDataCreation ;
         adm:logDate         "2011-01-10T10:37:06.493Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG9DBF4CE42602AADE
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2011-01-10T10:37:06.71Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
+    bda:LG7094308318E42C9B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2011-01-10T10:37:06.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -77,7 +77,7 @@ bdg:W1KG6160 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG6160 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "62/W1KG6160.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG6160 ;
@@ -107,7 +107,13 @@ bdg:W1KG6160 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   546 .
     
+    bdr:ID5F095B7D499D12BC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714560" .
+    
     bdr:W1KG6160  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5F095B7D499D12BC ;
         :instanceHasVolume  bdr:I1KG8417 , bdr:I1KG8418 , bdr:I1KG8419 ;
         :instanceOf         bdr:WA1KG6160 ;
         :instanceReproductionOf  bdr:MW1KG6160 ;

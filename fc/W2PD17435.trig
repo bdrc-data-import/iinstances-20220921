@@ -14,15 +14,9 @@
 bdg:W2PD17435 {
     bda:I4PD3053  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD3053 ;
-        adm:logEntry        bda:LG14BA698761C019C9 , bda:LG8D63FA4287071F49 ;
+        adm:logEntry        bda:LG8D63FA4287071F49 , bda:LGFE9874E08EBD046D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG14BA698761C019C9
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-09-15T11:20:00.444Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
     
     bda:LG3EA8BD580DA70F0C
         a                   adm:ScanRequestCreation ;
@@ -31,6 +25,12 @@ bdg:W2PD17435 {
         adm:logWho          bdu:U00021 .
     
     bda:LG8D63FA4287071F49
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-09-15T11:20:00.444Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGFE9874E08EBD046D
         a                   adm:Synced ;
         adm:logDate         "2017-12-10T01:28:34.774Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -41,7 +41,7 @@ bdg:W2PD17435 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD17435 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fc/W2PD17435.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD17435 ;
@@ -57,7 +57,13 @@ bdg:W2PD17435 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   722 .
     
+    bdr:ID4A778A6F929320C6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715284" .
+    
     bdr:W2PD17435  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4A778A6F929320C6 ;
         :instanceHasVolume  bdr:I4PD3053 ;
         :instanceOf         bdr:WA2PD17435 ;
         :instanceReproductionOf  bdr:MW2PD17435 ;

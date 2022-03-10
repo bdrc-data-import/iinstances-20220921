@@ -14,20 +14,20 @@
 bdg:W4CZ307418 {
     bda:I1KG116074  a       adm:AdminData ;
         adm:adminAbout      bdr:I1KG116074 ;
-        adm:logEntry        bda:LG4C6B05D0F075BDF6 , bda:LGIM5DCE7AF8 ;
+        adm:logEntry        bda:LGD9344BA09CD23EAA , bda:LGIM5DCE7AF8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG4C6B05D0F075BDF6
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-11-06T10:32:24.614Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LGA170339D95C8248C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-11-06T10:32:24.712Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD9344BA09CD23EAA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-11-06T10:32:24.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM5DCE7AF8  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W4CZ307418 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ307418 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a9/W4CZ307418.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ307418 ;
@@ -57,7 +57,13 @@ bdg:W4CZ307418 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   570 .
     
+    bdr:IDABFF192B5817B97B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147758406" .
+    
     bdr:W4CZ307418  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDABFF192B5817B97B ;
         :instanceHasVolume  bdr:I1KG116074 ;
         :instanceOf         bdr:WA4CZ307418 ;
         :instanceReproductionOf  bdr:MW4CZ307418 ;

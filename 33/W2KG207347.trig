@@ -14,20 +14,20 @@
 bdg:W2KG207347 {
     bda:I2KG207424  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG207424 ;
-        adm:logEntry        bda:LG6235360A2877A2D4 , bda:LGIM4B20B714 ;
+        adm:logEntry        bda:LG1A326A91CC7D0F8C , bda:LGIM4B20B714 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG1A326A91CC7D0F8C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-31T15:09:07.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG38728BA132654276
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-05-31T15:09:07.216Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG6235360A2877A2D4
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-05-31T15:09:07.123Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM4B20B714  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W2KG207347 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG207347 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "33/W2KG207347.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG207347 ;
@@ -57,7 +57,13 @@ bdg:W2KG207347 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   228 .
     
+    bdr:ID6E5C3BB61AA0BCB3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147749482" .
+    
     bdr:W2KG207347  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6E5C3BB61AA0BCB3 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I2KG207424 ;
         :instanceOf         bdr:WA2KG207347 ;

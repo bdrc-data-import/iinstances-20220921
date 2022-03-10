@@ -14,17 +14,17 @@
 bdg:W3CN6024 {
     bda:I1KG85664  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG85664 ;
-        adm:logEntry        bda:LG34731DD57B469B54 , bda:LGIMDB89D5F0 ;
+        adm:logEntry        bda:LGF53E9326E9EBE414 , bda:LGIMDB89D5F0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG85665  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG85665 ;
-        adm:logEntry        bda:LG0CC4F3E90A3FA1A7 , bda:LGIMBC222532 ;
+        adm:logEntry        bda:LG183D98E562C05467 , bda:LGIMBC222532 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG0CC4F3E90A3FA1A7
+    bda:LG183D98E562C05467
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-01-02T15:43:18.726Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -36,17 +36,17 @@ bdg:W3CN6024 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG34731DD57B469B54
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-01-02T15:43:18.641Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGD0D7AA182C75729B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-08T16:31:09.61Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGF53E9326E9EBE414
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-02T15:43:18.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIMBC222532  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -65,7 +65,7 @@ bdg:W3CN6024 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN6024 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3a/W3CN6024.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN6024 ;
@@ -88,7 +88,13 @@ bdg:W3CN6024 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   436 .
     
+    bdr:IDB5D850672C33A23F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746605" .
+    
     bdr:W3CN6024  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDB5D850672C33A23F ;
         :instanceHasVolume  bdr:I1KG85664 , bdr:I1KG85665 ;
         :instanceOf         bdr:WA1KG16138 ;
         :instanceReproductionOf  bdr:MW3CN6024 ;

@@ -15,31 +15,31 @@ bdg:W21613 {
     bda:I00EGS1016939
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I00EGS1016939 ;
-        adm:logEntry        bda:LG1CCAB0412139AC03 , bda:LG3EA64DA58307A569 , bda:LG50AF5F0FC1BBF0CC , bda:LG780EEC48FDDFE77E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG1CCAB0412139AC03 , bda:LG3EA64DA58307A569 , bda:LG50AF5F0FC1BBF0CC , bda:LG6192E28BF997BC93 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG1CCAB0412139AC03
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2006-12-14T22:28:33.531Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3EA64DA58307A569
         a                   adm:UpdateData ;
         adm:logDate         "2006-12-18T00:46:45.968Z"^^xsd:dateTime ;
         adm:logMessage      "recreated ig from backup"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LG3EA64DA58307A569
+    bda:LG50AF5F0FC1BBF0CC
         a                   adm:UpdateData ;
         adm:logDate         "2006-12-18T00:51:23.546Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00001 .
     
-    bda:LG50AF5F0FC1BBF0CC
+    bda:LG6192E28BF997BC93
         a                   adm:UpdateData ;
         adm:logDate         "2007-09-10T17:39:27.521Z"^^xsd:dateTime ;
         adm:logMessage      "annotation corrected; image group revised"@en ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LG780EEC48FDDFE77E
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2006-12-14T22:28:33.531Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
     bda:LGD076DA2249B2C4F1
@@ -71,7 +71,7 @@ bdg:W21613 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W21613 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "33/W21613.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W21613 ;
@@ -88,7 +88,13 @@ bdg:W21613 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   752 .
     
+    bdr:ID10AF15B7EB301974
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147708657" .
+    
     bdr:W21613  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID10AF15B7EB301974 ;
         :instanceHasVolume  bdr:I00EGS1016939 ;
         :instanceOf         bdr:WA21613 ;
         :instanceReproductionOf  bdr:MW21613 ;

@@ -14,9 +14,15 @@
 bdg:W1KG14589 {
     bda:I4CZ354576  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ354576 ;
-        adm:logEntry        bda:LGE2527230DD07890E , bda:LGIMF3EEDF83 ;
+        adm:logEntry        bda:LGC770E70132975E6B , bda:LGIMF3EEDF83 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LGC770E70132975E6B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-08-28T14:23:28.752Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGCE9CF74A5B523985
         a                   adm:ScanRequestCreation ;
@@ -30,12 +36,6 @@ bdg:W1KG14589 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGE2527230DD07890E
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-08-28T14:23:28.752Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
     bda:LGIMF3EEDF83  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2019-11-22T22:37:20.922Z"^^xsd:dateTime ;
@@ -47,7 +47,7 @@ bdg:W1KG14589 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG14589 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b6/W1KG14589.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14589 ;
@@ -63,7 +63,13 @@ bdg:W1KG14589 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   182 .
     
+    bdr:ID68D2C50A01AA3ED7
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147757630" .
+    
     bdr:W1KG14589  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID68D2C50A01AA3ED7 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I4CZ354576 ;
         :instanceOf         bdr:WA1KG14589 ;

@@ -14,20 +14,20 @@
 bdg:W8LS66820 {
     bda:I8LS67940  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67940 ;
-        adm:logEntry        bda:LGB27F24DD95AD32F3 , bda:LGIM173592F7 ;
+        adm:logEntry        bda:LG70D0DCCDC375B515 , bda:LGIM173592F7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG70D0DCCDC375B515
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-05T15:56:14.923Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG7DA16963E59ECAD6
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-05T15:56:14.99Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LGB27F24DD95AD32F3
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-05T15:56:14.923Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIM173592F7  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W8LS66820 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS66820 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d1/W8LS66820.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS66820 ;
@@ -57,7 +57,13 @@ bdg:W8LS66820 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   258 .
     
+    bdr:ID87974CE6B54D9359
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147729339" .
+    
     bdr:W8LS66820  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID87974CE6B54D9359 ;
         :instanceHasVolume  bdr:I8LS67940 ;
         :instanceOf         bdr:WA8LS66820 ;
         :instanceReproductionOf  bdr:MW8LS66820 ;

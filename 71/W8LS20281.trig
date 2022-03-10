@@ -14,7 +14,7 @@
 bdg:W8LS20281 {
     bda:I8LS20283  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20283 ;
-        adm:logEntry        bda:LGC98AAD1108545210 , bda:LGD9DD031D05661483 ;
+        adm:logEntry        bda:LGD02AF5D82410274C , bda:LGD9DD031D05661483 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,24 +24,24 @@ bdg:W8LS20281 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC98AAD1108545210
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-15T09:48:28.857Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LGD9DD031D05661483
+    bda:LGD02AF5D82410274C
         a                   adm:Synced ;
         adm:logDate         "2018-01-18T02:14:47.183Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD9DD031D05661483
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T09:48:28.857Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:W8LS20281  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS20281 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "71/W8LS20281.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS20281 ;
@@ -57,7 +57,13 @@ bdg:W8LS20281 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   355 .
     
+    bdr:IDE36080167D3487CD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742784" .
+    
     bdr:W8LS20281  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE36080167D3487CD ;
         :instanceHasVolume  bdr:I8LS20283 ;
         :instanceOf         bdr:WA8LS20281 ;
         :instanceReproductionOf  bdr:MW8LS20281 ;

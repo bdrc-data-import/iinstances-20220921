@@ -14,15 +14,15 @@
 bdg:W8LS18694 {
     bda:I8LS18696  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18696 ;
-        adm:logEntry        bda:LG92165C66C80B2EA9 , bda:LGF97920EF29D05FDD ;
+        adm:logEntry        bda:LG98123E2B19732269 , bda:LGF97920EF29D05FDD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG92165C66C80B2EA9
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T11:46:34.916Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+    bda:LG98123E2B19732269
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:39:43.213Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGBA8719B52958CDCC
         a                   adm:ScanRequestCreation ;
@@ -31,17 +31,17 @@ bdg:W8LS18694 {
         adm:logWho          bdu:U00019 .
     
     bda:LGF97920EF29D05FDD
-        a                   adm:Synced ;
-        adm:logDate         "2018-02-01T03:39:43.213Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:46:34.916Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:W8LS18694  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18694 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ed/W8LS18694.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18694 ;
@@ -57,7 +57,13 @@ bdg:W8LS18694 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   331 .
     
+    bdr:IDD0E27044FBE968AE
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147755046" .
+    
     bdr:W8LS18694  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD0E27044FBE968AE ;
         :instanceHasVolume  bdr:I8LS18696 ;
         :instanceOf         bdr:WA8LS18694 ;
         :instanceReproductionOf  bdr:MW8LS18694 ;

@@ -14,15 +14,9 @@
 bdg:W1CZ2262 {
     bda:I1CZ2301  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ2301 ;
-        adm:logEntry        bda:LG670F401A5909AAC2 , bda:LG8C40FFD22DB967FA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG8C40FFD22DB967FA , bda:LGC2424B216342AF32 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG670F401A5909AAC2
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-10-23T09:08:37.88Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
     
     bda:LG7D780FB35B99EF8D
         a                   adm:ScanRequestCreation ;
@@ -31,6 +25,12 @@ bdg:W1CZ2262 {
         adm:logWho          bdu:U00017 .
     
     bda:LG8C40FFD22DB967FA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-10-23T09:08:37.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC2424B216342AF32
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-03T11:38:22.472Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
@@ -59,7 +59,7 @@ bdg:W1CZ2262 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1CZ2262 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "16/W1CZ2262.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1CZ2262 ;
@@ -75,7 +75,13 @@ bdg:W1CZ2262 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   146 .
     
+    bdr:IDBF57FF9F4E71C382
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724093" .
+    
     bdr:W1CZ2262  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBF57FF9F4E71C382 ;
         :instanceHasVolume  bdr:I1CZ2301 ;
         :instanceOf         bdr:WA1CZ2262 ;
         :instanceReproductionOf  bdr:MW1CZ2262 ;

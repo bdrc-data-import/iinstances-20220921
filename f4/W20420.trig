@@ -41,7 +41,7 @@ bdg:W20420 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20420 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f4/W20420.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20420 ;
@@ -55,7 +55,13 @@ bdg:W20420 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   426 .
     
+    bdr:IDCDCED4144CE2DCB7
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147723593" .
+    
     bdr:W20420  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCDCED4144CE2DCB7 ;
         :instanceHasVolume  bdr:I4781 ;
         :instanceOf         bdr:WA20420 ;
         :instanceReproductionOf  bdr:MW20420 ;

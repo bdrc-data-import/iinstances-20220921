@@ -14,7 +14,7 @@
 bdg:W8LS19228 {
     bda:I8LS19230  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS19230 ;
-        adm:logEntry        bda:LGB19473428861E3BC , bda:LGE19879BA13CF4541 , bda:LGIM1FEF6916 , bda:LGIM8E243BE0 ;
+        adm:logEntry        bda:LG2B77958A844B1D70 , bda:LGB19473428861E3BC , bda:LGIM1FEF6916 , bda:LGIM8E243BE0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,13 +24,13 @@ bdg:W8LS19228 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGB19473428861E3BC
+    bda:LG2B77958A844B1D70
         a                   adm:Synced ;
         adm:logDate         "2017-09-26T23:08:12.002Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:LGE19879BA13CF4541
+    bda:LGB19473428861E3BC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T15:21:59.696Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -53,7 +53,7 @@ bdg:W8LS19228 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS19228 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a2/W8LS19228.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS19228 ;
@@ -69,7 +69,13 @@ bdg:W8LS19228 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   860 .
     
+    bdr:IDAAFC3E8C557E8D2B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147710614" .
+    
     bdr:W8LS19228  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAAFC3E8C557E8D2B ;
         :instanceHasVolume  bdr:I8LS19230 ;
         :instanceOf         bdr:WA1AC411 ;
         :instanceReproductionOf  bdr:MW8LS19228 ;

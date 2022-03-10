@@ -14,17 +14,11 @@
 bdg:W3CN7930 {
     bda:I3CN8651  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN8651 ;
-        adm:logEntry        bda:LG8CB5D57D1A8E0408 , bda:LG917BD14A59C802E7 ;
+        adm:logEntry        bda:LG8CB5D57D1A8E0408 , bda:LGC810B2D102A46630 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG8CB5D57D1A8E0408
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-20T08:09:26.853Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG917BD14A59C802E7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-05-30T18:52:01.868Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -35,6 +29,12 @@ bdg:W3CN7930 {
         adm:logDate         "2016-12-15T16:18:56.018Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGC810B2D102A46630
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-20T08:09:26.853Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGE593D4ED0ACF6873
         a                   adm:ScanRequestCreation ;
@@ -47,7 +47,7 @@ bdg:W3CN7930 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN7930 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6f/W3CN7930.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN7930 ;
@@ -63,7 +63,13 @@ bdg:W3CN7930 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   122 .
     
+    bdr:ID35698FF8EE137594
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147747698" .
+    
     bdr:W3CN7930  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID35698FF8EE137594 ;
         :instanceHasVolume  bdr:I3CN8651 ;
         :instanceOf         bdr:WA3CN7930 ;
         :instanceReproductionOf  bdr:MW3CN7930 ;

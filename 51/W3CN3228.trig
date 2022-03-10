@@ -14,21 +14,21 @@
 bdg:W3CN3228 {
     bda:I3CN3363  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN3363 ;
-        adm:logEntry        bda:LG3CA3FECA6DDFC33E , bda:LGB741C987C5349110 ;
+        adm:logEntry        bda:LG04E65DC9F89D45D5 , bda:LGB741C987C5349110 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG3CA3FECA6DDFC33E
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-07T15:15:51.746Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LGB741C987C5349110
+    bda:LG04E65DC9F89D45D5
         a                   adm:Synced ;
         adm:logDate         "2018-01-18T02:08:48.313Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB741C987C5349110
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-07T15:15:51.746Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGDD2329A725EE2DB3
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W3CN3228 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN3228 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "51/W3CN3228.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN3228 ;
@@ -57,7 +57,13 @@ bdg:W3CN3228 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   1989 .
     
+    bdr:ID4AA8BAC297D501F1
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147736346" .
+    
     bdr:W3CN3228  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4AA8BAC297D501F1 ;
         :instanceHasVolume  bdr:I3CN3363 ;
         :instanceOf         bdr:WA3CN3228 ;
         :instanceReproductionOf  bdr:MW3CN3228 ;

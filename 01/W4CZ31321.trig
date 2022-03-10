@@ -14,20 +14,20 @@
 bdg:W4CZ31321 {
     bda:I1KG15972  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG15972 ;
-        adm:logEntry        bda:LG3B319BDBC6D0956D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG160995CF670F3851 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG160995CF670F3851
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2013-11-19T10:37:47.714Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1977EB3951D00502
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2013-11-19T10:37:47.813Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG3B319BDBC6D0956D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2013-11-19T10:37:47.714Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W4CZ31321 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ31321 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "01/W4CZ31321.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ31321 ;
@@ -69,7 +69,13 @@ bdg:W4CZ31321 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   104 .
     
+    bdr:IDBF78C672509078C8
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147739123" .
+    
     bdr:W4CZ31321  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBF78C672509078C8 ;
         :instanceHasVolume  bdr:I1KG15972 ;
         :instanceOf         bdr:WA4CZ31321 ;
         :instanceReproductionOf  bdr:MW4CZ31321 ;

@@ -14,17 +14,17 @@
 bdg:W1CZ2284 {
     bda:I1CZ2318  a         adm:AdminData ;
         adm:adminAbout      bdr:I1CZ2318 ;
-        adm:logEntry        bda:LG8B7C41B40047C444 , bda:LGAE98E2BC6CF0BE1E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG552586EEB895560D , bda:LG8B7C41B40047C444 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG8B7C41B40047C444
+    bda:LG552586EEB895560D
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-03T17:00:07.547Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGAE98E2BC6CF0BE1E
+    bda:LG8B7C41B40047C444
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-10-23T10:33:54.946Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -59,7 +59,7 @@ bdg:W1CZ2284 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1CZ2284 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "17/W1CZ2284.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1CZ2284 ;
@@ -75,7 +75,13 @@ bdg:W1CZ2284 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   90 .
     
+    bdr:IDEDD64E95C4F6D8BD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147756979" .
+    
     bdr:W1CZ2284  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEDD64E95C4F6D8BD ;
         :instanceHasVolume  bdr:I1CZ2318 ;
         :instanceOf         bdr:WA1CZ2284 ;
         :instanceReproductionOf  bdr:MW1CZ2284 ;

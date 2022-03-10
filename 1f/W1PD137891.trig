@@ -14,11 +14,17 @@
 bdg:W1PD137891 {
     bda:I2PD18070  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18070 ;
-        adm:logEntry        bda:LG750128244D36878D , bda:LGDDDC4123230E2269 ;
+        adm:logEntry        bda:LG750128244D36878D , bda:LG99334ABE903EFC92 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG750128244D36878D
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-12T05:45:34.875Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG99334ABE903EFC92
         a                   adm:Synced ;
         adm:logDate         "2017-06-24T01:00:29.674Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -30,18 +36,12 @@ bdg:W1PD137891 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGDDDC4123230E2269
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-12T05:45:34.875Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
     bda:W1PD137891  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD137891 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1f/W1PD137891.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD137891 ;
@@ -57,7 +57,13 @@ bdg:W1PD137891 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   1162 .
     
+    bdr:ID4E2E8EBC5435C74D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147721525" .
+    
     bdr:W1PD137891  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4E2E8EBC5435C74D ;
         :instanceHasVolume  bdr:I2PD18070 ;
         :instanceOf         bdr:WA1PD137891 ;
         :instanceReproductionOf  bdr:MW1PD137891 ;

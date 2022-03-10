@@ -14,25 +14,19 @@
 bdg:W00PD1011327 {
     bda:I1KG10553  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG10553 ;
-        adm:logEntry        bda:LG11B979695397DC17 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0EAEACB1A0A10E54 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG10554  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG10554 ;
-        adm:logEntry        bda:LG12B564E3E5CF4774 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGBAA8969AE5210DF0 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG11B979695397DC17
+    bda:LG0EAEACB1A0A10E54
         a                   adm:InitialDataCreation ;
         adm:logDate         "2011-09-12T12:41:44.795Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG12B564E3E5CF4774
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2011-09-12T12:41:44.898Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -40,6 +34,12 @@ bdg:W00PD1011327 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-09-12T12:41:44.996Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBAA8969AE5210DF0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2011-09-12T12:41:44.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -65,7 +65,7 @@ bdg:W00PD1011327 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00PD1011327 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "db/W00PD1011327.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00PD1011327 ;
@@ -88,7 +88,13 @@ bdg:W00PD1011327 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   440 .
     
+    bdr:ID84D4491526D7FFF3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716401" .
+    
     bdr:W00PD1011327  a     :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID84D4491526D7FFF3 ;
         :instanceHasVolume  bdr:I1KG10553 , bdr:I1KG10554 ;
         :instanceOf         bdr:WA00PD1011327 ;
         :instanceReproductionOf  bdr:MW00PD1011327 ;

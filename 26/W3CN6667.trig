@@ -14,21 +14,21 @@
 bdg:W3CN6667 {
     bda:I3CN6669  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN6669 ;
-        adm:logEntry        bda:LG28DBCD1858CB128B , bda:LGDB9B5DAB9B504D3C ;
+        adm:logEntry        bda:LG28DBCD1858CB128B , bda:LG4BFB219CC6FCD059 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG28DBCD1858CB128B
-        a                   adm:Synced ;
-        adm:logDate         "2017-05-26T01:54:37.35Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGDB9B5DAB9B504D3C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-13T15:48:10.394Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG4BFB219CC6FCD059
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:37.35Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGEA876B32C513D556
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W3CN6667 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN6667 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "26/W3CN6667.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN6667 ;
@@ -57,7 +57,13 @@ bdg:W3CN6667 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   147 .
     
+    bdr:IDFEB1815D1ABD048E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147710897" .
+    
     bdr:W3CN6667  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFEB1815D1ABD048E ;
         :instanceHasVolume  bdr:I3CN6669 ;
         :instanceOf         bdr:WA3CN6667 ;
         :instanceReproductionOf  bdr:MW3CN6667 ;

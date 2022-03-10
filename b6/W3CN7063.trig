@@ -14,15 +14,15 @@
 bdg:W3CN7063 {
     bda:I3CN7065  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN7065 ;
-        adm:logEntry        bda:LG770FEE62488DABE6 , bda:LGF6B8C39C1E79A759 ;
+        adm:logEntry        bda:LG370321A8B79205B4 , bda:LGF6B8C39C1E79A759 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG770FEE62488DABE6
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-14T12:00:13.356Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
+    bda:LG370321A8B79205B4
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-10T21:29:29.65Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGD8944E719224289C
         a                   adm:ScanRequestCreation ;
@@ -31,17 +31,17 @@ bdg:W3CN7063 {
         adm:logWho          bdu:U00007 .
     
     bda:LGF6B8C39C1E79A759
-        a                   adm:Synced ;
-        adm:logDate         "2017-08-10T21:29:29.65Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-14T12:00:13.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:W3CN7063  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN7063 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b6/W3CN7063.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN7063 ;
@@ -57,7 +57,13 @@ bdg:W3CN7063 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   310 .
     
+    bdr:IDF90BD4498A39C515
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147708036" .
+    
     bdr:W3CN7063  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF90BD4498A39C515 ;
         :instanceHasVolume  bdr:I3CN7065 ;
         :instanceOf         bdr:WA3CN7063 ;
         :instanceReproductionOf  bdr:MW3CN7063 ;

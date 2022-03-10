@@ -14,20 +14,20 @@
 bdg:W25114 {
     bda:I1KG12344  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG12344 ;
-        adm:logEntry        bda:LG06730F081ABB03D3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGDF95989F04699337 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG06730F081ABB03D3
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2012-05-07T12:45:20.769Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LGCED2F7A2EB73AD45
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2012-05-07T12:45:20.852Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDF95989F04699337
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2012-05-07T12:45:20.769Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W25114 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W25114 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8c/W25114.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W25114 ;
@@ -69,7 +69,13 @@ bdg:W25114 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   434 .
     
+    bdr:ID6EB4C8661F993B59
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147757742" .
+    
     bdr:W25114  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6EB4C8661F993B59 ;
         :instanceHasVolume  bdr:I1KG12344 ;
         :instanceOf         bdr:WA25114 ;
         :instanceReproductionOf  bdr:MW25114 ;

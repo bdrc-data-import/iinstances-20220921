@@ -14,17 +14,11 @@
 bdg:W8LS20233 {
     bda:I8LS20235  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20235 ;
-        adm:logEntry        bda:LG172FB711BE57721F , bda:LG464EBB29061C7CE3 ;
+        adm:logEntry        bda:LG172FB711BE57721F , bda:LGBC67795F679E48FD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG172FB711BE57721F
-        a                   adm:Synced ;
-        adm:logDate         "2017-08-25T21:08:07.926Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG464EBB29061C7CE3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-15T09:24:54.289Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -36,12 +30,18 @@ bdg:W8LS20233 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGBC67795F679E48FD
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-25T21:08:07.926Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W8LS20233  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS20233 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "93/W8LS20233.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS20233 ;
@@ -57,7 +57,13 @@ bdg:W8LS20233 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   147 .
     
+    bdr:IDC0DF1BED75626801
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147717746" .
+    
     bdr:W8LS20233  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC0DF1BED75626801 ;
         :instanceHasVolume  bdr:I8LS20235 ;
         :instanceOf         bdr:WA8LS20233 ;
         :instanceReproductionOf  bdr:MW8LS20233 ;

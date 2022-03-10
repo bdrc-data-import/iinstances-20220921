@@ -14,15 +14,15 @@
 bdg:W1AC431 {
     bda:I2PD18249  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18249 ;
-        adm:logEntry        bda:LG155AAE8917DC21BB , bda:LGACD1E9B5C09F9143 ;
+        adm:logEntry        bda:LG155AAE8917DC21BB , bda:LGEFD8DF6D62285CBC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG155AAE8917DC21BB
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-09T00:39:33.93Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-15T23:44:06.084Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LG3B6284669C8B8047
         a                   adm:ScanRequestCreation ;
@@ -30,18 +30,18 @@ bdg:W1AC431 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGACD1E9B5C09F9143
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-15T23:44:06.084Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LGEFD8DF6D62285CBC
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:33.93Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1AC431  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC431 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "27/W1AC431.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC431 ;
@@ -57,7 +57,13 @@ bdg:W1AC431 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   358 .
     
+    bdr:ID2A2791489EDCB244
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147753171" .
+    
     bdr:W1AC431  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2A2791489EDCB244 ;
         :instanceHasVolume  bdr:I2PD18249 ;
         :instanceOf         bdr:WA1AC431 ;
         :instanceReproductionOf  bdr:MW1AC431 ;

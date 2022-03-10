@@ -14,11 +14,17 @@
 bdg:W8LS20483 {
     bda:I8LS20485  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20485 ;
-        adm:logEntry        bda:LG785CCE7B2608EAF5 , bda:LGC7DCDC6030D0C023 ;
+        adm:logEntry        bda:LG785CCE7B2608EAF5 , bda:LGB1DC0F31C8E1DDC8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG785CCE7B2608EAF5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T10:39:41.481Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB1DC0F31C8E1DDC8
         a                   adm:Synced ;
         adm:logDate         "2017-05-26T01:54:48.742Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -30,18 +36,12 @@ bdg:W8LS20483 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC7DCDC6030D0C023
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-15T10:39:41.481Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
     bda:W8LS20483  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS20483 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "57/W8LS20483.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS20483 ;
@@ -57,7 +57,13 @@ bdg:W8LS20483 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   161 .
     
+    bdr:ID3FD0464A52D25517
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724104" .
+    
     bdr:W8LS20483  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3FD0464A52D25517 ;
         :instanceHasVolume  bdr:I8LS20485 ;
         :instanceOf         bdr:WA8LS20483 ;
         :instanceReproductionOf  bdr:MW8LS20483 ;

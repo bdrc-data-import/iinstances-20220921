@@ -14,14 +14,14 @@
 bdg:W00KG01517 {
     bda:I1PD9191  a         adm:AdminData ;
         adm:adminAbout      bdr:I1PD9191 ;
-        adm:logEntry        bda:LG1595E1BAD1FD641F , bda:LGB82F5F7124556216 , bda:LGE526378A59F1642B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG1595E1BAD1FD641F , bda:LG71D08C3D8A993F20 , bda:LGB82F5F7124556216 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG1595E1BAD1FD641F
         a                   adm:UpdateData ;
-        adm:logDate         "2007-06-08T13:14:37.01Z"^^xsd:dateTime ;
-        adm:logMessage      "scan complete"@en ;
+        adm:logDate         "2007-06-08T12:16:40.428Z"^^xsd:dateTime ;
+        adm:logMessage      "revised false to true; added cataloging info"@en ;
         adm:logWho          bdu:U00001 .
     
     bda:LG50DDFDCE93F746EB
@@ -30,13 +30,13 @@ bdg:W00KG01517 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGB82F5F7124556216
+    bda:LG71D08C3D8A993F20
         a                   adm:UpdateData ;
-        adm:logDate         "2007-06-08T12:16:40.428Z"^^xsd:dateTime ;
-        adm:logMessage      "revised false to true; added cataloging info"@en ;
+        adm:logDate         "2007-06-08T13:14:37.01Z"^^xsd:dateTime ;
+        adm:logMessage      "scan complete"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGE526378A59F1642B
+    bda:LGB82F5F7124556216
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-05-30T09:21:53.75Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -65,7 +65,7 @@ bdg:W00KG01517 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG01517 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "82/W00KG01517.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG01517 ;
@@ -81,7 +81,13 @@ bdg:W00KG01517 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   176 .
     
+    bdr:ID06E6F6F976FA5BBC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147732198" .
+    
     bdr:W00KG01517  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID06E6F6F976FA5BBC ;
         :instanceHasVolume  bdr:I1PD9191 ;
         :instanceOf         bdr:WA00KG01517 ;
         :instanceReproductionOf  bdr:MW00KG01517 ;

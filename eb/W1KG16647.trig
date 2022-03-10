@@ -14,21 +14,21 @@
 bdg:W1KG16647 {
     bda:I2PD17905  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD17905 ;
-        adm:logEntry        bda:LG7DCECC6DF926D4E2 , bda:LGDD1C34E486BA6053 ;
+        adm:logEntry        bda:LG7DCECC6DF926D4E2 , bda:LGAE55A5C9F4CF0184 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG7DCECC6DF926D4E2
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-09T00:39:47.686Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGDD1C34E486BA6053
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-10T21:16:10.028Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGAE55A5C9F4CF0184
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:47.686Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGF65F0AC4174F7788
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1KG16647 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG16647 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "eb/W1KG16647.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG16647 ;
@@ -57,7 +57,13 @@ bdg:W1KG16647 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   362 .
     
+    bdr:ID47CEA978078EA417
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147733783" .
+    
     bdr:W1KG16647  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID47CEA978078EA417 ;
         :instanceHasVolume  bdr:I2PD17905 ;
         :instanceOf         bdr:WA1KG16647 ;
         :instanceReproductionOf  bdr:MW1KG16647 ;

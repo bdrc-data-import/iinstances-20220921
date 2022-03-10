@@ -14,15 +14,15 @@
 bdg:W2PD17613 {
     bda:I4PD4269  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD4269 ;
-        adm:logEntry        bda:LG160D3F1A893ED3CA , bda:LGED13DC38EB3ABCC5 ;
+        adm:logEntry        bda:LG160D3F1A893ED3CA , bda:LGAADC2EFA05BB44F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG160D3F1A893ED3CA
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-10T01:28:41.73Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T18:21:25.912Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LG71CB5324E060CA31
         a                   adm:ScanRequestCreation ;
@@ -30,18 +30,18 @@ bdg:W2PD17613 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGED13DC38EB3ABCC5
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-08T18:21:25.912Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LGAADC2EFA05BB44F9
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:41.73Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W2PD17613  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD17613 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d4/W2PD17613.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD17613 ;
@@ -57,7 +57,13 @@ bdg:W2PD17613 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   250 .
     
+    bdr:IDEC08F8167475C080
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147740521" .
+    
     bdr:W2PD17613  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEC08F8167475C080 ;
         :instanceHasVolume  bdr:I4PD4269 ;
         :instanceOf         bdr:WA2PD17613 ;
         :instanceReproductionOf  bdr:MW2PD17613 ;

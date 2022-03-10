@@ -14,33 +14,33 @@
 bdg:W00EGS1016689 {
     bda:I1CZ93  a           adm:AdminData ;
         adm:adminAbout      bdr:I1CZ93 ;
-        adm:logEntry        bda:LG14F49A4298733DEF , bda:LG5DE68382438210A7 , bda:LG7E5FA5F1297F8427 , bda:LGBEE20418BB6CDA67 , bda:LGF09704EE8AFFDCDE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG5DE68382438210A7 , bda:LG6BB696492719D1E8 , bda:LG7E5FA5F1297F8427 , bda:LGBEE20418BB6CDA67 , bda:LGF09704EE8AFFDCDE , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG14F49A4298733DEF
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-03-12T15:34:28.648Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
-    
     bda:LG5DE68382438210A7
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-03-26T16:47:43.892Z"^^xsd:dateTime ;
-        adm:logMessage      "checking volume map issues; jann"@en ;
-        adm:logWho          bdu:U00011 .
-    
-    bda:LG7E5FA5F1297F8427
         a                   adm:UpdateData ;
         adm:logDate         "2007-03-26T14:16:23.26Z"^^xsd:dateTime ;
         adm:logMessage      "number of pages updated; jann"@en ;
         adm:logWho          bdu:U00011 .
     
-    bda:LGBEE20418BB6CDA67
+    bda:LG6BB696492719D1E8
         a                   adm:UpdateData ;
         adm:logDate         "2009-01-07T12:38:41.615Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LG7E5FA5F1297F8427
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-26T14:12:11.019Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scan and QC info; jann"@en ;
+        adm:logWho          bdu:U00011 .
+    
+    bda:LGBEE20418BB6CDA67
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-03-26T16:47:43.892Z"^^xsd:dateTime ;
+        adm:logMessage      "checking volume map issues; jann"@en ;
+        adm:logWho          bdu:U00011 .
     
     bda:LGD631F15714C9ACC1
         a                   adm:ScanRequestCreation ;
@@ -49,10 +49,10 @@ bdg:W00EGS1016689 {
         adm:logWho          bdu:U00017 .
     
     bda:LGF09704EE8AFFDCDE
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-03-26T14:12:11.019Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scan and QC info; jann"@en ;
-        adm:logWho          bdu:U00011 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-03-12T15:34:28.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -78,7 +78,7 @@ bdg:W00EGS1016689 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00EGS1016689 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "eb/W00EGS1016689.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00EGS1016689 ;
@@ -94,8 +94,14 @@ bdg:W00EGS1016689 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   535 .
     
+    bdr:ID56F5E9CE5F56D367
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147751386" .
+    
     bdr:W00EGS1016689
         a                   :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID56F5E9CE5F56D367 ;
         :instanceHasVolume  bdr:I1CZ93 ;
         :instanceOf         bdr:WA00EGS1016689 ;
         :instanceReproductionOf  bdr:MW00EGS1016689 ;

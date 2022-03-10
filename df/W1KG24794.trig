@@ -14,9 +14,15 @@
 bdg:W1KG24794 {
     bda:I1KG24796  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24796 ;
-        adm:logEntry        bda:LGEDBD71F4220BF4D6 , bda:LGF62AC9A515047E3A , bda:LGIM76D0E16E , bda:LGIM887B8A84 ;
+        adm:logEntry        bda:LG1B159FA78BB98F80 , bda:LGF62AC9A515047E3A , bda:LGIM76D0E16E , bda:LGIM887B8A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG1B159FA78BB98F80
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:35:05.554Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG252FB981C15A1ABD
         a                   adm:ScanRequestCreation ;
@@ -24,17 +30,11 @@ bdg:W1KG24794 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGEDBD71F4220BF4D6
+    bda:LGF62AC9A515047E3A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T14:42:08.614Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGF62AC9A515047E3A
-        a                   adm:Synced ;
-        adm:logDate         "2018-02-01T03:35:05.554Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM76D0E16E  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -53,7 +53,7 @@ bdg:W1KG24794 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24794 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "df/W1KG24794.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24794 ;
@@ -69,7 +69,13 @@ bdg:W1KG24794 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   163 .
     
+    bdr:IDC1F36F887BC9E9A5
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737247" .
+    
     bdr:W1KG24794  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC1F36F887BC9E9A5 ;
         :instanceHasVolume  bdr:I1KG24796 ;
         :instanceOf         bdr:WA1KG24794 ;
         :instanceReproductionOf  bdr:MW1KG24794 ;

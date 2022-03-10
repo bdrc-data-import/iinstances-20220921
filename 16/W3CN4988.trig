@@ -14,29 +14,35 @@
 bdg:W3CN4988 {
     bda:I8LS20820  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20820 ;
-        adm:logEntry        bda:LG2540B841C5818976 , bda:LG255F801ADCB764A9 ;
+        adm:logEntry        bda:LG24F10316B407D0E3 , bda:LG255F801ADCB764A9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS20821  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20821 ;
-        adm:logEntry        bda:LG3A24A617272BB811 , bda:LG9CE06DB45DB810AC ;
+        adm:logEntry        bda:LG3A24A617272BB811 , bda:LG3AEB524E7908930C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG2540B841C5818976
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-06-01T14:59:07.567Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LG255F801ADCB764A9
+    bda:LG24F10316B407D0E3
         a                   adm:Synced ;
         adm:logDate         "2017-10-26T20:57:19.231Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LG255F801ADCB764A9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-01T14:59:07.567Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG3A24A617272BB811
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-01T14:59:07.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG3AEB524E7908930C
         a                   adm:Synced ;
         adm:logDate         "2017-10-26T20:57:19.924Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -48,18 +54,12 @@ bdg:W3CN4988 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG9CE06DB45DB810AC
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-06-01T14:59:07.684Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
     bda:W3CN4988  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN4988 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "16/W3CN4988.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN4988 ;
@@ -82,7 +82,13 @@ bdg:W3CN4988 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   556 .
     
+    bdr:ID30582F284A4E58EA
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716458" .
+    
     bdr:W3CN4988  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID30582F284A4E58EA ;
         :instanceHasVolume  bdr:I8LS20820 , bdr:I8LS20821 ;
         :instanceOf         bdr:WA3CN4988 ;
         :instanceReproductionOf  bdr:MW3CN4988 ;

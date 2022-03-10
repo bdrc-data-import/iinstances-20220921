@@ -14,7 +14,7 @@
 bdg:W3CN5676 {
     bda:I1KG26425  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26425 ;
-        adm:logEntry        bda:LG96B5A613EE6B861D , bda:LG9740E8BD7A067E99 ;
+        adm:logEntry        bda:LG86185A1827201182 , bda:LG9740E8BD7A067E99 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,17 +24,17 @@ bdg:W3CN5676 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG96B5A613EE6B861D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-06-02T15:08:27.609Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG9740E8BD7A067E99
+    bda:LG86185A1827201182
         a                   adm:Synced ;
         adm:logDate         "2017-12-20T08:09:13.308Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG9740E8BD7A067E99
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-06-02T15:08:27.609Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGF57EE130238A49C8
         a                   adm:ScanRequestCreation ;
@@ -47,7 +47,7 @@ bdg:W3CN5676 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN5676 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "42/W3CN5676.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5676 ;
@@ -63,7 +63,13 @@ bdg:W3CN5676 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   274 .
     
+    bdr:ID4C9CB1349DBA4A66
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715618" .
+    
     bdr:W3CN5676  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4C9CB1349DBA4A66 ;
         :instanceHasVolume  bdr:I1KG26425 ;
         :instanceOf         bdr:WA3CN5676 ;
         :instanceReproductionOf  bdr:MW3CN5676 ;

@@ -14,7 +14,7 @@
 bdg:W29229 {
     bda:I2DB89892  a        adm:AdminData ;
         adm:adminAbout      bdr:I2DB89892 ;
-        adm:logEntry        bda:LG8D8AEC4F8C7BAC6B , bda:LGF9E96BF35D452598 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG9F59AA55825615C0 , bda:LGF9E96BF35D452598 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,17 +24,17 @@ bdg:W29229 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00003 .
     
-    bda:LG8D8AEC4F8C7BAC6B
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2009-10-06T14:42:01.461Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00003 .
-    
-    bda:LGF9E96BF35D452598
+    bda:LG9F59AA55825615C0
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-07T11:17:45.843Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00040 .
+    
+    bda:LGF9E96BF35D452598
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2009-10-06T14:42:01.461Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00003 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -59,7 +59,7 @@ bdg:W29229 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W29229 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c0/W29229.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W29229 ;
@@ -75,7 +75,13 @@ bdg:W29229 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   127 .
     
+    bdr:IDF9E496D21A5BD093
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147753408" .
+    
     bdr:W29229  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF9E496D21A5BD093 ;
         :instanceHasVolume  bdr:I2DB89892 ;
         :instanceOf         bdr:WA29229 ;
         :instanceReproductionOf  bdr:MW29229 ;

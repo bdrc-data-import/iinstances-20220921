@@ -14,13 +14,13 @@
 bdg:W2KG209060 {
     bda:I2KG209827  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209827 ;
-        adm:logEntry        bda:LG35E428522E324443 , bda:LGIMEBF4BFEB ;
+        adm:logEntry        bda:LG96C9ADA05DB486CE , bda:LGIMEBF4BFEB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2KG209828  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209828 ;
-        adm:logEntry        bda:LG2165DD3D74169D9D , bda:LGIMC42E270D ;
+        adm:logEntry        bda:LG71EB71576BC798E3 , bda:LGIMC42E270D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,13 +30,13 @@ bdg:W2KG209060 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG2165DD3D74169D9D
+    bda:LG71EB71576BC798E3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-23T16:27:25.74Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG35E428522E324443
+    bda:LG96C9ADA05DB486CE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-23T16:27:25.688Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -59,7 +59,7 @@ bdg:W2KG209060 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG209060 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "56/W2KG209060.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG209060 ;
@@ -82,7 +82,13 @@ bdg:W2KG209060 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   833 .
     
+    bdr:ID8901AD66221DE349
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715255" .
+    
     bdr:W2KG209060  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8901AD66221DE349 ;
         :instanceHasVolume  bdr:I2KG209827 , bdr:I2KG209828 ;
         :instanceOf         bdr:WA2KG209060 ;
         :instanceReproductionOf  bdr:MW2KG209060 ;

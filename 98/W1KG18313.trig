@@ -14,7 +14,7 @@
 bdg:W1KG18313 {
     bda:I1KG18385  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18385 ;
-        adm:logEntry        bda:LG65E3283751D83125 , bda:LGF74851CBC23A2ACC , bda:LGIMBCCC132A ;
+        adm:logEntry        bda:LG65E3283751D83125 , bda:LGAABBDC1F738231C0 , bda:LGIMBCCC132A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,16 +25,16 @@ bdg:W1KG18313 {
         adm:logWho          bdu:U00016 .
     
     bda:LG65E3283751D83125
-        a                   adm:Synced ;
-        adm:logDate         "2017-07-31T23:53:56.921Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGF74851CBC23A2ACC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-08-14T12:17:18.424Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGAABBDC1F738231C0
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-31T23:53:56.921Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMBCCC132A  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -47,7 +47,7 @@ bdg:W1KG18313 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG18313 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "98/W1KG18313.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG18313 ;
@@ -63,7 +63,13 @@ bdg:W1KG18313 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   375 .
     
+    bdr:IDF34AE6696F072D9D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147738709" .
+    
     bdr:W1KG18313  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF34AE6696F072D9D ;
         :instanceHasVolume  bdr:I1KG18385 ;
         :instanceOf         bdr:WA1KG18313 ;
         :instanceReproductionOf  bdr:MW1KG18313 ;

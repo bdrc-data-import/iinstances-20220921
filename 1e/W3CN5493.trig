@@ -14,17 +14,11 @@
 bdg:W3CN5493 {
     bda:I3CN5495  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN5495 ;
-        adm:logEntry        bda:LG88FE4A3502358F17 , bda:LGA4553964868B9B40 ;
+        adm:logEntry        bda:LG88FE4A3502358F17 , bda:LGBC2EC8805682055C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG88FE4A3502358F17
-        a                   adm:Synced ;
-        adm:logDate         "2017-09-29T22:27:36.233Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGA4553964868B9B40
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-08T11:19:49.106Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -36,12 +30,18 @@ bdg:W3CN5493 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGBC2EC8805682055C
+        a                   adm:Synced ;
+        adm:logDate         "2017-09-29T22:27:36.233Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN5493  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN5493 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1e/W3CN5493.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5493 ;
@@ -57,7 +57,13 @@ bdg:W3CN5493 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   257 .
     
+    bdr:IDBBF8C487307E61BD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147709418" .
+    
     bdr:W3CN5493  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBBF8C487307E61BD ;
         :instanceHasVolume  bdr:I3CN5495 ;
         :instanceOf         bdr:WA3CN5493 ;
         :instanceReproductionOf  bdr:MW3CN5493 ;

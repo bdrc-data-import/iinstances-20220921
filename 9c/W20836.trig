@@ -14,7 +14,7 @@
 bdg:W20836 {
     bda:I1GS53138  a        adm:AdminData ;
         adm:adminAbout      bdr:I1GS53138 ;
-        adm:logEntry        bda:LGC05FD3588820CFF7 , bda:LGC1054F41E31A095D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGC05FD3588820CFF7 , bda:LGF792DEF43D1BAF66 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,15 +25,15 @@ bdg:W20836 {
         adm:logWho          bdu:U00001 .
     
     bda:LGC05FD3588820CFF7
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-09-17T21:11:19.39Z"^^xsd:dateTime ;
-        adm:logMessage      "annotation added; image group revised"@en ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LGC1054F41E31A095D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-07-12T17:23:26.069Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGF792DEF43D1BAF66
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-09-17T21:11:19.39Z"^^xsd:dateTime ;
+        adm:logMessage      "annotation added; image group revised"@en ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -59,7 +59,7 @@ bdg:W20836 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20836 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9c/W20836.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20836 ;
@@ -75,7 +75,13 @@ bdg:W20836 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   177 .
     
+    bdr:ID3DDDD955CD912C8D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147749566" .
+    
     bdr:W20836  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID3DDDD955CD912C8D ;
         :instanceHasVolume  bdr:I1GS53138 ;
         :instanceOf         bdr:WA20836 ;
         :instanceReproductionOf  bdr:MW20836 ;

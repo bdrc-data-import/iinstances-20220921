@@ -14,37 +14,25 @@
 bdg:W8LS68172 {
     bda:I8LS68174  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68174 ;
-        adm:logEntry        bda:LG040F6676BB92CACE , bda:LGIMCE722BDE ;
+        adm:logEntry        bda:LG212088398D0B1E57 , bda:LGIMCE722BDE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS68175  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68175 ;
-        adm:logEntry        bda:LG577E54B1631C1E3F , bda:LGIM414934E0 ;
+        adm:logEntry        bda:LGB43FA126D7DC2631 , bda:LGIM414934E0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS68176  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68176 ;
-        adm:logEntry        bda:LG171872DDFBD259A1 , bda:LGIM09C9A2AA ;
+        adm:logEntry        bda:LGDDCE3A6D594CF0F0 , bda:LGIM09C9A2AA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG040F6676BB92CACE
+    bda:LG212088398D0B1E57
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-27T11:44:42.395Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LG171872DDFBD259A1
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-01-27T11:44:42.528Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LG577E54B1631C1E3F
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-01-27T11:44:42.462Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -52,6 +40,18 @@ bdg:W8LS68172 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-01-27T11:44:42.594Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB43FA126D7DC2631
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-27T11:44:42.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDDCE3A6D594CF0F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-27T11:44:42.528Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIM09C9A2AA  a     adm:Synced ;
@@ -77,7 +77,7 @@ bdg:W8LS68172 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS68172 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "0b/W8LS68172.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS68172 ;
@@ -107,7 +107,13 @@ bdg:W8LS68172 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   959 .
     
+    bdr:IDEF93817DB84C5D9D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1153320459" .
+    
     bdr:W8LS68172  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEF93817DB84C5D9D ;
         :instanceHasVolume  bdr:I8LS68174 , bdr:I8LS68175 , bdr:I8LS68176 ;
         :instanceOf         bdr:WA8LS68172 ;
         :instanceReproductionOf  bdr:MW8LS68172 ;

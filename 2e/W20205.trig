@@ -14,21 +14,21 @@
 bdg:W20205 {
     bda:I1PD38197  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD38197 ;
-        adm:logEntry        bda:LG0CD76BB124E8C106 , bda:LG38F6846CA8319C1E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0CD76BB124E8C106 , bda:LG3EAA5C4A03E0297D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG0CD76BB124E8C106
-        a                   adm:UpdateData ;
-        adm:logDate         "2008-08-04T11:33:16.991Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00003 .
-    
-    bda:LG38F6846CA8319C1E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-08-04T11:28:43.654Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG3EAA5C4A03E0297D
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-08-04T11:33:16.991Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00003 .
     
     bda:LGF7CDDF2220D5166B
         a                   adm:ScanRequestCreation ;
@@ -59,7 +59,7 @@ bdg:W20205 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20205 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "2e/W20205.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20205 ;
@@ -75,7 +75,13 @@ bdg:W20205 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   112 .
     
+    bdr:ID5003A79AC99B138E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147717745" .
+    
     bdr:W20205  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5003A79AC99B138E ;
         :instanceHasVolume  bdr:I1PD38197 ;
         :instanceOf         bdr:WA20205 ;
         :instanceReproductionOf  bdr:MW20205 ;

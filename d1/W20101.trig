@@ -41,7 +41,7 @@ bdg:W20101 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20101 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d1/W20101.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20101 ;
@@ -55,7 +55,13 @@ bdg:W20101 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   270 .
     
+    bdr:IDDEC1B60EC0DB69DB
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147715314" .
+    
     bdr:W20101  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDEC1B60EC0DB69DB ;
         :instanceHasVolume  bdr:I4246 ;
         :instanceOf         bdr:WA20101 ;
         :instanceReproductionOf  bdr:MW20101 ;

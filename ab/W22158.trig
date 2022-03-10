@@ -14,7 +14,7 @@
 bdg:W22158 {
     bda:I1KG18102  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18102 ;
-        adm:logEntry        bda:LG7CAD4FC3C98D2FE6 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG5B9C3A5D4C565608 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,7 +24,7 @@ bdg:W22158 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG7CAD4FC3C98D2FE6
+    bda:LG5B9C3A5D4C565608
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-07-09T15:35:27.619Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -53,7 +53,7 @@ bdg:W22158 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W22158 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ab/W22158.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W22158 ;
@@ -69,7 +69,13 @@ bdg:W22158 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   458 .
     
+    bdr:ID2B53F4A70F78E9C5
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147750987" .
+    
     bdr:W22158  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2B53F4A70F78E9C5 ;
         :instanceHasVolume  bdr:I1KG18102 ;
         :instanceOf         bdr:WA22158 ;
         :instanceReproductionOf  bdr:MW22158 ;

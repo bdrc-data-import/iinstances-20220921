@@ -14,20 +14,20 @@
 bdg:W8LS43820 {
     bda:I8LS43822  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS43822 ;
-        adm:logEntry        bda:LG9DFF6656C6DE901D , bda:LGIM8FB37182 ;
+        adm:logEntry        bda:LG437C6D44E9EB60D3 , bda:LGIM8FB37182 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG437C6D44E9EB60D3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-03-15T14:37:07.418Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG6D49E07274E05B35
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-03-15T14:37:07.568Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LG9DFF6656C6DE901D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-03-15T14:37:07.418Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIM8FB37182  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W8LS43820 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS43820 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "de/W8LS43820.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS43820 ;
@@ -57,7 +57,13 @@ bdg:W8LS43820 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   286 .
     
+    bdr:IDEA9DE33B1063109B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743463" .
+    
     bdr:W8LS43820  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDEA9DE33B1063109B ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I8LS43822 ;
         :instanceOf         bdr:WA8LS43820 ;

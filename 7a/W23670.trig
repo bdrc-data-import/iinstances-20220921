@@ -14,11 +14,11 @@
 bdg:W23670 {
     bda:I4220  a            adm:AdminData ;
         adm:adminAbout      bdr:I4220 ;
-        adm:logEntry        bda:LGB9EE570826383FA4 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGE0F4EDF7CB39236C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGB9EE570826383FA4
+    bda:LGE0F4EDF7CB39236C
         a                   adm:ContentQC ;
         adm:logDate         "2005-01-20"^^xsd:date ;
         adm:logWho          bdu:U00026 .
@@ -46,7 +46,7 @@ bdg:W23670 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W23670 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7a/W23670.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W23670 ;
@@ -60,7 +60,13 @@ bdg:W23670 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   712 .
     
+    bdr:ID88A71056EC473F18
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147712655" .
+    
     bdr:W23670  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID88A71056EC473F18 ;
         :instanceHasVolume  bdr:I4220 ;
         :instanceOf         bdr:WA23670 ;
         :instanceReproductionOf  bdr:MW23670 ;

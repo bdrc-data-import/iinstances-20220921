@@ -14,7 +14,7 @@
 bdg:W8LS68268 {
     bda:I8LS68270  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68270 ;
-        adm:logEntry        bda:LGCC468F88AF08B283 , bda:LGIM1950CC17 ;
+        adm:logEntry        bda:LG732213993CF9EAFE , bda:LGIM1950CC17 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,7 +24,7 @@ bdg:W8LS68268 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCC468F88AF08B283
+    bda:LG732213993CF9EAFE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-31T12:38:21.848Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W8LS68268 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS68268 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0d/W8LS68268.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS68268 ;
@@ -57,7 +57,13 @@ bdg:W8LS68268 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   364 .
     
+    bdr:IDAC693AFEAE130D58
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743475" .
+    
     bdr:W8LS68268  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAC693AFEAE130D58 ;
         :instanceHasVolume  bdr:I8LS68270 ;
         :instanceOf         bdr:WA8LS68268 ;
         :instanceReproductionOf  bdr:MW8LS68268 ;

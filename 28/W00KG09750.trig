@@ -14,11 +14,11 @@
 bdg:W00KG09750 {
     bda:I00KG09796  a       adm:AdminData ;
         adm:adminAbout      bdr:I00KG09796 ;
-        adm:logEntry        bda:LG1D43BECAE143D864 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG1E427E86E5A31F79 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1D43BECAE143D864
+    bda:LG1E427E86E5A31F79
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-06-17T12:56:20.546Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -53,7 +53,7 @@ bdg:W00KG09750 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG09750 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "28/W00KG09750.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG09750 ;
@@ -69,7 +69,13 @@ bdg:W00KG09750 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   64 .
     
+    bdr:IDBAC6A149E499C94E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147727118" .
+    
     bdr:W00KG09750  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBAC6A149E499C94E ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I00KG09796 ;
         :instanceOf         bdr:WA00KG09750 ;

@@ -14,17 +14,17 @@
 bdg:W00KG01516 {
     bda:I5816  a            adm:AdminData ;
         adm:adminAbout      bdr:I5816 ;
-        adm:logEntry        bda:LG040EB8D44F81E746 , bda:LG0E19C93CF3F7A9FC , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0E19C93CF3F7A9FC , bda:LG12808881B05102EF , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG040EB8D44F81E746
+    bda:LG0E19C93CF3F7A9FC
         a                   adm:UpdateData ;
         adm:logDate         "2007-05-22T16:20:11.471Z"^^xsd:dateTime ;
         adm:logMessage      "reworked image map for series"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG0E19C93CF3F7A9FC
+    bda:LG12808881B05102EF
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-06T14:45:13.774Z"^^xsd:dateTime ;
         adm:logMessage      "checked image group"@en ;
@@ -53,7 +53,7 @@ bdg:W00KG01516 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG01516 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "68/W00KG01516.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG01516 ;
@@ -67,7 +67,13 @@ bdg:W00KG01516 {
         :volumePagesTbrcIntro  0 ;
         :volumePagesTotal   761 .
     
+    bdr:IDF839D651B4363C8D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147730173" .
+    
     bdr:W00KG01516  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF839D651B4363C8D ;
         :instanceHasVolume  bdr:I5816 ;
         :instanceOf         bdr:WA00KG01516 ;
         :instanceReproductionOf  bdr:MW00KG01516 ;

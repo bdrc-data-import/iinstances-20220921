@@ -14,28 +14,28 @@
 bdg:W2PD19190 {
     bda:I4PD4778  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD4778 ;
-        adm:logEntry        bda:LG56F3D31D56582EB6 , bda:LG8C676F71BC2F433C ;
+        adm:logEntry        bda:LG56F3D31D56582EB6 , bda:LGA748CDC0BAD2C725 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG56F3D31D56582EB6
-        a                   adm:Synced ;
-        adm:logDate         "2017-06-17T02:29:22.731Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG8C676F71BC2F433C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-02-24T09:09:40.361Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGA748CDC0BAD2C725
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-17T02:29:22.731Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W2PD19190  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD19190 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a8/W2PD19190.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD19190 ;
@@ -50,7 +50,13 @@ bdg:W2PD19190 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   212 .
     
+    bdr:ID46593A03EB81D70C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147712981" .
+    
     bdr:W2PD19190  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID46593A03EB81D70C ;
         :instanceHasVolume  bdr:I4PD4778 ;
         :instanceOf         bdr:WA2PD19190 ;
         :instanceReproductionOf  bdr:MW2PD19190 ;

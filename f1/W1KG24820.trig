@@ -14,15 +14,15 @@
 bdg:W1KG24820 {
     bda:I1KG24822  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24822 ;
-        adm:logEntry        bda:LG4E6C81B926462BA1 , bda:LG8E1449255EF2D209 ;
+        adm:logEntry        bda:LG4E6C81B926462BA1 , bda:LGABF72C1F2EA4CC08 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG4E6C81B926462BA1
-        a                   adm:Synced ;
-        adm:logDate         "2018-02-01T03:35:12.423Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T15:14:26.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG7BCCDD9E337D31F9
         a                   adm:ScanRequestCreation ;
@@ -30,18 +30,18 @@ bdg:W1KG24820 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG8E1449255EF2D209
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T15:14:26.337Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+    bda:LGABF72C1F2EA4CC08
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:35:12.423Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1KG24820  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24820 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f1/W1KG24820.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24820 ;
@@ -57,7 +57,13 @@ bdg:W1KG24820 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   383 .
     
+    bdr:IDBD58B4B3E52F2CC5
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147730439" .
+    
     bdr:W1KG24820  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBD58B4B3E52F2CC5 ;
         :instanceHasVolume  bdr:I1KG24822 ;
         :instanceOf         bdr:WA1KG24820 ;
         :instanceReproductionOf  bdr:MW1KG24820 ;

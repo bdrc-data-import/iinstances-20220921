@@ -14,21 +14,21 @@
 bdg:W1AC311 {
     bda:I4PD4478  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD4478 ;
-        adm:logEntry        bda:LG6ABDA194D419AB6B , bda:LGE85ACA297FCE37BF ;
+        adm:logEntry        bda:LGCF4B476743663FBF , bda:LGE85ACA297FCE37BF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG6ABDA194D419AB6B
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-24T18:16:02.637Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LGE85ACA297FCE37BF
+    bda:LGCF4B476743663FBF
         a                   adm:Synced ;
         adm:logDate         "2017-11-30T01:59:44.371Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGE85ACA297FCE37BF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-24T18:16:02.637Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LGF04852ADA0AAD6B1
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1AC311 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC311 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a3/W1AC311.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC311 ;
@@ -57,7 +57,13 @@ bdg:W1AC311 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   456 .
     
+    bdr:ID715F6A6662A5A768
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147720412" .
+    
     bdr:W1AC311  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID715F6A6662A5A768 ;
         :instanceHasVolume  bdr:I4PD4478 ;
         :instanceOf         bdr:WA1AC311 ;
         :instanceReproductionOf  bdr:MW1AC311 ;

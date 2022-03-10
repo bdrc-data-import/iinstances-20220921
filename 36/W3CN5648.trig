@@ -14,21 +14,21 @@
 bdg:W3CN5648 {
     bda:I3CN5650  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN5650 ;
-        adm:logEntry        bda:LG4088DCE04F07A838 , bda:LG7725DE2DF3876E5C ;
+        adm:logEntry        bda:LG09845C05070F1F0D , bda:LG7725DE2DF3876E5C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG4088DCE04F07A838
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-08T16:00:43.238Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LG7725DE2DF3876E5C
+    bda:LG09845C05070F1F0D
         a                   adm:Synced ;
         adm:logDate         "2017-07-31T23:54:03.69Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG7725DE2DF3876E5C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-08T16:00:43.238Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGEAECDB9E68E1ACF0
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W3CN5648 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN5648 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "36/W3CN5648.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5648 ;
@@ -57,7 +57,13 @@ bdg:W3CN5648 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   401 .
     
+    bdr:ID10250103E5EB6442
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147723109" .
+    
     bdr:W3CN5648  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID10250103E5EB6442 ;
         :instanceHasVolume  bdr:I3CN5650 ;
         :instanceOf         bdr:WA3CN5648 ;
         :instanceReproductionOf  bdr:MW3CN5648 ;

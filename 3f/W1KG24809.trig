@@ -14,27 +14,27 @@
 bdg:W1KG24809 {
     bda:I1KG24811  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24811 ;
-        adm:logEntry        bda:LG1ABEF73A410806C8 , bda:LGCB67C7E27CAFB0A2 ;
+        adm:logEntry        bda:LG1ABEF73A410806C8 , bda:LG673384404C181E3C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24812  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24812 ;
-        adm:logEntry        bda:LG9F159C4B57060A24 , bda:LGD5E3E9C504B25953 ;
+        adm:logEntry        bda:LG7322EE9567C4508C , bda:LGD5E3E9C504B25953 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG24813  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24813 ;
-        adm:logEntry        bda:LG8A0267417EE7536D , bda:LG9CDEB6E38AEA9029 ;
+        adm:logEntry        bda:LG8A0267417EE7536D , bda:LGB1DB93CDA4B134F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG1ABEF73A410806C8
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-12T04:45:00.395Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T15:00:29.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1EF8815A86955C29
         a                   adm:ScanRequestCreation ;
@@ -42,42 +42,42 @@ bdg:W1KG24809 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG8A0267417EE7536D
+    bda:LG673384404C181E3C
         a                   adm:Synced ;
-        adm:logDate         "2017-12-12T04:45:02.684Z"^^xsd:dateTime ;
+        adm:logDate         "2017-12-12T04:45:00.395Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:LG9CDEB6E38AEA9029
+    bda:LG7322EE9567C4508C
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-12T04:45:01.47Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG8A0267417EE7536D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T15:00:29.967Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG9F159C4B57060A24
+    bda:LGB1DB93CDA4B134F9
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-12T04:45:02.684Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD5E3E9C504B25953
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T15:00:29.883Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGCB67C7E27CAFB0A2
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T15:00:29.804Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGD5E3E9C504B25953
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-12T04:45:01.47Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
     
     bda:W1KG24809  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24809 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "3f/W1KG24809.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24809 ;
@@ -107,7 +107,13 @@ bdg:W1KG24809 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   338 .
     
+    bdr:ID6D4180730AC55BAD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147741839" .
+    
     bdr:W1KG24809  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6D4180730AC55BAD ;
         :instanceHasVolume  bdr:I1KG24811 , bdr:I1KG24812 , bdr:I1KG24813 ;
         :instanceOf         bdr:WA1KG24809 ;
         :instanceReproductionOf  bdr:MW1KG24809 ;

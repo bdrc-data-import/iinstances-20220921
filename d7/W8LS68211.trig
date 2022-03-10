@@ -14,7 +14,7 @@
 bdg:W8LS68211 {
     bda:I8LS68213  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS68213 ;
-        adm:logEntry        bda:LGDA478369FD7DF709 , bda:LGIM046FCBC1 , bda:LGIM076E60D1 , bda:LGIM14B0CD5F , bda:LGIM1BAC04B2 , bda:LGIM20EFB384 , bda:LGIM22346994 , bda:LGIM2F4AA589 , bda:LGIM2F9BBF3D , bda:LGIM3A032684 , bda:LGIM415823CB , bda:LGIM53177369 , bda:LGIM7792B3B5 , bda:LGIM8751EDA1 , bda:LGIM899157EB , bda:LGIM89A32086 , bda:LGIM933E596E , bda:LGIM96ACC874 , bda:LGIM98588FF7 , bda:LGIMBD852575 , bda:LGIMC93AE0AD , bda:LGIME02F5751 , bda:LGIME0B0FBE5 , bda:LGIMF42A04A8 ;
+        adm:logEntry        bda:LG68FDAFBD23E319DF , bda:LGIM046FCBC1 , bda:LGIM076E60D1 , bda:LGIM14B0CD5F , bda:LGIM1BAC04B2 , bda:LGIM20EFB384 , bda:LGIM22346994 , bda:LGIM2F4AA589 , bda:LGIM2F9BBF3D , bda:LGIM3A032684 , bda:LGIM415823CB , bda:LGIM53177369 , bda:LGIM7792B3B5 , bda:LGIM8751EDA1 , bda:LGIM899157EB , bda:LGIM89A32086 , bda:LGIM933E596E , bda:LGIM96ACC874 , bda:LGIM98588FF7 , bda:LGIMBD852575 , bda:LGIMC93AE0AD , bda:LGIME02F5751 , bda:LGIME0B0FBE5 , bda:LGIMF42A04A8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,7 +24,7 @@ bdg:W8LS68211 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDA478369FD7DF709
+    bda:LG68FDAFBD23E319DF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-28T14:53:13.585Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -173,7 +173,7 @@ bdg:W8LS68211 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS68211 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      25 ;
+        adm:facetIndex      26 ;
         adm:gitPath         "d7/W8LS68211.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS68211 ;
@@ -189,7 +189,13 @@ bdg:W8LS68211 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   530 .
     
+    bdr:IDA7444EB6D21916C0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737864" .
+    
     bdr:W8LS68211  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA7444EB6D21916C0 ;
         :instanceHasVolume  bdr:I8LS68213 ;
         :instanceOf         bdr:WA8LS68211 ;
         :instanceReproductionOf  bdr:MW8LS68211 ;

@@ -14,15 +14,15 @@
 bdg:W00KG05881 {
     bda:I00KG08417  a       adm:AdminData ;
         adm:adminAbout      bdr:I00KG08417 ;
-        adm:logEntry        bda:LG05D9511FB55B1DDE , bda:LGEAB04501F0847342 , bda:LGFDDA58C004D43335 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG05D9511FB55B1DDE , bda:LGCE5464ACF6989A38 , bda:LGEAB04501F0847342 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG05D9511FB55B1DDE
-        a                   adm:UpdateData ;
-        adm:logDate         "2010-04-27T16:06:54.716Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00021 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-04-17T11:18:20.565Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG294919EED91813F5
         a                   adm:ScanRequestCreation ;
@@ -30,17 +30,17 @@ bdg:W00KG05881 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGEAB04501F0847342
+    bda:LGCE5464ACF6989A38
         a                   adm:UpdateData ;
         adm:logDate         "2010-04-27T16:12:48.519Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGFDDA58C004D43335
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-04-17T11:18:20.565Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+    bda:LGEAB04501F0847342
+        a                   adm:UpdateData ;
+        adm:logDate         "2010-04-27T16:06:54.716Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -65,7 +65,7 @@ bdg:W00KG05881 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG05881 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ea/W00KG05881.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG05881 ;
@@ -81,7 +81,13 @@ bdg:W00KG05881 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   46 .
     
+    bdr:ID33BD9929451C06E0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147725542" .
+    
     bdr:W00KG05881  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID33BD9929451C06E0 ;
         :instanceHasVolume  bdr:I00KG08417 ;
         :instanceOf         bdr:WA00KG05881 ;
         :instanceReproductionOf  bdr:MW00KG05881 ;

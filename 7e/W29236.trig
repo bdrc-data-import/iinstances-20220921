@@ -14,11 +14,11 @@
 bdg:W29236 {
     bda:I5257  a            adm:AdminData ;
         adm:adminAbout      bdr:I5257 ;
-        adm:logEntry        bda:LG99658A3306028771 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMBF4B1431 ;
+        adm:logEntry        bda:LGD17B134842973CDF , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMBF4B1431 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG99658A3306028771
+    bda:LGD17B134842973CDF
         a                   adm:ContentQC ;
         adm:logDate         "2006-01-10"^^xsd:date ;
         adm:logMessage      "re scaaned NY"@en ;
@@ -53,7 +53,7 @@ bdg:W29236 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W29236 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7e/W29236.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W29236 ;
@@ -67,7 +67,13 @@ bdg:W29236 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   2 .
     
+    bdr:ID2DDEE6A999E9B02E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147754444" .
+    
     bdr:W29236  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2DDEE6A999E9B02E ;
         :instanceHasVolume  bdr:I5257 ;
         :instanceOf         bdr:WA29236 ;
         :instanceReproductionOf  bdr:MW29236 ;

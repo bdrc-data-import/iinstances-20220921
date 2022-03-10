@@ -14,9 +14,15 @@
 bdg:W1KG16704 {
     bda:I2PD18259  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18259 ;
-        adm:logEntry        bda:LGF9401E727156A9D6 , bda:LGFC9578E3D4E9920F ;
+        adm:logEntry        bda:LG369121085719B3E6 , bda:LGF9401E727156A9D6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG369121085719B3E6
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:50.339Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGD690E790CEA6CC59
         a                   adm:ScanRequestCreation ;
@@ -25,12 +31,6 @@ bdg:W1KG16704 {
         adm:logWho          bdu:U00021 .
     
     bda:LGF9401E727156A9D6
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-09T00:39:50.339Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGFC9578E3D4E9920F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-16T02:36:01.341Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W1KG16704 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG16704 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6f/W1KG16704.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG16704 ;
@@ -57,7 +57,13 @@ bdg:W1KG16704 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   298 .
     
+    bdr:ID4A6E5C2D1A1EEAF5
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147727978" .
+    
     bdr:W1KG16704  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4A6E5C2D1A1EEAF5 ;
         :instanceHasVolume  bdr:I2PD18259 ;
         :instanceOf         bdr:WA1KG16704 ;
         :instanceReproductionOf  bdr:MW1KG16704 ;

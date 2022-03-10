@@ -14,11 +14,17 @@
 bdg:W1KG20958 {
     bda:I1KG20983  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG20983 ;
-        adm:logEntry        bda:LG4D6E7D6310D578FE , bda:LGC67CBF1D5B4C97A3 ;
+        adm:logEntry        bda:LG4D6E7D6310D578FE , bda:LGA6C943B85F824626 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG4D6E7D6310D578FE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-01-07T10:58:59.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA6C943B85F824626
         a                   adm:Synced ;
         adm:logDate         "2017-12-02T00:11:44.257Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -30,18 +36,12 @@ bdg:W1KG20958 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGC67CBF1D5B4C97A3
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-01-07T10:58:59.337Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:W1KG20958  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG20958 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4b/W1KG20958.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG20958 ;
@@ -57,7 +57,13 @@ bdg:W1KG20958 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   142 .
     
+    bdr:IDCF1F716CA26B4A6C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714779" .
+    
     bdr:W1KG20958  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCF1F716CA26B4A6C ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG20983 ;
         :instanceOf         bdr:WA1KG20958 ;

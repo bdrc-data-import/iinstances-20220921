@@ -14,21 +14,21 @@
 bdg:W19992 {
     bda:I1KG21194  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG21194 ;
-        adm:logEntry        bda:LG1F09FA47C6038A47 , bda:LG89C1E2AFAD9FF735 ;
+        adm:logEntry        bda:LG15FEF7F19950BDB3 , bda:LG89C1E2AFAD9FF735 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1F09FA47C6038A47
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-02-12T12:57:56.29Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG89C1E2AFAD9FF735
+    bda:LG15FEF7F19950BDB3
         a                   adm:Synced ;
         adm:logDate         "2017-12-15T00:19:20.216Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG89C1E2AFAD9FF735
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-12T12:57:56.29Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGE5664DF1CD7116FF
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W19992 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W19992 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "11/W19992.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W19992 ;
@@ -57,7 +57,13 @@ bdg:W19992 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   254 .
     
+    bdr:ID6FACE02940CDF10C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147740046" .
+    
     bdr:W19992  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6FACE02940CDF10C ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG21194 ;
         :instanceOf         bdr:WA19992 ;

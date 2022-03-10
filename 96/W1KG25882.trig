@@ -14,7 +14,7 @@
 bdg:W1KG25882 {
     bda:I1KG25884  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25884 ;
-        adm:logEntry        bda:LG59EC77903928F0E2 , bda:LGD97633581E53DCFC ;
+        adm:logEntry        bda:LGB0EDE4A1BD817D68 , bda:LGD97633581E53DCFC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,24 +24,24 @@ bdg:W1KG25882 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG59EC77903928F0E2
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-15T14:59:03.186Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGD97633581E53DCFC
+    bda:LGB0EDE4A1BD817D68
         a                   adm:Synced ;
         adm:logDate         "2017-08-01T23:13:12.759Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD97633581E53DCFC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-15T14:59:03.186Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W1KG25882  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG25882 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "96/W1KG25882.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG25882 ;
@@ -57,7 +57,13 @@ bdg:W1KG25882 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   224 .
     
+    bdr:IDD8FBD1DEF7098805
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746193" .
+    
     bdr:W1KG25882  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD8FBD1DEF7098805 ;
         :instanceHasVolume  bdr:I1KG25884 ;
         :instanceOf         bdr:WA1KG25882 ;
         :instanceReproductionOf  bdr:MW1KG25882 ;

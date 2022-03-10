@@ -14,12 +14,12 @@
 bdg:W3CN8311 {
     bda:I3CN8315  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN8315 ;
-        adm:logEntry        bda:LG7338CA1F3CEE86A6 ;
+        adm:logEntry        bda:LGF16F6AD1A4B9B831 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I3CN8316  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN8316 ;
-        adm:logEntry        bda:LGC3033E39207320AE ;
+        adm:logEntry        bda:LG9C72AB72B6FA8436 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:LG159B0AA3BCD0F26A
@@ -28,15 +28,15 @@ bdg:W3CN8311 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG7338CA1F3CEE86A6
+    bda:LG9C72AB72B6FA8436
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-15T17:22:50.682Z"^^xsd:dateTime ;
+        adm:logDate         "2016-12-15T17:22:50.782Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGC3033E39207320AE
+    bda:LGF16F6AD1A4B9B831
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-15T17:22:50.782Z"^^xsd:dateTime ;
+        adm:logDate         "2016-12-15T17:22:50.682Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
@@ -51,7 +51,7 @@ bdg:W3CN8311 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN8311 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bb/W3CN8311.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN8311 ;
@@ -74,7 +74,13 @@ bdg:W3CN8311 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
+    bdr:IDA0499B16B57996C9
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147717446" .
+    
     bdr:W3CN8311  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA0499B16B57996C9 ;
         :instanceHasVolume  bdr:I3CN8315 , bdr:I3CN8316 ;
         :instanceOf         bdr:WA3CN8311 ;
         :instanceReproductionOf  bdr:MW3CN8311 ;

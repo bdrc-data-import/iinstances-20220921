@@ -14,21 +14,21 @@
 bdg:W1AC424 {
     bda:I2PD18273  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18273 ;
-        adm:logEntry        bda:LG27243CA0A17FC964 , bda:LG304A64E52FA3D09B ;
+        adm:logEntry        bda:LG27243CA0A17FC964 , bda:LG5CE504FDD25EDF23 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG27243CA0A17FC964
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-02T00:11:37.229Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG304A64E52FA3D09B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-16T03:22:59.863Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG5CE504FDD25EDF23
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-02T00:11:37.229Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGC7420416320C6D80
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1AC424 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC424 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2f/W1AC424.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC424 ;
@@ -57,7 +57,13 @@ bdg:W1AC424 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   250 .
     
+    bdr:IDF0C2E8876B143D78
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716834" .
+    
     bdr:W1AC424  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF0C2E8876B143D78 ;
         :instanceHasVolume  bdr:I2PD18273 ;
         :instanceOf         bdr:WA1AC424 ;
         :instanceReproductionOf  bdr:MW1AC424 ;

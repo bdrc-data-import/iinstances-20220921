@@ -14,21 +14,21 @@
 bdg:W1KG21594 {
     bda:I1KG21683  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG21683 ;
-        adm:logEntry        bda:LG8CE7E52E17217F0D , bda:LGDF7AB55E0A7020A0 ;
+        adm:logEntry        bda:LG7E076939B9E38D6C , bda:LGDF7AB55E0A7020A0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG8CE7E52E17217F0D
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-04-07T15:34:05.149Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGDF7AB55E0A7020A0
+    bda:LG7E076939B9E38D6C
         a                   adm:Synced ;
         adm:logDate         "2016-11-14T20:23:15.287Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGDF7AB55E0A7020A0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-04-07T15:34:05.149Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGEAC135F82AB1F2A1
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1KG21594 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG21594 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "56/W1KG21594.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG21594 ;
@@ -57,7 +57,13 @@ bdg:W1KG21594 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   88 .
     
+    bdr:ID52E467AB56C706CD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147727448" .
+    
     bdr:W1KG21594  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID52E467AB56C706CD ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG21683 ;
         :instanceOf         bdr:WA1KG21594 ;

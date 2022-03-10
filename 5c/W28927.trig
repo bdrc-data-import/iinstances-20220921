@@ -41,7 +41,7 @@ bdg:W28927 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W28927 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "5c/W28927.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W28927 ;
@@ -55,7 +55,13 @@ bdg:W28927 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   270 .
     
+    bdr:IDF255C6F6CBC450D1
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147727813" .
+    
     bdr:W28927  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF255C6F6CBC450D1 ;
         :instanceHasVolume  bdr:I4865 ;
         :instanceOf         bdr:WA28927 ;
         :instanceReproductionOf  bdr:MW28927 ;

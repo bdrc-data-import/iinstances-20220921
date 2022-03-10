@@ -14,15 +14,9 @@
 bdg:W20218 {
     bda:I1KG21196  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG21196 ;
-        adm:logEntry        bda:LG0D45E7A57287A801 , bda:LGB56FD9DE9DD2CD3A ;
+        adm:logEntry        bda:LG71C65942E6FEE9D5 , bda:LGB56FD9DE9DD2CD3A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG0D45E7A57287A801
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-02-12T15:26:53.847Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LG59CEE9E246D81D1C
         a                   adm:ScanRequestCreation ;
@@ -30,18 +24,24 @@ bdg:W20218 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGB56FD9DE9DD2CD3A
+    bda:LG71C65942E6FEE9D5
         a                   adm:Synced ;
         adm:logDate         "2017-01-10T23:18:50.33Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGB56FD9DE9DD2CD3A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-02-12T15:26:53.847Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W20218  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20218 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "13/W20218.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20218 ;
@@ -57,7 +57,13 @@ bdg:W20218 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   366 .
     
+    bdr:ID25428D449900CBBF
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147755101" .
+    
     bdr:W20218  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID25428D449900CBBF ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG21196 ;
         :instanceOf         bdr:WA20218 ;

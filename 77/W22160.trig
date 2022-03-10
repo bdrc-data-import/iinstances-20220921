@@ -14,35 +14,35 @@
 bdg:W22160 {
     bda:I1KG18122  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18122 ;
-        adm:logEntry        bda:LG7CE6B7759D567AF2 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG504E316A76290931 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG18123  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18123 ;
-        adm:logEntry        bda:LG7561E88CDA750B28 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG016959BD4373F8AB , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG18124  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18124 ;
-        adm:logEntry        bda:LG1C60C15A32E775BC , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG0036852565372D1A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1C60C15A32E775BC
+    bda:LG0036852565372D1A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-07-10T17:11:53.78Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG7561E88CDA750B28
+    bda:LG016959BD4373F8AB
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-07-10T17:11:53.747Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG7CE6B7759D567AF2
+    bda:LG504E316A76290931
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-07-10T17:11:53.714Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -77,7 +77,7 @@ bdg:W22160 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W22160 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "77/W22160.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W22160 ;
@@ -107,7 +107,13 @@ bdg:W22160 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   258 .
     
+    bdr:ID6D0DB1D58BC15529
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147738715" .
+    
     bdr:W22160  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6D0DB1D58BC15529 ;
         :instanceHasVolume  bdr:I1KG18122 , bdr:I1KG18123 , bdr:I1KG18124 ;
         :instanceOf         bdr:WA1KG17182 ;
         :instanceReproductionOf  bdr:MW22160 ;

@@ -14,9 +14,15 @@
 bdg:W3CN5546 {
     bda:I3CN5548  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN5548 ;
-        adm:logEntry        bda:LG445FBDA04420E624 , bda:LGDC4F160C2CB95EC9 , bda:LGIMB72C5E75 , bda:LGIMC2142B9F , bda:LGIMD62FAC39 ;
+        adm:logEntry        bda:LG13203F2192A83396 , bda:LGDC4F160C2CB95EC9 , bda:LGIMB72C5E75 , bda:LGIMC2142B9F , bda:LGIMD62FAC39 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG13203F2192A83396
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-21T18:11:15.285Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG32E2FA1C912AD434
         a                   adm:ScanRequestCreation ;
@@ -24,17 +30,11 @@ bdg:W3CN5546 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG445FBDA04420E624
+    bda:LGDC4F160C2CB95EC9
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-08T12:38:37.125Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LGDC4F160C2CB95EC9
-        a                   adm:Synced ;
-        adm:logDate         "2017-04-21T18:11:15.285Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMB72C5E75  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -59,7 +59,7 @@ bdg:W3CN5546 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN5546 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0a/W3CN5546.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5546 ;
@@ -75,7 +75,13 @@ bdg:W3CN5546 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   318 .
     
+    bdr:IDF4033E2132A89D5E
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724647" .
+    
     bdr:W3CN5546  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF4033E2132A89D5E ;
         :instanceHasVolume  bdr:I3CN5548 ;
         :instanceOf         bdr:WA3CN5546 ;
         :instanceReproductionOf  bdr:MW3CN5546 ;

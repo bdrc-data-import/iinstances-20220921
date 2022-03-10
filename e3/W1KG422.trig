@@ -14,20 +14,20 @@
 bdg:W1KG422 {
     bda:I1KG425  a          adm:AdminData ;
         adm:adminAbout      bdr:I1KG425 ;
-        adm:logEntry        bda:LGE34A0E10638EBC54 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG6E3C4A71118A3D35 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG6E3C4A71118A3D35
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-08-26T15:16:08.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGC51B8C8EFB3D6B78
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-08-26T15:16:09.237Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGE34A0E10638EBC54
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-08-26T15:16:08.394Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -53,7 +53,7 @@ bdg:W1KG422 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG422 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e3/W1KG422.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG422 ;
@@ -69,7 +69,13 @@ bdg:W1KG422 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   386 .
     
+    bdr:IDFCCB3F069F4D2A6C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147713483" .
+    
     bdr:W1KG422  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFCCB3F069F4D2A6C ;
         :instanceHasReproduction  bdr:IE1KG422 ;
         :instanceHasVolume  bdr:I1KG425 ;
         :instanceOf         bdr:WA1KG422 ;

@@ -14,9 +14,15 @@
 bdg:W8LS20567 {
     bda:I8LS20569  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20569 ;
-        adm:logEntry        bda:LGF9740A4854B44743 , bda:LGFAD319E07A8B35BC ;
+        adm:logEntry        bda:LG43184AA49C15F360 , bda:LGF9740A4854B44743 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG43184AA49C15F360
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:55.228Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGC2BF9A0A0EC719AB
         a                   adm:ScanRequestCreation ;
@@ -25,12 +31,6 @@ bdg:W8LS20567 {
         adm:logWho          bdu:U00019 .
     
     bda:LGF9740A4854B44743
-        a                   adm:Synced ;
-        adm:logDate         "2017-05-26T01:54:55.228Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGFAD319E07A8B35BC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-15T11:57:39.26Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W8LS20567 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS20567 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "8b/W8LS20567.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS20567 ;
@@ -57,7 +57,13 @@ bdg:W8LS20567 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   420 .
     
+    bdr:ID974E6A0A27270ADA
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147743014" .
+    
     bdr:W8LS20567  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID974E6A0A27270ADA ;
         :instanceHasVolume  bdr:I8LS20569 ;
         :instanceOf         bdr:WA8LS20567 ;
         :instanceReproductionOf  bdr:MW8LS20567 ;

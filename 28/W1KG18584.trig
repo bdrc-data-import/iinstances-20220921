@@ -14,7 +14,7 @@
 bdg:W1KG18584 {
     bda:I1KG18738  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18738 ;
-        adm:logEntry        bda:LG37C8D1489E0568DD , bda:LG683AF5CB3D0152EA ;
+        adm:logEntry        bda:LG4DE2D4A0FBAB4B25 , bda:LG683AF5CB3D0152EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,24 +24,24 @@ bdg:W1KG18584 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG37C8D1489E0568DD
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2014-10-28T15:42:56.56Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG683AF5CB3D0152EA
+    bda:LG4DE2D4A0FBAB4B25
         a                   adm:Synced ;
         adm:logDate         "2016-11-08T21:50:34.31Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG683AF5CB3D0152EA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-10-28T15:42:56.56Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W1KG18584  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG18584 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "28/W1KG18584.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG18584 ;
@@ -57,7 +57,13 @@ bdg:W1KG18584 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   86 .
     
+    bdr:ID31B446C425ABD403
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728702" .
+    
     bdr:W1KG18584  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID31B446C425ABD403 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG18738 ;
         :instanceOf         bdr:WA1KG18584 ;

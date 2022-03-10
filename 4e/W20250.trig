@@ -14,11 +14,11 @@
 bdg:W20250 {
     bda:I5046  a            adm:AdminData ;
         adm:adminAbout      bdr:I5046 ;
-        adm:logEntry        bda:LG1D13A98DCC6C07EA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM2980ABDC ;
+        adm:logEntry        bda:LG16E23DDE9E49C7C3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM2980ABDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1D13A98DCC6C07EA
+    bda:LG16E23DDE9E49C7C3
         a                   adm:UpdateData ;
         adm:logDate         "2007-07-12T16:49:45.739Z"^^xsd:dateTime ;
         adm:logMessage      "annotation changed"@en ;
@@ -53,7 +53,7 @@ bdg:W20250 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20250 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "4e/W20250.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20250 ;
@@ -67,7 +67,13 @@ bdg:W20250 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   404 .
     
+    bdr:ID15B6776B123008A8
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147732829" .
+    
     bdr:W20250  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID15B6776B123008A8 ;
         :instanceHasVolume  bdr:I5046 ;
         :instanceOf         bdr:WA20250 ;
         :instanceReproductionOf  bdr:MW20250 ;

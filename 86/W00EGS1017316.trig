@@ -15,17 +15,11 @@ bdg:W00EGS1017316 {
     bda:I00EGS1017318
         a                   adm:AdminData ;
         adm:adminAbout      bdr:I00EGS1017318 ;
-        adm:logEntry        bda:LG3237621303BFE27C , bda:LG79CCE72C88599C64 , bda:LGF3C1BCF5C7292982 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG3237621303BFE27C , bda:LGD1BF02009C00401A , bda:LGF3C1BCF5C7292982 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG3237621303BFE27C
-        a                   adm:UpdateData ;
-        adm:logDate         "2008-05-29T09:43:05.661Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LG79CCE72C88599C64
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-01-15T03:01:45.515Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -37,10 +31,16 @@ bdg:W00EGS1017316 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGF3C1BCF5C7292982
+    bda:LGD1BF02009C00401A
         a                   adm:UpdateData ;
         adm:logDate         "2008-05-29T09:45:01.085Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF3C1BCF5C7292982
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-05-29T09:43:05.661Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -67,7 +67,7 @@ bdg:W00EGS1017316 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00EGS1017316 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "86/W00EGS1017316.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00EGS1017316 ;
@@ -84,8 +84,14 @@ bdg:W00EGS1017316 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   140 .
     
+    bdr:ID1AB73B304F99D8DA
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147745386" .
+    
     bdr:W00EGS1017316
         a                   :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1AB73B304F99D8DA ;
         :instanceHasVolume  bdr:I00EGS1017318 ;
         :instanceOf         bdr:WA00EGS1017316 ;
         :instanceReproductionOf  bdr:MW00EGS1017316 ;

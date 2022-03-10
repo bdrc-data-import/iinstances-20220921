@@ -14,41 +14,35 @@
 bdg:W23847 {
     bda:I1PD100874  a       adm:AdminData ;
         adm:adminAbout      bdr:I1PD100874 ;
-        adm:logEntry        bda:LG49B320E4DD0686B6 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG01D8D220E10989B1 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1PD100875  a       adm:AdminData ;
         adm:adminAbout      bdr:I1PD100875 ;
-        adm:logEntry        bda:LG084CDF7BFC5B6D86 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGF7D1E2F29ACBF468 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1PD100876  a       adm:AdminData ;
         adm:adminAbout      bdr:I1PD100876 ;
-        adm:logEntry        bda:LG41A42BBFFCA86168 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG32D39979E454E0B3 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1PD100877  a       adm:AdminData ;
         adm:adminAbout      bdr:I1PD100877 ;
-        adm:logEntry        bda:LG079195824AD15561 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG52D62A672DF58847 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG079195824AD15561
+    bda:LG01D8D220E10989B1
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-03-22T14:50:45.011Z"^^xsd:dateTime ;
+        adm:logDate         "2010-03-22T14:50:44.045Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG084CDF7BFC5B6D86
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-03-22T14:50:44.379Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LG41A42BBFFCA86168
+    bda:LG32D39979E454E0B3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-03-22T14:50:44.695Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -60,9 +54,15 @@ bdg:W23847 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG49B320E4DD0686B6
+    bda:LG52D62A672DF58847
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2010-03-22T14:50:44.045Z"^^xsd:dateTime ;
+        adm:logDate         "2010-03-22T14:50:45.011Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGF7D1E2F29ACBF468
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2010-03-22T14:50:44.379Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
@@ -89,7 +89,7 @@ bdg:W23847 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W23847 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "b3/W23847.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W23847 ;
@@ -126,7 +126,13 @@ bdg:W23847 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   178 .
     
+    bdr:IDAE44C38D59EF1D77
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147739647" .
+    
     bdr:W23847  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDAE44C38D59EF1D77 ;
         :instanceHasVolume  bdr:I1PD100874 , bdr:I1PD100875 , bdr:I1PD100876 , bdr:I1PD100877 ;
         :instanceOf         bdr:WA23847 ;
         :instanceReproductionOf  bdr:MW23847 ;

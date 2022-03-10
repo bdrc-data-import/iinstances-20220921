@@ -14,11 +14,11 @@
 bdg:W00KG01502 {
     bda:I01JW11566  a       adm:AdminData ;
         adm:adminAbout      bdr:I01JW11566 ;
-        adm:logEntry        bda:LG3C097705CC43A6FC , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
+        adm:logEntry        bda:LG4A985EF2A75F8EC7 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM60F924CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG3C097705CC43A6FC
+    bda:LG4A985EF2A75F8EC7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-10-12T10:41:42.536Z"^^xsd:dateTime ;
         adm:logMessage      "remapped to W00KG01502"@en ;
@@ -59,7 +59,7 @@ bdg:W00KG01502 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG01502 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "37/W00KG01502.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG01502 ;
@@ -74,7 +74,13 @@ bdg:W00KG01502 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   410 .
     
+    bdr:ID86303989C34BA8C8
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711277" .
+    
     bdr:W00KG01502  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID86303989C34BA8C8 ;
         :instanceHasVolume  bdr:I01JW11566 ;
         :instanceOf         bdr:WA00KG01502 ;
         :instanceReproductionOf  bdr:MW00KG01502 ;

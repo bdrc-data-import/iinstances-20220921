@@ -14,28 +14,28 @@
 bdg:W1PD137855 {
     bda:I4PD4451  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD4451 ;
-        adm:logEntry        bda:LG1FC34F7884B980C7 , bda:LG3DFEAB64839E9291 , bda:LG897C1D417745A3FC ;
+        adm:logEntry        bda:LG1FC34F7884B980C7 , bda:LG3DFEAB64839E9291 , bda:LGAE2A8BB5B5A13DE1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG1FC34F7884B980C7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-22T16:34:25.102Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LG3DFEAB64839E9291
         a                   adm:Synced ;
         adm:logDate         "2017-06-23T00:56:50.163Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:LG3DFEAB64839E9291
+    bda:LGAE2A8BB5B5A13DE1
         a                   adm:ImagesUpdated ;
         adm:logDate         "2017-07-18T21:24:48.173Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bda:LG897C1D417745A3FC
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-22T16:34:25.102Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
     
     bda:LGB8B53310C263C9AD
         a                   adm:ScanRequestCreation ;
@@ -48,7 +48,7 @@ bdg:W1PD137855 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD137855 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1d/W1PD137855.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD137855 ;
@@ -64,7 +64,13 @@ bdg:W1PD137855 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   354 .
     
+    bdr:ID6B9FE646995A5956
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147751295" .
+    
     bdr:W1PD137855  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6B9FE646995A5956 ;
         :instanceHasVolume  bdr:I4PD4451 ;
         :instanceOf         bdr:WA1PD137855 ;
         :instanceReproductionOf  bdr:MW1PD137855 ;

@@ -14,19 +14,25 @@
 bdg:W8LS66808 {
     bda:I8LS67919  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67919 ;
-        adm:logEntry        bda:LGD5326850ADB3C92C , bda:LGIM1C27CF5E ;
+        adm:logEntry        bda:LG9C5BACABE449FD00 , bda:LGIM1C27CF5E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS67920  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67920 ;
-        adm:logEntry        bda:LG1971E39AE36B734F , bda:LGIM86A75F62 ;
+        adm:logEntry        bda:LG6302391FF6593BAA , bda:LGIM86A75F62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1971E39AE36B734F
+    bda:LG6302391FF6593BAA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-05T11:54:03.471Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9C5BACABE449FD00
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-12-05T11:54:03.404Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -34,12 +40,6 @@ bdg:W8LS66808 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-05T11:54:03.537Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LGD5326850ADB3C92C
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-12-05T11:54:03.404Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIM1C27CF5E  a     adm:Synced ;
@@ -59,7 +59,7 @@ bdg:W8LS66808 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS66808 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "20/W8LS66808.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS66808 ;
@@ -82,7 +82,13 @@ bdg:W8LS66808 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   364 .
     
+    bdr:ID2D243E29C51F5A33
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746361" .
+    
     bdr:W8LS66808  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2D243E29C51F5A33 ;
         :instanceHasVolume  bdr:I8LS67919 , bdr:I8LS67920 ;
         :instanceOf         bdr:WA8LS66808 ;
         :instanceReproductionOf  bdr:MW8LS66808 ;

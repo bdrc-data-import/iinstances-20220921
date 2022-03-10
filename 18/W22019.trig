@@ -14,17 +14,17 @@
 bdg:W22019 {
     bda:I1GS54234  a        adm:AdminData ;
         adm:adminAbout      bdr:I1GS54234 ;
-        adm:logEntry        bda:LG8E973E21EF4DFDAA , bda:LGA52C0F36BE444E4C , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG5D983799AD311207 , bda:LG8E973E21EF4DFDAA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG8E973E21EF4DFDAA
+    bda:LG5D983799AD311207
         a                   adm:UpdateData ;
         adm:logDate         "2007-09-10T13:06:47.356Z"^^xsd:dateTime ;
         adm:logMessage      "annotation changed; revised image group"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGA52C0F36BE444E4C
+    bda:LG8E973E21EF4DFDAA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-07-27T10:58:17.668Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -59,7 +59,7 @@ bdg:W22019 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W22019 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "18/W22019.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W22019 ;
@@ -75,7 +75,13 @@ bdg:W22019 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   223 .
     
+    bdr:ID4A682712C12501B6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742531" .
+    
     bdr:W22019  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID4A682712C12501B6 ;
         :instanceHasVolume  bdr:I1GS54234 ;
         :instanceOf         bdr:WA22019 ;
         :instanceReproductionOf  bdr:MW22019 ;

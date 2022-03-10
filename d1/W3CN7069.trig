@@ -14,9 +14,15 @@
 bdg:W3CN7069 {
     bda:I3CN7071  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN7071 ;
-        adm:logEntry        bda:LG7F54D472827C6299 , bda:LG85F3813065A98FD6 ;
+        adm:logEntry        bda:LG4429652BE949FAD1 , bda:LG7F54D472827C6299 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG4429652BE949FAD1
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-05T01:03:49.18Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG5D69DF3C939DFD1D
         a                   adm:ScanRequestCreation ;
@@ -25,12 +31,6 @@ bdg:W3CN7069 {
         adm:logWho          bdu:U00007 .
     
     bda:LG7F54D472827C6299
-        a                   adm:Synced ;
-        adm:logDate         "2017-08-05T01:03:49.18Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG85F3813065A98FD6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-14T12:00:47.727Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W3CN7069 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN7069 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d1/W3CN7069.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN7069 ;
@@ -57,7 +57,13 @@ bdg:W3CN7069 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   334 .
     
+    bdr:IDE6B3A2256F854530
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147747298" .
+    
     bdr:W3CN7069  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE6B3A2256F854530 ;
         :instanceHasVolume  bdr:I3CN7071 ;
         :instanceOf         bdr:WA3CN7069 ;
         :instanceReproductionOf  bdr:MW3CN7069 ;

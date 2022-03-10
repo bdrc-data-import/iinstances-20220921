@@ -14,20 +14,13 @@
 bdg:W1PD105831 {
     bda:I1PD105833  a       adm:AdminData ;
         adm:adminAbout      bdr:I1PD105833 ;
-        adm:logEntry        bda:LG15E314F31F3E5931 , bda:LG22110C91104A9C3C , bda:LGC184980C53DF8444 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG22110C91104A9C3C , bda:LG770C87AD896D53F0 , bda:LGEA76E5334A1B288A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG15E314F31F3E5931
-        a                   adm:ImagesUpdated ;
-        adm:logDate         "2017-09-11T22:41:27.664Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG22110C91104A9C3C
         a                   adm:ImagesUpdated ;
-        adm:logDate         "2017-09-12T14:27:42.567Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-11T22:41:27.664Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
@@ -38,11 +31,18 @@ bdg:W1PD105831 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGC184980C53DF8444
+    bda:LG770C87AD896D53F0
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-06-30T11:07:44.387Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGEA76E5334A1B288A
+        a                   adm:ImagesUpdated ;
+        adm:logDate         "2017-09-12T14:27:42.567Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -67,7 +67,7 @@ bdg:W1PD105831 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD105831 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "bf/W1PD105831.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD105831 ;
@@ -83,7 +83,13 @@ bdg:W1PD105831 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   196 .
     
+    bdr:ID02FCD90723CF5138
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147735704" .
+    
     bdr:W1PD105831  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID02FCD90723CF5138 ;
         :instanceHasVolume  bdr:I1PD105833 ;
         :instanceOf         bdr:WA1PD105831 ;
         :instanceReproductionOf  bdr:MW1PD105831 ;

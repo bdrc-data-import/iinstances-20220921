@@ -14,9 +14,15 @@
 bdg:W1KG25449 {
     bda:I1KG25451  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25451 ;
-        adm:logEntry        bda:LG806803434369D8F5 , bda:LGD794E6300A311E57 ;
+        adm:logEntry        bda:LG1809F6DBE15D39D4 , bda:LG806803434369D8F5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG1809F6DBE15D39D4
+        a                   adm:Synced ;
+        adm:logDate         "2017-05-26T01:54:18.719Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG2E368CE227784BCC
         a                   adm:ScanRequestCreation ;
@@ -25,12 +31,6 @@ bdg:W1KG25449 {
         adm:logWho          bdu:U00016 .
     
     bda:LG806803434369D8F5
-        a                   adm:Synced ;
-        adm:logDate         "2017-05-26T01:54:18.719Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGD794E6300A311E57
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-13T10:51:09.13Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W1KG25449 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG25449 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b5/W1KG25449.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG25449 ;
@@ -57,7 +57,13 @@ bdg:W1KG25449 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   472 .
     
+    bdr:ID64EACB7C45DC1AE3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711912" .
+    
     bdr:W1KG25449  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID64EACB7C45DC1AE3 ;
         :instanceHasVolume  bdr:I1KG25451 ;
         :instanceOf         bdr:WA1KG25449 ;
         :instanceReproductionOf  bdr:MW1KG25449 ;

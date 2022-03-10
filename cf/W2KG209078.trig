@@ -14,32 +14,32 @@
 bdg:W2KG209078 {
     bda:I2KG209097  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209097 ;
-        adm:logEntry        bda:LG63C0317F2815B2EB , bda:LGIM317907B2 ;
+        adm:logEntry        bda:LGFD5AD5865824C163 , bda:LGIM317907B2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2KG209098  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG209098 ;
-        adm:logEntry        bda:LG8A3BCF3B51F08E21 , bda:LGIM95ACED20 ;
+        adm:logEntry        bda:LGFAFE892C7FB17FDF , bda:LGIM95ACED20 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG63C0317F2815B2EB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-11-05T11:17:44.327Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG8A3BCF3B51F08E21
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-11-05T11:17:44.382Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
     
     bda:LGC7D2FBA0CA8C5BF8
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-11-05T11:17:44.435Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFAFE892C7FB17FDF
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-05T11:17:44.382Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFD5AD5865824C163
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-11-05T11:17:44.327Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM317907B2  a     adm:Synced ;
@@ -59,7 +59,7 @@ bdg:W2KG209078 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG209078 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "cf/W2KG209078.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG209078 ;
@@ -82,7 +82,13 @@ bdg:W2KG209078 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   240 .
     
+    bdr:ID583C1F4B29AD36EE
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147721689" .
+    
     bdr:W2KG209078  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID583C1F4B29AD36EE ;
         :instanceHasVolume  bdr:I2KG209097 , bdr:I2KG209098 ;
         :instanceOf         bdr:WA2KG209078 ;
         :instanceReproductionOf  bdr:MW2KG209078 ;

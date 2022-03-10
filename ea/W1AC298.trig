@@ -14,15 +14,15 @@
 bdg:W1AC298 {
     bda:I2PD18816  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18816 ;
-        adm:logEntry        bda:LG41FE4B00FCAB93B7 , bda:LGBF9450113D75DF13 ;
+        adm:logEntry        bda:LG41FE4B00FCAB93B7 , bda:LGE0ECE3AD15557F92 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG41FE4B00FCAB93B7
-        a                   adm:Synced ;
-        adm:logDate         "2017-07-08T00:00:45.87Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-22T23:11:52.229Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LG966A89E0B448CDE3
         a                   adm:ScanRequestCreation ;
@@ -30,18 +30,18 @@ bdg:W1AC298 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGBF9450113D75DF13
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-22T23:11:52.229Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LGE0ECE3AD15557F92
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-08T00:00:45.87Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1AC298  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC298 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ea/W1AC298.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC298 ;
@@ -57,7 +57,13 @@ bdg:W1AC298 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   128 .
     
+    bdr:ID603C46E4C8C08917
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147709255" .
+    
     bdr:W1AC298  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID603C46E4C8C08917 ;
         :instanceHasVolume  bdr:I2PD18816 ;
         :instanceOf         bdr:WA1AC298 ;
         :instanceReproductionOf  bdr:MW1AC298 ;

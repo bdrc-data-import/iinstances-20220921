@@ -14,7 +14,7 @@
 bdg:W19704 {
     bda:I1KG21810  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG21810 ;
-        adm:logEntry        bda:LG4651BE1CBA3BE73E , bda:LG870B549F6F726641 ;
+        adm:logEntry        bda:LG870B549F6F726641 , bda:LG8FE4ED23498E281F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,13 +24,13 @@ bdg:W19704 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG4651BE1CBA3BE73E
+    bda:LG870B549F6F726641
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-04-29T12:47:02.106Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG870B549F6F726641
+    bda:LG8FE4ED23498E281F
         a                   adm:Synced ;
         adm:logDate         "2017-01-09T23:59:44.687Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -41,7 +41,7 @@ bdg:W19704 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W19704 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ae/W19704.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W19704 ;
@@ -57,7 +57,13 @@ bdg:W19704 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   94 .
     
+    bdr:IDC7E0EFBE1ACBFE48
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147729556" .
+    
     bdr:W19704  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC7E0EFBE1ACBFE48 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG21810 ;
         :instanceOf         bdr:WA19704 ;

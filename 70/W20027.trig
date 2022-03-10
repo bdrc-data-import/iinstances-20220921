@@ -14,21 +14,21 @@
 bdg:W20027 {
     bda:I1KG1056  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG1056 ;
-        adm:logEntry        bda:LG299BA43B5E093146 , bda:LGAB4EDDFAA3614103 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG299BA43B5E093146 , bda:LG42D8AFCD05AFE68E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG299BA43B5E093146
-        a                   adm:UpdateData ;
-        adm:logDate         "2009-04-16T11:52:23.944Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00040 .
-    
-    bda:LGAB4EDDFAA3614103
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-11-20T09:36:52.49Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG42D8AFCD05AFE68E
+        a                   adm:UpdateData ;
+        adm:logDate         "2009-04-16T11:52:23.944Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00040 .
     
     bda:LGFE1F632059C159D4
         a                   adm:ScanRequestCreation ;
@@ -59,7 +59,7 @@ bdg:W20027 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20027 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "70/W20027.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20027 ;
@@ -75,7 +75,13 @@ bdg:W20027 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   170 .
     
+    bdr:ID5DBFB3331DB99304
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147709270" .
+    
     bdr:W20027  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID5DBFB3331DB99304 ;
         :instanceHasVolume  bdr:I1KG1056 ;
         :instanceOf         bdr:WA20027 ;
         :instanceReproductionOf  bdr:MW20027 ;

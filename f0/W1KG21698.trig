@@ -14,44 +14,50 @@
 bdg:W1KG21698 {
     bda:I1KG26309  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26309 ;
-        adm:logEntry        bda:LG72D8A6BCF1A1B03F , bda:LG9C3FA6861DD60D9C ;
+        adm:logEntry        bda:LG2C1B6CD8CD829521 , bda:LG72D8A6BCF1A1B03F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG26310  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26310 ;
-        adm:logEntry        bda:LG0F3E04B070978201 ;
+        adm:logEntry        bda:LG652AEA2797010FA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG26311  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26311 ;
-        adm:logEntry        bda:LG4C918FCA7C09A04D ;
+        adm:logEntry        bda:LG052D04A501665842 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I1KG26312  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26312 ;
-        adm:logEntry        bda:LGDEFB41C122528083 ;
+        adm:logEntry        bda:LG06E00151AB836914 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG0F3E04B070978201
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-03-07T15:47:21.674Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG4C918FCA7C09A04D
+    bda:LG052D04A501665842
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-03-07T15:47:22.05Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG72D8A6BCF1A1B03F
+    bda:LG06E00151AB836914
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-03-07T15:47:22.222Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2C1B6CD8CD829521
         a                   adm:Synced ;
         adm:logDate         "2017-11-20T02:00:35.722Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
-    bda:LG9C3FA6861DD60D9C
+    bda:LG652AEA2797010FA6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-03-07T15:47:21.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG72D8A6BCF1A1B03F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-03-07T15:47:21.487Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -63,18 +69,12 @@ bdg:W1KG21698 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGDEFB41C122528083
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-03-07T15:47:22.222Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:W1KG21698  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG21698 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f0/W1KG21698.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG21698 ;
@@ -111,7 +111,13 @@ bdg:W1KG21698 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
+    bdr:ID0B058F558A0CFDC0
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716814" .
+    
     bdr:W1KG21698  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0B058F558A0CFDC0 ;
         :digitalLendingPossible  false ;
         :instanceHasVolume  bdr:I1KG26309 , bdr:I1KG26310 , bdr:I1KG26311 , bdr:I1KG26312 ;
         :instanceOf         bdr:WA1KG21698 ;

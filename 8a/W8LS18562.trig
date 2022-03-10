@@ -14,26 +14,26 @@
 bdg:W8LS18562 {
     bda:I8LS18564  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18564 ;
-        adm:logEntry        bda:LGB921568C40D59338 , bda:LGE52B98DA84635727 , bda:LGIM945D624D ;
+        adm:logEntry        bda:LG6238163EF76647D4 , bda:LGB921568C40D59338 , bda:LGIM945D624D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LGB921568C40D59338
+    bda:LG6238163EF76647D4
         a                   adm:Synced ;
         adm:logDate         "2018-02-01T03:39:25.309Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGB921568C40D59338
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:15:39.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE3E58FDD7B86086B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T11:15:40.049Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LGE52B98DA84635727
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T11:15:39.948Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:LGIM945D624D  a     adm:ImagesUpdated ;
@@ -47,7 +47,7 @@ bdg:W8LS18562 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18562 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8a/W8LS18562.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18562 ;
@@ -63,7 +63,13 @@ bdg:W8LS18562 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   167 .
     
+    bdr:IDBEF3ABEC481CE526
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716755" .
+    
     bdr:W8LS18562  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDBEF3ABEC481CE526 ;
         :instanceHasVolume  bdr:I8LS18564 ;
         :instanceOf         bdr:WA8LS18562 ;
         :instanceReproductionOf  bdr:MW8LS18562 ;

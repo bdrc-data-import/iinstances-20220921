@@ -14,33 +14,33 @@
 bdg:W2PD17645 {
     bda:I2PD19255  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD19255 ;
-        adm:logEntry        bda:LG3C8119816660126B , bda:LG552920F8C388A81E ;
+        adm:logEntry        bda:LG3C8119816660126B , bda:LG988748C0BE00DF99 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2PD19256  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD19256 ;
-        adm:logEntry        bda:LG213411214F7221B8 , bda:LGE688FB37DD0F7EFC ;
+        adm:logEntry        bda:LG85E6E5DB41456D1D , bda:LGE688FB37DD0F7EFC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG213411214F7221B8
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-02T02:24:03.068Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
     bda:LG3C8119816660126B
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-10T01:28:48.88Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG552920F8C388A81E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-02T02:24:01.563Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG85E6E5DB41456D1D
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:49.09Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LG988748C0BE00DF99
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-10T01:28:48.88Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGCF0752BAC760F025
         a                   adm:ScanRequestCreation ;
@@ -49,17 +49,17 @@ bdg:W2PD17645 {
         adm:logWho          bdu:U00021 .
     
     bda:LGE688FB37DD0F7EFC
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-10T01:28:49.09Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-02T02:24:03.068Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:W2PD17645  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD17645 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c5/W2PD17645.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD17645 ;
@@ -82,7 +82,13 @@ bdg:W2PD17645 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   368 .
     
+    bdr:ID9960A2A01E0484F3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147746536" .
+    
     bdr:W2PD17645  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9960A2A01E0484F3 ;
         :instanceHasVolume  bdr:I2PD19255 , bdr:I2PD19256 ;
         :instanceOf         bdr:WA2PD17645 ;
         :instanceReproductionOf  bdr:MW2PD17645 ;

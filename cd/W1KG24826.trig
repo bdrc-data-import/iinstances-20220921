@@ -14,7 +14,7 @@
 bdg:W1KG24826 {
     bda:I1KG24828  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG24828 ;
-        adm:logEntry        bda:LG545FB626FA6E5490 , bda:LG5770DFE87D439220 ;
+        adm:logEntry        bda:LG545FB626FA6E5490 , bda:LG644CEAA1CC66766A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,23 +25,23 @@ bdg:W1KG24826 {
         adm:logWho          bdu:U00016 .
     
     bda:LG545FB626FA6E5490
-        a                   adm:Synced ;
-        adm:logDate         "2018-02-01T03:35:14.536Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG5770DFE87D439220
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T15:20:48.649Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG644CEAA1CC66766A
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-01T03:35:14.536Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1KG24826  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG24826 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "cd/W1KG24826.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG24826 ;
@@ -57,7 +57,13 @@ bdg:W1KG24826 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   271 .
     
+    bdr:ID9490CFF0C32B839F
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147722876" .
+    
     bdr:W1KG24826  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID9490CFF0C32B839F ;
         :instanceHasVolume  bdr:I1KG24828 ;
         :instanceOf         bdr:WA1KG24826 ;
         :instanceReproductionOf  bdr:MW1KG24826 ;

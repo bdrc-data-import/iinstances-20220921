@@ -14,21 +14,21 @@
 bdg:W3PD364 {
     bda:I2PD19305  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD19305 ;
-        adm:logEntry        bda:LG8315B6013B710515 , bda:LGAAFF9C68CE11C88A ;
+        adm:logEntry        bda:LGA069C6CACBE1FC61 , bda:LGAAFF9C68CE11C88A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG8315B6013B710515
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-02T20:18:44.53Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LGAAFF9C68CE11C88A
+    bda:LGA069C6CACBE1FC61
         a                   adm:Synced ;
         adm:logDate         "2017-11-28T00:08:41.3Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGAAFF9C68CE11C88A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-02T20:18:44.53Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LGB8CA2B8C5A54FEF7
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W3PD364 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3PD364 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "16/W3PD364.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3PD364 ;
@@ -57,7 +57,13 @@ bdg:W3PD364 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   364 .
     
+    bdr:ID6544FC9E178340E7
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147721908" .
+    
     bdr:W3PD364  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6544FC9E178340E7 ;
         :instanceHasVolume  bdr:I2PD19305 ;
         :instanceOf         bdr:WA3PD364 ;
         :instanceReproductionOf  bdr:MW3PD364 ;

@@ -14,17 +14,17 @@
 bdg:W1AC434 {
     bda:I2PD18766  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18766 ;
-        adm:logEntry        bda:LG3BCABD3C028C2019 , bda:LG55FAB1B96D0F8445 ;
+        adm:logEntry        bda:LG55FAB1B96D0F8445 , bda:LG5B9F3CB910DAFE58 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG3BCABD3C028C2019
+    bda:LG55FAB1B96D0F8445
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-22T21:02:23.418Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG55FAB1B96D0F8445
+    bda:LG5B9F3CB910DAFE58
         a                   adm:Synced ;
         adm:logDate         "2017-12-09T00:39:34.805Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -41,7 +41,7 @@ bdg:W1AC434 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC434 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6a/W1AC434.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC434 ;
@@ -57,7 +57,13 @@ bdg:W1AC434 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   190 .
     
+    bdr:IDCA29297C26D0E629
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147721069" .
+    
     bdr:W1AC434  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDCA29297C26D0E629 ;
         :instanceHasVolume  bdr:I2PD18766 ;
         :instanceOf         bdr:WA1AC434 ;
         :instanceReproductionOf  bdr:MW1AC434 ;

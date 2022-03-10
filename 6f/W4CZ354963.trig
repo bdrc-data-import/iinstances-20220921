@@ -14,7 +14,7 @@
 bdg:W4CZ354963 {
     bda:I4CZ355098  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ355098 ;
-        adm:logEntry        bda:LGA86B4AF748DAEA70 , bda:LGIM4295FE34 ;
+        adm:logEntry        bda:LGD144667DF00B7313 , bda:LGIM4295FE34 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,7 +24,7 @@ bdg:W4CZ354963 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGA86B4AF748DAEA70
+    bda:LGD144667DF00B7313
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-03T11:10:23.575Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W4CZ354963 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ354963 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6f/W4CZ354963.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ354963 ;
@@ -57,7 +57,13 @@ bdg:W4CZ354963 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   428 .
     
+    bdr:ID8D98107A4C378F71
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147747594" .
+    
     bdr:W4CZ354963  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8D98107A4C378F71 ;
         :instanceHasVolume  bdr:I4CZ355098 ;
         :instanceOf         bdr:WA4CZ354963 ;
         :instanceReproductionOf  bdr:MW4CZ354963 ;

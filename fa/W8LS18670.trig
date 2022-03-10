@@ -14,15 +14,15 @@
 bdg:W8LS18670 {
     bda:I8LS18672  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18672 ;
-        adm:logEntry        bda:LG522DA9D7D7E4BF6C , bda:LGE3B88AEEB487E378 , bda:LGIM85D3E2D1 ;
+        adm:logEntry        bda:LG522DA9D7D7E4BF6C , bda:LGD6820D7AA59DB60C , bda:LGIM85D3E2D1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG522DA9D7D7E4BF6C
-        a                   adm:Synced ;
-        adm:logDate         "2018-02-14T00:05:42.755Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:41:23.636Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG57F3D923EB8967BD
         a                   adm:ScanRequestCreation ;
@@ -30,11 +30,11 @@ bdg:W8LS18670 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE3B88AEEB487E378
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T11:41:23.636Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+    bda:LGD6820D7AA59DB60C
+        a                   adm:Synced ;
+        adm:logDate         "2018-02-14T00:05:42.755Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM85D3E2D1  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -47,7 +47,7 @@ bdg:W8LS18670 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18670 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fa/W8LS18670.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18670 ;
@@ -63,7 +63,13 @@ bdg:W8LS18670 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   140 .
     
+    bdr:ID6D1B03FAFAC5B23C
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147712125" .
+    
     bdr:W8LS18670  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6D1B03FAFAC5B23C ;
         :instanceHasVolume  bdr:I8LS18672 ;
         :instanceOf         bdr:WA8LS18670 ;
         :instanceReproductionOf  bdr:MW8LS18670 ;

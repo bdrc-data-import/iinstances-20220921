@@ -14,9 +14,15 @@
 bdg:W3CN6958 {
     bda:I3CN6960  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN6960 ;
-        adm:logEntry        bda:LGB3A6EA7E77BEDCE3 , bda:LGFFFD6900CD300215 ;
+        adm:logEntry        bda:LG072FC8CBF07F00B7 , bda:LGFFFD6900CD300215 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG072FC8CBF07F00B7
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-02T00:39:34.593Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG7D33510C46A4D5F5
         a                   adm:ScanRequestCreation ;
@@ -24,24 +30,18 @@ bdg:W3CN6958 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGB3A6EA7E77BEDCE3
+    bda:LGFFFD6900CD300215
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-14T10:45:10.978Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LGFFFD6900CD300215
-        a                   adm:Synced ;
-        adm:logDate         "2017-06-02T00:39:34.593Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN6958  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN6958 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2f/W3CN6958.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN6958 ;
@@ -57,7 +57,13 @@ bdg:W3CN6958 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   380 .
     
+    bdr:ID13E17CD1E25580AC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714762" .
+    
     bdr:W3CN6958  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID13E17CD1E25580AC ;
         :instanceHasVolume  bdr:I3CN6960 ;
         :instanceOf         bdr:WA3CN6958 ;
         :instanceReproductionOf  bdr:MW3CN6958 ;

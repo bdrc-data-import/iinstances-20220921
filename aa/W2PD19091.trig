@@ -14,21 +14,21 @@
 bdg:W2PD19091 {
     bda:I2PD20270  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD20270 ;
-        adm:logEntry        bda:LG1EB2F1F48A9BD8B9 , bda:LG3EB92F1490C699E2 ;
+        adm:logEntry        bda:LG0BFD3E99F3123642 , bda:LG3EB92F1490C699E2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1EB2F1F48A9BD8B9
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-01-17T21:02:16.758Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
-    
-    bda:LG3EB92F1490C699E2
+    bda:LG0BFD3E99F3123642
         a                   adm:Synced ;
         adm:logDate         "2017-12-10T01:28:51.336Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG3EB92F1490C699E2
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-01-17T21:02:16.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LG3FC6E2BFDBE061F9
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W2PD19091 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD19091 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "aa/W2PD19091.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD19091 ;
@@ -57,7 +57,13 @@ bdg:W2PD19091 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   218 .
     
+    bdr:ID0100119980DFC836
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147735190" .
+    
     bdr:W2PD19091  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0100119980DFC836 ;
         :instanceHasVolume  bdr:I2PD20270 ;
         :instanceOf         bdr:WA2PD19091 ;
         :instanceReproductionOf  bdr:MW2PD19091 ;

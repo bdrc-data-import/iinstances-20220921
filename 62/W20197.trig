@@ -14,11 +14,11 @@
 bdg:W20197 {
     bda:I4225  a            adm:AdminData ;
         adm:adminAbout      bdr:I4225 ;
-        adm:logEntry        bda:LG21AF6E5075263C1D , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG8DBCF08DA30B0698 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG21AF6E5075263C1D
+    bda:LG8DBCF08DA30B0698
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-05T07:19:13.078Z"^^xsd:dateTime ;
         adm:logMessage      "edited image group"@en ;
@@ -47,7 +47,7 @@ bdg:W20197 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W20197 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "62/W20197.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W20197 ;
@@ -61,7 +61,13 @@ bdg:W20197 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   260 .
     
+    bdr:IDC304F876B053E5F8
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737171" .
+    
     bdr:W20197  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC304F876B053E5F8 ;
         :instanceHasVolume  bdr:I4225 ;
         :instanceOf         bdr:WA20197 ;
         :instanceReproductionOf  bdr:MW20197 ;

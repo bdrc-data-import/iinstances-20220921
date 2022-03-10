@@ -14,7 +14,7 @@
 bdg:W1PD86468 {
     bda:I1KG2765  a         adm:AdminData ;
         adm:adminAbout      bdr:I1KG2765 ;
-        adm:logEntry        bda:LG47E494686D7A3279 , bda:LG5987E02BFDB326FB , bda:LGEDC50524C0598C8B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG5987E02BFDB326FB , bda:LG9A761438AAE184F7 , bda:LGEDC50524C0598C8B , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,21 +24,21 @@ bdg:W1PD86468 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG47E494686D7A3279
+    bda:LG5987E02BFDB326FB
         a                   adm:InitialDataCreation ;
         adm:logDate         "2009-06-09T14:10:40.966Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG5987E02BFDB326FB
+    bda:LG9A761438AAE184F7
         a                   adm:UpdateData ;
-        adm:logDate         "2009-10-23T10:21:18.625Z"^^xsd:dateTime ;
+        adm:logDate         "2009-10-23T10:36:26.781Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00040 .
     
     bda:LGEDC50524C0598C8B
         a                   adm:UpdateData ;
-        adm:logDate         "2009-10-23T10:36:26.781Z"^^xsd:dateTime ;
+        adm:logDate         "2009-10-23T10:21:18.625Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00040 .
     
@@ -65,7 +65,7 @@ bdg:W1PD86468 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD86468 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "22/W1PD86468.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD86468 ;
@@ -81,7 +81,13 @@ bdg:W1PD86468 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   253 .
     
+    bdr:IDD1A8ADC5E78930CC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147722115" .
+    
     bdr:W1PD86468  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD1A8ADC5E78930CC ;
         :instanceHasVolume  bdr:I1KG2765 ;
         :instanceOf         bdr:WA1PD86468 ;
         :instanceReproductionOf  bdr:MW1PD86468 ;

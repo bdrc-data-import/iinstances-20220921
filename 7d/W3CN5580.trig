@@ -14,21 +14,21 @@
 bdg:W3CN5580 {
     bda:I3CN5582  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN5582 ;
-        adm:logEntry        bda:LG2BE8C3185E4A4484 , bda:LG4E4F6F7895839C50 ;
+        adm:logEntry        bda:LG2BE8C3185E4A4484 , bda:LG4DC3E36DB6A143B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG2BE8C3185E4A4484
-        a                   adm:Synced ;
-        adm:logDate         "2017-04-25T22:05:10.107Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG4E4F6F7895839C50
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-08T12:45:01.65Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG4DC3E36DB6A143B1
+        a                   adm:Synced ;
+        adm:logDate         "2017-04-25T22:05:10.107Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG8D9B4B6CAEB65136
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W3CN5580 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN5580 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "7d/W3CN5580.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN5580 ;
@@ -57,7 +57,13 @@ bdg:W3CN5580 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   314 .
     
+    bdr:ID2AA47312C99B1B09
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147713497" .
+    
     bdr:W3CN5580  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2AA47312C99B1B09 ;
         :instanceHasVolume  bdr:I3CN5582 ;
         :instanceOf         bdr:WA3CN5580 ;
         :instanceReproductionOf  bdr:MW3CN5580 ;

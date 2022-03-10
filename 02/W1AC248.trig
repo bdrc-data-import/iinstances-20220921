@@ -14,21 +14,21 @@
 bdg:W1AC248 {
     bda:I2PD18134  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18134 ;
-        adm:logEntry        bda:LG19E7A12DB3D706E9 , bda:LG403CDCF5BA746324 ;
+        adm:logEntry        bda:LG19E7A12DB3D706E9 , bda:LG39C5B2A98DD3100F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG19E7A12DB3D706E9
-        a                   adm:Synced ;
-        adm:logDate         "2017-07-08T00:00:39.282Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG403CDCF5BA746324
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-14T21:58:34.038Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG39C5B2A98DD3100F
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-08T00:00:39.282Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGC606C41564ED1848
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W1AC248 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC248 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "02/W1AC248.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC248 ;
@@ -57,7 +57,13 @@ bdg:W1AC248 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   380 .
     
+    bdr:ID7EF479379E60F607
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147726125" .
+    
     bdr:W1AC248  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID7EF479379E60F607 ;
         :instanceHasVolume  bdr:I2PD18134 ;
         :instanceOf         bdr:WA1AC248 ;
         :instanceReproductionOf  bdr:MW1AC248 ;

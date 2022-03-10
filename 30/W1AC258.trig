@@ -14,15 +14,15 @@
 bdg:W1AC258 {
     bda:I2PD18119  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18119 ;
-        adm:logEntry        bda:LG4ADDB7CFDDC43328 , bda:LGE44AAD52818B4836 ;
+        adm:logEntry        bda:LG4ADDB7CFDDC43328 , bda:LGFB0C40A3105DC287 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG4ADDB7CFDDC43328
-        a                   adm:Synced ;
-        adm:logDate         "2017-06-30T00:48:39.528Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-14T21:01:18.534Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
     
     bda:LGCCEF97D4CC8AFA09
         a                   adm:ScanRequestCreation ;
@@ -30,18 +30,18 @@ bdg:W1AC258 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGE44AAD52818B4836
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-14T21:01:18.534Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
+    bda:LGFB0C40A3105DC287
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-30T00:48:39.528Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1AC258  a          adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1AC258 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "30/W1AC258.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1AC258 ;
@@ -57,7 +57,13 @@ bdg:W1AC258 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   616 .
     
+    bdr:IDFEA2C364CCDE62C6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724103" .
+    
     bdr:W1AC258  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFEA2C364CCDE62C6 ;
         :instanceHasVolume  bdr:I2PD18119 ;
         :instanceOf         bdr:WA1AC258 ;
         :instanceReproductionOf  bdr:MW1AC258 ;

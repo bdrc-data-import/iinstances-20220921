@@ -14,7 +14,7 @@
 bdg:W3CN6498 {
     bda:I3CN6500  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN6500 ;
-        adm:logEntry        bda:LG325A04163DD3A208 , bda:LGD06235473C218516 ;
+        adm:logEntry        bda:LGAFF7605E059534E0 , bda:LGD06235473C218516 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,24 +24,24 @@ bdg:W3CN6498 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG325A04163DD3A208
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-12T16:03:11.79Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LGD06235473C218516
+    bda:LGAFF7605E059534E0
         a                   adm:Synced ;
         adm:logDate         "2017-04-25T22:13:39.411Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGD06235473C218516
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-12T16:03:11.79Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:W3CN6498  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN6498 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "eb/W3CN6498.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN6498 ;
@@ -57,7 +57,13 @@ bdg:W3CN6498 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   270 .
     
+    bdr:IDF84F80837BBF23D7
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147718577" .
+    
     bdr:W3CN6498  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF84F80837BBF23D7 ;
         :instanceHasVolume  bdr:I3CN6500 ;
         :instanceOf         bdr:WA3CN6498 ;
         :instanceReproductionOf  bdr:MW3CN6498 ;

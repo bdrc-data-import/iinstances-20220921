@@ -14,20 +14,20 @@
 bdg:W18121 {
     bda:I2KG207273  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG207273 ;
-        adm:logEntry        bda:LGAFA654F041E3940C , bda:LGIM819082A4 ;
+        adm:logEntry        bda:LG2F3A7F1714B55FAA , bda:LGIM819082A4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG2F3A7F1714B55FAA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-05-07T11:27:59.064Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG6B0B4947E57D31EE
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-05-07T11:27:59.187Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LGAFA654F041E3940C
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-05-07T11:27:59.064Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM819082A4  a     adm:Synced ;
@@ -41,7 +41,7 @@ bdg:W18121 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W18121 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bf/W18121.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W18121 ;
@@ -57,7 +57,13 @@ bdg:W18121 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   64 .
     
+    bdr:IDD4E164F6FB8F2D95
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147716864" .
+    
     bdr:W18121  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD4E164F6FB8F2D95 ;
         :instanceHasVolume  bdr:I2KG207273 ;
         :instanceOf         bdr:WA18121 ;
         :instanceReproductionOf  bdr:MW18121 ;

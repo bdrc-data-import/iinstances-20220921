@@ -14,11 +14,11 @@
 bdg:W8LS66786 {
     bda:I8LS67879  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67879 ;
-        adm:logEntry        bda:LG348E6C14438A85FC , bda:LGIM9BB8E08C ;
+        adm:logEntry        bda:LG9AA1341EE759941D , bda:LGIM9BB8E08C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG348E6C14438A85FC
+    bda:LG9AA1341EE759941D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-03T09:06:49.029Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W8LS66786 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS66786 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "33/W8LS66786.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS66786 ;
@@ -57,7 +57,13 @@ bdg:W8LS66786 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   136 .
     
+    bdr:IDD869F33FEB71A607
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147718013" .
+    
     bdr:W8LS66786  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDD869F33FEB71A607 ;
         :instanceHasVolume  bdr:I8LS67879 ;
         :instanceOf         bdr:WA8LS66786 ;
         :instanceReproductionOf  bdr:MW8LS66786 ;

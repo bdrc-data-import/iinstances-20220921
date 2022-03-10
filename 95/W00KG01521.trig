@@ -14,11 +14,11 @@
 bdg:W00KG01521 {
     bda:I5822  a            adm:AdminData ;
         adm:adminAbout      bdr:I5822 ;
-        adm:logEntry        bda:LG6B214D814BE64146 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGBB10DF844EDDE0E7 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG6B214D814BE64146
+    bda:LGBB10DF844EDDE0E7
         a                   adm:UpdateData ;
         adm:logDate         "2007-05-22T16:19:50.315Z"^^xsd:dateTime ;
         adm:logMessage      "reworked image map for series"@en ;
@@ -47,7 +47,7 @@ bdg:W00KG01521 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG01521 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "95/W00KG01521.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG01521 ;
@@ -61,7 +61,13 @@ bdg:W00KG01521 {
         :volumePagesTbrcIntro  0 ;
         :volumePagesTotal   293 .
     
+    bdr:ID846A08EC7C7A8E49
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742623" .
+    
     bdr:W00KG01521  a       :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID846A08EC7C7A8E49 ;
         :instanceHasReproduction  bdr:IE00KG01521 ;
         :instanceHasVolume  bdr:I5822 ;
         :instanceOf         bdr:WA00KG01521 ;

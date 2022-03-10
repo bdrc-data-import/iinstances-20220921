@@ -14,17 +14,11 @@
 bdg:W1KG25710 {
     bda:I1KG25712  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25712 ;
-        adm:logEntry        bda:LG099917F0501C0E20 , bda:LG64B3EBB4B99554CC ;
+        adm:logEntry        bda:LG099917F0501C0E20 , bda:LGBBA3FD0AF476A4E8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG099917F0501C0E20
-        a                   adm:Synced ;
-        adm:logDate         "2017-08-05T01:03:45.904Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG64B3EBB4B99554CC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-15T09:42:54.268Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -36,12 +30,18 @@ bdg:W1KG25710 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGBBA3FD0AF476A4E8
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-05T01:03:45.904Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1KG25710  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG25710 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5f/W1KG25710.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG25710 ;
@@ -57,7 +57,13 @@ bdg:W1KG25710 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   73 .
     
+    bdr:ID2310A308293D68EC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147724844" .
+    
     bdr:W1KG25710  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID2310A308293D68EC ;
         :instanceHasVolume  bdr:I1KG25712 ;
         :instanceOf         bdr:WA1KG25710 ;
         :instanceReproductionOf  bdr:MW1KG25710 ;

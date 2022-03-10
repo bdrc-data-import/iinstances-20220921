@@ -14,9 +14,15 @@
 bdg:W8LS18871 {
     bda:I8LS18873  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18873 ;
-        adm:logEntry        bda:LGAA92A5D48A92B029 , bda:LGBBE1A3B2A666814D ;
+        adm:logEntry        bda:LG7439A86D5BEA80A0 , bda:LGAA92A5D48A92B029 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG7439A86D5BEA80A0
+        a                   adm:Synced ;
+        adm:logDate         "2017-07-14T23:27:24.731Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LG90F2334132C0BD20
         a                   adm:ScanRequestCreation ;
@@ -25,12 +31,6 @@ bdg:W8LS18871 {
         adm:logWho          bdu:U00019 .
     
     bda:LGAA92A5D48A92B029
-        a                   adm:Synced ;
-        adm:logDate         "2017-07-14T23:27:24.731Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGBBE1A3B2A666814D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-29T14:17:22.066Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W8LS18871 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18871 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ed/W8LS18871.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18871 ;
@@ -57,7 +57,13 @@ bdg:W8LS18871 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   48 .
     
+    bdr:IDC25F4980BD347BAD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147752149" .
+    
     bdr:W8LS18871  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC25F4980BD347BAD ;
         :instanceHasVolume  bdr:I8LS18873 ;
         :instanceOf         bdr:WA8LS18871 ;
         :instanceReproductionOf  bdr:MW8LS18871 ;

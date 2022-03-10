@@ -14,21 +14,21 @@
 bdg:W8LS18667 {
     bda:I8LS18669  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18669 ;
-        adm:logEntry        bda:LG108699FA0CEBDA42 , bda:LG6817467F59531483 ;
+        adm:logEntry        bda:LG23EE2A73D62B54E7 , bda:LG6817467F59531483 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG108699FA0CEBDA42
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T11:40:58.743Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LG6817467F59531483
+    bda:LG23EE2A73D62B54E7
         a                   adm:Synced ;
         adm:logDate         "2018-02-01T03:39:34.973Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LG6817467F59531483
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:40:58.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGD0A3AECAD19598E7
         a                   adm:ScanRequestCreation ;
@@ -41,7 +41,7 @@ bdg:W8LS18667 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18667 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c5/W8LS18667.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18667 ;
@@ -57,7 +57,13 @@ bdg:W8LS18667 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   143 .
     
+    bdr:ID0836CCC17F85945B
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737934" .
+    
     bdr:W8LS18667  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0836CCC17F85945B ;
         :instanceHasVolume  bdr:I8LS18669 ;
         :instanceOf         bdr:WA8LS18667 ;
         :instanceReproductionOf  bdr:MW8LS18667 ;

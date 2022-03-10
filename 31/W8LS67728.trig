@@ -14,23 +14,23 @@
 bdg:W8LS67728 {
     bda:I8LS67731  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67731 ;
-        adm:logEntry        bda:LG5E4BEB8FC9B817B3 , bda:LGIM835AB3DE ;
+        adm:logEntry        bda:LGF2E5B32A8DB7C985 , bda:LGIM835AB3DE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS67732  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67732 ;
-        adm:logEntry        bda:LG31901F796CD321E2 , bda:LGIM51CDD798 ;
+        adm:logEntry        bda:LG355B5D3BB1E20029 , bda:LGIM51CDD798 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I8LS67733  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS67733 ;
-        adm:logEntry        bda:LGCB74F49A6A015D13 , bda:LGIM9849AF0B ;
+        adm:logEntry        bda:LG531FC179DBBA72BD , bda:LGIM9849AF0B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG31901F796CD321E2
+    bda:LG355B5D3BB1E20029
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-11-21T10:32:31.753Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -42,15 +42,15 @@ bdg:W8LS67728 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG5E4BEB8FC9B817B3
+    bda:LG531FC179DBBA72BD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-11-21T10:32:31.686Z"^^xsd:dateTime ;
+        adm:logDate         "2019-11-21T10:32:31.82Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCB74F49A6A015D13
+    bda:LGF2E5B32A8DB7C985
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-11-21T10:32:31.82Z"^^xsd:dateTime ;
+        adm:logDate         "2019-11-21T10:32:31.686Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
@@ -77,7 +77,7 @@ bdg:W8LS67728 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS67728 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "31/W8LS67728.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS67728 ;
@@ -107,7 +107,13 @@ bdg:W8LS67728 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   262 .
     
+    bdr:IDF80A12671C67E743
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147760247" .
+    
     bdr:W8LS67728  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF80A12671C67E743 ;
         :instanceHasVolume  bdr:I8LS67731 , bdr:I8LS67732 , bdr:I8LS67733 ;
         :instanceOf         bdr:WA8LS67728 ;
         :instanceReproductionOf  bdr:MW8LS67728 ;

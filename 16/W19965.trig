@@ -14,7 +14,7 @@
 bdg:W19965 {
     bda:I1GS105563  a       adm:AdminData ;
         adm:adminAbout      bdr:I1GS105563 ;
-        adm:logEntry        bda:LG2AA9E4C62B04088D , bda:LGD00F07B989DC3F6A , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG2AA9E4C62B04088D , bda:LGEC4771251D9DF305 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,16 +25,16 @@ bdg:W19965 {
         adm:logWho          bdu:U00001 .
     
     bda:LG2AA9E4C62B04088D
-        a                   adm:UpdateData ;
-        adm:logDate         "2008-07-21T10:12:12.257Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:LGD00F07B989DC3F6A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-06-03T11:21:36.433Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGEC4771251D9DF305
+        a                   adm:UpdateData ;
+        adm:logDate         "2008-07-21T10:12:12.257Z"^^xsd:dateTime ;
+        adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -59,7 +59,7 @@ bdg:W19965 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W19965 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "16/W19965.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W19965 ;
@@ -75,7 +75,13 @@ bdg:W19965 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   758 .
     
+    bdr:ID19B68403025E1862
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147728198" .
+    
     bdr:W19965  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID19B68403025E1862 ;
         :instanceHasVolume  bdr:I1GS105563 ;
         :instanceOf         bdr:WA19965 ;
         :instanceReproductionOf  bdr:MW19965 ;

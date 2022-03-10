@@ -14,7 +14,7 @@
 bdg:W11051 {
     bda:I4CZ342739  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ342739 ;
-        adm:logEntry        bda:LGFFD124C24EEEE551 , bda:LGIM41D2188B ;
+        adm:logEntry        bda:LGFF65EBFB64FABF6D , bda:LGIM41D2188B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -30,7 +30,7 @@ bdg:W11051 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGFFD124C24EEEE551
+    bda:LGFF65EBFB64FABF6D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-05-31T13:06:15.978Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -47,7 +47,7 @@ bdg:W11051 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W11051 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "05/W11051.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W11051 ;
@@ -63,7 +63,13 @@ bdg:W11051 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   92 .
     
+    bdr:IDC30DA68E7B909D38
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147729706" .
+    
     bdr:W11051  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC30DA68E7B909D38 ;
         :instanceHasVolume  bdr:I4CZ342739 ;
         :instanceOf         bdr:WA11051 ;
         :instanceReproductionOf  bdr:MW11051 ;

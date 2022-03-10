@@ -14,32 +14,32 @@
 bdg:W1KG18488 {
     bda:I1KG18502  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18502 ;
-        adm:logEntry        bda:LG93018062A23A7733 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG07770827610B2C30 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I1KG18503  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG18503 ;
-        adm:logEntry        bda:LGF885AAF067043A58 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG7550D76967CFC7E7 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG7E978329A342AFA5
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2014-09-29T14:36:48.336Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG93018062A23A7733
+    bda:LG07770827610B2C30
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-09-29T14:36:48.275Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGF885AAF067043A58
+    bda:LG7550D76967CFC7E7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-09-29T14:36:48.301Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7E978329A342AFA5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-09-29T14:36:48.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIGS001  a         adm:UpdateData ;
@@ -65,7 +65,7 @@ bdg:W1KG18488 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG18488 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "55/W1KG18488.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG18488 ;
@@ -88,7 +88,13 @@ bdg:W1KG18488 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   532 .
     
+    bdr:ID647AC0C17ABC2B10
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714010" .
+    
     bdr:W1KG18488  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID647AC0C17ABC2B10 ;
         :instanceHasVolume  bdr:I1KG18502 , bdr:I1KG18503 ;
         :instanceOf         bdr:WA1KG18488 ;
         :instanceReproductionOf  bdr:MW1KG18488 ;

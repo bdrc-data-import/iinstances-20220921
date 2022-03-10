@@ -14,7 +14,7 @@
 bdg:W8LS18691 {
     bda:I8LS18693  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS18693 ;
-        adm:logEntry        bda:LG7CCAE3F48FE7E7A3 , bda:LGF9C0443423C0A176 , bda:LGIMD5281A1E ;
+        adm:logEntry        bda:LGAA190EAC1D2B1758 , bda:LGF9C0443423C0A176 , bda:LGIMD5281A1E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,17 +24,17 @@ bdg:W8LS18691 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7CCAE3F48FE7E7A3
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-11-29T11:45:47.615Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
-    
-    bda:LGF9C0443423C0A176
+    bda:LGAA190EAC1D2B1758
         a                   adm:Synced ;
         adm:logDate         "2018-02-01T03:39:42.133Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
+    
+    bda:LGF9C0443423C0A176
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-11-29T11:45:47.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGIMD5281A1E  a     adm:ImagesUpdated ;
         adm:logAgent        "Imagegroups Updater" ;
@@ -47,7 +47,7 @@ bdg:W8LS18691 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS18691 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "18/W8LS18691.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS18691 ;
@@ -63,7 +63,13 @@ bdg:W8LS18691 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   129 .
     
+    bdr:ID234DF7FFB319DE79
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147708435" .
+    
     bdr:W8LS18691  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID234DF7FFB319DE79 ;
         :instanceHasVolume  bdr:I8LS18693 ;
         :instanceOf         bdr:WA8LS18691 ;
         :instanceReproductionOf  bdr:MW8LS18691 ;

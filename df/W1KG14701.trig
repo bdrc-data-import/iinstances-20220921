@@ -14,7 +14,7 @@
 bdg:W1KG14701 {
     bda:I4PD4354  a         adm:AdminData ;
         adm:adminAbout      bdr:I4PD4354 ;
-        adm:logEntry        bda:LG7B5A12000836C627 , bda:LGE36A0E6C6B370CF2 ;
+        adm:logEntry        bda:LG7B5A12000836C627 , bda:LGA6284CF83D55A9E0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -25,23 +25,23 @@ bdg:W1KG14701 {
         adm:logWho          bdu:U00021 .
     
     bda:LG7B5A12000836C627
-        a                   adm:Synced ;
-        adm:logDate         "2017-06-14T00:03:48.078Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LGE36A0E6C6B370CF2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-09T16:19:15.419Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGA6284CF83D55A9E0
+        a                   adm:Synced ;
+        adm:logDate         "2017-06-14T00:03:48.078Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W1KG14701  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG14701 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "df/W1KG14701.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG14701 ;
@@ -57,7 +57,13 @@ bdg:W1KG14701 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   358 .
     
+    bdr:ID77DC34A55F6E3556
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147711078" .
+    
     bdr:W1KG14701  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID77DC34A55F6E3556 ;
         :instanceHasVolume  bdr:I4PD4354 ;
         :instanceOf         bdr:WA1KG14701 ;
         :instanceReproductionOf  bdr:MW1KG14701 ;

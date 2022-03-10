@@ -14,7 +14,7 @@
 bdg:W3CN21532 {
     bda:I3CN21773  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN21773 ;
-        adm:logEntry        bda:LGE6638AEE608C737A , bda:LGIM6A520AB9 ;
+        adm:logEntry        bda:LGBFD22BA660EF983B , bda:LGIM6A520AB9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,7 +24,7 @@ bdg:W3CN21532 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGE6638AEE608C737A
+    bda:LGBFD22BA660EF983B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-06T15:34:22.213Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -41,7 +41,7 @@ bdg:W3CN21532 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN21532 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0a/W3CN21532.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN21532 ;
@@ -57,7 +57,13 @@ bdg:W3CN21532 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   336 .
     
+    bdr:ID8F842E895938F743
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147732663" .
+    
     bdr:W3CN21532  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID8F842E895938F743 ;
         :instanceHasVolume  bdr:I3CN21773 ;
         :instanceOf         bdr:WA1KG14961 ;
         :instanceReproductionOf  bdr:MW3CN21532 ;

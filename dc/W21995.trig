@@ -14,15 +14,15 @@
 bdg:W21995 {
     bda:I1GS58134  a        adm:AdminData ;
         adm:adminAbout      bdr:I1GS58134 ;
-        adm:logEntry        bda:LG05D8A72D12CF442A , bda:LG65E49DCA97F2C9D0 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG05D8A72D12CF442A , bda:LG4C9640134A02AEB0 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG05D8A72D12CF442A
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-09-19T23:37:54.286Z"^^xsd:dateTime ;
-        adm:logMessage      "scan completed"@en ;
-        adm:logWho          bdu:U00012 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2007-09-07T14:42:31.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG24FC85950313509D
         a                   adm:ScanRequestCreation ;
@@ -30,11 +30,11 @@ bdg:W21995 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LG65E49DCA97F2C9D0
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2007-09-07T14:42:31.141Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00001 .
+    bda:LG4C9640134A02AEB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2007-09-19T23:37:54.286Z"^^xsd:dateTime ;
+        adm:logMessage      "scan completed"@en ;
+        adm:logWho          bdu:U00012 .
     
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
@@ -59,7 +59,7 @@ bdg:W21995 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W21995 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "dc/W21995.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W21995 ;
@@ -75,7 +75,13 @@ bdg:W21995 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   101 .
     
+    bdr:IDA86DBBDD621AD5DA
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714810" .
+    
     bdr:W21995  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA86DBBDD621AD5DA ;
         :instanceHasVolume  bdr:I1GS58134 ;
         :instanceOf         bdr:WA21995 ;
         :instanceReproductionOf  bdr:MW21995 ;

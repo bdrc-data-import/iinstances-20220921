@@ -14,15 +14,9 @@
 bdg:W2PD19199 {
     bda:I2PD19211  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD19211 ;
-        adm:logEntry        bda:LG031BCA8B4D06C3F6 , bda:LG70DB90FD2F4F7884 ;
+        adm:logEntry        bda:LG70DB90FD2F4F7884 , bda:LGA2340FC1BBB2A3C7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG031BCA8B4D06C3F6
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-12-01T22:09:06Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00021 .
     
     bda:LG2A01BDE1DC6C5FA6
         a                   adm:ScanRequestCreation ;
@@ -31,6 +25,12 @@ bdg:W2PD19199 {
         adm:logWho          bdu:U00021 .
     
     bda:LG70DB90FD2F4F7884
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-12-01T22:09:06Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00021 .
+    
+    bda:LGA2340FC1BBB2A3C7
         a                   adm:Synced ;
         adm:logDate         "2017-06-17T02:29:24.312Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -41,7 +41,7 @@ bdg:W2PD19199 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2PD19199 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "26/W2PD19199.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2PD19199 ;
@@ -57,7 +57,13 @@ bdg:W2PD19199 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   196 .
     
+    bdr:IDF0824AAFAA2DBC27
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147712786" .
+    
     bdr:W2PD19199  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDF0824AAFAA2DBC27 ;
         :instanceHasVolume  bdr:I2PD19211 ;
         :instanceOf         bdr:WA2PD19199 ;
         :instanceReproductionOf  bdr:MW2PD19199 ;

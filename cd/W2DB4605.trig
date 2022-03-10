@@ -14,7 +14,7 @@
 bdg:W2DB4605 {
     bda:I1PD27261  a        adm:AdminData ;
         adm:adminAbout      bdr:I1PD27261 ;
-        adm:logEntry        bda:LGACD5DCFBA20B12DA , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGD450871CD0415058 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,7 +24,7 @@ bdg:W2DB4605 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGACD5DCFBA20B12DA
+    bda:LGD450871CD0415058
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-12-05T13:21:36.055Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -53,7 +53,7 @@ bdg:W2DB4605 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2DB4605 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "cd/W2DB4605.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2DB4605 ;
@@ -69,7 +69,13 @@ bdg:W2DB4605 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   134 .
     
+    bdr:ID1D70E8BBD26C4BDB
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147736925" .
+    
     bdr:W2DB4605  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID1D70E8BBD26C4BDB ;
         :instanceHasVolume  bdr:I1PD27261 ;
         :instanceOf         bdr:WA2DB4603 ;
         :instanceReproductionOf  bdr:MW2DB4605 ;

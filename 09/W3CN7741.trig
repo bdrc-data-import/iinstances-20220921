@@ -14,17 +14,11 @@
 bdg:W3CN7741 {
     bda:I1KG26427  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG26427 ;
-        adm:logEntry        bda:LG3342E79A7B0956EA , bda:LG523F89A20270118F ;
+        adm:logEntry        bda:LG3342E79A7B0956EA , bda:LG90BF83BC71A522C8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG3342E79A7B0956EA
-        a                   adm:Synced ;
-        adm:logDate         "2017-11-09T20:49:41.326Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG523F89A20270118F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-06-02T15:16:42.493Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -35,6 +29,12 @@ bdg:W3CN7741 {
         adm:logDate         "2017-06-02T15:16:42.577Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG90BF83BC71A522C8
+        a                   adm:Synced ;
+        adm:logDate         "2017-11-09T20:49:41.326Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGCA311ED3F86A2853
         a                   adm:ScanRequestCreation ;
@@ -47,7 +47,7 @@ bdg:W3CN7741 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN7741 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "09/W3CN7741.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN7741 ;
@@ -63,7 +63,13 @@ bdg:W3CN7741 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   100 .
     
+    bdr:ID6C829F4BAEF21EB6
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147713849" .
+    
     bdr:W3CN7741  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID6C829F4BAEF21EB6 ;
         :instanceHasVolume  bdr:I1KG26427 ;
         :instanceOf         bdr:WA3CN7741 ;
         :instanceReproductionOf  bdr:MW3CN7741 ;

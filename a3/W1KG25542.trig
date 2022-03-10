@@ -14,7 +14,7 @@
 bdg:W1KG25542 {
     bda:I1KG25544  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG25544 ;
-        adm:logEntry        bda:LG5C57E016ECCABCDB , bda:LG7C104481CD7B4004 ;
+        adm:logEntry        bda:LG7C104481CD7B4004 , bda:LGCEA60BC36AF795B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -24,13 +24,13 @@ bdg:W1KG25542 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG5C57E016ECCABCDB
+    bda:LG7C104481CD7B4004
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-14T09:35:34.848Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG7C104481CD7B4004
+    bda:LGCEA60BC36AF795B1
         a                   adm:Synced ;
         adm:logDate         "2017-05-26T01:54:25.89Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -41,7 +41,7 @@ bdg:W1KG25542 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG25542 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a3/W1KG25542.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG25542 ;
@@ -57,7 +57,13 @@ bdg:W1KG25542 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   286 .
     
+    bdr:IDA23BCA0F6680A2F2
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147751884" .
+    
     bdr:W1KG25542  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA23BCA0F6680A2F2 ;
         :instanceHasVolume  bdr:I1KG25544 ;
         :instanceOf         bdr:WA1KG25542 ;
         :instanceReproductionOf  bdr:MW1KG25542 ;

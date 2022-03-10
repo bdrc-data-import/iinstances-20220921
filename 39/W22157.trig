@@ -14,20 +14,20 @@
 bdg:W22157 {
     bda:I1KG80387  a        adm:AdminData ;
         adm:adminAbout      bdr:I1KG80387 ;
-        adm:logEntry        bda:LG6F1EC0D4F800AD66 , bda:LGIMD4578769 ;
+        adm:logEntry        bda:LG5B346BD582EFE4C4 , bda:LGIMD4578769 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG5B346BD582EFE4C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-09-12T16:15:22.639Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG67AB7B1D5B55B875
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2014-04-11T11:17:00.193Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG6F1EC0D4F800AD66
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2017-09-12T16:15:22.639Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGE1756698A841850C
@@ -47,7 +47,7 @@ bdg:W22157 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W22157 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "39/W22157.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W22157 ;
@@ -63,7 +63,13 @@ bdg:W22157 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   538 .
     
+    bdr:ID537BCE3FF0E9AA2D
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147714400" .
+    
     bdr:W22157  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID537BCE3FF0E9AA2D ;
         :instanceHasVolume  bdr:I1KG80387 ;
         :instanceOf         bdr:WA22157 ;
         :instanceReproductionOf  bdr:MW22157 ;

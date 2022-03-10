@@ -14,11 +14,11 @@
 bdg:W23671 {
     bda:I4265  a            adm:AdminData ;
         adm:adminAbout      bdr:I4265 ;
-        adm:logEntry        bda:LG302237863DEBA9D5 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGF8CA139FC558C4FF , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG302237863DEBA9D5
+    bda:LGF8CA139FC558C4FF
         a                   adm:UpdateData ;
         adm:logDate         "2007-07-11T14:28:17.02Z"^^xsd:dateTime ;
         adm:logMessage      "annotation revised"@en ;
@@ -47,7 +47,7 @@ bdg:W23671 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W23671 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3b/W23671.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W23671 ;
@@ -61,7 +61,13 @@ bdg:W23671 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   510 .
     
+    bdr:IDA1C3C7DF7A44FD76
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147737801" .
+    
     bdr:W23671  a           :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA1C3C7DF7A44FD76 ;
         :instanceHasVolume  bdr:I4265 ;
         :instanceOf         bdr:WA23671 ;
         :instanceReproductionOf  bdr:MW23671 ;

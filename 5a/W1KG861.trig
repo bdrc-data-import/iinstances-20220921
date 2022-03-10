@@ -14,26 +14,26 @@
 bdg:W1KG861 {
     bda:I1KG900  a          adm:AdminData ;
         adm:adminAbout      bdr:I1KG900 ;
-        adm:logEntry        bda:LG1DD6275F14D3E904 , bda:LG50F917BB965F364D , bda:LGB7E95961D6E5B803 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG10F3598E42465DE3 , bda:LG50F917BB965F364D , bda:LGB7E95961D6E5B803 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG1DD6275F14D3E904
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2008-10-24T17:08:13.845Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG50F917BB965F364D
+    bda:LG10F3598E42465DE3
         a                   adm:UpdateData ;
         adm:logDate         "2009-03-04T12:17:38.253Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGB7E95961D6E5B803
+    bda:LG50F917BB965F364D
         a                   adm:UpdateData ;
         adm:logDate         "2009-03-04T12:11:40.21Z"^^xsd:dateTime ;
         adm:logMessage      "updated scanning and QC status"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB7E95961D6E5B803
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2008-10-24T17:08:13.845Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGD1CAD7896A1E2C99
@@ -65,7 +65,7 @@ bdg:W1KG861 {
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG861 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "5a/W1KG861.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG861 ;
@@ -81,7 +81,13 @@ bdg:W1KG861 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   220 .
     
+    bdr:IDE08F3D8F530118FC
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147740647" .
+    
     bdr:W1KG861  a          :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDE08F3D8F530118FC ;
         :instanceHasVolume  bdr:I1KG900 ;
         :instanceOf         bdr:WA1KG861 ;
         :instanceReproductionOf  bdr:MW1KG861 ;

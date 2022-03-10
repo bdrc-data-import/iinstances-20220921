@@ -14,28 +14,28 @@
 bdg:W3CN6997 {
     bda:I3CN6999  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN6999 ;
-        adm:logEntry        bda:LG617C07149FE1340E , bda:LG926AD1680EA80A3F ;
+        adm:logEntry        bda:LG617C07149FE1340E , bda:LGE766526F3B299189 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG617C07149FE1340E
-        a                   adm:Synced ;
-        adm:logDate         "2017-08-01T23:13:16.171Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:LG926AD1680EA80A3F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-14T11:25:23.672Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGE766526F3B299189
+        a                   adm:Synced ;
+        adm:logDate         "2017-08-01T23:13:16.171Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W3CN6997  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W3CN6997 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b8/W3CN6997.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN6997 ;
@@ -50,7 +50,13 @@ bdg:W3CN6997 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   108 .
     
+    bdr:ID67C5AB36A4D2D8A3
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147742286" .
+    
     bdr:W3CN6997  a         :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID67C5AB36A4D2D8A3 ;
         :instanceHasVolume  bdr:I3CN6999 ;
         :instanceReproductionOf  bdr:MW3CN6997 ;
         :isRoot             true ;

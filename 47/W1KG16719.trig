@@ -14,21 +14,15 @@
 bdg:W1KG16719 {
     bda:I2PD18889  a        adm:AdminData ;
         adm:adminAbout      bdr:I2PD18889 ;
-        adm:logEntry        bda:LG5D8538577BC2DC63 , bda:LG8313C204A60C3D5B ;
+        adm:logEntry        bda:LG8313C204A60C3D5B , bda:LGA6253C8082F07975 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bda:LG5D8538577BC2DC63
+    bda:LG8313C204A60C3D5B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-23T21:29:53.409Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
-    
-    bda:LG8313C204A60C3D5B
-        a                   adm:Synced ;
-        adm:logDate         "2017-12-09T00:39:52.775Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
     
     bda:LG8DB4AEB5AFEA8FC0
         a                   adm:ScanRequestCreation ;
@@ -36,12 +30,18 @@ bdg:W1KG16719 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGA6253C8082F07975
+        a                   adm:Synced ;
+        adm:logDate         "2017-12-09T00:39:52.775Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1KG16719  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1KG16719 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "47/W1KG16719.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1KG16719 ;
@@ -57,7 +57,13 @@ bdg:W1KG16719 {
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   190 .
     
+    bdr:IDA4A84275AF211FAD
+        a                   bdr:OclcControlNumber ;
+        rdf:value           "1147733021" .
+    
     bdr:W1KG16719  a        :ImageInstance ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA4A84275AF211FAD ;
         :instanceHasVolume  bdr:I2PD18889 ;
         :instanceOf         bdr:WA1KG16719 ;
         :instanceReproductionOf  bdr:MW1KG16719 ;
