@@ -12,23 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W4CZ58531 {
-    bda:I2KG216544  a       adm:AdminData ;
-        adm:adminAbout      bdr:I2KG216544 ;
-        adm:logEntry        bda:LG20A34882AF153FEB , bda:LGIM911D50FD ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+    bda:I4CZ299086  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ299086 ;
+        adm:logEntry        bda:LG81775E198AD88A6B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG20A34882AF153FEB
+    bda:LG81775E198AD88A6B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-10-01T10:07:33.436Z"^^xsd:dateTime ;
+        adm:logDate         "2017-09-19T12:26:46.632Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
-    bda:LG343284D4B23C21C8
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2020-10-01T10:07:33.553Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+        adm:logWho          bdu:U00017 .
     
     bda:LGAC232679CE1CAD56
         a                   adm:ScanRequestCreation ;
@@ -36,39 +29,33 @@ bdg:W4CZ58531 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGIM911D50FD  a     adm:Synced ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2020-10-02T00:42:38.141Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
     bda:W4CZ58531  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ58531 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "0a/W4CZ58531.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ58531 ;
-        adm:logEntry        bda:LG343284D4B23C21C8 , bda:LGAC232679CE1CAD56 ;
+        adm:logEntry        bda:LGAC232679CE1CAD56 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I2KG216544  a       :ImageGroup ;
+    bdr:I4CZ299086  a       :ImageGroup ;
         :biblioNote         "Volume 1 of bshes springs rnam bshad/"@en ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ58531 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   378 .
+        :volumePagesTotal   0 .
     
     bdr:W4CZ58531  a        :ImageInstance ;
         :digitalLendingPossible  false ;
-        :instanceHasVolume  bdr:I2KG216544 ;
+        :instanceHasVolume  bdr:I4CZ299086 ;
         :instanceOf         bdr:WA4CZ58531 ;
         :instanceReproductionOf  bdr:MW4CZ58531 ;
         :isRoot             true ;
         :numberOfVolumes    1 ;
-        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D27641"@en , "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center. Comments: 10/2020"@en .
+        :scanInfo           "copy made available from the library of tibetan works and archives; ltwa acc. no.D27641"@en .
 }
