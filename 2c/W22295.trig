@@ -24,12 +24,6 @@ bdg:W22295 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG995A97648469489E
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2017-07-12T12:54:17.827Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
     bda:LGIM66A63B47  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2022-03-15T23:10:16.175Z"^^xsd:dateTime ;
@@ -45,10 +39,9 @@ bdg:W22295 {
         adm:gitPath         "2c/W22295.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W22295 ;
-        adm:logEntry        bda:LG995A97648469489E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  false ;
-        adm:status          bda:StatusOnHold .
+        adm:status          bda:StatusWithdrawn .
     
     bdr:I3CN8762  a         :ImageGroup ;
         :biblioNote         "Volume 1 of dpal ri bo dge ldan pa'i chos spyod sna tshogs kyi 'grel ba phyogs bsgrigs"@en ;
@@ -59,7 +52,6 @@ bdg:W22295 {
     
     bdr:W22295  a           :ImageInstance ;
         :instanceHasVolume  bdr:I3CN8762 ;
-        :instanceOf         bdr:WA22295 ;
         :instanceReproductionOf  bdr:MW22295 ;
         :isRoot             true ;
         :numberOfVolumes    1 ;
