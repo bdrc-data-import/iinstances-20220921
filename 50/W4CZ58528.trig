@@ -14,19 +14,15 @@
 bdg:W4CZ58528 {
     bda:I4CZ58796  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CZ58796 ;
-        adm:logEntry        bda:LGAF750421B2CD778E ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGAF750421B2CD778E , bda:LGIMBFA3E88C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ58797  a        adm:AdminData ;
         adm:adminAbout      bdr:I4CZ58797 ;
-        adm:logEntry        bda:LG5FB3395B536BD8B9 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bda:LG5FB3395B536BD8B9
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2016-01-27T11:46:20.726Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+        adm:logEntry        bda:LGC3588B58CBC0C016 , bda:LGIM32B0826D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LGAE1B1334E6EC210A
         a                   adm:ScanRequestCreation ;
@@ -40,12 +36,30 @@ bdg:W4CZ58528 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGC3588B58CBC0C016
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-01-27T11:46:20.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIM32B0826D  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:14:31.958Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBFA3E88C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:14:31.721Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ58528  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ58528 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "50/W4CZ58528.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ58528 ;
@@ -59,14 +73,14 @@ bdg:W4CZ58528 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ58528 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   470 .
     
     bdr:I4CZ58797  a        :ImageGroup ;
         :biblioNote         "Volume 2 of gcod kyi khrid skor/"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ58528 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   147 .
     
     bdr:W4CZ58528  a        :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ58796 , bdr:I4CZ58797 ;

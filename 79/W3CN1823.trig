@@ -14,28 +14,25 @@
 bdg:W3CN1823 {
     bda:I3CN1828  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN1828 ;
-        adm:logEntry        bda:LGF6C492153A597DE5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGF6C492153A597DE5 , bda:LGIM7BD5446C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN1829  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN1829 ;
-        adm:logEntry        bda:LG0B4063E844327E25 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG231C2BFC483557C7 , bda:LGIMCA25E5C0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I3CN1830  a         adm:AdminData ;
         adm:adminAbout      bdr:I3CN1830 ;
-        adm:logEntry        bda:LG029838841DFFC6EE ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0A7B7E26D4300A5E , bda:LGIMEC1DC900 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG029838841DFFC6EE
+    bda:LG0A7B7E26D4300A5E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-06-16T10:06:15.214Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LG0B4063E844327E25
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2015-06-16T10:06:15.164Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
@@ -45,18 +42,42 @@ bdg:W3CN1823 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG231C2BFC483557C7
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2015-06-16T10:06:15.164Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF6C492153A597DE5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-06-16T10:06:15.097Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM7BD5446C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:13:33.59Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMCA25E5C0  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:13:33.83Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMEC1DC900  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-03-25T01:13:34.079Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W3CN1823  a         adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN1823 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "79/W3CN1823.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN1823 ;
@@ -70,21 +91,21 @@ bdg:W3CN1823 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W3CN1823 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   594 .
     
     bdr:I3CN1829  a         :ImageGroup ;
         :biblioNote         "Volume 2 of sog yul du spar ba'i mdo rgyud khag cig"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN1823 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   208 .
     
     bdr:I3CN1830  a         :ImageGroup ;
         :biblioNote         "Volume 3 of sog yul du spar ba'i mdo rgyud khag cig"@en ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W3CN1823 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   1134 .
     
     bdr:W3CN1823  a         :ImageInstance ;
         :instanceHasVolume  bdr:I3CN1828 , bdr:I3CN1829 , bdr:I3CN1830 ;
