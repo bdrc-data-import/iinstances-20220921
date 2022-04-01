@@ -1,0 +1,59 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W8LS76964 {
+    bda:I8LS76966  a        adm:AdminData ;
+        adm:adminAbout      bdr:I8LS76966 ;
+        adm:logEntry        bda:LG2326871E9F149155 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG2326871E9F149155
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-31T08:28:22.026Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGED8E970AED47DB16
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-31T08:28:22.125Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:W8LS76964  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W8LS76964 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "ee/W8LS76964.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W8LS76964 ;
+        adm:logEntry        bda:LGED8E970AED47DB16 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I8LS76966  a        :ImageGroup ;
+        :biblioNote         "Volume 1 of shing gsal dang brda yul gyi mtha' dpyod lung dang rigs pa'i rgya mtsho/"@en ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W8LS76964 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W8LS76964  a        :ImageInstance ;
+        :instanceHasVolume  bdr:I8LS76966 ;
+        :instanceOf         bdr:WA8LS76964 ;
+        :instanceReproductionOf  bdr:MW8LS76964 ;
+        :isRoot             true ;
+        :numberOfVolumes    1 .
+}
