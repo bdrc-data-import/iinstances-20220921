@@ -14,13 +14,21 @@
 bdg:W8LS66299 {
     bda:I8LS66301  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS66301 ;
-        adm:logEntry        bda:LGD6EB1F73AAEB3986 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGD6EB1F73AAEB3986 , bda:LGIM35B7171C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS66302  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS66302 ;
-        adm:logEntry        bda:LGF7707E5A09375FAB ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG4C12486FFB87EB10 , bda:LGIM7F1ADF04 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG4C12486FFB87EB10
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-06-27T09:38:04.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGD6EB1F73AAEB3986
         a                   adm:InitialDataCreation ;
@@ -34,18 +42,24 @@ bdg:W8LS66299 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF7707E5A09375FAB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-06-27T09:38:04.162Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00019 .
+    bda:LGIM35B7171C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-05T04:44:50.534Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7F1ADF04  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-05T04:44:50.803Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS66299  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W8LS66299 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b1/W8LS66299.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS66299 ;
@@ -59,14 +73,14 @@ bdg:W8LS66299 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS66299 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   852 .
     
     bdr:I8LS66302  a        :ImageGroup ;
         :biblioNote         "Volume 2 of nga'i skye yul dang mi tshe'i 'gan 'khur/ stod cha dang smad cha/"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS66299 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   788 .
     
     bdr:W8LS66299  a        :ImageInstance ;
         :digitalLendingPossible  false ;
