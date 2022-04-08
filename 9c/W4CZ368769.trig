@@ -14,13 +14,15 @@
 bdg:W4CZ368769 {
     bda:I4CZ369355  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369355 ;
-        adm:logEntry        bda:LG0D0DF7AAB2C87A70 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0D0DF7AAB2C87A70 , bda:LGIM832E601B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ369356  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369356 ;
-        adm:logEntry        bda:LGF6BE9325E72C183C ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGBC1C882C6426B5AE , bda:LGIM8F69B37C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG0D0DF7AAB2C87A70
         a                   adm:InitialDataCreation ;
@@ -34,18 +36,30 @@ bdg:W4CZ368769 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGF6BE9325E72C183C
+    bda:LGBC1C882C6426B5AE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-03-30T09:48:22.159Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGIM832E601B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-07T22:59:04.767Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM8F69B37C  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-07T22:59:05.083Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W4CZ368769  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ368769 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "9c/W4CZ368769.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ368769 ;
@@ -59,14 +73,14 @@ bdg:W4CZ368769 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ368769 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   556 .
     
     bdr:I4CZ369356  a       :ImageGroup ;
         :biblioNote         "Volume 2 of rgya bod shan sbyar gyi gtam dpe/"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ368769 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   562 .
     
     bdr:W4CZ368769  a       :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ369355 , bdr:I4CZ369356 ;
