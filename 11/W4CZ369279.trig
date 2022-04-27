@@ -11,49 +11,49 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:W4CZ369257 {
-    bda:I4CZ369382  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ369382 ;
-        adm:logEntry        bda:LG9048F986A9AD09AB ;
+bdg:W4CZ369279 {
+    bda:I4CZ369559  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ369559 ;
+        adm:logEntry        bda:LGA81830FC94CEC266 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG9048F986A9AD09AB
+    bda:LGA81830FC94CEC266
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-30T11:56:52.432Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-26T11:42:09.289Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGCD175E9B4AEC6E8A
+    bda:LGD3AD2AB09AF09420
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-03-30T11:56:52.54Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-26T11:42:09.435Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:W4CZ369257  a       adm:AdminData ;
+    bda:W4CZ369279  a       adm:AdminData ;
         :isRoot             true ;
-        adm:access          bda:AccessFairUse ;
-        adm:adminAbout      bdr:W4CZ369257 ;
-        adm:contentLegal    bda:LD_BDRC_Copyright ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ369279 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
         adm:facetIndex      2 ;
-        adm:gitPath         "45/W4CZ369257.trig" ;
+        adm:gitPath         "11/W4CZ369279.trig" ;
         adm:gitRepo         bda:GR0014 ;
-        adm:graphId         bdg:W4CZ369257 ;
-        adm:logEntry        bda:LGCD175E9B4AEC6E8A ;
+        adm:graphId         bdg:W4CZ369279 ;
+        adm:logEntry        bda:LGD3AD2AB09AF09420 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
+        adm:restrictedInChina  false ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ369382  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of blo bzang dgongs rgyan mu tig phreng mdzes deb brgyad pa/ (2)"@en ;
+    bdr:I4CZ369559  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of rdo rje theg pa'i sa lam phyogs bsgrigs nor bu'i bang mdzod/"@en ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W4CZ369257 ;
+        :volumeOf           bdr:W4CZ369279 ;
         :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
-    bdr:W4CZ369257  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ369382 ;
-        :instanceOf         bdr:WA4CZ369257 ;
-        :instanceReproductionOf  bdr:MW4CZ369257 ;
+    bdr:W4CZ369279  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ369559 ;
+        :instanceOf         bdr:WA4CZ369279 ;
+        :instanceReproductionOf  bdr:MW4CZ369279 ;
         :isRoot             true ;
         :numberOfVolumes    1 .
 }

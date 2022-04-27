@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W4CZ369276 {
+    bda:I4CZ369542  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ369542 ;
+        adm:logEntry        bda:LG2DBB7BA891136F38 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I4CZ369543  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ369543 ;
+        adm:logEntry        bda:LG5BD008C8624D19D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG2DBB7BA891136F38
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-26T11:10:52.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG4314441042E5CE1F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-26T11:10:52.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG5BD008C8624D19D6
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-26T11:10:52.766Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:W4CZ369276  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W4CZ369276 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b2/W4CZ369276.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W4CZ369276 ;
+        adm:logEntry        bda:LG4314441042E5CE1F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I4CZ369542  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of rdzogs pa chen po sems nyid ngal gso'i 'grel pa shing rta chen po/"@en ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W4CZ369276 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I4CZ369543  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of rdzogs pa chen po sems nyid ngal gso'i 'grel pa shing rta chen po/"@en ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W4CZ369276 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W4CZ369276  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ369542 , bdr:I4CZ369543 ;
+        :instanceOf         bdr:WA4CZ369276 ;
+        :instanceReproductionOf  bdr:MW4CZ369276 ;
+        :isRoot             true ;
+        :numberOfVolumes    2 .
+}
