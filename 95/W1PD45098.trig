@@ -444,19 +444,19 @@ bdg:W1PD45098 {
     
     bda:I2KG230066  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG230066 ;
-        adm:logEntry        bda:LG83403173D35A5C61 ;
+        adm:logEntry        bda:LG83403173D35A5C61 , bda:LGIM574A2080 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2KG230067  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG230067 ;
-        adm:logEntry        bda:LG684BB32605D4085C ;
+        adm:logEntry        bda:LG082582933F04F231 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I2KG230068  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG230068 ;
-        adm:logEntry        bda:LGFF86DA135AE5DCC0 ;
+        adm:logEntry        bda:LG95D3553640C74D50 , bda:LGIM92148D10 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -471,6 +471,12 @@ bdg:W1PD45098 {
         adm:logDate         "2008-09-18T16:48:03.085Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG082582933F04F231
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-11-10T10:34:04.515Z"^^xsd:dateTime ;
+        adm:logMessage      "created imagegroup for W1PD45098"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG09F645F46F705CCD
         a                   adm:InitialDataCreation ;
@@ -622,12 +628,6 @@ bdg:W1PD45098 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG684BB32605D4085C
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-11-10T10:34:04.515Z"^^xsd:dateTime ;
-        adm:logMessage      "created imagegroup for W1PD45098"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LG6C123EC063A4B7FA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-09-18T16:48:46.677Z"^^xsd:dateTime ;
@@ -729,6 +729,12 @@ bdg:W1PD45098 {
         adm:logDate         "2008-09-18T16:48:07.038Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG95D3553640C74D50
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-11-10T10:34:05.166Z"^^xsd:dateTime ;
+        adm:logMessage      "created imagegroup for W1PD45098"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG9864C173FDB96BB8
         a                   adm:InitialDataCreation ;
@@ -928,12 +934,6 @@ bdg:W1PD45098 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGFF86DA135AE5DCC0
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-11-10T10:34:05.166Z"^^xsd:dateTime ;
-        adm:logMessage      "created imagegroup for W1PD45098"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGIGS001  a         adm:UpdateData ;
         adm:logDate         "2016-03-30T16:20:30.571Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
@@ -952,12 +952,24 @@ bdg:W1PD45098 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM574A2080  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-27T23:14:05.09Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM92148D10  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-27T23:14:05.295Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W1PD45098  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W1PD45098 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      245 ;
+        adm:facetIndex      247 ;
         adm:gitPath         "95/W1PD45098.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W1PD45098 ;
@@ -1493,7 +1505,9 @@ bdg:W1PD45098 {
     
     bdr:I2KG230066  a       :ImageGroup ;
         :volumeNumber       123 ;
-        :volumeOf           bdr:W1PD45098 .
+        :volumeOf           bdr:W1PD45098 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
     
     bdr:I2KG230067  a       :ImageGroup ;
         :volumeNumber       124 ;
@@ -1501,7 +1515,9 @@ bdg:W1PD45098 {
     
     bdr:I2KG230068  a       :ImageGroup ;
         :volumeNumber       125 ;
-        :volumeOf           bdr:W1PD45098 .
+        :volumeOf           bdr:W1PD45098 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   134 .
     
     bdr:IDA0E2AC1AE7F1D9FA
         a                   bdr:OclcControlNumber ;
