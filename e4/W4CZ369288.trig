@@ -14,15 +14,16 @@
 bdg:W4CZ369288 {
     bda:I4CZ369569  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369569 ;
-        adm:logEntry        bda:LG72C8A95FF5AD86EC ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG72C8A95FF5AD86EC , bda:LGIM5CD20D3E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ369570  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369570 ;
-        adm:logEntry        bda:LG1F430148BB5A7813 ;
+        adm:logEntry        bda:LG328CBB59C176D6EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG1F430148BB5A7813
+    bda:LG328CBB59C176D6EA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-04-26T12:51:48.727Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +41,18 @@ bdg:W4CZ369288 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM5CD20D3E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-04-29T01:11:52.293Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ369288  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ369288 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e4/W4CZ369288.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ369288 ;
@@ -59,7 +66,7 @@ bdg:W4CZ369288 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ369288 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   636 .
     
     bdr:I4CZ369570  a       :ImageGroup ;
         :biblioNote         "Volume 2 of rgyal dpal gsang ba 'dus pa'i Tik+ka chen mo dang 'grel pa bzhi sbrags kyi zin bris/"@en ;
