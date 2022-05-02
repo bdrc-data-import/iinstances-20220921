@@ -14,7 +14,7 @@
 bdg:W27875 {
     bda:I4494  a            adm:AdminData ;
         adm:adminAbout      bdr:I4494 ;
-        adm:logEntry        bda:LGB668711BF68A698E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGB668711BF68A698E , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM1D23E655 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -42,12 +42,18 @@ bdg:W27875 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM1D23E655  a     adm:UpdateData ;
+        adm:logAgent        "admin/imagegroups-two-tbrcIntro-by-list.xql" ;
+        adm:logDate         "2022-05-01T08:20:40.475Z"^^xsd:dateTime ;
+        adm:logMessage      "setting tbrcIntro = 2"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W27875  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W27875 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ab/W27875.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W27875 ;
@@ -58,7 +64,7 @@ bdg:W27875 {
     bdr:I4494  a            :ImageGroup ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W27875 ;
-        :volumePagesTbrcIntro  0 ;
+        :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   240 .
     
     bdr:W27875  a           :ImageInstance ;

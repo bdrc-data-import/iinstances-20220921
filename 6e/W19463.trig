@@ -14,7 +14,7 @@
 bdg:W19463 {
     bda:I4534  a            adm:AdminData ;
         adm:adminAbout      bdr:I4534 ;
-        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIM1D23E655 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W19463 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM1D23E655  a     adm:UpdateData ;
+        adm:logAgent        "admin/imagegroups-two-tbrcIntro-by-list.xql" ;
+        adm:logDate         "2022-05-01T08:20:40.475Z"^^xsd:dateTime ;
+        adm:logMessage      "setting tbrcIntro = 2"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W19463  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W19463 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6e/W19463.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W19463 ;
@@ -52,7 +58,7 @@ bdg:W19463 {
     bdr:I4534  a            :ImageGroup ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W19463 ;
-        :volumePagesTbrcIntro  0 ;
+        :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   114 .
     
     bdr:W19463  a           :ImageInstance ;
