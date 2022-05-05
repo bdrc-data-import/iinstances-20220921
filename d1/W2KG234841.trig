@@ -1,0 +1,132 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG234841 {
+    bda:I2KG235378  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235378 ;
+        adm:logEntry        bda:LGED02703AADC7E212 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG235379  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235379 ;
+        adm:logEntry        bda:LGF3042E111E78EBF5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG235380  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235380 ;
+        adm:logEntry        bda:LG099DA476CD13A61F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG235381  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235381 ;
+        adm:logEntry        bda:LG63BD4B22D506B116 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG235382  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235382 ;
+        adm:logEntry        bda:LG3A85FB729B511C0A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG099DA476CD13A61F
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-04T07:37:47.596Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3A85FB729B511C0A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-04T07:37:47.775Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG63BD4B22D506B116
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-04T07:37:47.686Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG762B7F6800ABAF46
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-04T07:37:47.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGED02703AADC7E212
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-04T07:37:47.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF3042E111E78EBF5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-04T07:37:47.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG234841  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG234841 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "d1/W2KG234841.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG234841 ;
+        adm:logEntry        bda:LG762B7F6800ABAF46 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG235378  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of sher phyin 'bum gyi pod kha cig"@en ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W2KG234841 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG235379  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of sher phyin 'bum gyi pod kha cig"@en ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W2KG234841 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG235380  a       :ImageGroup ;
+        :biblioNote         "Volume 3 of sher phyin 'bum gyi pod kha cig"@en ;
+        :volumeNumber       3 ;
+        :volumeOf           bdr:W2KG234841 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG235381  a       :ImageGroup ;
+        :biblioNote         "Volume 4 of sher phyin 'bum gyi pod kha cig"@en ;
+        :volumeNumber       4 ;
+        :volumeOf           bdr:W2KG234841 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG235382  a       :ImageGroup ;
+        :biblioNote         "Volume 5 of sher phyin 'bum gyi pod kha cig"@en ;
+        :volumeNumber       5 ;
+        :volumeOf           bdr:W2KG234841 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG234841  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG235378 , bdr:I2KG235379 , bdr:I2KG235380 , bdr:I2KG235381 , bdr:I2KG235382 ;
+        :instanceOf         bdr:WA2KG234841 ;
+        :instanceReproductionOf  bdr:MW2KG234841 ;
+        :isRoot             true ;
+        :numberOfVolumes    5 ;
+        :scanInfo           "Scanned at the Tibetan Manuscript Project Vienna (TMPV) (University of Vienna)."@en .
+}
