@@ -12,54 +12,49 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:W30118 {
-    bda:I5879  a            adm:AdminData ;
-        adm:adminAbout      bdr:I5879 ;
-        adm:logEntry        bda:LG2359ED89599E8192 , bda:LG8ECFA160EEE8C451 , bda:LGEC497DD5DDC4B118 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+    bda:I2KG235384  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235384 ;
+        adm:logEntry        bda:LGF82729E415F38270 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG2359ED89599E8192
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-12-26T14:28:12.929Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00017 .
+    bda:LG4ACC09BBF27DBB98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-05T15:47:01.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
-    bda:LG8ECFA160EEE8C451
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-12-27T12:27:33.025Z"^^xsd:dateTime ;
-        adm:logMessage      "not scanned"@en ;
-        adm:logWho          bdu:U00026 .
-    
-    bda:LGEC497DD5DDC4B118
-        a                   adm:UpdateData ;
-        adm:logDate         "2007-12-20T11:30:19.947Z"^^xsd:dateTime ;
-        adm:logMessage      "updated scanning and QC status"@en ;
-        adm:logWho          bdu:U00026 .
+    bda:LGF82729E415F38270
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-05T15:47:01.571Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:W30118  a           adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W30118 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "56/W30118.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W30118 ;
+        adm:logEntry        bda:LG4ACC09BBF27DBB98 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  false ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I5879  a            :ImageGroup ;
+    bdr:I2KG235384  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of byed grub rtsis kyi gsal byed nyi ma'i 'od zer zhes bya ba pad dkar zhal lung gi bzhed gzhung"@en ;
         :volumeNumber       1 ;
         :volumeOf           bdr:W30118 ;
-        :volumePagesTbrcIntro  0 ;
+        :volumePagesTbrcIntro  2 ;
         :volumePagesTotal   0 .
     
     bdr:W30118  a           :ImageInstance ;
-        :instanceHasVolume  bdr:I5879 ;
+        :instanceHasVolume  bdr:I2KG235384 ;
         :instanceOf         bdr:WA30118 ;
         :instanceReproductionOf  bdr:MW30118 ;
         :isRoot             true ;
         :numberOfVolumes    1 ;
-        :scanInfo           "Scanned at M/S Satluj Infotech Images, E-45, Sector 27 Noida, District Gautam Buddha Nagar, U.P. 201301 via New Delhi, India for the Buddhist Digital Resource Center."@en .
+        :scanInfo           "Scanned at Multimedia Section, Shantarakshita Library, CIHTS, Sarnath, Varanasi, U.P. India."@en , "Scanned by Multimedia section, Shantarakshita Library, Central Institute of Higher Tibetan Studies (CIHTS), Sarnath, Varanasi; CIHTS shared the digital images with BDRC to make these texts available to users on a wider basis."@en .
 }
