@@ -14,8 +14,9 @@
 bdg:W2KG234634 {
     bda:I2KG234763  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG234763 ;
-        adm:logEntry        bda:LGC60D06D230B0DE27 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGC60D06D230B0DE27 , bda:LGIM765FD795 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG70DC34693B481DB0
         a                   adm:ScanRequestCreation ;
@@ -29,12 +30,18 @@ bdg:W2KG234634 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM765FD795  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-05-10T23:59:15.251Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2KG234634  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2KG234634 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "16/W2KG234634.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG234634 ;
@@ -48,7 +55,7 @@ bdg:W2KG234634 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG234634 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   188 .
     
     bdr:W2KG234634  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG234763 ;
