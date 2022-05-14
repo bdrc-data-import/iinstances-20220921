@@ -14,7 +14,7 @@
 bdg:W4CZ369292 {
     bda:I4CZ369572  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369572 ;
-        adm:logEntry        bda:LG1B638145DC2F455D , bda:LGIM99C59FD5 ;
+        adm:logEntry        bda:LG1B638145DC2F455D , bda:LGIM99C59FD5 , bda:LGIMCBCF1EF7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W4CZ369292 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIMCBCF1EF7  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-05-13T21:03:32.155Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W4CZ369292  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W4CZ369292 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "75/W4CZ369292.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ369292 ;
@@ -55,7 +61,7 @@ bdg:W4CZ369292 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W4CZ369292 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   350 .
+        :volumePagesTotal   348 .
     
     bdr:W4CZ369292  a       :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ369572 ;
