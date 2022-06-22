@@ -14,7 +14,7 @@
 bdg:W2KG230201 {
     bda:I2KG232492  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG232492 ;
-        adm:logEntry        bda:LGDFA7E32CA31CE067 , bda:LGIM36628C56 ;
+        adm:logEntry        bda:LGDFA7E32CA31CE067 , bda:LGIM36628C56 , bda:LGIM5633DBAF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,12 +36,18 @@ bdg:W2KG230201 {
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
+    bda:LGIM5633DBAF  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-22T01:29:17.303Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2KG230201  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG230201 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "10/W2KG230201.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG230201 ;

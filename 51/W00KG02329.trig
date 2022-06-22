@@ -14,7 +14,7 @@
 bdg:W00KG02329 {
     bda:I00KG02348  a       adm:AdminData ;
         adm:adminAbout      bdr:I00KG02348 ;
-        adm:logEntry        bda:LG1CF7A371D309DCE7 , bda:LG9B05508EC2092180 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 ;
+        adm:logEntry        bda:LG1CF7A371D309DCE7 , bda:LG9B05508EC2092180 , bda:LGIGS001 , bda:LGIGS002 , bda:LGIGS003 , bda:LGIMA65AB157 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -54,12 +54,18 @@ bdg:W00KG02329 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMA65AB157  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-22T01:28:07.149Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W00KG02329  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W00KG02329 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "51/W00KG02329.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W00KG02329 ;
@@ -73,7 +79,7 @@ bdg:W00KG02329 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W00KG02329 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   128 .
+        :volumePagesTotal   256 .
     
     bdr:ID6E3A7807916D5EF4
         a                   bdr:OclcControlNumber ;

@@ -11,56 +11,49 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:W4CZ369475 {
-    bda:I4CZ370593  a       adm:AdminData ;
-        adm:adminAbout      bdr:I4CZ370593 ;
-        adm:logEntry        bda:LG6A7F465C577350D9 , bda:LGIM7BBE9650 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+bdg:W4CZ369487 {
+    bda:I4CZ370780  a       adm:AdminData ;
+        adm:adminAbout      bdr:I4CZ370780 ;
+        adm:logEntry        bda:LGA628706AF97198F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
-    bda:LG662982330AF0A43E
+    bda:LG796FA68287F92CDB
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-05-18T09:34:31.418Z"^^xsd:dateTime ;
+        adm:logDate         "2022-06-21T09:14:39.201Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG6A7F465C577350D9
+    bda:LGA628706AF97198F6
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-05-18T09:34:31.323Z"^^xsd:dateTime ;
+        adm:logDate         "2022-06-21T09:14:39.097Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGIM7BBE9650  a     adm:Synced ;
-        adm:logAgent        "Imagegroups Updater" ;
-        adm:logDate         "2022-06-22T01:48:42.214Z"^^xsd:dateTime ;
-        adm:logMessage      "Updated total pages"@en ;
-        adm:logMethod       bda:BatchMethod .
-    
-    bda:W4CZ369475  a       adm:AdminData ;
+    bda:W4CZ369487  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
-        adm:adminAbout      bdr:W4CZ369475 ;
+        adm:adminAbout      bdr:W4CZ369487 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
-        adm:gitPath         "16/W4CZ369475.trig" ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "00/W4CZ369487.trig" ;
         adm:gitRepo         bda:GR0014 ;
-        adm:graphId         bdg:W4CZ369475 ;
-        adm:logEntry        bda:LG662982330AF0A43E ;
+        adm:graphId         bdg:W4CZ369487 ;
+        adm:logEntry        bda:LG796FA68287F92CDB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:I4CZ370593  a       :ImageGroup ;
-        :biblioNote         "Volume 1 of 'bras ljongs gnas kyi bsang dang gsol ka'i rigs/"@en ;
+    bdr:I4CZ370780  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of cha gsum gyi cho ga dang 'dod khams bdag mo ma gcig dpal lha'i gser skyems/"@en ;
         :volumeNumber       1 ;
-        :volumeOf           bdr:W4CZ369475 ;
+        :volumeOf           bdr:W4CZ369487 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   196 .
+        :volumePagesTotal   0 .
     
-    bdr:W4CZ369475  a       :ImageInstance ;
-        :instanceHasVolume  bdr:I4CZ370593 ;
-        :instanceOf         bdr:WA4CZ369475 ;
-        :instanceReproductionOf  bdr:MW4CZ369475 ;
+    bdr:W4CZ369487  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I4CZ370780 ;
+        :instanceOf         bdr:WA4CZ369487 ;
+        :instanceReproductionOf  bdr:MW4CZ369487 ;
         :isRoot             true ;
         :numberOfVolumes    1 .
 }

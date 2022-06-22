@@ -19,27 +19,36 @@ bdg:W4CZ369278 {
     
     bda:I4CZ369554  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369554 ;
-        adm:logEntry        bda:LG5F354D92AB29F2C1 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG5F354D92AB29F2C1 , bda:LGIM3A5771F6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ369555  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369555 ;
-        adm:logEntry        bda:LG3F674D735AD7E030 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG414D68CBA32DD0F7 , bda:LGIM277CBDE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I4CZ369556  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369556 ;
-        adm:logEntry        bda:LGF69CDE85216AA2A8 ;
+        adm:logEntry        bda:LG3A6212AA166744D1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bda:I4CZ369557  a       adm:AdminData ;
         adm:adminAbout      bdr:I4CZ369557 ;
-        adm:logEntry        bda:LG0581C0F39FBC8498 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0AAFEA9E561BB213 , bda:LGIM14B7D90E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG0581C0F39FBC8498
+    bda:LG0AAFEA9E561BB213
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-04-26T11:33:54.539Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG3A6212AA166744D1
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-26T11:33:54.415Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -49,7 +58,7 @@ bdg:W4CZ369278 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG3F674D735AD7E030
+    bda:LG414D68CBA32DD0F7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-04-26T11:33:54.297Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -79,18 +88,30 @@ bdg:W4CZ369278 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGF69CDE85216AA2A8
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-26T11:33:54.415Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00017 .
+    bda:LGIM14B7D90E  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-22T01:31:55.836Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM277CBDE8  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-22T01:31:55.601Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM3A5771F6  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-22T01:31:55.345Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W4CZ369278  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W4CZ369278 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "0c/W4CZ369278.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W4CZ369278 ;
@@ -111,14 +132,14 @@ bdg:W4CZ369278 {
         :volumeNumber       2 ;
         :volumeOf           bdr:W4CZ369278 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   172 .
     
     bdr:I4CZ369555  a       :ImageGroup ;
         :biblioNote         "Volume 3 of rigs lam sgo brgya 'byed pa'i 'phrul gyi lde mig"@en ;
         :volumeNumber       3 ;
         :volumeOf           bdr:W4CZ369278 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   268 .
     
     bdr:I4CZ369556  a       :ImageGroup ;
         :biblioNote         "Volume 4 of rigs lam sgo brgya 'byed pa'i 'phrul gyi lde mig"@en ;
@@ -132,7 +153,7 @@ bdg:W4CZ369278 {
         :volumeNumber       5 ;
         :volumeOf           bdr:W4CZ369278 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   228 .
     
     bdr:W4CZ369278  a       :ImageInstance ;
         :instanceHasVolume  bdr:I4CZ369553 , bdr:I4CZ369554 , bdr:I4CZ369555 , bdr:I4CZ369556 , bdr:I4CZ369557 ;

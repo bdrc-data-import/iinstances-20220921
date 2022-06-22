@@ -1,0 +1,78 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG234837 {
+    bda:I2KG235439  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235439 ;
+        adm:logEntry        bda:LGF534C1D1418C4CE5 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:I2KG235440  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG235440 ;
+        adm:logEntry        bda:LG01F28C0C369AEAC4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG01F28C0C369AEAC4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-21T17:08:44.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGE7E4BAA0730175F1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T17:08:44.585Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF534C1D1418C4CE5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-06-21T17:08:44.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG234837  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG234837 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "89/W2KG234837.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG234837 ;
+        adm:logEntry        bda:LGE7E4BAA0730175F1 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  false ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG235439  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of tshad ma'i dgongs rgyan/"@en ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W2KG234837 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:I2KG235440  a       :ImageGroup ;
+        :biblioNote         "Volume 2 of tshad ma'i dgongs rgyan/"@en ;
+        :volumeNumber       2 ;
+        :volumeOf           bdr:W2KG234837 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG234837  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG235439 , bdr:I2KG235440 ;
+        :instanceOf         bdr:WA2KG234837 ;
+        :instanceReproductionOf  bdr:MW2KG234837 ;
+        :isRoot             true ;
+        :numberOfVolumes    2 ;
+        :scanInfo           "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) Montague PE C0A 1R0, Canada."@en .
+}
