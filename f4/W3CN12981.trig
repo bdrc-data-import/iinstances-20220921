@@ -14,26 +14,26 @@
 bdg:W3CN12981 {
     bda:I3CN12983  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN12983 ;
-        adm:logEntry        bda:LGBF121559DA347B6A , bda:LGIM73A8D155 ;
+        adm:logEntry        bda:LGBF121559DA347B6A , bda:LGIM0BE50B1E , bda:LGIM73A8D155 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:I3CN12984  a        adm:AdminData ;
         adm:adminAbout      bdr:I3CN12984 ;
-        adm:logEntry        bda:LG289BF5FF18FBEA03 , bda:LGIM10B49F28 ;
+        adm:logEntry        bda:LG91FBE22A8634E480 , bda:LGIM10B49F28 , bda:LGIM21FCEC6E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG289BF5FF18FBEA03
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2018-01-29T14:57:09.292Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00007 .
     
     bda:LG2943EFDF189926FD
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-01-29T14:57:09.391Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG91FBE22A8634E480
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-01-29T14:57:09.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGBF121559DA347B6A
@@ -42,9 +42,21 @@ bdg:W3CN12981 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM0BE50B1E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-29T15:46:32.998Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM10B49F28  a     adm:Synced ;
         adm:logAgent        "Imagegroups Updater" ;
         adm:logDate         "2019-09-29T06:05:32.756Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM21FCEC6E  a     adm:ImagesUpdated ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-29T15:46:33.423Z"^^xsd:dateTime ;
         adm:logMessage      "Updated total pages"@en ;
         adm:logMethod       bda:BatchMethod .
     
@@ -59,7 +71,7 @@ bdg:W3CN12981 {
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W3CN12981 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f4/W3CN12981.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W3CN12981 ;
@@ -80,7 +92,7 @@ bdg:W3CN12981 {
         :volumeNumber       2 ;
         :volumeOf           bdr:W3CN12981 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   47 .
+        :volumePagesTotal   38 .
     
     bdr:W3CN12981  a        :ImageInstance ;
         :instanceHasVolume  bdr:I3CN12983 , bdr:I3CN12984 ;

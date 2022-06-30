@@ -14,13 +14,15 @@
 bdg:W8LS20011 {
     bda:I8LS20013  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20013 ;
-        adm:logEntry        bda:LG3AAA75136D31663B ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG3AAA75136D31663B , bda:LGIMA834FC3B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I8LS20014  a        adm:AdminData ;
         adm:adminAbout      bdr:I8LS20014 ;
-        adm:logEntry        bda:LGBF47893B09615A7C ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG7A0EA59CF6B78E64 , bda:LGIM4D9403C9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG0BBAE166B4A61A70
         a                   adm:ScanRequestCreation ;
@@ -34,18 +36,30 @@ bdg:W8LS20011 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBF47893B09615A7C
+    bda:LG7A0EA59CF6B78E64
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-12T16:19:57.938Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LGIM4D9403C9  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-29T12:52:24.005Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMA834FC3B  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-06-29T12:52:23.753Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W8LS20011  a        adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W8LS20011 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "30/W8LS20011.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W8LS20011 ;
@@ -59,14 +73,14 @@ bdg:W8LS20011 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W8LS20011 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   716 .
     
     bdr:I8LS20014  a        :ImageGroup ;
         :biblioNote         "Volume 2 of 'dul ba mdo rtsa ba'i 'grel pa rin po che'i phreng ba'i do shal las dang po dang gnyis pa/"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W8LS20011 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   572 .
     
     bdr:W8LS20011  a        :ImageInstance ;
         :instanceHasVolume  bdr:I8LS20013 , bdr:I8LS20014 ;
