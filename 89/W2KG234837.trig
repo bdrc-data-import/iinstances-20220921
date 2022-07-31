@@ -14,15 +14,17 @@
 bdg:W2KG234837 {
     bda:I2KG235439  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG235439 ;
-        adm:logEntry        bda:LGF534C1D1418C4CE5 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGF534C1D1418C4CE5 , bda:LGIMF3C59C59 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I2KG235440  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG235440 ;
-        adm:logEntry        bda:LG01F28C0C369AEAC4 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG11A806EA56C5F1DA , bda:LGIMA899A383 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LG01F28C0C369AEAC4
+    bda:LG11A806EA56C5F1DA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-21T17:08:44.485Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W2KG234837 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIMA899A383  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-07-29T22:42:27.356Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMF3C59C59  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-07-29T22:42:27.155Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2KG234837  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2KG234837 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "89/W2KG234837.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG234837 ;
@@ -59,14 +73,14 @@ bdg:W2KG234837 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG234837 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   314 .
     
     bdr:I2KG235440  a       :ImageGroup ;
         :biblioNote         "Volume 2 of tshad ma'i dgongs rgyan/"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W2KG234837 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   244 .
     
     bdr:W2KG234837  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG235439 , bdr:I2KG235440 ;
