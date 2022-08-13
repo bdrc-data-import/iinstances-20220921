@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:W2KG237996 {
+    bda:I2KG238054  a       adm:AdminData ;
+        adm:adminAbout      bdr:I2KG238054 ;
+        adm:logEntry        bda:LG64A66339ED35934E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bda:LG441F7F363D415E39
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T09:17:45.609Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG64A66339ED35934E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-12T09:17:45.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:W2KG237996  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:access          bda:AccessOpen ;
+        adm:adminAbout      bdr:W2KG237996 ;
+        adm:contentLegal    bda:LD_BDRC_PD ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "6b/W2KG237996.trig" ;
+        adm:gitRepo         bda:GR0014 ;
+        adm:graphId         bdg:W2KG237996 ;
+        adm:logEntry        bda:LG441F7F363D415E39 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:I2KG238054  a       :ImageGroup ;
+        :biblioNote         "Volume 1 of dbu ma la 'jug pa'i spyi don legs bshad skal bzang mgul rgyan/"@en ;
+        :volumeNumber       1 ;
+        :volumeOf           bdr:W2KG237996 ;
+        :volumePagesTbrcIntro  2 ;
+        :volumePagesTotal   0 .
+    
+    bdr:W2KG237996  a       :ImageInstance ;
+        :instanceHasVolume  bdr:I2KG238054 ;
+        :instanceOf         bdr:WA2KG237996 ;
+        :instanceReproductionOf  bdr:MW2KG237996 ;
+        :isRoot             true ;
+        :numberOfVolumes    1 ;
+        :scanInfo           "Scanned at Great Enlightenment Buddhist Institute Society (GEBIS) Montague PE C0A 1R0, Canada."@en .
+}
