@@ -14,15 +14,17 @@
 bdg:W2KG237848 {
     bda:I2KG238035  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238035 ;
-        adm:logEntry        bda:LGECED581FA06D1F6A ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGECED581FA06D1F6A , bda:LGIM6EE52357 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I2KG238036  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238036 ;
-        adm:logEntry        bda:LGD768AF289E9559C1 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB189B5738EE6D793 , bda:LGIM97742E90 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bda:LGD768AF289E9559C1
+    bda:LGB189B5738EE6D793
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-08-12T09:10:41.095Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
@@ -40,12 +42,24 @@ bdg:W2KG237848 {
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM6EE52357  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:18:31.256Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM97742E90  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:18:31.468Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:W2KG237848  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessOpen ;
         adm:adminAbout      bdr:W2KG237848 ;
         adm:contentLegal    bda:LD_BDRC_PD ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "7d/W2KG237848.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG237848 ;
@@ -59,14 +73,14 @@ bdg:W2KG237848 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG237848 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   310 .
     
     bdr:I2KG238036  a       :ImageGroup ;
         :biblioNote         "Volume 2 of mngon par rtogs pa'i rgyan gyi don gsal bar byed pa lung dang rigs pa'i gter mdzod/"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W2KG237848 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   388 .
     
     bdr:W2KG237848  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG238035 , bdr:I2KG238036 ;

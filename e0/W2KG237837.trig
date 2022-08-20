@@ -14,17 +14,25 @@
 bdg:W2KG237837 {
     bda:I2KG238012  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238012 ;
-        adm:logEntry        bda:LG0B68A218B846A7D9 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG0B68A218B846A7D9 , bda:LGIM80C34306 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:I2KG238013  a       adm:AdminData ;
         adm:adminAbout      bdr:I2KG238013 ;
-        adm:logEntry        bda:LGE187721D408FB27A ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG42F527665EB200E0 , bda:LGIM0020EE66 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bda:LG0B68A218B846A7D9
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-08-12T06:32:48.203Z"^^xsd:dateTime ;
+        adm:logMessage      "added image group for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG42F527665EB200E0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-08-12T06:32:48.3Z"^^xsd:dateTime ;
         adm:logMessage      "added image group for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
@@ -34,18 +42,24 @@ bdg:W2KG237837 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGE187721D408FB27A
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-08-12T06:32:48.3Z"^^xsd:dateTime ;
-        adm:logMessage      "added image group for scan request"@en ;
-        adm:logWho          bdu:U00016 .
+    bda:LGIM0020EE66  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:11:11.386Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM80C34306  a     adm:Synced ;
+        adm:logAgent        "Imagegroups Updater" ;
+        adm:logDate         "2022-08-19T23:11:11.118Z"^^xsd:dateTime ;
+        adm:logMessage      "Updated total pages"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:W2KG237837  a       adm:AdminData ;
         :isRoot             true ;
         adm:access          bda:AccessFairUse ;
         adm:adminAbout      bdr:W2KG237837 ;
         adm:contentLegal    bda:LD_BDRC_Copyright ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e0/W2KG237837.trig" ;
         adm:gitRepo         bda:GR0014 ;
         adm:graphId         bdg:W2KG237837 ;
@@ -59,14 +73,14 @@ bdg:W2KG237837 {
         :volumeNumber       1 ;
         :volumeOf           bdr:W2KG237837 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   630 .
     
     bdr:I2KG238013  a       :ImageGroup ;
         :biblioNote         "Volume 2 of shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi dgongs don gsal bar byed pa skal bzang 'jug ngogs/"@en ;
         :volumeNumber       2 ;
         :volumeOf           bdr:W2KG237837 ;
         :volumePagesTbrcIntro  2 ;
-        :volumePagesTotal   0 .
+        :volumePagesTotal   510 .
     
     bdr:W2KG237837  a       :ImageInstance ;
         :instanceHasVolume  bdr:I2KG238012 , bdr:I2KG238013 ;
